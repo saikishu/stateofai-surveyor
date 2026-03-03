@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en" x-data="app()" x-init="init()" :class="{ 'dark': isDark }">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Agents Surveyor</title>
+  <!-- Apply saved theme before anything renders (prevents flash) -->
+  <script>if (localStorage.theme !== 'light') document.documentElement.classList.add('dark');</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            surface: '#0f172a',
+            card: '#1e293b',
+            border: '#334155',
+            accent: '#6366f1',
+            cyan: '#22d3ee',
+          }
+        }
+      }
+    }
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    /* ── Theme tokens ─────────────────────────────────────────── */
+    :root {
+      --c-bg:         #0f172a;
+      --c-card:       #1e293b;
+      --c-border:     #334155;
+      --c-text:       #f1f5f9;
+      --c-muted:      #94a3b8;
+      --c-faint:      #64748b;
+      --c-btn2:       #334155;
+      --c-btn2-text:  #cbd5e1;
+      --c-surface2:   #1e293b;
+      --c-hover:      rgba(30,41,59,0.6);
+      --c-scroll-bg:  #1e293b;
+      --c-scroll-fg:  #475569;
+      --c-chart-grid: rgba(255,255,255,0.06);
+      --c-chart-tick: #64748b;
+      --c-chart-leg:  #94a3b8;
+    }
+    html:not(.dark) {
+      --c-bg:         #f8fafc;
+      --c-card:       #ffffff;
+      --c-border:     #e2e8f0;
+      --c-text:       #0f172a;
+      --c-muted:      #475569;
+      --c-faint:      #94a3b8;
+      --c-btn2:       #e2e8f0;
+      --c-btn2-text:  #475569;
+      --c-surface2:   #f1f5f9;
+      --c-hover:      rgba(241,245,249,0.9);
+      --c-scroll-bg:  #f1f5f9;
+      --c-scroll-fg:  #cbd5e1;
+      --c-chart-grid: rgba(0,0,0,0.06);
+      --c-chart-tick: #64748b;
+      --c-chart-leg:  #475569;
+    }
+
+    body { background: var(--c-bg); color: var(--c-text); font-family: 'Inter', system-ui, sans-serif; transition: background 0.2s, color 0.2s; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--c-scroll-bg); }
+    ::-webkit-scrollbar-thumb { background: var(--c-scroll-fg); border-radius: 3px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 0.25rem;
+      padding: 0.2rem 0.55rem; border-radius: 9999px;
+      font-size: 0.7rem; font-weight: 600; line-height: 1.4;
+    }
+    .lang-tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem; border-radius: 0.375rem;
+      font-size: 0.7rem; font-weight: 500;
+      border: 1px solid var(--c-border); color: var(--c-muted);
+    }
+    .stat-card { border-radius: 0.75rem; padding: 1.25rem 1rem; background: var(--c-card); border: 1px solid var(--c-border); }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.375rem;
+      background-color: #6366f1; color: #fff;
+      padding: 0.5rem 1rem; border-radius: 0.75rem;
+      font-size: 0.875rem; font-weight: 500; transition: background-color 0.15s;
+    }
+    .btn-primary:hover { background-color: #6d28d9; }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.375rem;
+      padding: 0.5rem 1rem; border-radius: 0.75rem;
+      font-size: 0.875rem; font-weight: 500;
+      background: var(--c-btn2); color: var(--c-btn2-text); transition: filter 0.15s;
+    }
+    .btn-secondary:hover { filter: brightness(0.9); }
+    .btn-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.5rem; border-radius: 0.75rem;
+      background: var(--c-btn2); color: var(--c-btn2-text); transition: filter 0.15s;
+    }
+    .btn-icon:hover { filter: brightness(0.9); }
+    .table-row { border-bottom: 1px solid var(--c-border); cursor: pointer; transition: background 0.15s; }
+    .table-row:hover { background: var(--c-hover); }
+    .drawer { transition: transform 0.3s ease; }
+    .drawer-open { transform: translateX(0); }
+    .drawer-closed { transform: translateX(100%); }
+    .sparkline { height: 32px; }
+    @keyframes pulse-dot { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+    .pulse-dot { animation: pulse-dot 1.5s ease-in-out infinite; }
+    .fade-in { animation: fadeIn .25s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; } }
+    input[type=range] { accent-color: #6366f1; }
+    .chart-container { position: relative; }
+
+    /* ── Light-mode overrides for Tailwind's dark-centric classes ── */
+    html:not(.dark) nav { background-color: rgba(248,250,252,0.95); border-color: var(--c-border); }
+    html:not(.dark) .bg-surface    { background-color: var(--c-bg); }
+    html:not(.dark) .bg-card       { background-color: var(--c-card); }
+    html:not(.dark) .border-border  { border-color: var(--c-border); }
+    html:not(.dark) .text-white      { color: var(--c-text); }
+    html:not(.dark) .text-slate-300  { color: #334155; }
+    html:not(.dark) .text-slate-400  { color: #475569; }
+    html:not(.dark) .text-slate-500  { color: #64748b; }
+    html:not(.dark) .bg-slate-700    { background-color: #e2e8f0; }
+    html:not(.dark) .bg-slate-800    { background-color: var(--c-surface2); }
+    html:not(.dark) .bg-slate-800\/80 { background-color: rgba(241,245,249,0.9); }
+    html:not(.dark) select,
+    html:not(.dark) input[type=text] { background-color: var(--c-card); color: var(--c-text); border-color: var(--c-border); }
+    html:not(.dark) .placeholder-slate-500::placeholder { color: #94a3b8; }
+    html:not(.dark) .hover\:text-white:hover { color: var(--c-text); }
+
+    /* ── Accessible colored text in light mode ── */
+    html:not(.dark) .text-yellow-400  { color: #92400e; }
+    html:not(.dark) .text-cyan-400    { color: #0e7490; }
+    html:not(.dark) .text-green-400   { color: #15803d; }
+    html:not(.dark) .text-orange-400  { color: #c2410c; }
+    html:not(.dark) .text-amber-400   { color: #92400e; }
+    html:not(.dark) .text-purple-400  { color: #6b21a8; }
+    html:not(.dark) .text-purple-300  { color: #7e22ce; }
+    html:not(.dark) .text-pink-400    { color: #9d174d; }
+    html:not(.dark) .text-blue-400    { color: #1d4ed8; }
+    html:not(.dark) .text-indigo-400  { color: #4338ca; }
+
+    /* ── Status / advisory badge colors in light mode ── */
+    html:not(.dark) .bg-green-900      { background-color: #dcfce7; }
+    html:not(.dark) .text-green-300    { color: #15803d; }
+    html:not(.dark) .bg-green-900\/60  { background-color: rgba(220,252,231,0.8); }
+    html:not(.dark) .bg-yellow-900     { background-color: #fef9c3; }
+    html:not(.dark) .text-yellow-300   { color: #854d0e; }
+    html:not(.dark) .bg-orange-900     { background-color: #ffedd5; }
+    html:not(.dark) .text-orange-300   { color: #c2410c; }
+    html:not(.dark) .bg-red-900        { background-color: #fee2e2; }
+    html:not(.dark) .text-red-300      { color: #b91c1c; }
+    html:not(.dark) .bg-red-900\/30    { background-color: rgba(254,226,226,0.9); }
+    html:not(.dark) .border-red-700    { border-color: #fca5a5; }
+    html:not(.dark) .border-red-700\/50 { border-color: rgba(252,165,165,0.5); }
+    html:not(.dark) .bg-blue-900       { background-color: #dbeafe; }
+    html:not(.dark) .text-blue-300     { color: #1d4ed8; }
+    html:not(.dark) .bg-indigo-900     { background-color: #e0e7ff; }
+    html:not(.dark) .text-indigo-300   { color: #4338ca; }
+    html:not(.dark) .bg-indigo-900\/60 { background-color: rgba(238,242,255,0.8); }
+    html:not(.dark) .border-indigo-700 { border-color: #c7d2fe; }
+    html:not(.dark) .text-orange-200   { color: #c2410c; }
+    html:not(.dark) .text-yellow-200   { color: #854d0e; }
+    html:not(.dark) .text-blue-200     { color: #1e40af; }
+    html:not(.dark) .text-red-400      { color: #b91c1c; }
+    html:not(.dark) .text-green-500    { color: #15803d; }
+    html:not(.dark) .shadow-2xl        { box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); }
+  </style>
+</head>
+<body class="min-h-screen">
+
+<!-- ═══════════════════════ TOP NAV ═══════════════════════ -->
+<nav class="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur-sm">
+  <div class="max-w-screen-2xl mx-auto px-6 h-14 flex items-center gap-4">
+    <div class="flex items-center gap-2.5 flex-1">
+      <span class="text-2xl">🔬</span>
+      <span class="font-bold text-lg text-white">AI Agents Surveyor</span>
+      <span class="text-slate-500 text-sm hidden sm:block">· OWASP State of Agentic AI Security and Governance 2026</span>
+    </div>
+
+    <!-- Rate limit badge -->
+    <template x-if="rateLimit.remaining !== null">
+      <div class="flex items-center gap-1.5 text-xs text-slate-400">
+        <div :class="rateLimit.remaining > 100 ? 'bg-green-500' : 'bg-yellow-500'"
+             class="w-2 h-2 rounded-full"></div>
+        <span x-text="`${rateLimit.remaining} / ${rateLimit.limit} API calls left`"></span>
+      </div>
+    </template>
+
+    <!-- Theme toggle -->
+    <button @click="toggleTheme()" class="btn-icon"
+            :title="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
+      <template x-if="isDark">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+        </svg>
+      </template>
+      <template x-if="!isDark">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+        </svg>
+      </template>
+    </button>
+
+    <button @click="exportCSV()" class="btn-secondary">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+      </svg>
+      Export CSV
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ MAIN LAYOUT ═══════════════════════ -->
+<div class="max-w-screen-2xl mx-auto px-6 py-6 space-y-6">
+
+  <!-- ── SUMMARY STAT CARDS ── -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-9 gap-3 fade-in">
+    <div class="stat-card text-center">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">Repos</p>
+      <p class="text-2xl font-bold text-white" x-text="repos.length"></p>
+    </div>
+    <div class="stat-card text-center">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">Total Stars</p>
+      <p class="text-2xl font-bold text-yellow-400" x-text="fmt(aggregate.stars)"></p>
+    </div>
+    <div class="stat-card text-center">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">Total Forks</p>
+      <p class="text-2xl font-bold text-cyan-400" x-text="fmt(aggregate.forks)"></p>
+    </div>
+    <div class="stat-card text-center">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">Contributors</p>
+      <p class="text-2xl font-bold text-green-400" x-text="fmt(aggregate.contributors)"></p>
+    </div>
+    <div class="stat-card text-center">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">Open Issues</p>
+      <p class="text-2xl font-bold text-orange-400" x-text="fmt(aggregate.openIssues)"></p>
+    </div>
+    <div class="stat-card text-center border-l-2 border-amber-500/40">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">PRs Open</p>
+      <p class="text-2xl font-bold text-amber-400" x-text="fmt(aggregate.prsOpen)"></p>
+      <p class="text-xs text-slate-500 mt-1.5">in review</p>
+    </div>
+    <div class="stat-card text-center border-l-2 border-slate-500/40">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">PRs Closed</p>
+      <p class="text-2xl font-bold text-slate-300" x-text="fmt(aggregate.prsClosed)"></p>
+      <p class="text-xs text-slate-500 mt-1.5">rejected / stale</p>
+    </div>
+    <div class="stat-card text-center border-l-2 border-green-500/40">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">PRs Merged</p>
+      <p class="text-2xl font-bold text-green-400" x-text="fmt(aggregate.prsMerged)"></p>
+      <p class="text-xs text-slate-500 mt-1.5">shipped</p>
+    </div>
+    <div class="stat-card text-center">
+      <p class="text-xs text-slate-400 uppercase tracking-wide mb-2">Fetched</p>
+      <p class="text-2xl font-bold text-purple-400"
+         x-text="`${repos.filter(r=>r.fetch_status==='complete').length}/${repos.length}`"></p>
+    </div>
+  </div>
+
+  <!-- ── TOOLBAR ── -->
+  <div class="flex flex-wrap gap-3 items-center">
+    <!-- Fetch All -->
+    <button @click="fetchAll()"
+            :disabled="fetching"
+            class="btn-primary flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+      <template x-if="!fetching">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+        </svg>
+      </template>
+      <template x-if="fetching">
+        <div class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+      </template>
+      <span x-text="fetching ? `Fetching ${progress.completed}/${progress.total}…` : 'Fetch All Repos'"></span>
+    </button>
+
+    <!-- Refresh rate limit -->
+    <button @click="loadRateLimit()" class="btn-secondary flex items-center gap-1.5">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
+      API Status
+    </button>
+
+    <!-- Search -->
+    <div class="relative flex-1 min-w-[180px] max-w-xs">
+      <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400"
+           fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <input x-model="search" type="text" placeholder="Search repos…"
+             class="w-full bg-card border border-border rounded-lg pl-9 pr-3 py-2 text-sm text-white
+                    placeholder-slate-500 focus:outline-none focus:border-accent" />
+    </div>
+
+    <!-- Filter: Status -->
+    <select x-model="filterStatus"
+            class="bg-card border border-border text-sm text-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:border-accent">
+      <option value="">All statuses</option>
+      <option value="active">🟢 Active</option>
+      <option value="recent">🟡 Recent</option>
+      <option value="stale">🟠 Stale</option>
+      <option value="dormant">⚫ Dormant</option>
+      <option value="archived">🔴 Archived</option>
+    </select>
+
+    <!-- Sort -->
+    <select x-model="sortBy"
+            class="bg-card border border-border text-sm text-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:border-accent">
+      <option value="stars">Sort: Stars</option>
+      <option value="forks">Sort: Forks</option>
+      <option value="issues_open">Sort: Open Issues</option>
+      <option value="age_days">Sort: Age</option>
+      <option value="commits_last_year">Sort: Commits/yr</option>
+      <option value="contributor_count">Sort: Contributors</option>
+      <option value="prs_merged">Sort: Merged PRs</option>
+    </select>
+
+    <button @click="sortDesc = !sortDesc" class="btn-secondary px-3 py-2 tabular-nums"
+            :title="sortDesc ? 'Sort descending' : 'Sort ascending'"
+            x-text="sortDesc ? '↓ Desc' : '↑ Asc'"></button>
+  </div>
+
+  <!-- ── FETCH PROGRESS BAR ── -->
+  <template x-if="fetching || (progress.total > 0 && !progress.done)">
+    <div class="bg-card border border-border rounded-xl p-4">
+      <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full bg-accent pulse-dot"></div>
+          <span class="text-sm font-medium text-white">
+            Fetching GitHub data — <span x-text="`${progress.completed} / ${progress.total}`"></span>
+          </span>
+        </div>
+        <span class="text-xs text-slate-400" x-text="progress.current"></span>
+      </div>
+      <div class="h-2 bg-slate-700 rounded-full overflow-hidden">
+        <div class="h-full bg-accent rounded-full transition-all duration-500"
+             :style="`width:${progress.total>0 ? (progress.completed/progress.total*100) : 0}%`"></div>
+      </div>
+      <template x-if="progress.errors && progress.errors.length">
+        <p class="text-xs text-red-400 mt-2" x-text="`${progress.errors.length} error(s)`"></p>
+      </template>
+    </div>
+  </template>
+
+  <!-- ── REPO TABLE ── -->
+  <div class="bg-card border border-border rounded-xl overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-border text-xs text-slate-400 uppercase tracking-wider">
+            <th class="px-4 py-3 text-left">Repo</th>
+            <th class="px-4 py-3 text-right cursor-pointer hover:text-white select-none"
+                @click="toggleSort('stars')">
+              ★ Stars <span x-show="sortBy==='stars'" x-text="sortDesc?'↓':'↑'"></span>
+            </th>
+            <th class="px-4 py-3 text-right cursor-pointer hover:text-white select-none"
+                @click="toggleSort('forks')">
+              Forks <span x-show="sortBy==='forks'" x-text="sortDesc?'↓':'↑'"></span>
+            </th>
+            <th class="px-4 py-3 text-left hidden md:table-cell">Languages</th>
+            <th class="px-4 py-3 text-right hidden lg:table-cell cursor-pointer hover:text-white select-none"
+                @click="toggleSort('issues_open')">
+              Issues <span x-show="sortBy==='issues_open'" x-text="sortDesc?'↓':'↑'"></span>
+            </th>
+            <th class="px-4 py-3 text-right hidden lg:table-cell cursor-pointer hover:text-white select-none"
+                @click="toggleSort('prs_merged')">
+              PRs ✓ <span x-show="sortBy==='prs_merged'" x-text="sortDesc?'↓':'↑'"></span>
+            </th>
+            <th class="px-4 py-3 text-right hidden xl:table-cell cursor-pointer hover:text-white select-none"
+                @click="toggleSort('commits_last_year')">
+              Commits/yr <span x-show="sortBy==='commits_last_year'" x-text="sortDesc?'↓':'↑'"></span>
+            </th>
+            <th class="px-4 py-3 text-left hidden xl:table-cell">Activity</th>
+            <th class="px-4 py-3 text-left hidden xl:table-cell">License</th>
+            <th class="px-4 py-3 text-center">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template x-for="repo in filteredRepos" :key="repo.full_name">
+            <tr class="table-row" @click="openRepo(repo)">
+              <!-- Name -->
+              <td class="px-4 py-3">
+                <div class="flex items-center gap-2.5">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center text-sm font-bold text-slate-300"
+                       x-text="(repo.name||'?')[0].toUpperCase()"></div>
+                  <div>
+                    <p class="font-semibold text-white text-sm" x-text="repo.name"></p>
+                    <p class="text-xs text-slate-500" x-text="repo.owner"></p>
+                  </div>
+                </div>
+              </td>
+              <!-- Stars -->
+              <td class="px-4 py-3 text-right font-mono text-yellow-400 font-semibold"
+                  x-text="fmt(repo.stars||0)"></td>
+              <!-- Forks -->
+              <td class="px-4 py-3 text-right font-mono text-cyan-400"
+                  x-text="fmt(repo.forks||0)"></td>
+              <!-- Languages -->
+              <td class="px-4 py-3 hidden md:table-cell">
+                <div class="flex gap-1 flex-wrap">
+                  <template x-for="lang in (repo.top_3_languages||[]).slice(0,3)" :key="lang">
+                    <span class="lang-tag" x-text="lang"></span>
+                  </template>
+                  <template x-if="!repo.top_3_languages?.length && repo.csv_row?.license">
+                    <span class="text-xs text-slate-500">–</span>
+                  </template>
+                </div>
+              </td>
+              <!-- Issues open -->
+              <td class="px-4 py-3 text-right hidden lg:table-cell font-mono"
+                  :class="(repo.issues_open||0)>500 ? 'text-orange-400' : 'text-slate-300'"
+                  x-text="fmt(repo.issues_open||0)"></td>
+              <!-- Merged PRs -->
+              <td class="px-4 py-3 text-right hidden lg:table-cell font-mono text-green-400"
+                  x-text="fmt(repo.prs_merged||0)"></td>
+              <!-- Commits/yr -->
+              <td class="px-4 py-3 text-right hidden xl:table-cell font-mono text-purple-400"
+                  x-text="fmt(repo.commits_last_year||0)"></td>
+              <!-- Activity spark -->
+              <td class="px-4 py-3 hidden xl:table-cell">
+                <template x-if="repo.weekly_commits && repo.weekly_commits.length">
+                  <canvas :id="`spark-${repo.full_name.replace('/','__')}`"
+                          width="80" height="24" class="sparkline"></canvas>
+                </template>
+              </td>
+              <!-- License -->
+              <td class="px-4 py-3 hidden xl:table-cell text-xs text-slate-400"
+                  x-text="repo.license_spdx || repo.license_name || repo.csv_row?.license || '–'"></td>
+              <!-- Status -->
+              <td class="px-4 py-3 text-center">
+                <template x-if="repo.fetch_status === 'pending'">
+                  <span class="badge bg-slate-700 text-slate-400">pending</span>
+                </template>
+                <template x-if="repo.fetch_status === 'fetching'">
+                  <span class="badge bg-blue-900 text-blue-300">
+                    <span class="pulse-dot inline-block w-1.5 h-1.5 rounded-full bg-blue-400 mr-1"></span>
+                    fetching
+                  </span>
+                </template>
+                <template x-if="repo.fetch_status === 'error'">
+                  <span class="badge bg-red-900 text-red-300">error</span>
+                </template>
+                <template x-if="repo.fetch_status === 'complete'">
+                  <span class="badge" :style="{
+                    active:   'border:1px solid #22c55e;color:#22c55e',
+                    recent:   'border:1px solid #84cc16;color:#84cc16',
+                    stale:    'border:1px solid #f97316;color:#f97316',
+                    dormant:  'border:1px solid #64748b;color:#64748b',
+                    archived: 'border:1px solid #ef4444;color:#ef4444',
+                  }[repo.activity_status] || 'border:1px solid #818cf8;color:#818cf8'">
+                    <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" :style="{
+                      active:   'background:#22c55e',
+                      recent:   'background:#84cc16',
+                      stale:    'background:#f97316',
+                      dormant:  'background:#64748b',
+                      archived: 'background:#ef4444',
+                    }[repo.activity_status] || 'background:#818cf8'"></span>
+                    <span x-text="repo.activity_status || 'ok'"></span>
+                  </span>
+                </template>
+              </td>
+            </tr>
+          </template>
+          <!-- Empty state -->
+          <template x-if="filteredRepos.length === 0">
+            <tr>
+              <td colspan="10" class="px-6 py-12 text-center text-slate-500">
+                No repos match your filters. <button @click="clearFilters()" class="text-accent underline">Clear filters</button>
+              </td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+    <!-- Table footer -->
+    <div class="border-t border-border px-4 py-2 flex justify-between items-center text-xs text-slate-500">
+      <span x-text="`${filteredRepos.length} of ${repos.length} repos`"></span>
+      <span x-text="lastRefreshed ? `Last refreshed: ${lastRefreshed}` : ''"></span>
+    </div>
+  </div>
+
+  <!-- ── OVERVIEW CHARTS (visible when no repo selected) ── -->
+  <div x-show="!selectedRepo" class="grid grid-cols-1 lg:grid-cols-2 gap-6 fade-in">
+      <!-- Stars ranking -->
+      <div class="bg-card border border-border rounded-xl p-5">
+        <h3 class="font-semibold text-white mb-4 flex items-center gap-2">
+          <span>★</span> Stars Ranking (Top 20)
+        </h3>
+        <div class="chart-container" style="height:360px">
+          <canvas id="chart-stars"></canvas>
+        </div>
+      </div>
+
+      <!-- License distribution -->
+      <div class="bg-card border border-border rounded-xl p-5">
+        <h3 class="font-semibold text-white mb-4 flex items-center gap-2">
+          <span>⚖️</span> License Distribution
+        </h3>
+        <div class="chart-container" style="height:360px">
+          <canvas id="chart-licenses"></canvas>
+        </div>
+      </div>
+
+      <!-- Activity status -->
+      <div class="bg-card border border-border rounded-xl p-5">
+        <h3 class="font-semibold text-white mb-4">📡 Activity Status</h3>
+        <div class="chart-container" style="height:280px">
+          <canvas id="chart-activity"></canvas>
+        </div>
+      </div>
+
+      <!-- Language popularity -->
+      <div class="bg-card border border-border rounded-xl p-5">
+        <h3 class="font-semibold text-white mb-4">🔤 Language Popularity</h3>
+        <div class="chart-container" style="height:280px">
+          <canvas id="chart-languages"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+
+<!-- ═══════════════════════ REPO DETAIL DRAWER ═══════════════════════ -->
+<div class="fixed inset-y-0 right-0 w-full sm:w-[680px] xl:w-[800px] z-50
+            bg-surface border-l border-border overflow-y-auto
+            drawer shadow-2xl"
+     :class="selectedRepo ? 'drawer-open' : 'drawer-closed'">
+
+  <template x-if="selectedRepo">
+    <div class="p-6 space-y-6 fade-in">
+
+      <!-- Drawer header -->
+      <div class="flex items-start gap-4">
+        <button @click="closeRepo()"
+                class="mt-1 text-slate-400 hover:text-white flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-3 flex-wrap">
+            <h2 class="text-xl font-bold text-white" x-text="selectedRepo.full_name"></h2>
+            <template x-if="selectedRepo.is_archived">
+              <span class="badge bg-red-900 text-red-300">Archived</span>
+            </template>
+            <template x-if="selectedRepo.is_fork">
+              <span class="badge bg-slate-700 text-slate-400">Fork</span>
+            </template>
+          </div>
+          <p class="text-slate-400 text-sm mt-1 line-clamp-2"
+             x-text="selectedRepo.description || (selectedRepo.csv_row?.key_capabilities||'')"></p>
+          <div class="flex gap-3 mt-2 text-xs text-slate-500 flex-wrap">
+            <a :href="selectedRepo.github_url" target="_blank"
+               class="text-accent hover:underline" x-text="selectedRepo.github_url"></a>
+            <template x-if="selectedRepo.homepage">
+              <a :href="selectedRepo.homepage" target="_blank"
+                 class="text-cyan-400 hover:underline" x-text="selectedRepo.homepage"></a>
+            </template>
+          </div>
+        </div>
+        <button @click="refreshRepo(selectedRepo.full_name)"
+                :disabled="refreshing"
+                class="btn-secondary flex-shrink-0 flex items-center gap-1.5 text-xs">
+          <svg class="w-3.5 h-3.5" :class="refreshing?'animate-spin':''" fill="none"
+               stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+          </svg>
+          Refresh
+        </button>
+      </div>
+
+      <!-- Core metric cards -->
+      <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
+        <div class="stat-card text-center !p-3">
+          <p class="text-xs text-slate-400">Stars</p>
+          <p class="text-lg font-bold text-yellow-400" x-text="fmt(selectedRepo.stars)"></p>
+        </div>
+        <div class="stat-card text-center !p-3">
+          <p class="text-xs text-slate-400">Forks</p>
+          <p class="text-lg font-bold text-cyan-400" x-text="fmt(selectedRepo.forks)"></p>
+        </div>
+        <div class="stat-card text-center !p-3">
+          <p class="text-xs text-slate-400">Watchers</p>
+          <p class="text-lg font-bold text-blue-400" x-text="fmt(selectedRepo.watchers)"></p>
+        </div>
+        <div class="stat-card text-center !p-3">
+          <p class="text-xs text-slate-400">Contributors</p>
+          <p class="text-lg font-bold text-green-400" x-text="fmt(selectedRepo.contributor_count)"></p>
+        </div>
+        <div class="stat-card text-center !p-3">
+          <p class="text-xs text-slate-400">Commits/yr</p>
+          <p class="text-lg font-bold text-purple-400" x-text="fmt(selectedRepo.commits_last_year)"></p>
+        </div>
+        <div class="stat-card text-center !p-3">
+          <p class="text-xs text-slate-400">Releases</p>
+          <p class="text-lg font-bold text-pink-400" x-text="fmt(selectedRepo.release_count)"></p>
+        </div>
+      </div>
+
+      <!-- Lifecycle row -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-sm">
+        <div class="bg-slate-800 rounded-lg p-3">
+          <p class="text-xs text-slate-500 mb-0.5">Created</p>
+          <p class="font-medium text-white" x-text="fmtDate(selectedRepo.created_at)"></p>
+          <p class="text-xs text-slate-400" x-text="`${selectedRepo.age_days} days old`"></p>
+        </div>
+        <div class="bg-slate-800 rounded-lg p-3">
+          <p class="text-xs text-slate-500 mb-0.5">First Commit</p>
+          <p class="font-medium text-white" x-text="fmtDate(selectedRepo.first_commit_date) || '–'"></p>
+          <p class="text-xs text-slate-400"
+             x-text="selectedRepo.commit_span_days ? `${Math.round(selectedRepo.commit_span_days/365*10)/10}yr lifespan` : '–'"></p>
+        </div>
+        <div class="bg-slate-800 rounded-lg p-3">
+          <p class="text-xs text-slate-500 mb-0.5">Last Push</p>
+          <p class="font-medium text-white" x-text="fmtDate(selectedRepo.pushed_at)"></p>
+          <p class="text-xs text-slate-400" x-text="`${selectedRepo.days_since_push}d inactive`"></p>
+        </div>
+        <div class="bg-slate-800 rounded-lg p-3">
+          <p class="text-xs text-slate-500 mb-0.5">Total Commits</p>
+          <p class="font-medium text-white" x-text="fmt(selectedRepo.total_commits) || '–'"></p>
+          <p class="text-xs text-slate-400" x-text="selectedRepo.commits_last_year ? `${fmt(selectedRepo.commits_last_year)} last yr` : ''"></p>
+        </div>
+        <div class="bg-slate-800 rounded-lg p-3">
+          <p class="text-xs text-slate-500 mb-0.5">Avg Release</p>
+          <p class="font-medium text-white"
+             x-text="selectedRepo.avg_days_between_releases ? `${Math.round(selectedRepo.avg_days_between_releases)}d` : '–'"></p>
+          <p class="text-xs text-slate-400">between releases</p>
+        </div>
+        <div class="bg-slate-800 rounded-lg p-3">
+          <p class="text-xs text-slate-500 mb-0.5">Approx LOC</p>
+          <p class="font-medium text-white" x-text="fmt(selectedRepo.approx_loc)"></p>
+          <p class="text-xs text-slate-400" x-text="fmtBytes(selectedRepo.total_code_bytes)"></p>
+        </div>
+      </div>
+
+      <!-- Charts row 1 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Commit activity -->
+        <div class="bg-card border border-border rounded-xl p-4">
+          <div class="flex items-center gap-2 mb-3 min-w-0">
+            <h4 class="text-sm font-semibold text-white whitespace-nowrap">📈 Commits</h4>
+            <span class="text-xs text-slate-500 whitespace-nowrap">52 weeks</span>
+            <template x-if="selectedRepo.commit_trend && selectedRepo.commit_trend !== 'unknown'">
+              <div class="flex items-center gap-1.5 ml-auto flex-shrink-0">
+                <span class="badge" :style="{
+                  surging:   'border:1px solid #22c55e;color:#22c55e',
+                  rising:    'border:1px solid #84cc16;color:#84cc16',
+                  flat:      'border:1px solid #64748b;color:#94a3b8',
+                  declining: 'border:1px solid #f97316;color:#f97316',
+                  stalled:   'border:1px solid #ef4444;color:#ef4444',
+                }[selectedRepo.commit_trend] || 'border:1px solid #64748b;color:#94a3b8'"
+                x-text="{surging:'⬆ surging',rising:'↑ rising',flat:'→ flat',declining:'↓ declining',stalled:'⬇ stalled'}[selectedRepo.commit_trend]"></span>
+                <span class="text-xs whitespace-nowrap" :class="selectedRepo.commit_growth_pct >= 0 ? 'text-green-400' : 'text-red-400'"
+                      x-text="`${selectedRepo.commit_growth_pct >= 0 ? '+' : ''}${selectedRepo.commit_growth_pct}%`"></span>
+              </div>
+            </template>
+          </div>
+          <div class="chart-container" style="height:130px">
+            <canvas id="detail-commits"></canvas>
+          </div>
+          <div class="grid grid-cols-4 gap-1 mt-2 text-xs text-center">
+            <div>
+              <p class="text-slate-500">52w ago</p>
+            </div>
+            <div>
+              <p class="text-slate-500">30d</p>
+              <p class="font-semibold text-purple-400" x-text="fmt(selectedRepo.commits_30d||0)"></p>
+            </div>
+            <div>
+              <p class="text-slate-500">90d</p>
+              <p class="font-semibold text-purple-300" x-text="fmt(selectedRepo.commits_90d||0)"></p>
+            </div>
+            <div>
+              <p class="text-slate-500">avg/wk</p>
+              <p class="font-semibold text-slate-300" x-text="Math.round(selectedRepo.commits_per_week_avg||0)"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language distribution -->
+        <div class="bg-card border border-border rounded-xl p-4">
+          <h4 class="text-sm font-semibold text-white mb-3">🔤 Languages (by bytes)</h4>
+          <template x-if="Object.keys(selectedRepo.languages||{}).length">
+            <div class="chart-container" style="height:150px">
+              <canvas id="detail-languages"></canvas>
+            </div>
+          </template>
+          <template x-if="!Object.keys(selectedRepo.languages||{}).length">
+            <p class="text-slate-500 text-sm text-center py-8">No language data</p>
+          </template>
+        </div>
+      </div>
+
+      <!-- Charts row 2 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Issues & PRs -->
+        <div class="bg-card border border-border rounded-xl p-4">
+          <h4 class="text-sm font-semibold text-white mb-3">🐛 Issues &amp; Pull Requests</h4>
+          <div class="chart-container" style="height:140px">
+            <canvas id="detail-issues"></canvas>
+          </div>
+          <!-- Totals row -->
+          <div class="grid grid-cols-3 gap-1 mt-3 text-xs text-center border-b border-border pb-2">
+            <div>
+              <p class="text-slate-500">Issues Open</p>
+              <p class="font-bold text-orange-400" x-text="fmt(selectedRepo.issues_open)"></p>
+            </div>
+            <div>
+              <p class="text-slate-500">Issues Closed</p>
+              <p class="font-bold text-slate-300" x-text="fmt(selectedRepo.issues_closed)"></p>
+            </div>
+            <div>
+              <p class="text-slate-500">PRs Merged</p>
+              <p class="font-bold text-green-400" x-text="fmt(selectedRepo.prs_merged)"></p>
+            </div>
+          </div>
+          <!-- 30-day trends row -->
+          <div class="grid grid-cols-4 gap-1 mt-2 text-xs text-center">
+            <div>
+              <p class="text-slate-500">New (30d)</p>
+              <p class="font-semibold text-yellow-400" x-text="selectedRepo.issues_new_30d ?? '–'"></p>
+            </div>
+            <div>
+              <p class="text-slate-500">Active (30d)</p>
+              <p class="font-semibold text-cyan-400" x-text="selectedRepo.issues_active_30d ?? '–'"></p>
+            </div>
+            <div>
+              <p class="text-slate-500">Closed (30d)</p>
+              <p class="font-semibold text-slate-300" x-text="selectedRepo.issues_closed_30d ?? '–'"></p>
+            </div>
+            <div>
+              <p class="text-slate-500">PRs Active</p>
+              <p class="font-semibold text-indigo-400" x-text="selectedRepo.prs_active_30d ?? '–'"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top contributors -->
+        <div class="bg-card border border-border rounded-xl p-4">
+          <h4 class="text-sm font-semibold text-white mb-3">
+            👥 Top Contributors
+            <span class="text-slate-500 font-normal text-xs ml-1"
+                  x-text="selectedRepo.contributor_count ? `(${fmt(selectedRepo.contributor_count)} total)` : ''"></span>
+          </h4>
+          <template x-if="(selectedRepo.top_contributors||[]).length">
+            <div>
+              <div class="chart-container" style="height:120px">
+                <canvas id="detail-contributors"></canvas>
+              </div>
+              <!-- Contributor detail table -->
+              <div class="mt-3 space-y-1 max-h-36 overflow-y-auto">
+                <template x-for="c in (selectedRepo.top_contributors||[]).slice(0,10)" :key="c.login">
+                  <div class="flex items-center gap-2 text-xs py-0.5">
+                    <img :src="c.avatar_url" class="w-5 h-5 rounded-full flex-shrink-0" />
+                    <a :href="c.html_url" target="_blank"
+                       class="text-slate-300 hover:text-accent w-24 truncate flex-shrink-0"
+                       x-text="c.login"></a>
+                    <div class="flex-1 h-1.5 bg-slate-700 rounded-full overflow-hidden">
+                      <div class="h-full bg-indigo-500 rounded-full"
+                           :style="`width:${Math.min(100,(c.contributions/(selectedRepo.top_contributors[0]?.contributions||1))*100)}%`"></div>
+                    </div>
+                    <span class="text-slate-400 w-12 text-right" x-text="`${fmt(c.contributions)}c`"></span>
+                    <template x-if="c.additions > 0">
+                      <span class="text-green-500" x-text="`+${fmt(c.additions)}`"></span>
+                    </template>
+                    <template x-if="c.deletions > 0">
+                      <span class="text-red-400" x-text="`-${fmt(c.deletions)}`"></span>
+                    </template>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </template>
+          <template x-if="!(selectedRepo.top_contributors||[]).length">
+            <p class="text-slate-500 text-sm text-center py-8">No contributor data</p>
+          </template>
+        </div>
+      </div>
+
+      <!-- Security Advisories -->
+      <template x-if="selectedRepo.fetch_status === 'complete'">
+        <div class="bg-card border rounded-xl p-4"
+             :class="selectedRepo.security_advisories_count > 0 ? 'border-red-700/50' : 'border-border'">
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="text-sm font-semibold text-white">🔒 Security Advisories</h4>
+            <span x-show="selectedRepo.security_advisories_count === 0"
+                  class="badge bg-green-900/60 text-green-300">✓ none found</span>
+            <span x-show="selectedRepo.security_advisories_count > 0"
+                  class="badge bg-red-900 text-red-300"
+                  x-text="`${selectedRepo.security_advisories_count} advisory`"></span>
+          </div>
+          <template x-if="(selectedRepo.security_advisories||[]).length">
+            <div class="space-y-2">
+              <template x-for="adv in (selectedRepo.security_advisories||[])" :key="adv.ghsa_id">
+                <div class="bg-slate-800/80 rounded-lg px-3 py-2 text-xs">
+                  <div class="flex items-start justify-between gap-2">
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center gap-2 mb-0.5">
+                        <span :style="{
+                          critical: 'border-left:3px solid #ef4444;background:rgba(239,68,68,0.1);color:#fca5a5',
+                          high:     'border-left:3px solid #f97316;background:rgba(249,115,22,0.1);color:#fdba74',
+                          medium:   'border-left:3px solid #eab308;background:rgba(234,179,8,0.1);color:#fde047',
+                          low:      'border-left:3px solid #3b82f6;background:rgba(59,130,246,0.1);color:#93c5fd',
+                        }[adv.severity] || 'border-left:3px solid #64748b;background:rgba(100,116,139,0.1);color:#94a3b8'"
+                              style="padding:0.2rem 0.5rem 0.2rem 0.4rem;border-radius:0.375rem;font-size:0.7rem;font-weight:600;text-transform:uppercase"
+                              x-text="adv.severity"></span>
+                        <span class="font-mono text-slate-400" x-text="adv.ghsa_id"></span>
+                        <template x-if="adv.cve_id">
+                          <span class="text-slate-500" x-text="adv.cve_id"></span>
+                        </template>
+                        <template x-if="adv.cvss_score">
+                          <span class="text-slate-400" x-text="`CVSS ${adv.cvss_score}`"></span>
+                        </template>
+                      </div>
+                      <p class="text-slate-300" x-text="adv.summary"></p>
+                    </div>
+                    <div class="flex flex-col items-end gap-1 flex-shrink-0">
+                      <span class="text-slate-500" x-text="fmtDate(adv.published_at)"></span>
+                      <template x-if="adv.url">
+                        <a :href="adv.url" target="_blank" class="text-accent hover:underline">↗</a>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </template>
+        </div>
+      </template>
+
+      <!-- Topics / Tags -->
+      <template x-if="(selectedRepo.topics||[]).length">
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-2">🏷️ Topics</h4>
+          <div class="flex flex-wrap gap-2">
+            <template x-for="t in selectedRepo.topics" :key="t">
+              <span class="badge bg-indigo-900/60 text-indigo-300 border border-indigo-700"
+                    x-text="t"></span>
+            </template>
+          </div>
+        </div>
+      </template>
+
+      <!-- Recent releases -->
+      <template x-if="(selectedRepo.releases||[]).length">
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-2">🚀 Recent Releases</h4>
+          <div class="space-y-1.5 max-h-40 overflow-y-auto">
+            <template x-for="rel in (selectedRepo.releases||[]).slice(0,10)" :key="rel.tag_name">
+              <div class="flex items-center justify-between bg-slate-800 rounded-lg px-3 py-2 text-xs">
+                <div class="flex items-center gap-2">
+                  <span class="font-mono text-accent" x-text="rel.tag_name"></span>
+                  <template x-if="rel.prerelease">
+                    <span class="badge bg-yellow-900 text-yellow-300">pre</span>
+                  </template>
+                </div>
+                <span class="text-slate-400" x-text="fmtDate(rel.published_at)"></span>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+
+
+      <!-- Fetch error -->
+      <template x-if="selectedRepo.fetch_error">
+        <div class="bg-red-900/30 border border-red-700 rounded-xl p-4 text-sm text-red-300">
+          <strong>Fetch error:</strong>
+          <span x-text="selectedRepo.fetch_error"></span>
+        </div>
+      </template>
+
+    </div>
+  </template>
+
+</div>
+
+<!-- Drawer backdrop -->
+<div x-show="selectedRepo"
+     @click="closeRepo()"
+     class="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
+     x-transition:enter="transition ease-out duration-200"
+     x-transition:enter-start="opacity-0"
+     x-transition:enter-end="opacity-100"
+     x-transition:leave="transition ease-in duration-150"
+     x-transition:leave-start="opacity-100"
+     x-transition:leave-end="opacity-0">
+</div>
+
+
+<!-- ═══════════════════════ ALPINE APP ═══════════════════════ -->
+<script>
+const CHART_COLORS = [
+  '#6366f1','#22d3ee','#22c55e','#f59e0b','#ef4444',
+  '#a855f7','#ec4899','#14b8a6','#f97316','#84cc16',
+];
+
+// Chart instances live OUTSIDE Alpine's reactive system.
+// Storing Chart.js objects inside Alpine's x-data causes deep-proxy wrapping
+// which breaks Chart.js's internal canvas registry and prevents rendering.
+const _charts = {};
+const _sparks  = {};
+
+function app() {
+  return {
+    repos: [],
+    selectedRepo: null,
+    search: '',
+    filterStatus: '',
+    filterCategory: '',
+    sortBy: 'stars',
+    sortDesc: true,
+    fetching: false,
+    refreshing: false,
+    lastRefreshed: '',
+    rateLimit: { remaining: null, limit: null },
+    progress: { total: 0, completed: 0, current: null, errors: [], done: true },
+    isDark: localStorage.theme !== 'light',
+
+    async init() {
+      await this.loadRepos();
+      await this.loadRateLimit();
+      // setTimeout lets Alpine finish its own render pass before Chart.js
+      // queries the canvas elements (x-show keeps them in the DOM, but we
+      // still need layout to settle before Chart.js measures dimensions).
+      setTimeout(() => this.drawOverviewCharts(), 50);
+    },
+
+    async loadRepos() {
+      try {
+        const data = await fetch('/api/repos').then(r => r.json());
+        this.repos = data;
+        this.lastRefreshed = new Date().toLocaleTimeString();
+        setTimeout(() => {
+          this.drawSparklines();
+          this.drawOverviewCharts();
+        }, 50);
+      } catch (e) {
+        console.error('loadRepos', e);
+      }
+    },
+
+    async loadRateLimit() {
+      try {
+        const d = await fetch('/api/rate-limit').then(r => r.json());
+        const core = d?.resources?.core || {};
+        this.rateLimit = { remaining: core.remaining ?? null, limit: core.limit ?? null };
+      } catch (_) {}
+    },
+
+    get categories() {
+      const cats = new Set(this.repos.map(r => r.csv_row?.category || r.category).filter(Boolean));
+      return [...cats].sort();
+    },
+
+    get aggregate() {
+      const fetched = this.repos.filter(r => r.fetch_status === 'complete');
+      return {
+        stars:        this.repos.reduce((s,r) => s + (r.stars||0), 0),
+        forks:        fetched.reduce((s,r) => s + (r.forks||0), 0),
+        contributors: fetched.reduce((s,r) => s + (r.contributor_count||0), 0),
+        openIssues:   fetched.reduce((s,r) => s + (r.issues_open||0), 0),
+        prsOpen:      fetched.reduce((s,r) => s + (r.prs_open||0), 0),
+        prsClosed:    fetched.reduce((s,r) => s + (r.prs_closed||0), 0),
+        prsMerged:    fetched.reduce((s,r) => s + (r.prs_merged||0), 0),
+      };
+    },
+
+    get filteredRepos() {
+      let list = [...this.repos];
+      if (this.search) {
+        const q = this.search.toLowerCase();
+        list = list.filter(r =>
+          r.full_name?.toLowerCase().includes(q) ||
+          r.description?.toLowerCase().includes(q) ||
+          r.csv_row?.key_capabilities?.toLowerCase().includes(q)
+        );
+      }
+      if (this.filterStatus) {
+        list = list.filter(r => r.activity_status === this.filterStatus ||
+          (this.filterStatus === 'active' && !r.activity_status && r.fetch_status === 'pending'));
+      }
+      if (this.filterCategory) {
+        list = list.filter(r => (r.csv_row?.category || r.category) === this.filterCategory);
+      }
+      list.sort((a, b) => {
+        const av = a[this.sortBy] ?? 0, bv = b[this.sortBy] ?? 0;
+        return this.sortDesc ? bv - av : av - bv;
+      });
+      return list;
+    },
+
+    toggleSort(col) {
+      if (this.sortBy === col) this.sortDesc = !this.sortDesc;
+      else { this.sortBy = col; this.sortDesc = true; }
+    },
+
+    clearFilters() {
+      this.search = '';
+      this.filterStatus = '';
+      this.filterCategory = '';
+    },
+
+    // ── Theme ─────────────────────────────────────────────────────────
+    toggleTheme() {
+      this.isDark = !this.isDark;
+      localStorage.theme = this.isDark ? 'dark' : 'light';
+      // Re-draw charts after CSS variables update
+      setTimeout(() => {
+        if (this.selectedRepo) this.drawDetailCharts(this.selectedRepo);
+        else this.drawOverviewCharts();
+        this.drawSparklines();
+      }, 50);
+    },
+
+    // Returns chart-specific theme colors based on current mode
+    _tc() {
+      return {
+        grid: this.isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)',
+        tick: '#64748b',
+        leg:  this.isDark ? '#94a3b8' : '#475569',
+      };
+    },
+
+    // ── Fetch operations ─────────────────────────────────────────────
+    async fetchAll() {
+      if (this.fetching) return;
+      this.fetching = true;
+      try {
+        const r = await fetch('/api/repos/fetch-all', { method: 'POST' });
+        if (!r.ok) {
+          const e = await r.json();
+          alert(e.detail || 'Failed to start fetch');
+          return;
+        }
+        this.subscribeProgress();
+      } catch (e) {
+        alert('Failed: ' + e.message);
+        this.fetching = false;
+      }
+    },
+
+    subscribeProgress() {
+      const es = new EventSource('/api/stream/progress');
+      es.onmessage = async (evt) => {
+        const p = JSON.parse(evt.data);
+        this.progress = p;
+        // Refresh repo list every 5 completions
+        if (p.completed % 5 === 0 || p.done) await this.loadRepos();
+        if (p.done) {
+          this.fetching = false;
+          es.close();
+          await this.loadRepos();
+          this.drawOverviewCharts();
+        }
+      };
+      es.onerror = () => { this.fetching = false; es.close(); };
+    },
+
+    async refreshRepo(fullName) {
+      this.refreshing = true;
+      try {
+        const [owner, repo] = fullName.split('/');
+        const data = await fetch(`/api/repos/${owner}/${repo}/fetch`, { method: 'POST' }).then(r => r.json());
+        // Update in list
+        const idx = this.repos.findIndex(r => r.full_name === fullName);
+        if (idx >= 0) this.repos[idx] = data;
+        this.selectedRepo = data;
+        setTimeout(() => this.drawDetailCharts(data), 100);
+      } catch (e) {
+        alert('Refresh failed: ' + e.message);
+      } finally {
+        this.refreshing = false;
+      }
+    },
+
+    // ── Repo detail ──────────────────────────────────────────────────
+    openRepo(repo) {
+      this.selectedRepo = repo;
+      // x-if="selectedRepo" inserts DOM asynchronously; setTimeout gives Alpine
+      // time to finish inserting the canvas elements before Chart.js queries them.
+      setTimeout(() => this.drawDetailCharts(repo), 100);
+    },
+
+    closeRepo() {
+      ['detail-commits','detail-languages','detail-issues','detail-contributors'].forEach(id => {
+        if (_charts[id]) { _charts[id].destroy(); delete _charts[id]; }
+      });
+      this.selectedRepo = null;
+      setTimeout(() => this.drawOverviewCharts(), 50);
+    },
+
+    // ── Charts ───────────────────────────────────────────────────────
+    drawDetailCharts(repo) {
+      this.drawCommitChart(repo);
+      this.drawLanguageChart(repo);
+      this.drawIssuesChart(repo);
+      this.drawContributorsChart(repo);
+    },
+
+    _getCanvas(id) {
+      const el = document.getElementById(id);
+      if (!el) return null;
+      // Destroy via module-level map first, then via Chart.js registry as fallback
+      // (guards against "Canvas is already in use" when Alpine re-renders)
+      if (_charts[id]) { try { _charts[id].destroy(); } catch(_){} delete _charts[id]; }
+      const existing = Chart.getChart(el);
+      if (existing) { try { existing.destroy(); } catch(_){} }
+      return el;
+    },
+
+    drawCommitChart(repo) {
+      const el = this._getCanvas('detail-commits');
+      if (!el) return;
+      const tc = this._tc();
+      const weeks = repo.weekly_commits || [];
+      const labels = weeks.map((_, i) => i === weeks.length - 1 ? 'now' : '');
+      _charts['detail-commits'] = new Chart(el, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [{
+            data: weeks,
+            borderColor: '#6366f1',
+            backgroundColor: 'rgba(99,102,241,0.15)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 0,
+            borderWidth: 2,
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: {
+            callbacks: { label: ctx => `${ctx.raw} commits` }
+          }},
+          scales: {
+            x: { display: false },
+            y: { display: true, grid: { color: tc.grid },
+                 ticks: { color: tc.tick, font: { size: 10 } } }
+          }
+        }
+      });
+    },
+
+    drawLanguageChart(repo) {
+      const el = this._getCanvas('detail-languages');
+      if (!el) return;
+      const tc = this._tc();
+      const langs = repo.languages || {};
+      const sorted = Object.entries(langs).sort((a,b) => b[1]-a[1]).slice(0,6);
+      if (!sorted.length) return;
+      const total = sorted.reduce((s,[,v]) => s+v, 0);
+      _charts['detail-languages'] = new Chart(el, {
+        type: 'doughnut',
+        data: {
+          labels: sorted.map(([k]) => k),
+          datasets: [{ data: sorted.map(([,v]) => v), backgroundColor: CHART_COLORS, borderWidth: 0 }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          cutout: '60%',
+          plugins: {
+            legend: { position: 'right', labels: { color: tc.leg, font: { size: 10 }, padding: 8 } },
+            tooltip: {
+              callbacks: { label: ctx => `${ctx.label}: ${(ctx.raw/total*100).toFixed(1)}%` }
+            }
+          }
+        }
+      });
+    },
+
+    drawIssuesChart(repo) {
+      const el = this._getCanvas('detail-issues');
+      if (!el) return;
+      const tc = this._tc();
+      _charts['detail-issues'] = new Chart(el, {
+        type: 'bar',
+        data: {
+          labels: ['Issues', 'Pull Requests'],
+          datasets: [
+            { label: 'Open',   data: [repo.issues_open||0,  repo.prs_open||0],   backgroundColor: '#f59e0b' },
+            { label: 'Closed', data: [repo.issues_closed||0, repo.prs_closed||0], backgroundColor: '#64748b' },
+            { label: 'Merged', data: [0, repo.prs_merged||0],                    backgroundColor: '#22c55e' },
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          scales: {
+            x: { stacked: true, ticks: { color: tc.leg }, grid: { display: false } },
+            y: { stacked: true, ticks: { color: tc.tick, font: { size: 10 } }, grid: { color: tc.grid } }
+          },
+          plugins: { legend: { labels: { color: tc.leg, font: { size: 10 } } } }
+        }
+      });
+    },
+
+    drawContributorsChart(repo) {
+      const el = this._getCanvas('detail-contributors');
+      if (!el) return;
+      const tc = this._tc();
+      const top = (repo.top_contributors || []).slice(0, 10);
+      if (!top.length) return;
+      _charts['detail-contributors'] = new Chart(el, {
+        type: 'bar',
+        data: {
+          labels: top.map(c => c.login),
+          datasets: [{
+            data: top.map(c => c.contributions),
+            backgroundColor: CHART_COLORS,
+            borderRadius: 4,
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: tc.tick, font: { size: 10 } }, grid: { color: tc.grid } },
+            y: { ticks: { color: tc.leg, font: { size: 10 } }, grid: { display: false } }
+          }
+        }
+      });
+    },
+
+    drawSparklines() {
+      this.repos.forEach(repo => {
+        if (!repo.weekly_commits?.length) return;
+        const id = `spark-${(repo.full_name||'').replace('/','__')}`;
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (_sparks[id]) { try { _sparks[id].destroy(); } catch(_){} delete _sparks[id]; }
+        const existingSpark = Chart.getChart(el);
+        if (existingSpark) { try { existingSpark.destroy(); } catch(_){} }
+        _sparks[id] = new Chart(el, {
+          type: 'line',
+          data: {
+            labels: repo.weekly_commits.map(() => ''),
+            datasets: [{
+              data: repo.weekly_commits,
+              borderColor: '#6366f1', borderWidth: 1.5,
+              fill: false, pointRadius: 0, tension: 0.3,
+            }]
+          },
+          options: {
+            responsive: false,
+            animation: false,
+            plugins: { legend: { display: false }, tooltip: { enabled: false } },
+            scales: { x: { display: false }, y: { display: false } }
+          }
+        });
+      });
+    },
+
+    drawOverviewCharts() {
+      this.drawStarsChart();
+      this.drawLicenseChart();
+      this.drawActivityChart();
+      this.drawLanguagesOverviewChart();
+    },
+
+    drawStarsChart() {
+      const el = this._getCanvas('chart-stars');
+      if (!el) return;
+      const tc = this._tc();
+      const sorted = [...this.repos]
+        .filter(r => r.stars > 0)
+        .sort((a,b) => (b.stars||0)-(a.stars||0))
+        .slice(0, 20);
+      _charts['chart-stars'] = new Chart(el, {
+        type: 'bar',
+        data: {
+          labels: sorted.map(r => r.name),
+          datasets: [{
+            data: sorted.map(r => r.stars),
+            backgroundColor: sorted.map((_,i) => CHART_COLORS[i % CHART_COLORS.length]),
+            borderRadius: 4,
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: tc.tick, font: { size: 10 },
+                          callback: v => v >= 1000 ? `${(v/1000).toFixed(0)}k` : v },
+                 grid: { color: tc.grid } },
+            y: { ticks: { color: tc.leg, font: { size: 10 } }, grid: { display: false } }
+          }
+        }
+      });
+    },
+
+    drawLicenseChart() {
+      const el = this._getCanvas('chart-licenses');
+      if (!el) return;
+      const tc = this._tc();
+      const counts = {};
+      this.repos.forEach(r => {
+        const lic = r.license_spdx || r.license_name || null;
+        if (lic) counts[lic] = (counts[lic]||0) + 1;
+        else counts['Unknown'] = (counts['Unknown']||0) + 1;
+      });
+      const entries = Object.entries(counts).sort((a,b) => b[1]-a[1]);
+      _charts['chart-licenses'] = new Chart(el, {
+        type: 'doughnut',
+        data: {
+          labels: entries.map(([k])=>k),
+          datasets: [{
+            data: entries.map(([,v])=>v),
+            backgroundColor: CHART_COLORS,
+            borderWidth: 0,
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          cutout: '55%',
+          plugins: {
+            legend: { position: 'right', labels: { color: tc.leg, font: { size: 11 }, padding: 10 } },
+            tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.raw} repos` } }
+          }
+        }
+      });
+    },
+
+    drawActivityChart() {
+      const el = this._getCanvas('chart-activity');
+      if (!el) return;
+      const tc = this._tc();
+      const statuses = ['active','recent','stale','dormant','archived','pending'];
+      const colors = ['#22c55e','#84cc16','#f59e0b','#64748b','#ef4444','#475569'];
+      const counts = statuses.map(s =>
+        this.repos.filter(r => r.activity_status === s || (!r.activity_status && s==='pending')).length
+      );
+      _charts['chart-activity'] = new Chart(el, {
+        type: 'doughnut',
+        data: {
+          labels: statuses.map(s => s.charAt(0).toUpperCase()+s.slice(1)),
+          datasets: [{ data: counts, backgroundColor: colors, borderWidth: 0 }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          cutout: '60%',
+          plugins: {
+            legend: { position: 'right', labels: { color: tc.leg, font: { size: 11 } } }
+          }
+        }
+      });
+    },
+
+    drawLanguagesOverviewChart() {
+      const el = this._getCanvas('chart-languages');
+      if (!el) return;
+      const tc = this._tc();
+      const counts = {};
+      this.repos.forEach(r => {
+        (r.top_3_languages||[]).forEach(l => { counts[l] = (counts[l]||0)+1; });
+      });
+      const entries = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,10);
+      _charts['chart-languages'] = new Chart(el, {
+        type: 'bar',
+        data: {
+          labels: entries.map(([k])=>k),
+          datasets: [{
+            data: entries.map(([,v])=>v),
+            backgroundColor: CHART_COLORS,
+            borderRadius: 4,
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: tc.leg, font: { size: 10 } }, grid: { display: false } },
+            y: { ticks: { color: tc.tick, font: { size: 10 } }, grid: { color: tc.grid } }
+          }
+        }
+      });
+    },
+
+    // ── Export ───────────────────────────────────────────────────────
+    exportCSV() {
+      window.open('/api/export/csv', '_blank');
+    },
+
+    // ── Formatters ───────────────────────────────────────────────────
+    fmt(n) {
+      if (n == null) return '–';
+      if (n >= 1_000_000) return `${(n/1_000_000).toFixed(1)}M`;
+      if (n >= 1_000)     return `${(n/1_000).toFixed(0)}k`;
+      return String(n);
+    },
+
+    fmtDate(s) {
+      if (!s) return '–';
+      try { return new Date(s).toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' }); }
+      catch (_) { return s; }
+    },
+
+    fmtBytes(b) {
+      if (!b) return '';
+      if (b >= 1e9) return `${(b/1e9).toFixed(1)} GB`;
+      if (b >= 1e6) return `${(b/1e6).toFixed(1)} MB`;
+      if (b >= 1e3) return `${(b/1e3).toFixed(0)} KB`;
+      return `${b} B`;
+    },
+  };
+}
+</script>
+</body>
+</html>

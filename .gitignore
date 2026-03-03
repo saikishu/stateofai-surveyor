@@ -1,0 +1,21 @@
+# Environment / secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Cache
+surveyor/cache/
+
+# Backups
+backups/
+
+# OS
+.DS_Store
