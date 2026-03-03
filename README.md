@@ -46,7 +46,7 @@ cp .env.example .env
 
 | Variable | Default | Description |
 |---|---|---|
-| `GITHUB_TOKEN` | *(required)* | GitHub personal access token — needs `public_repo` + `repo` scope |
+| `GITHUB_TOKEN` | *(required)* | GitHub fine-grained or classic personal access token (see below) |
 | `REPOS_FILE` | `repos.txt` | Path to the repo list file |
 | `PORT` | `8000` | Server port |
 | `ADMIN_PASSWORD` | *(required)* | Password for the `/admin` page |
@@ -54,7 +54,23 @@ cp .env.example .env
 | `GIT_USER_NAME` | `OWASP Surveyor Bot` | Commit author name used by Git Sync |
 | `GIT_USER_EMAIL` | `surveyor@owasp.org` | Commit author email used by Git Sync |
 
-Create a token at [github.com/settings/tokens](https://github.com/settings/tokens). The `public_repo` scope covers data fetching; the `repo` scope is additionally required for Git Sync to push branches and open PRs.
+### GitHub Token Setup
+
+**Recommended — Fine-grained personal access token** (least privilege):
+
+Create one at [github.com/settings/tokens?type=beta](https://github.com/settings/tokens?type=beta).
+
+| Setting | Value |
+|---|---|
+| Resource owner | your user or org |
+| Repository access | **Only select repositories** → pick this surveyor repo |
+| **Contents** | Read and write *(push sync branches)* |
+| **Pull requests** | Read and write *(open PRs)* |
+| **Metadata** | Read-only *(auto-selected)* |
+
+> Fetching data from the surveyed public repos requires no extra permissions — an authenticated token is sufficient for GitHub's GraphQL and REST APIs on public repositories.
+
+**Alternative — Classic token** (`public_repo` + `repo` scopes): works but grants broader access than needed.
 
 ---
 
