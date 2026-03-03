@@ -1,1 +1,670 @@
-{"full_name": "anthropics/claude-code", "name": "claude-code", "owner": "anthropics", "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.", "homepage": "https://code.claude.com/docs/en/overview", "github_url": "https://github.com/anthropics/claude-code", "stars": 73162, "forks": 5797, "watchers": 447, "license_name": null, "license_spdx": null, "topics": [], "is_archived": false, "is_fork": false, "default_branch": "main", "created_at": "2025-02-22T17:41:21Z", "updated_at": "2026-03-03T17:04:58Z", "pushed_at": "2026-03-02T16:38:30Z", "age_days": 373, "days_since_push": 1, "activity_status": "active", "languages": {"Shell": 61221, "Python": 38265, "TypeScript": 23117, "PowerShell": 5319, "Dockerfile": 2507}, "top_3_languages": ["Shell", "Python", "TypeScript"], "total_code_bytes": 130429, "approx_loc": 3607, "issues_open": 5198, "issues_closed": 23996, "issues_new_30d": 100, "issues_new_90d": 100, "issues_active_30d": 100, "issues_closed_30d": 100, "prs_open": 241, "prs_closed": 194, "prs_merged": 145, "prs_active_30d": 100, "release_count": 51, "latest_release_tag": "v2.1.63", "latest_release_date": "2026-02-28T03:45:37Z", "avg_days_between_releases": 0.6551724137931034, "releases": [{"tag_name": "v2.1.63", "name": "v2.1.63", "published_at": "2026-02-28T03:45:37Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63"}, {"tag_name": "v2.1.62", "name": "v2.1.62", "published_at": "2026-02-27T01:56:19Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.62"}, {"tag_name": "v2.1.61", "name": "v2.1.61", "published_at": "2026-02-26T22:34:32Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.61"}, {"tag_name": "v2.1.59", "name": "v2.1.59", "published_at": "2026-02-26T00:59:24Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.59"}, {"tag_name": "v2.1.58", "name": "v2.1.58", "published_at": "2026-02-25T20:00:11Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.58"}, {"tag_name": "v2.1.56", "name": "v2.1.56", "published_at": "2026-02-25T06:27:48Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56"}, {"tag_name": "v2.1.55", "name": "v2.1.55", "published_at": "2026-02-25T03:15:51Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.55"}, {"tag_name": "v2.1.53", "name": "v2.1.53", "published_at": "2026-02-25T00:13:48Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.53"}, {"tag_name": "v2.1.52", "name": "v2.1.52", "published_at": "2026-02-24T06:39:56Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.52"}, {"tag_name": "v2.1.51", "name": "v2.1.51", "published_at": "2026-02-24T01:40:58Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.51"}, {"tag_name": "v2.1.50", "name": "v2.1.50", "published_at": "2026-02-20T23:48:57Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.50"}, {"tag_name": "v2.1.49", "name": "v2.1.49", "published_at": "2026-02-19T23:28:27Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49"}, {"tag_name": "v2.1.47", "name": "v2.1.47", "published_at": "2026-02-18T21:38:45Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.47"}, {"tag_name": "v2.1.45", "name": "v2.1.45", "published_at": "2026-02-17T18:53:52Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.45"}, {"tag_name": "v2.1.44", "name": "v2.1.44", "published_at": "2026-02-16T21:35:03Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.44"}, {"tag_name": "v2.1.42", "name": "v2.1.42", "published_at": "2026-02-13T19:56:33Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.42"}, {"tag_name": "v2.1.41", "name": "v2.1.41", "published_at": "2026-02-13T06:08:49Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.41"}, {"tag_name": "v2.1.39", "name": "v2.1.39", "published_at": "2026-02-10T23:11:36Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.39"}, {"tag_name": "v2.1.38", "name": "v2.1.38", "published_at": "2026-02-10T00:53:32Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.38"}, {"tag_name": "v2.1.37", "name": "v2.1.37", "published_at": "2026-02-07T19:10:10Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.37"}, {"tag_name": "v2.1.36", "name": "v2.1.36", "published_at": "2026-02-07T18:02:15Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.36"}, {"tag_name": "v2.1.34", "name": "v2.1.34", "published_at": "2026-02-06T14:26:47Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.34"}, {"tag_name": "v2.1.33", "name": "v2.1.33", "published_at": "2026-02-06T01:47:21Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.33"}, {"tag_name": "v2.1.32", "name": "v2.1.32", "published_at": "2026-02-05T17:47:50Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.32"}, {"tag_name": "v2.1.31", "name": "v2.1.31", "published_at": "2026-02-04T00:44:13Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.31"}, {"tag_name": "v2.1.30", "name": "v2.1.30", "published_at": "2026-02-03T18:05:59Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.30"}, {"tag_name": "v2.1.29", "name": "v2.1.29", "published_at": "2026-01-31T23:37:51Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.29"}, {"tag_name": "v2.1.27", "name": "v2.1.27", "published_at": "2026-01-30T20:38:53Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.27"}, {"tag_name": "v2.1.25", "name": "v2.1.25", "published_at": "2026-01-29T21:13:33Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.25"}, {"tag_name": "v2.1.23", "name": "v2.1.23", "published_at": "2026-01-29T01:09:51Z", "prerelease": false, "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.23"}], "contributor_count": 47, "top_contributors": [{"login": "actions-user", "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4", "html_url": "https://github.com/actions-user", "contributions": 248, "additions": 2086, "deletions": 226, "commits_count": 248}, {"login": "bcherny", "avatar_url": "https://avatars.githubusercontent.com/u/1761758?v=4", "html_url": "https://github.com/bcherny", "contributions": 70, "additions": 1686, "deletions": 241, "commits_count": 35}, {"login": "ant-kurt", "avatar_url": "https://avatars.githubusercontent.com/u/209710463?v=4", "html_url": "https://github.com/ant-kurt", "contributions": 31, "additions": 156, "deletions": 59, "commits_count": 12}, {"login": "fvolcic", "avatar_url": "https://avatars.githubusercontent.com/u/59806465?v=4", "html_url": "https://github.com/fvolcic", "contributions": 20, "additions": 147, "deletions": 125, "commits_count": 15}, {"login": "ashwin-ant", "avatar_url": "https://avatars.githubusercontent.com/u/178951676?v=4", "html_url": "https://github.com/ashwin-ant", "contributions": 19, "additions": 3647, "deletions": 704, "commits_count": 18}, {"login": "bogini", "avatar_url": "https://avatars.githubusercontent.com/u/605424?v=4", "html_url": "https://github.com/bogini", "contributions": 19, "additions": 809, "deletions": 786, "commits_count": 10}, {"login": "OctavianGuzu", "avatar_url": "https://avatars.githubusercontent.com/u/23151373?v=4", "html_url": "https://github.com/OctavianGuzu", "contributions": 12, "additions": 402, "deletions": 185, "commits_count": 6}, {"login": "hackyon-anthropic", "avatar_url": "https://avatars.githubusercontent.com/u/171081355?v=4", "html_url": "https://github.com/hackyon-anthropic", "contributions": 8, "additions": 119, "deletions": 122, "commits_count": 4}, {"login": "chrislloyd", "avatar_url": "https://avatars.githubusercontent.com/u/718?v=4", "html_url": "https://github.com/chrislloyd", "contributions": 8, "additions": 441, "deletions": 456, "commits_count": 6}, {"login": "ThariqS", "avatar_url": "https://avatars.githubusercontent.com/u/140827?v=4", "html_url": "https://github.com/ThariqS", "contributions": 8, "additions": 178, "deletions": 1, "commits_count": 4}], "commits_last_year": 423, "commits_per_week_avg": 9.0, "weekly_commits": [1, 0, 0, 2, 0, 4, 5, 5, 6, 5, 5, 4, 11, 2, 3, 4, 10, 7, 7, 4, 16, 18, 15, 13, 6, 11, 8, 5, 6, 8, 14, 8, 10, 14, 7, 11, 12, 8, 11, 10, 12, 0, 0, 19, 16, 5, 13, 9, 24, 9, 19, 1], "weekly_timestamps": [1741478400, 1742083200, 1742688000, 1743292800, 1743897600, 1744502400, 1745107200, 1745712000, 1746316800, 1746921600, 1747526400, 1748131200, 1748736000, 1749340800, 1749945600, 1750550400, 1751155200, 1751760000, 1752364800, 1752969600, 1753574400, 1754179200, 1754784000, 1755388800, 1755993600, 1756598400, 1757203200, 1757808000, 1758412800, 1759017600, 1759622400, 1760227200, 1760832000, 1761436800, 1762041600, 1762646400, 1763251200, 1763856000, 1764460800, 1765065600, 1765670400, 1766275200, 1766880000, 1767484800, 1768089600, 1768694400, 1769299200, 1769904000, 1770508800, 1771113600, 1771718400, 1772323200], "commits_30d": 62, "commits_90d": 137, "commit_trend": "rising", "commit_growth_pct": 23.3, "total_commits": 543, "first_commit_date": "2025-02-22T17:23:42Z", "commit_span_days": 373, "vulnerability_alert_count": 0, "security_advisories_count": 21, "security_advisories": [{"ghsa_id": "GHSA-66q4-vfjg-2qhh", "cve_id": "CVE-2026-25722", "severity": "high", "summary": "Command Injection via Directory Change Bypasses Write Protection", "published_at": "2026-02-06T00:15:51Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-66q4-vfjg-2qhh"}, {"ghsa_id": "GHSA-mhg7-666j-cqg4", "cve_id": "CVE-2026-25723", "severity": "high", "summary": "Command Injection via Piped sed Command Bypasses File Write Restrictions", "published_at": "2026-02-06T00:14:51Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-mhg7-666j-cqg4"}, {"ghsa_id": "GHSA-ff64-7w26-62rf", "cve_id": "CVE-2026-25725", "severity": "high", "summary": "Sandbox Escape via Persistent Configuration Injection in settings.json", "published_at": "2026-02-06T00:13:40Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-ff64-7w26-62rf"}, {"ghsa_id": "GHSA-4q92-rfm6-2cqx", "cve_id": "CVE-2026-25724", "severity": "low", "summary": "Permission Deny Bypass Through Symbolic Links", "published_at": "2026-02-06T00:12:26Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-4q92-rfm6-2cqx"}, {"ghsa_id": "GHSA-qgqw-h4xq-7w8w", "cve_id": "CVE-2026-24887", "severity": "high", "summary": "Command Injection in find Command Bypasses User Approval Prompt", "published_at": "2026-02-03T19:13:11Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-qgqw-h4xq-7w8w"}, {"ghsa_id": "GHSA-q728-gf8j-w49r", "cve_id": "CVE-2026-24053", "severity": "high", "summary": "Path Restriction Bypass via ZSH Clobber Allows Arbitrary File Writes", "published_at": "2026-02-03T19:10:25Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-q728-gf8j-w49r"}, {"ghsa_id": "GHSA-vhw5-3g5m-8ggf", "cve_id": "CVE-2026-24052", "severity": "high", "summary": "Domain Validation Bypass Allows Automatic Requests to Attacker-Controlled Domains", "published_at": "2026-02-03T19:05:06Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-vhw5-3g5m-8ggf"}, {"ghsa_id": "GHSA-jh7p-qr78-84p7", "cve_id": "CVE-2026-21852", "severity": "medium", "summary": "Malicious repo configuration can trigger data leakage via environment configuration used before trust confirmation", "published_at": "2026-01-20T22:31:15Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-jh7p-qr78-84p7"}, {"ghsa_id": "GHSA-xq4m-mc3c-vvg3", "cve_id": "CVE-2025-66032", "severity": "high", "summary": "Command Validation Bypass Allows Arbitrary Code Execution", "published_at": "2025-12-03T00:54:43Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-xq4m-mc3c-vvg3"}, {"ghsa_id": "GHSA-5hhx-v7f6-x7gv", "cve_id": "CVE-2025-65099", "severity": "high", "summary": "Command execution prior to Claude Code startup trust dialog", "published_at": "2025-11-19T02:34:10Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-5hhx-v7f6-x7gv"}, {"ghsa_id": "GHSA-7mv8-j34q-vp7q", "cve_id": "CVE-2025-64755", "severity": "high", "summary": "Sed Command Validation Bypass Allows Arbitrary File Writes", "published_at": "2025-11-20T18:54:54Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-7mv8-j34q-vp7q"}, {"ghsa_id": "GHSA-66m2-gx93-v996", "cve_id": "CVE-2025-59829", "severity": "low", "summary": "Permission deny bypass through symlink", "published_at": "2025-10-03T04:36:40Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-66m2-gx93-v996"}, {"ghsa_id": "GHSA-2jjv-qf24-vfm4", "cve_id": "CVE-2025-59828", "severity": "high", "summary": "Claude Code Vulnerable to Arbitrary Code Execution via Plugin Autoloading with Specific Yarn Versions", "published_at": "2025-09-24T12:49:58Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-2jjv-qf24-vfm4"}, {"ghsa_id": "GHSA-4fgq-fpq9-mr3g", "cve_id": "CVE-2025-59536", "severity": "high", "summary": "Command execution prior to Claude Code startup trust dialog ", "published_at": "2025-10-03T04:41:02Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-4fgq-fpq9-mr3g"}, {"ghsa_id": "GHSA-j4h9-wv2m-wrf7", "cve_id": "CVE-2025-59041", "severity": "high", "summary": "Claude Code vulnerable to arbitrary code execution caused by maliciously configured git email ", "published_at": "2025-09-09T23:58:39Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-j4h9-wv2m-wrf7"}, {"ghsa_id": "GHSA-qxfv-fcpc-w36x", "cve_id": "CVE-2025-58764", "severity": "high", "summary": "Command Injection in Claude Code rg command allowed bypass of user approval prompt for command execution", "published_at": "2025-09-09T23:58:42Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-qxfv-fcpc-w36x"}, {"ghsa_id": "GHSA-ph6w-f82w-28w6", "cve_id": null, "severity": "high", "summary": "Claude Code Vulnerable to Arbitrary Code Execution Due to Insufficient Startup Warning", "published_at": "2025-09-02T21:21:00Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-ph6w-f82w-28w6"}, {"ghsa_id": "GHSA-x5gv-jw7f-j6xj", "cve_id": "CVE-2025-55284", "severity": "high", "summary": "Permissive Default Allowlist Enables Unauthorized File Read and Network Exfiltration in Claude Code", "published_at": "2025-08-15T21:36:43Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-x5gv-jw7f-j6xj"}, {"ghsa_id": "GHSA-x56v-x2h6-7j34", "cve_id": "CVE-2025-54795", "severity": "high", "summary": "Command Injection in Claude Code echo command allowed bypass of user approval prompt for command execution", "published_at": "2025-08-01T23:38:23Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-x56v-x2h6-7j34"}, {"ghsa_id": "GHSA-pmw4-pwvc-3hx2", "cve_id": "CVE-2025-54794", "severity": "high", "summary": "Path Restriction Bypass in Claude Code Research Preview could allow unauthorized file access when path prefixes collide", "published_at": "2025-08-01T23:38:37Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-pmw4-pwvc-3hx2"}, {"ghsa_id": "GHSA-9f65-56v6-gxw7", "cve_id": "CVE-2025-52882", "severity": "high", "summary": "Claude Code IDE extensions allow websocket connections from arbitrary origins", "published_at": "2025-06-23T15:00:37Z", "cvss_score": null, "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-9f65-56v6-gxw7"}], "csv_row": null, "fetched_at": "2026-03-03T17:12:49.098134+00:00", "fetch_error": null, "fetch_status": "complete"}
+{
+  "full_name": "anthropics/claude-code",
+  "name": "claude-code",
+  "owner": "anthropics",
+  "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+  "homepage": "https://code.claude.com/docs/en/overview",
+  "github_url": "https://github.com/anthropics/claude-code",
+  "stars": 73167,
+  "forks": 5799,
+  "watchers": 447,
+  "license_name": null,
+  "license_spdx": null,
+  "topics": [],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2025-02-22T17:41:21Z",
+  "updated_at": "2026-03-03T17:34:44Z",
+  "pushed_at": "2026-03-02T16:38:30Z",
+  "age_days": 373,
+  "days_since_push": 1,
+  "activity_status": "active",
+  "languages": {
+    "Shell": 61221,
+    "Python": 38265,
+    "TypeScript": 23117,
+    "PowerShell": 5319,
+    "Dockerfile": 2507
+  },
+  "top_3_languages": [
+    "Shell",
+    "Python",
+    "TypeScript"
+  ],
+  "total_code_bytes": 130429,
+  "approx_loc": 3607,
+  "issues_open": 5206,
+  "issues_closed": 23996,
+  "issues_new_30d": 99,
+  "issues_new_90d": 99,
+  "issues_active_30d": 99,
+  "issues_closed_30d": 100,
+  "prs_open": 242,
+  "prs_closed": 194,
+  "prs_merged": 145,
+  "prs_active_30d": 100,
+  "release_count": 51,
+  "latest_release_tag": "v2.1.63",
+  "latest_release_date": "2026-02-28T03:45:37Z",
+  "avg_days_between_releases": 0.6551724137931034,
+  "releases": [
+    {
+      "tag_name": "v2.1.63",
+      "name": "v2.1.63",
+      "published_at": "2026-02-28T03:45:37Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63"
+    },
+    {
+      "tag_name": "v2.1.62",
+      "name": "v2.1.62",
+      "published_at": "2026-02-27T01:56:19Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.62"
+    },
+    {
+      "tag_name": "v2.1.61",
+      "name": "v2.1.61",
+      "published_at": "2026-02-26T22:34:32Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.61"
+    },
+    {
+      "tag_name": "v2.1.59",
+      "name": "v2.1.59",
+      "published_at": "2026-02-26T00:59:24Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.59"
+    },
+    {
+      "tag_name": "v2.1.58",
+      "name": "v2.1.58",
+      "published_at": "2026-02-25T20:00:11Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.58"
+    },
+    {
+      "tag_name": "v2.1.56",
+      "name": "v2.1.56",
+      "published_at": "2026-02-25T06:27:48Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56"
+    },
+    {
+      "tag_name": "v2.1.55",
+      "name": "v2.1.55",
+      "published_at": "2026-02-25T03:15:51Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.55"
+    },
+    {
+      "tag_name": "v2.1.53",
+      "name": "v2.1.53",
+      "published_at": "2026-02-25T00:13:48Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.53"
+    },
+    {
+      "tag_name": "v2.1.52",
+      "name": "v2.1.52",
+      "published_at": "2026-02-24T06:39:56Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.52"
+    },
+    {
+      "tag_name": "v2.1.51",
+      "name": "v2.1.51",
+      "published_at": "2026-02-24T01:40:58Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.51"
+    },
+    {
+      "tag_name": "v2.1.50",
+      "name": "v2.1.50",
+      "published_at": "2026-02-20T23:48:57Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.50"
+    },
+    {
+      "tag_name": "v2.1.49",
+      "name": "v2.1.49",
+      "published_at": "2026-02-19T23:28:27Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49"
+    },
+    {
+      "tag_name": "v2.1.47",
+      "name": "v2.1.47",
+      "published_at": "2026-02-18T21:38:45Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.47"
+    },
+    {
+      "tag_name": "v2.1.45",
+      "name": "v2.1.45",
+      "published_at": "2026-02-17T18:53:52Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.45"
+    },
+    {
+      "tag_name": "v2.1.44",
+      "name": "v2.1.44",
+      "published_at": "2026-02-16T21:35:03Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.44"
+    },
+    {
+      "tag_name": "v2.1.42",
+      "name": "v2.1.42",
+      "published_at": "2026-02-13T19:56:33Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.42"
+    },
+    {
+      "tag_name": "v2.1.41",
+      "name": "v2.1.41",
+      "published_at": "2026-02-13T06:08:49Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.41"
+    },
+    {
+      "tag_name": "v2.1.39",
+      "name": "v2.1.39",
+      "published_at": "2026-02-10T23:11:36Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.39"
+    },
+    {
+      "tag_name": "v2.1.38",
+      "name": "v2.1.38",
+      "published_at": "2026-02-10T00:53:32Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.38"
+    },
+    {
+      "tag_name": "v2.1.37",
+      "name": "v2.1.37",
+      "published_at": "2026-02-07T19:10:10Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.37"
+    },
+    {
+      "tag_name": "v2.1.36",
+      "name": "v2.1.36",
+      "published_at": "2026-02-07T18:02:15Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.36"
+    },
+    {
+      "tag_name": "v2.1.34",
+      "name": "v2.1.34",
+      "published_at": "2026-02-06T14:26:47Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.34"
+    },
+    {
+      "tag_name": "v2.1.33",
+      "name": "v2.1.33",
+      "published_at": "2026-02-06T01:47:21Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.33"
+    },
+    {
+      "tag_name": "v2.1.32",
+      "name": "v2.1.32",
+      "published_at": "2026-02-05T17:47:50Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.32"
+    },
+    {
+      "tag_name": "v2.1.31",
+      "name": "v2.1.31",
+      "published_at": "2026-02-04T00:44:13Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.31"
+    },
+    {
+      "tag_name": "v2.1.30",
+      "name": "v2.1.30",
+      "published_at": "2026-02-03T18:05:59Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.30"
+    },
+    {
+      "tag_name": "v2.1.29",
+      "name": "v2.1.29",
+      "published_at": "2026-01-31T23:37:51Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.29"
+    },
+    {
+      "tag_name": "v2.1.27",
+      "name": "v2.1.27",
+      "published_at": "2026-01-30T20:38:53Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.27"
+    },
+    {
+      "tag_name": "v2.1.25",
+      "name": "v2.1.25",
+      "published_at": "2026-01-29T21:13:33Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.25"
+    },
+    {
+      "tag_name": "v2.1.23",
+      "name": "v2.1.23",
+      "published_at": "2026-01-29T01:09:51Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.23"
+    }
+  ],
+  "contributor_count": 47,
+  "top_contributors": [
+    {
+      "login": "actions-user",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "html_url": "https://github.com/actions-user",
+      "contributions": 248,
+      "additions": 2086,
+      "deletions": 226,
+      "commits_count": 248
+    },
+    {
+      "login": "bcherny",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1761758?v=4",
+      "html_url": "https://github.com/bcherny",
+      "contributions": 70,
+      "additions": 1686,
+      "deletions": 241,
+      "commits_count": 35
+    },
+    {
+      "login": "ant-kurt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/209710463?v=4",
+      "html_url": "https://github.com/ant-kurt",
+      "contributions": 31,
+      "additions": 156,
+      "deletions": 59,
+      "commits_count": 12
+    },
+    {
+      "login": "fvolcic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59806465?v=4",
+      "html_url": "https://github.com/fvolcic",
+      "contributions": 20,
+      "additions": 147,
+      "deletions": 125,
+      "commits_count": 15
+    },
+    {
+      "login": "ashwin-ant",
+      "avatar_url": "https://avatars.githubusercontent.com/u/178951676?v=4",
+      "html_url": "https://github.com/ashwin-ant",
+      "contributions": 19,
+      "additions": 3647,
+      "deletions": 704,
+      "commits_count": 18
+    },
+    {
+      "login": "bogini",
+      "avatar_url": "https://avatars.githubusercontent.com/u/605424?v=4",
+      "html_url": "https://github.com/bogini",
+      "contributions": 19,
+      "additions": 809,
+      "deletions": 786,
+      "commits_count": 10
+    },
+    {
+      "login": "OctavianGuzu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23151373?v=4",
+      "html_url": "https://github.com/OctavianGuzu",
+      "contributions": 12,
+      "additions": 402,
+      "deletions": 185,
+      "commits_count": 6
+    },
+    {
+      "login": "hackyon-anthropic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/171081355?v=4",
+      "html_url": "https://github.com/hackyon-anthropic",
+      "contributions": 8,
+      "additions": 119,
+      "deletions": 122,
+      "commits_count": 4
+    },
+    {
+      "login": "chrislloyd",
+      "avatar_url": "https://avatars.githubusercontent.com/u/718?v=4",
+      "html_url": "https://github.com/chrislloyd",
+      "contributions": 8,
+      "additions": 441,
+      "deletions": 456,
+      "commits_count": 6
+    },
+    {
+      "login": "ThariqS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140827?v=4",
+      "html_url": "https://github.com/ThariqS",
+      "contributions": 8,
+      "additions": 178,
+      "deletions": 1,
+      "commits_count": 4
+    }
+  ],
+  "commits_last_year": 423,
+  "commits_per_week_avg": 9.0,
+  "weekly_commits": [
+    1,
+    0,
+    0,
+    2,
+    0,
+    4,
+    5,
+    5,
+    6,
+    5,
+    5,
+    4,
+    11,
+    2,
+    3,
+    4,
+    10,
+    7,
+    7,
+    4,
+    16,
+    18,
+    15,
+    13,
+    6,
+    11,
+    8,
+    5,
+    6,
+    8,
+    14,
+    8,
+    10,
+    14,
+    7,
+    11,
+    12,
+    8,
+    11,
+    10,
+    12,
+    0,
+    0,
+    19,
+    16,
+    5,
+    13,
+    9,
+    24,
+    9,
+    19,
+    1
+  ],
+  "weekly_timestamps": [
+    1741478400,
+    1742083200,
+    1742688000,
+    1743292800,
+    1743897600,
+    1744502400,
+    1745107200,
+    1745712000,
+    1746316800,
+    1746921600,
+    1747526400,
+    1748131200,
+    1748736000,
+    1749340800,
+    1749945600,
+    1750550400,
+    1751155200,
+    1751760000,
+    1752364800,
+    1752969600,
+    1753574400,
+    1754179200,
+    1754784000,
+    1755388800,
+    1755993600,
+    1756598400,
+    1757203200,
+    1757808000,
+    1758412800,
+    1759017600,
+    1759622400,
+    1760227200,
+    1760832000,
+    1761436800,
+    1762041600,
+    1762646400,
+    1763251200,
+    1763856000,
+    1764460800,
+    1765065600,
+    1765670400,
+    1766275200,
+    1766880000,
+    1767484800,
+    1768089600,
+    1768694400,
+    1769299200,
+    1769904000,
+    1770508800,
+    1771113600,
+    1771718400,
+    1772323200
+  ],
+  "commits_30d": 62,
+  "commits_90d": 137,
+  "commit_trend": "rising",
+  "commit_growth_pct": 23.3,
+  "total_commits": 543,
+  "first_commit_date": "2025-02-22T17:23:42Z",
+  "commit_span_days": 374,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 21,
+  "security_advisories": [
+    {
+      "ghsa_id": "GHSA-66q4-vfjg-2qhh",
+      "cve_id": "CVE-2026-25722",
+      "severity": "high",
+      "summary": "Command Injection via Directory Change Bypasses Write Protection",
+      "published_at": "2026-02-06T00:15:51Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-66q4-vfjg-2qhh"
+    },
+    {
+      "ghsa_id": "GHSA-mhg7-666j-cqg4",
+      "cve_id": "CVE-2026-25723",
+      "severity": "high",
+      "summary": "Command Injection via Piped sed Command Bypasses File Write Restrictions",
+      "published_at": "2026-02-06T00:14:51Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-mhg7-666j-cqg4"
+    },
+    {
+      "ghsa_id": "GHSA-ff64-7w26-62rf",
+      "cve_id": "CVE-2026-25725",
+      "severity": "high",
+      "summary": "Sandbox Escape via Persistent Configuration Injection in settings.json",
+      "published_at": "2026-02-06T00:13:40Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-ff64-7w26-62rf"
+    },
+    {
+      "ghsa_id": "GHSA-4q92-rfm6-2cqx",
+      "cve_id": "CVE-2026-25724",
+      "severity": "low",
+      "summary": "Permission Deny Bypass Through Symbolic Links",
+      "published_at": "2026-02-06T00:12:26Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-4q92-rfm6-2cqx"
+    },
+    {
+      "ghsa_id": "GHSA-qgqw-h4xq-7w8w",
+      "cve_id": "CVE-2026-24887",
+      "severity": "high",
+      "summary": "Command Injection in find Command Bypasses User Approval Prompt",
+      "published_at": "2026-02-03T19:13:11Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-qgqw-h4xq-7w8w"
+    },
+    {
+      "ghsa_id": "GHSA-q728-gf8j-w49r",
+      "cve_id": "CVE-2026-24053",
+      "severity": "high",
+      "summary": "Path Restriction Bypass via ZSH Clobber Allows Arbitrary File Writes",
+      "published_at": "2026-02-03T19:10:25Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-q728-gf8j-w49r"
+    },
+    {
+      "ghsa_id": "GHSA-vhw5-3g5m-8ggf",
+      "cve_id": "CVE-2026-24052",
+      "severity": "high",
+      "summary": "Domain Validation Bypass Allows Automatic Requests to Attacker-Controlled Domains",
+      "published_at": "2026-02-03T19:05:06Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-vhw5-3g5m-8ggf"
+    },
+    {
+      "ghsa_id": "GHSA-jh7p-qr78-84p7",
+      "cve_id": "CVE-2026-21852",
+      "severity": "medium",
+      "summary": "Malicious repo configuration can trigger data leakage via environment configuration used before trust confirmation",
+      "published_at": "2026-01-20T22:31:15Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-jh7p-qr78-84p7"
+    },
+    {
+      "ghsa_id": "GHSA-xq4m-mc3c-vvg3",
+      "cve_id": "CVE-2025-66032",
+      "severity": "high",
+      "summary": "Command Validation Bypass Allows Arbitrary Code Execution",
+      "published_at": "2025-12-03T00:54:43Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-xq4m-mc3c-vvg3"
+    },
+    {
+      "ghsa_id": "GHSA-5hhx-v7f6-x7gv",
+      "cve_id": "CVE-2025-65099",
+      "severity": "high",
+      "summary": "Command execution prior to Claude Code startup trust dialog",
+      "published_at": "2025-11-19T02:34:10Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-5hhx-v7f6-x7gv"
+    },
+    {
+      "ghsa_id": "GHSA-7mv8-j34q-vp7q",
+      "cve_id": "CVE-2025-64755",
+      "severity": "high",
+      "summary": "Sed Command Validation Bypass Allows Arbitrary File Writes",
+      "published_at": "2025-11-20T18:54:54Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-7mv8-j34q-vp7q"
+    },
+    {
+      "ghsa_id": "GHSA-66m2-gx93-v996",
+      "cve_id": "CVE-2025-59829",
+      "severity": "low",
+      "summary": "Permission deny bypass through symlink",
+      "published_at": "2025-10-03T04:36:40Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-66m2-gx93-v996"
+    },
+    {
+      "ghsa_id": "GHSA-2jjv-qf24-vfm4",
+      "cve_id": "CVE-2025-59828",
+      "severity": "high",
+      "summary": "Claude Code Vulnerable to Arbitrary Code Execution via Plugin Autoloading with Specific Yarn Versions",
+      "published_at": "2025-09-24T12:49:58Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-2jjv-qf24-vfm4"
+    },
+    {
+      "ghsa_id": "GHSA-4fgq-fpq9-mr3g",
+      "cve_id": "CVE-2025-59536",
+      "severity": "high",
+      "summary": "Command execution prior to Claude Code startup trust dialog ",
+      "published_at": "2025-10-03T04:41:02Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-4fgq-fpq9-mr3g"
+    },
+    {
+      "ghsa_id": "GHSA-j4h9-wv2m-wrf7",
+      "cve_id": "CVE-2025-59041",
+      "severity": "high",
+      "summary": "Claude Code vulnerable to arbitrary code execution caused by maliciously configured git email ",
+      "published_at": "2025-09-09T23:58:39Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-j4h9-wv2m-wrf7"
+    },
+    {
+      "ghsa_id": "GHSA-qxfv-fcpc-w36x",
+      "cve_id": "CVE-2025-58764",
+      "severity": "high",
+      "summary": "Command Injection in Claude Code rg command allowed bypass of user approval prompt for command execution",
+      "published_at": "2025-09-09T23:58:42Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-qxfv-fcpc-w36x"
+    },
+    {
+      "ghsa_id": "GHSA-ph6w-f82w-28w6",
+      "cve_id": null,
+      "severity": "high",
+      "summary": "Claude Code Vulnerable to Arbitrary Code Execution Due to Insufficient Startup Warning",
+      "published_at": "2025-09-02T21:21:00Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-ph6w-f82w-28w6"
+    },
+    {
+      "ghsa_id": "GHSA-x5gv-jw7f-j6xj",
+      "cve_id": "CVE-2025-55284",
+      "severity": "high",
+      "summary": "Permissive Default Allowlist Enables Unauthorized File Read and Network Exfiltration in Claude Code",
+      "published_at": "2025-08-15T21:36:43Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-x5gv-jw7f-j6xj"
+    },
+    {
+      "ghsa_id": "GHSA-x56v-x2h6-7j34",
+      "cve_id": "CVE-2025-54795",
+      "severity": "high",
+      "summary": "Command Injection in Claude Code echo command allowed bypass of user approval prompt for command execution",
+      "published_at": "2025-08-01T23:38:23Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-x56v-x2h6-7j34"
+    },
+    {
+      "ghsa_id": "GHSA-pmw4-pwvc-3hx2",
+      "cve_id": "CVE-2025-54794",
+      "severity": "high",
+      "summary": "Path Restriction Bypass in Claude Code Research Preview could allow unauthorized file access when path prefixes collide",
+      "published_at": "2025-08-01T23:38:37Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-pmw4-pwvc-3hx2"
+    },
+    {
+      "ghsa_id": "GHSA-9f65-56v6-gxw7",
+      "cve_id": "CVE-2025-52882",
+      "severity": "high",
+      "summary": "Claude Code IDE extensions allow websocket connections from arbitrary origins",
+      "published_at": "2025-06-23T15:00:37Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-9f65-56v6-gxw7"
+    }
+  ],
+  "csv_row": null,
+  "fetched_at": "2026-03-03T17:40:45.473084+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}
