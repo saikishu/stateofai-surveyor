@@ -17,7 +17,7 @@ from fastapi.responses import JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from . import cache_manager
+from . import storage
 from .github_client import GitHubClient
 from .models import FetchProgress, RepoStats
 
@@ -26,7 +26,6 @@ load_dotenv()
 
 GITHUB_TOKEN   = os.getenv("GITHUB_TOKEN", "")
 REPOS_FILE     = Path(os.getenv("CSV_PATH", "repos.txt"))
-CACHE_TTL      = float(os.getenv("CACHE_TTL_HOURS", "24"))
 PORT           = int(os.getenv("PORT", "8000"))
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 
@@ -84,7 +83,7 @@ async def list_repos() -> List[Dict]:
     full_names = load_repos_txt()
     result = []
     for full_name in full_names:
-        cached = cache_manager.get(full_name, ttl_hours=CACHE_TTL)
+        cached = storage.get(full_name)
         if cached:
             result.append(cached)
         else:
@@ -100,7 +99,7 @@ async def list_repos() -> List[Dict]:
 @app.get("/api/repos/{owner}/{repo}")
 async def get_repo(owner: str, repo: str) -> Dict:
     full_name = f"{owner}/{repo}"
-    cached = cache_manager.get(full_name, ttl_hours=CACHE_TTL)
+    cached = storage.get(full_name)
     if cached:
         return cached
     raise HTTPException(status_code=404, detail="Not fetched yet — use /api/repos/{owner}/{repo}/fetch")
@@ -116,7 +115,7 @@ async def fetch_repo(owner: str, repo: str) -> Dict:
         stats = await client.fetch_repo(full_name)
 
     data = stats.model_dump()
-    cache_manager.set(full_name, data)
+    storage.set(full_name, data)
     return data
 
 
@@ -165,8 +164,8 @@ async def rate_limit_status() -> Dict:
 @app.get("/api/export/csv")
 async def export_csv() -> StreamingResponse:
     """Export all cached repo data as a flat CSV."""
-    keys = cache_manager.list_keys()
-    rows_data = [cache_manager.get(k, ttl_hours=9999) for k in keys]
+    keys = storage.list_keys()
+    rows_data = [storage.get(k) for k in keys]
     rows_data = [r for r in rows_data if r]
 
     if not rows_data:
@@ -188,9 +187,9 @@ async def export_csv() -> StreamingResponse:
     )
 
 
-@app.delete("/api/cache/{owner}/{repo}")
-async def clear_cache(owner: str, repo: str) -> Dict:
-    cache_manager.delete(f"{owner}/{repo}")
+@app.delete("/api/data/repos/{owner}/{repo}")
+async def clear_repo_data(owner: str, repo: str) -> Dict:
+    storage.delete(f"{owner}/{repo}")
     return {"cleared": True}
 
 
@@ -235,8 +234,8 @@ async def admin_save_repos(
     # Back up current file
     backup_name = None
     if path.exists():
-        backup_dir = path.parent / "backups"
-        backup_dir.mkdir(exist_ok=True)
+        backup_dir = storage.DATA_DIR / "backups"
+        backup_dir.mkdir(parents=True, exist_ok=True)
         ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
         backup_name = f"repos_{ts}.txt"
         (backup_dir / backup_name).write_text(path.read_text(encoding="utf-8"), encoding="utf-8")
@@ -263,7 +262,7 @@ async def admin_save_repos(
 
 @app.get("/api/admin/backups")
 async def admin_list_backups(_: None = Depends(_admin_auth)) -> List[Dict]:
-    backup_dir = _repos_path().parent / "backups"
+    backup_dir = storage.DATA_DIR / "backups"
     if not backup_dir.exists():
         return []
     files = sorted(backup_dir.glob("repos_*.txt"), reverse=True)
@@ -293,7 +292,7 @@ async def _bulk_fetch_task(full_names: List[str]) -> None:
                 _progress.current = full_name
                 try:
                     stats = await client.fetch_repo(full_name)
-                    cache_manager.set(full_name, stats.model_dump())
+                    storage.set(full_name, stats.model_dump())
                 except Exception as exc:
                     logger.error("bulk fetch %s: %s", full_name, exc)
                     _progress.errors.append(f"{full_name}: {exc}")

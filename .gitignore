@@ -11,11 +11,5 @@ __pycache__/
 dist/
 build/
 
-# Cache
-surveyor/cache/
-
-# Backups
-backups/
-
 # OS
 .DS_Store

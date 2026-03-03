@@ -47,7 +47,6 @@ cp .env.example .env
 |---|---|---|
 | `GITHUB_TOKEN` | *(required)* | GitHub personal access token — needs `public_repo` scope |
 | `CSV_PATH` | `repos.txt` | Path to the repo list file |
-| `CACHE_TTL_HOURS` | `24` | Hours before cached data is considered stale |
 | `PORT` | `8000` | Server port |
 | `ADMIN_PASSWORD` | *(required)* | Password for the `/admin` page |
 
@@ -80,10 +79,13 @@ The list can be managed via the UI at `/admin`.
 ├── requirements.txt
 ├── setup.sh                   # Creates .venv and installs deps
 ├── run.sh                     # Starts uvicorn with --reload
+├── data/
+│   ├── repos/                 # Persistent repo data (owner/repo.json)
+│   └── backups/               # repos.txt backups (timestamped)
 └── surveyor/
     ├── main.py                # FastAPI routes
     ├── github_client.py       # GraphQL + REST GitHub client
-    ├── cache_manager.py       # File-based JSON cache
+    ├── storage.py             # Persistent file-based storage (data/)
     ├── models.py              # Pydantic models
     └── templates/
         ├── index.html         # Main UI (Alpine.js + Chart.js)
@@ -98,12 +100,13 @@ The list can be managed via the UI at `/admin`.
 |---|---|---|
 | `GET` | `/` | Main UI |
 | `GET` | `/admin` | Admin editor (password protected) |
-| `GET` | `/api/repos` | All repos merged with cached stats |
+| `GET` | `/api/repos` | All repos merged with stored stats |
 | `POST` | `/api/repos/fetch-all` | Trigger bulk background fetch |
 | `POST` | `/api/repos/{owner}/{repo}/fetch` | Fetch / refresh a single repo |
+| `DELETE` | `/api/data/repos/{owner}/{repo}` | Remove a repo's stored data |
 | `GET` | `/api/stream/progress` | SSE fetch progress stream |
 | `GET` | `/api/rate-limit` | GitHub API rate limit status |
-| `GET` | `/api/export/csv` | Export all cached data as CSV |
+| `GET` | `/api/export/csv` | Export all stored data as CSV |
 
 ---
 
