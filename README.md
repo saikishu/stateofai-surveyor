@@ -98,28 +98,25 @@ Fetched repo stats are stored as JSON files under `data/repos/` and committed to
 When new repos are fetched, the `data/` directory accumulates uncommitted changes. The **Git Sync** panel in `/admin` handles pushing these back to GitHub:
 
 1. **Status check** — on login the panel runs `git status data/` and lists any pending files.
-2. **Sync to Git** — clicking the button creates a new branch (`data/sync-{timestamp}`), commits only the `data/` changes, pushes it, and opens a pull request automatically.
+2. **Sync to Git** — clicking the button uses the GitHub Git Data API to create a branch, commit (authored as `GIT_USER_NAME` / `GIT_USER_EMAIL`), and pull request — all without touching the local working tree.
 3. **PR tracking** — the panel polls the PR state. Once the PR is merged, the badge updates to "merged ✓" and clears on the next refresh.
 
-The sync uses a git worktree so the running server's working tree is never touched during the operation.
+The entire commit + push path goes through the GitHub REST API (no local git writes), so commit authorship reflects the identity set in `.env` rather than the local git config.
 
 ```
-Pending changes detected
+Pending changes detected (git status data/)
        │
        ▼
-  git worktree add /tmp/sync-…  (isolated copy)
+  GitHub API: create blobs → tree → commit (author from .env)
        │
        ▼
-  git add data/ && git commit
-       │
-       ▼
-  git push → GitHub PR opened
+  GitHub API: create branch ref → open PR
        │
        ▼
   PR merged → badge clears → "Up to date"
 ```
 
-> **Token scope**: `GITHUB_TOKEN` must have `repo` scope to push branches and create PRs.
+> **Token scope**: `GITHUB_TOKEN` needs `Contents: write` and `Pull requests: write` on this repository (fine-grained token), or the classic `repo` scope.
 
 ---
 
@@ -138,7 +135,7 @@ Pending changes detected
     ├── main.py                # FastAPI routes
     ├── github_client.py       # GraphQL + REST GitHub client
     ├── storage.py             # Persistent file-based storage (data/)
-    ├── git_sync.py            # Git worktree sync + GitHub PR creation
+    ├── git_sync.py            # GitHub Git Data API sync + PR creation
     ├── models.py              # Pydantic models
     └── templates/
         ├── index.html         # Main UI (Alpine.js + Chart.js)

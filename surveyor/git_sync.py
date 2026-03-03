@@ -1,14 +1,17 @@
-"""Git sync utilities — push data/ changes to GitHub as a pull request.
+"""Git sync utilities — push data/ changes to GitHub via the Git Data API.
 
-Uses a temporary git worktree so the main working tree (and running server)
-are never affected by branch checkouts.
+Commit author identity (name + email) comes entirely from GIT_USER_NAME /
+GIT_USER_EMAIL in .env, not from the local git config or token owner.
+
+Flow: detect local changes (git status) → create blobs → build tree →
+      create commit (custom author) → create branch ref → open PR.
+No git worktree or local commits are made.
 """
 from __future__ import annotations
 
 import asyncio
+import base64
 import logging
-import shutil
-import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -18,16 +21,17 @@ import httpx
 logger = logging.getLogger(__name__)
 
 REPO_ROOT = Path(__file__).parent.parent
+_GH_API   = "https://api.github.com"
 
 # In-memory record of the most recently created sync PR.
 # Cleared once the PR is confirmed merged.  Resets on server restart.
 _latest_pr: Optional[Dict[str, Any]] = None
 
 
-# ── Internal git helper ────────────────────────────────────────────────────────
+# ── Internal helpers ───────────────────────────────────────────────────────────
 
 async def _git(*args: str) -> tuple[int, str, str]:
-    """Run a git command at REPO_ROOT and return (returncode, stdout, stderr)."""
+    """Run a git command at REPO_ROOT."""
     proc = await asyncio.create_subprocess_exec(
         "git", *args,
         cwd=str(REPO_ROOT),
@@ -38,59 +42,54 @@ async def _git(*args: str) -> tuple[int, str, str]:
     return proc.returncode, out.decode().strip(), err.decode().strip()
 
 
+def _gh_headers(token: str) -> Dict[str, str]:
+    return {
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+
+
+async def _gh(client: httpx.AsyncClient, method: str, path: str, token: str, **kwargs) -> Dict:
+    resp = await client.request(
+        method,
+        f"{_GH_API}{path}",
+        headers=_gh_headers(token),
+        **kwargs,
+    )
+    if resp.status_code >= 400:
+        raise RuntimeError(f"GitHub API {method} {path} → {resp.status_code}: {resp.text[:300]}")
+    return resp.json()
+
+
 # ── Public API ─────────────────────────────────────────────────────────────────
 
 async def data_status(token: str, repo_slug: str) -> Dict[str, Any]:
-    """Return git status for data/ and, if a sync PR is open, its merge state.
-
-    Response schema::
-
-        {
-          "pending": bool,          # are there un-pushed data/ changes?
-          "count":   int,
-          "files":   [str, ...],    # porcelain status lines  e.g. " M data/repos/…"
-          "pr":      {              # present only when _latest_pr is set
-            "number": int,
-            "url":    str,
-            "branch": str,
-            "state":  "open" | "closed",
-            "merged": bool,
-          } | None,
-        }
-    """
+    """Return git status for data/ and, if a sync PR is open, its merge state."""
     global _latest_pr
 
-    # 1. Check pending data/ changes
+    # Pending data/ changes (compare with local HEAD)
     rc, out, _ = await _git("status", "--porcelain", "data/")
     files = [line for line in out.splitlines() if line.strip()]
 
-    # 2. Check latest PR status (if any)
+    # Latest PR status (if any)
     pr_info: Optional[Dict] = None
     if _latest_pr and token and repo_slug:
         try:
             async with httpx.AsyncClient(timeout=10.0) as client:
-                resp = await client.get(
-                    f"https://api.github.com/repos/{repo_slug}/pulls/{_latest_pr['number']}",
-                    headers={
-                        "Authorization": f"Bearer {token}",
-                        "Accept": "application/vnd.github+json",
-                    },
-                )
-            if resp.status_code == 200:
-                data = resp.json()
-                merged = bool(data.get("merged"))
-                pr_info = {
-                    "number": _latest_pr["number"],
-                    "url":    _latest_pr["url"],
-                    "branch": _latest_pr["branch"],
-                    "state":  data.get("state", "unknown"),
-                    "merged": merged,
-                }
-                # Auto-clear once merged so next poll shows "up to date"
-                if merged:
-                    _latest_pr = None
-            else:
-                pr_info = {**_latest_pr, "state": "unknown", "merged": False}
+                data = await _gh(client, "GET",
+                                 f"/repos/{repo_slug}/pulls/{_latest_pr['number']}",
+                                 token)
+            merged = bool(data.get("merged"))
+            pr_info = {
+                "number": _latest_pr["number"],
+                "url":    _latest_pr["url"],
+                "branch": _latest_pr["branch"],
+                "state":  data.get("state", "unknown"),
+                "merged": merged,
+            }
+            if merged:
+                _latest_pr = None  # auto-clear once merged
         except Exception as exc:
             logger.warning("Could not fetch PR status: %s", exc)
             pr_info = {**_latest_pr, "state": "unknown", "merged": False}
@@ -109,105 +108,94 @@ async def create_sync_pr(
     token: str,
     repo_slug: str,
 ) -> Dict[str, Any]:
-    """Stage data/ changes, commit to a new branch, push, and open a GitHub PR.
+    """Commit pending data/ changes and open a GitHub PR via the Git Data API.
 
-    Uses a temporary git worktree so the main working tree is completely
-    untouched — the running server keeps serving from its current data/.
+    Author identity is set from user_name / user_email (sourced from .env),
+    completely independent of the local git config or the token owner's profile.
+    The local working tree is never modified.
     """
     global _latest_pr
 
     ts     = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     branch = f"data/sync-{ts}"
     msg    = f"data: sync repo stats {ts}"
+    now    = datetime.now(timezone.utc).isoformat()
 
-    # mkdtemp creates the dir; git worktree add requires it not to exist → remove first
-    tmpdir = tempfile.mkdtemp(prefix="surveyor-sync-")
-    shutil.rmtree(tmpdir)
+    # ── 1. Detect changed data/ files via local git status ────────────────────
+    rc, out, _ = await _git("status", "--porcelain", "data/")
+    changed: List[tuple[str, str]] = []
+    for line in out.splitlines():
+        if not line.strip():
+            continue
+        xy   = line[:2]          # e.g. " M", "??", " D"
+        path = line[3:].strip()  # e.g. "data/repos/owner/repo.json"
+        if path.startswith("data/"):
+            changed.append((xy, path))
 
-    try:
-        # ── 1. Create worktree on a new branch ────────────────────────────────
-        rc, out, err = await _git("worktree", "add", tmpdir, "-b", branch)
-        if rc != 0:
-            raise RuntimeError(f"git worktree add failed: {err or out}")
+    if not changed:
+        return {"status": "nothing_to_commit"}
 
-        # ── 2. Copy current data/ files into the worktree ─────────────────────
-        data_src = REPO_ROOT / "data"
-        data_dst = Path(tmpdir) / "data"
-        shutil.copytree(str(data_src), str(data_dst), dirs_exist_ok=True)
+    async with httpx.AsyncClient(timeout=30.0) as client:
 
-        # ── 3. Configure commit identity inside worktree ──────────────────────
-        await _git("-C", tmpdir, "config", "user.name",  user_name)
-        await _git("-C", tmpdir, "config", "user.email", user_email)
+        # ── 2. Get base commit + tree SHA from main ────────────────────────────
+        ref_data    = await _gh(client, "GET", f"/repos/{repo_slug}/git/ref/heads/main", token)
+        base_sha    = ref_data["object"]["sha"]
+        commit_data = await _gh(client, "GET", f"/repos/{repo_slug}/git/commits/{base_sha}", token)
+        base_tree   = commit_data["tree"]["sha"]
 
-        # ── 4. Stage data/ only ───────────────────────────────────────────────
-        rc, _, err = await _git("-C", tmpdir, "add", "data/")
-        if rc != 0:
-            raise RuntimeError(f"git add data/ failed: {err}")
+        # ── 3. Create blobs for each modified/added file ───────────────────────
+        tree_items: List[Dict] = []
+        files_synced: List[str] = []
 
-        # Check there is actually something staged
-        rc, staged, _ = await _git("-C", tmpdir, "diff", "--cached", "--name-only")
-        if not staged.strip():
-            logger.info("git-sync: nothing to commit in data/")
-            return {"status": "nothing_to_commit"}
+        for xy, path in changed:
+            is_deleted = xy.strip() == "D"
+            files_synced.append(path)
 
-        files_synced = [f.strip() for f in staged.splitlines() if f.strip()]
+            if is_deleted:
+                # Null SHA removes the file from the tree
+                tree_items.append({"path": path, "mode": "100644", "type": "blob", "sha": None})
+            else:
+                raw = (REPO_ROOT / path).read_bytes()
+                blob = await _gh(client, "POST", f"/repos/{repo_slug}/git/blobs", token,
+                                 json={"content": base64.b64encode(raw).decode(), "encoding": "base64"})
+                tree_items.append({"path": path, "mode": "100644", "type": "blob", "sha": blob["sha"]})
 
-        # ── 5. Commit ─────────────────────────────────────────────────────────
-        rc, _, err = await _git("-C", tmpdir, "commit", "-m", msg)
-        if rc != 0:
-            raise RuntimeError(f"git commit failed: {err}")
+        # ── 4. Create new tree ─────────────────────────────────────────────────
+        new_tree = await _gh(client, "POST", f"/repos/{repo_slug}/git/trees", token,
+                             json={"base_tree": base_tree, "tree": tree_items})
 
-        # ── 6. Push via HTTPS token auth ──────────────────────────────────────
-        push_url = f"https://x-access-token:{token}@github.com/{repo_slug}.git"
-        rc, _, err = await _git("-C", tmpdir, "push", push_url, f"HEAD:{branch}")
-        if rc != 0:
-            raise RuntimeError(f"git push failed: {err}")
+        # ── 5. Create commit with author from .env ─────────────────────────────
+        identity   = {"name": user_name, "email": user_email, "date": now}
+        new_commit = await _gh(client, "POST", f"/repos/{repo_slug}/git/commits", token,
+                               json={
+                                   "message":   msg,
+                                   "tree":      new_tree["sha"],
+                                   "parents":   [base_sha],
+                                   "author":    identity,
+                                   "committer": identity,
+                               })
 
-        # ── 7. Open GitHub PR ─────────────────────────────────────────────────
-        pr_url: Optional[str] = None
-        pr_number: Optional[int] = None
+        # ── 6. Create branch ref ───────────────────────────────────────────────
+        await _gh(client, "POST", f"/repos/{repo_slug}/git/refs", token,
+                  json={"ref": f"refs/heads/{branch}", "sha": new_commit["sha"]})
 
-        body_lines = ["Automated data sync from the admin panel.", "", "**Files changed:**", ""]
+        # ── 7. Open PR ─────────────────────────────────────────────────────────
+        body_lines  = ["Automated data sync from the admin panel.", "", "**Files changed:**", ""]
         body_lines += [f"- `{f}`" for f in files_synced]
         body_lines += ["", f"**Timestamp:** `{ts}`"]
 
-        async with httpx.AsyncClient(timeout=15.0) as client:
-            resp = await client.post(
-                f"https://api.github.com/repos/{repo_slug}/pulls",
-                headers={
-                    "Authorization": f"Bearer {token}",
-                    "Accept": "application/vnd.github+json",
-                },
-                json={
-                    "title": msg,
-                    "body":  "\n".join(body_lines),
-                    "head":  branch,
-                    "base":  "main",
-                },
-            )
+        pr = await _gh(client, "POST", f"/repos/{repo_slug}/pulls", token,
+                       json={
+                           "title": msg,
+                           "body":  "\n".join(body_lines),
+                           "head":  branch,
+                           "base":  "main",
+                       })
 
-        if resp.status_code == 201:
-            pr_data   = resp.json()
-            pr_url    = pr_data.get("html_url")
-            pr_number = pr_data.get("number")
-            _latest_pr = {
-                "number": pr_number,
-                "url":    pr_url,
-                "branch": branch,
-            }
-            logger.info("git-sync: PR #%s opened at %s", pr_number, pr_url)
-        else:
-            logger.error("GitHub PR creation failed: %s %s", resp.status_code, resp.text)
-            raise RuntimeError(f"PR creation failed ({resp.status_code}): {resp.text[:200]}")
-
-    finally:
-        # Always clean up the worktree (ignore errors — git may have already cleaned up)
-        try:
-            await _git("worktree", "remove", "--force", tmpdir)
-        except Exception:
-            pass
-        if Path(tmpdir).exists():
-            shutil.rmtree(tmpdir, ignore_errors=True)
+    pr_url    = pr["html_url"]
+    pr_number = pr["number"]
+    _latest_pr = {"number": pr_number, "url": pr_url, "branch": branch}
+    logger.info("git-sync: PR #%s opened at %s", pr_number, pr_url)
 
     return {
         "status":       "synced",
