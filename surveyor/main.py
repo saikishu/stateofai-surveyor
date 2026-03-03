@@ -25,7 +25,7 @@ from .models import FetchProgress, RepoStats
 load_dotenv()
 
 GITHUB_TOKEN   = os.getenv("GITHUB_TOKEN", "")
-REPOS_FILE     = Path(os.getenv("CSV_PATH", "repos.txt"))
+REPOS_FILE     = Path(os.getenv("REPOS_FILE", "repos.txt"))
 PORT           = int(os.getenv("PORT", "8000"))
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 GIT_USER_NAME  = os.getenv("GIT_USER_NAME",  "OWASP Surveyor Bot")

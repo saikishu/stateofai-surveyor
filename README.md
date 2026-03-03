@@ -46,7 +46,7 @@ cp .env.example .env
 | Variable | Default | Description |
 |---|---|---|
 | `GITHUB_TOKEN` | *(required)* | GitHub personal access token — needs `public_repo` scope |
-| `CSV_PATH` | `repos.txt` | Path to the repo list file |
+| `REPOS_FILE` | `repos.txt` | Path to the repo list file |
 | `PORT` | `8000` | Server port |
 | `ADMIN_PASSWORD` | *(required)* | Password for the `/admin` page |
 
