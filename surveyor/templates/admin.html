@@ -110,6 +110,30 @@
 
     @keyframes spin { to { transform: rotate(360deg); } }
     .spinner { animation: spin 0.8s linear infinite; display: inline-block; }
+
+    /* ── Git sync ── */
+    .git-file-list {
+      max-height: 160px; overflow-y: auto;
+      margin: 0.5rem 0;
+    }
+    .git-file-item {
+      font-family: 'Menlo','Monaco','Consolas',monospace;
+      font-size: 0.72rem; color: #94a3b8;
+      padding: 0.2rem 0;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .git-file-item .git-status-char {
+      color: #f59e0b; margin-right: 0.4rem; font-weight: 600;
+    }
+    .git-badge {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.75rem; font-weight: 500; padding: 0.3rem 0.6rem;
+      border-radius: 0.5rem; margin-top: 0.5rem;
+    }
+    .git-badge-pending  { background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.35); color: #fcd34d; }
+    .git-badge-open     { background: rgba(99,102,241,0.1);  border: 1px solid rgba(99,102,241,0.35); color: #a5b4fc; }
+    .git-badge-merged   { background: rgba(34,197,94,0.1);   border: 1px solid rgba(34,197,94,0.35);  color: #86efac; }
+    .git-badge-ok       { background: rgba(34,197,94,0.08);  border: 1px solid rgba(34,197,94,0.2);   color: #4ade80; }
   </style>
 </head>
 <body class="min-h-screen">
@@ -250,6 +274,82 @@
         </template>
       </div>
 
+      <!-- Git Sync card -->
+      <div class="card">
+        <h3 style="font-size:0.85rem;font-weight:600;margin:0 0 0.75rem;color:var(--c-muted);text-transform:uppercase;letter-spacing:0.05em">Git Sync</h3>
+
+        <!-- Loading state -->
+        <template x-if="gitStatus === null">
+          <p style="font-size:0.8rem;color:var(--c-muted)"><span class="spinner">⟳</span> Checking…</p>
+        </template>
+
+        <template x-if="gitStatus !== null">
+          <div>
+            <!-- Pending files -->
+            <template x-if="gitStatus.pending">
+              <div>
+                <span class="git-badge git-badge-pending">
+                  ● <span x-text="`${gitStatus.count} file${gitStatus.count > 1 ? 's' : ''} pending`"></span>
+                </span>
+                <div class="git-file-list">
+                  <template x-for="f in gitStatus.files" :key="f">
+                    <div class="git-file-item">
+                      <span class="git-status-char" x-text="f.slice(0,2).trim() || 'M'"></span>
+                      <span x-text="f.slice(3)"></span>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </template>
+
+            <!-- Up to date (no pending, no open PR) -->
+            <template x-if="!gitStatus.pending && !gitStatus.pr">
+              <span class="git-badge git-badge-ok">✓ Up to date</span>
+            </template>
+
+            <!-- PR status -->
+            <template x-if="gitStatus.pr">
+              <div style="margin-top:0.5rem">
+                <!-- PR merged -->
+                <template x-if="gitStatus.pr.merged">
+                  <span class="git-badge git-badge-merged">
+                    ✓ PR #<span x-text="gitStatus.pr.number"></span> merged to main
+                  </span>
+                </template>
+                <!-- PR open -->
+                <template x-if="!gitStatus.pr.merged">
+                  <a :href="gitStatus.pr.url" target="_blank" rel="noopener"
+                     class="git-badge git-badge-open" style="text-decoration:none;display:inline-flex">
+                    ↗ PR #<span x-text="gitStatus.pr.number"></span>
+                    <span style="color:var(--c-muted)">open — awaiting merge</span>
+                  </a>
+                </template>
+              </div>
+            </template>
+
+            <!-- Sync button (disabled while PR is open) -->
+            <div style="margin-top:0.75rem">
+              <button @click="syncToGit()"
+                      class="btn-primary"
+                      style="width:100%;justify-content:center;font-size:0.82rem;padding:0.45rem 1rem"
+                      :disabled="gitSyncing || (gitStatus.pr && !gitStatus.pr.merged) || !gitStatus.pending">
+                <template x-if="gitSyncing"><span class="spinner">⟳</span></template>
+                <template x-if="!gitSyncing">
+                  <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
+                  </svg>
+                </template>
+                <span x-text="gitSyncing ? 'Opening PR…' : (gitStatus.pr && !gitStatus.pr.merged) ? 'PR pending merge' : 'Sync to Git'"></span>
+              </button>
+              <template x-if="gitError">
+                <p style="margin-top:0.5rem;font-size:0.75rem;color:#fca5a5" x-text="gitError"></p>
+              </template>
+            </div>
+          </div>
+        </template>
+      </div>
+
       <!-- Backups card -->
       <div class="card">
         <h3 style="font-size:0.85rem;font-weight:600;margin:0 0 0.75rem;color:var(--c-muted);text-transform:uppercase;letter-spacing:0.05em">Backups</h3>
@@ -285,6 +385,9 @@ function admin() {
     status: null,
     backups: [],
     viewMode: 'list', // 'list' | 'raw'
+    gitStatus: null,   // { pending, count, files, pr }
+    gitSyncing: false,
+    gitError: '',
 
     get lineCount() {
       return this.content.split('\n').filter(l => {
@@ -354,6 +457,7 @@ function admin() {
           this.authed = true; this.dirty = false;
           sessionStorage.setItem('admin_pw', this.password);
           await this.loadBackups();
+          await this.loadGitStatus();
         } else {
           this.error = r.status === 401 ? 'Wrong password.' : 'Server error — check ADMIN_PASSWORD is set.';
           sessionStorage.removeItem('admin_pw');
@@ -391,10 +495,37 @@ function admin() {
       this.saving = false;
     },
 
+    async loadGitStatus() {
+      try {
+        const r = await fetch('/api/admin/git-status', { headers: { 'x-admin-password': this.password } });
+        if (r.ok) this.gitStatus = await r.json();
+      } catch { this.gitStatus = { pending: false, count: 0, files: [], pr: null }; }
+    },
+
+    async syncToGit() {
+      this.gitSyncing = true; this.gitError = '';
+      try {
+        const r = await fetch('/api/admin/git-sync', {
+          method: 'POST',
+          headers: { 'x-admin-password': this.password },
+        });
+        const d = await r.json();
+        if (!r.ok) {
+          this.gitError = d.detail || 'Sync failed — check server logs.';
+        } else if (d.status === 'nothing_to_commit') {
+          this.gitError = 'Nothing to commit — data/ is already in sync.';
+        }
+        // Refresh git status to show the new PR state
+        await this.loadGitStatus();
+      } catch { this.gitError = 'Network error during sync.'; }
+      this.gitSyncing = false;
+    },
+
     logout() {
       sessionStorage.removeItem('admin_pw');
       this.authed = false; this.password = ''; this.content = '';
       this.status = null; this.backups = [];
+      this.gitStatus = null; this.gitError = '';
     },
   };
 }

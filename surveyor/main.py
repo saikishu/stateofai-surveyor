@@ -17,7 +17,7 @@ from fastapi.responses import JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from . import storage
+from . import git_sync, storage
 from .github_client import GitHubClient
 from .models import FetchProgress, RepoStats
 
@@ -28,6 +28,9 @@ GITHUB_TOKEN   = os.getenv("GITHUB_TOKEN", "")
 REPOS_FILE     = Path(os.getenv("CSV_PATH", "repos.txt"))
 PORT           = int(os.getenv("PORT", "8000"))
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
+GIT_USER_NAME  = os.getenv("GIT_USER_NAME",  "OWASP Surveyor Bot")
+GIT_USER_EMAIL = os.getenv("GIT_USER_EMAIL", "surveyor@owasp.org")
+GITHUB_REPO    = os.getenv("GITHUB_REPO",    "")
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s  %(name)s  %(message)s")
 logger = logging.getLogger(__name__)
@@ -274,6 +277,22 @@ async def admin_list_backups(_: None = Depends(_admin_auth)) -> List[Dict]:
         }
         for f in files[:30]
     ]
+
+
+@app.get("/api/admin/git-status")
+async def admin_git_status(_: None = Depends(_admin_auth)) -> Dict:
+    """Return git status for data/ and any open sync PR."""
+    return await git_sync.data_status(GITHUB_TOKEN, GITHUB_REPO)
+
+
+@app.post("/api/admin/git-sync")
+async def admin_git_sync(_: None = Depends(_admin_auth)) -> Dict:
+    """Commit pending data/ changes to a new branch and open a GitHub PR."""
+    if not GITHUB_TOKEN:
+        raise HTTPException(status_code=503, detail="GITHUB_TOKEN not set in .env")
+    if not GITHUB_REPO:
+        raise HTTPException(status_code=503, detail="GITHUB_REPO not set in .env (e.g. owner/repo)")
+    return await git_sync.create_sync_pr(GIT_USER_NAME, GIT_USER_EMAIL, GITHUB_TOKEN, GITHUB_REPO)
 
 
 # ── Background bulk fetch ─────────────────────────────────────────────────────
