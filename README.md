@@ -12,11 +12,12 @@ Fetches live stats for a curated list of AI agent repos — stars, forks, contri
 - **Interactive table** with search, sort, and activity-status filtering
 - **Repo detail drawer** with commit trend chart, language breakdown, issue/PR charts, top contributors, and security advisories
 - **Overview charts** — stars ranking, license distribution, activity status, language popularity
-- **CSV export** of all cached data
+- **CSV export** of all stored data
 - **SSE progress stream** for live fetch progress
 - **Dark / light mode** toggle
 - **Admin page** (`/admin`) — password-protected editor for `repos.txt` with duplicate detection, per-entry remove, backup history, and auto-refresh on save
-- **File-based JSON cache** with configurable TTL
+- **Git Sync** — admin panel detects pending `data/` changes and opens a GitHub PR to push them; tracks PR merge status automatically
+- **Persistent git-tracked storage** — fetched stats stored as JSON under `data/repos/` and committed to the repository
 
 ---
 
@@ -29,7 +30,7 @@ cd stateofai-surveyor
 
 # 2. Configure
 cp .env.example .env
-# Edit .env — set GITHUB_TOKEN and ADMIN_PASSWORD
+# Edit .env — set GITHUB_TOKEN, ADMIN_PASSWORD, and GITHUB_REPO
 
 # 3. Install
 ./setup.sh
@@ -45,12 +46,15 @@ cp .env.example .env
 
 | Variable | Default | Description |
 |---|---|---|
-| `GITHUB_TOKEN` | *(required)* | GitHub personal access token — needs `public_repo` scope |
+| `GITHUB_TOKEN` | *(required)* | GitHub personal access token — needs `public_repo` + `repo` scope |
 | `REPOS_FILE` | `repos.txt` | Path to the repo list file |
 | `PORT` | `8000` | Server port |
 | `ADMIN_PASSWORD` | *(required)* | Password for the `/admin` page |
+| `GITHUB_REPO` | *(required for Git Sync)* | Repo slug for PR creation, e.g. `owner/repo` |
+| `GIT_USER_NAME` | `OWASP Surveyor Bot` | Commit author name used by Git Sync |
+| `GIT_USER_EMAIL` | `surveyor@owasp.org` | Commit author email used by Git Sync |
 
-Create a token at [github.com/settings/tokens](https://github.com/settings/tokens). Read-only `public_repo` scope is sufficient.
+Create a token at [github.com/settings/tokens](https://github.com/settings/tokens). The `public_repo` scope covers data fetching; the `repo` scope is additionally required for Git Sync to push branches and open PRs.
 
 ---
 
@@ -71,6 +75,38 @@ The list can be managed via the UI at `/admin`.
 
 ---
 
+## Git Sync
+
+Fetched repo stats are stored as JSON files under `data/repos/` and committed to this repository, making git the source of truth for all collected data.
+
+When new repos are fetched, the `data/` directory accumulates uncommitted changes. The **Git Sync** panel in `/admin` handles pushing these back to GitHub:
+
+1. **Status check** — on login the panel runs `git status data/` and lists any pending files.
+2. **Sync to Git** — clicking the button creates a new branch (`data/sync-{timestamp}`), commits only the `data/` changes, pushes it, and opens a pull request automatically.
+3. **PR tracking** — the panel polls the PR state. Once the PR is merged, the badge updates to "merged ✓" and clears on the next refresh.
+
+The sync uses a git worktree so the running server's working tree is never touched during the operation.
+
+```
+Pending changes detected
+       │
+       ▼
+  git worktree add /tmp/sync-…  (isolated copy)
+       │
+       ▼
+  git add data/ && git commit
+       │
+       ▼
+  git push → GitHub PR opened
+       │
+       ▼
+  PR merged → badge clears → "Up to date"
+```
+
+> **Token scope**: `GITHUB_TOKEN` must have `repo` scope to push branches and create PRs.
+
+---
+
 ## Project Structure
 
 ```
@@ -86,6 +122,7 @@ The list can be managed via the UI at `/admin`.
     ├── main.py                # FastAPI routes
     ├── github_client.py       # GraphQL + REST GitHub client
     ├── storage.py             # Persistent file-based storage (data/)
+    ├── git_sync.py            # Git worktree sync + GitHub PR creation
     ├── models.py              # Pydantic models
     └── templates/
         ├── index.html         # Main UI (Alpine.js + Chart.js)
@@ -98,6 +135,8 @@ The list can be managed via the UI at `/admin`.
 
 | Method | Path | Description |
 |---|---|---|
+| Method | Path | Description |
+|---|---|---|
 | `GET` | `/` | Main UI |
 | `GET` | `/admin` | Admin editor (password protected) |
 | `GET` | `/api/repos` | All repos merged with stored stats |
@@ -107,6 +146,8 @@ The list can be managed via the UI at `/admin`.
 | `GET` | `/api/stream/progress` | SSE fetch progress stream |
 | `GET` | `/api/rate-limit` | GitHub API rate limit status |
 | `GET` | `/api/export/csv` | Export all stored data as CSV |
+| `GET` | `/api/admin/git-status` | Pending `data/` changes + open PR state *(auth)* |
+| `POST` | `/api/admin/git-sync` | Commit `data/`, push branch, open GitHub PR *(auth)* |
 
 ---
 
