@@ -64,15 +64,33 @@ async def _gh(client: httpx.AsyncClient, method: str, path: str, token: str, **k
 
 # ── Public API ─────────────────────────────────────────────────────────────────
 
+async def _advance_local_head() -> None:
+    """After a PR is merged, bring the local HEAD and index in sync with remote main.
+
+    Uses git fetch + reset --mixed so:
+    - Local HEAD and index advance to the merged remote state.
+    - Working tree (live data files written by the app) is untouched.
+    - Next `git status data/` only shows files written *after* the merged PR.
+    """
+    rc, _, err = await _git("fetch", "origin", "main")
+    if rc != 0:
+        logger.warning("git fetch failed after PR merge: %s", err)
+        return
+    rc, _, err = await _git("reset", "--mixed", "FETCH_HEAD")
+    if rc != 0:
+        logger.warning("git reset --mixed failed after PR merge: %s", err)
+
+
 async def data_status(token: str, repo_slug: str) -> Dict[str, Any]:
-    """Return git status for data/ and, if a sync PR is open, its merge state."""
+    """Return git status for data/ and, if a sync PR is open, its merge state.
+
+    When a PR is detected as merged, the local repo is fast-forwarded to the
+    remote main (index only — working tree untouched) before re-checking status,
+    so the panel correctly reflects only changes made *after* the merged PR.
+    """
     global _latest_pr
 
-    # Pending data/ changes (compare with local HEAD)
-    rc, out, _ = await _git("status", "--porcelain", "data/")
-    files = [line for line in out.splitlines() if line.strip()]
-
-    # Latest PR status (if any)
+    # ── Check latest PR status first ──────────────────────────────────────────
     pr_info: Optional[Dict] = None
     if _latest_pr and token and repo_slug:
         try:
@@ -81,18 +99,28 @@ async def data_status(token: str, repo_slug: str) -> Dict[str, Any]:
                                  f"/repos/{repo_slug}/pulls/{_latest_pr['number']}",
                                  token)
             merged = bool(data.get("merged"))
-            pr_info = {
-                "number": _latest_pr["number"],
-                "url":    _latest_pr["url"],
-                "branch": _latest_pr["branch"],
-                "state":  data.get("state", "unknown"),
-                "merged": merged,
-            }
             if merged:
-                _latest_pr = None  # auto-clear once merged
+                # Advance local HEAD/index to the merged remote state, then
+                # re-run git status so it compares against the new baseline.
+                await _advance_local_head()
+                _latest_pr = None
+                # pr_info intentionally left None — UI shows "Up to date" or
+                # fresh pending count after the pull
+            else:
+                pr_info = {
+                    "number": _latest_pr["number"],
+                    "url":    _latest_pr["url"],
+                    "branch": _latest_pr["branch"],
+                    "state":  data.get("state", "unknown"),
+                    "merged": False,
+                }
         except Exception as exc:
             logger.warning("Could not fetch PR status: %s", exc)
             pr_info = {**_latest_pr, "state": "unknown", "merged": False}
+
+    # ── Fresh git status (after potential HEAD advance) ───────────────────────
+    rc, out, _ = await _git("status", "--porcelain", "data/")
+    files = [line for line in out.splitlines() if line.strip()]
 
     return {
         "pending": len(files) > 0,
