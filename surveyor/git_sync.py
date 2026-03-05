@@ -119,7 +119,9 @@ async def data_status(token: str, repo_slug: str) -> Dict[str, Any]:
             pr_info = {**_latest_pr, "state": "unknown", "merged": False}
 
     # ── Fresh git status (after potential HEAD advance) ───────────────────────
-    rc, out, _ = await _git("status", "--porcelain", "data/")
+    # -uall expands untracked directories to individual files so we never
+    # receive a directory path (which would break blob creation in create_sync_pr)
+    rc, out, _ = await _git("status", "--porcelain", "-uall", "data/")
     files = [line for line in out.splitlines() if line.strip()]
 
     return {
@@ -150,7 +152,7 @@ async def create_sync_pr(
     now    = datetime.now(timezone.utc).isoformat()
 
     # ── 1. Detect changed data/ files via local git status ────────────────────
-    rc, out, _ = await _git("status", "--porcelain", "data/")
+    rc, out, _ = await _git("status", "--porcelain", "-uall", "data/")
     changed: List[tuple[str, str]] = []
     for line in out.splitlines():
         if not line.strip():
