@@ -5,9 +5,9 @@
   "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
   "homepage": "https://openclaw.ai",
   "github_url": "https://github.com/openclaw/openclaw",
-  "stars": 253531,
-  "forks": 48696,
-  "watchers": 1329,
+  "stars": 262742,
+  "forks": 50301,
+  "watchers": 1355,
   "license_name": "MIT License",
   "license_spdx": "MIT",
   "topics": [
@@ -23,17 +23,17 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-11-24T10:16:47Z",
-  "updated_at": "2026-03-03T17:55:28Z",
-  "pushed_at": "2026-03-03T17:33:20Z",
-  "age_days": 99,
+  "updated_at": "2026-03-05T08:26:45Z",
+  "pushed_at": "2026-03-05T07:25:04Z",
+  "age_days": 100,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 31532070,
-    "Swift": 3290280,
+    "TypeScript": 32241161,
+    "Swift": 3302201,
     "Kotlin": 785481,
-    "Shell": 368253,
-    "JavaScript": 240845,
+    "Shell": 382955,
+    "JavaScript": 250911,
     "CSS": 143788
   },
   "top_3_languages": [
@@ -41,17 +41,17 @@
     "Swift",
     "Kotlin"
   ],
-  "total_code_bytes": 36524564,
-  "approx_loc": 859326,
-  "issues_open": 4669,
-  "issues_closed": 9841,
-  "issues_new_30d": 31,
-  "issues_new_90d": 31,
-  "issues_active_30d": 31,
-  "issues_closed_30d": 3,
-  "prs_open": 5266,
-  "prs_closed": 9730,
-  "prs_merged": 2629,
+  "total_code_bytes": 37270344,
+  "approx_loc": 877145,
+  "issues_open": 5163,
+  "issues_closed": 9969,
+  "issues_new_30d": 10,
+  "issues_new_90d": 10,
+  "issues_active_30d": 10,
+  "issues_closed_30d": 21,
+  "prs_open": 6376,
+  "prs_closed": 10294,
+  "prs_merged": 2705,
   "prs_active_30d": 100,
   "release_count": 59,
   "latest_release_tag": "v2026.3.2",
@@ -293,37 +293,37 @@
       "login": "obviyus",
       "avatar_url": "https://avatars.githubusercontent.com/u/22031114?v=4",
       "html_url": "https://github.com/obviyus",
-      "contributions": 306,
+      "contributions": 314,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 341
+      "commits_count": 350
     },
     {
       "login": "thewilloftheshadow",
       "avatar_url": "https://avatars.githubusercontent.com/u/35580099?v=4",
       "html_url": "https://github.com/thewilloftheshadow",
-      "contributions": 298,
+      "contributions": 300,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 337
-    },
-    {
-      "login": "vincentkoc",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25068?v=4",
-      "html_url": "https://github.com/vincentkoc",
-      "contributions": 221,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 287
+      "commits_count": 340
     },
     {
       "login": "gumadeiras",
       "avatar_url": "https://avatars.githubusercontent.com/u/5599352?v=4",
       "html_url": "https://github.com/gumadeiras",
-      "contributions": 185,
+      "contributions": 256,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 267
+      "commits_count": 342
+    },
+    {
+      "login": "vincentkoc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25068?v=4",
+      "html_url": "https://github.com/vincentkoc",
+      "contributions": 230,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 297
     },
     {
       "login": "sebslight",
@@ -347,23 +347,23 @@
       "login": "shakkernerd",
       "avatar_url": "https://avatars.githubusercontent.com/u/165377636?v=4",
       "html_url": "https://github.com/shakkernerd",
-      "contributions": 104,
+      "contributions": 118,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 117
+      "commits_count": 139
     },
     {
-      "login": "tyler6204",
-      "avatar_url": "https://avatars.githubusercontent.com/u/64381258?v=4",
-      "html_url": "https://github.com/tyler6204",
-      "contributions": 104,
+      "login": "Takhoffman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/781889?v=4",
+      "html_url": "https://github.com/Takhoffman",
+      "contributions": 106,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 123
+      "commits_count": 320
     }
   ],
-  "commits_last_year": 17771,
-  "commits_per_week_avg": 1184.7333333333333,
+  "commits_last_year": 17999,
+  "commits_per_week_avg": 1199.9333333333334,
   "weekly_commits": [
     0,
     0,
@@ -415,8 +415,8 @@
     664,
     1536,
     3068,
-    2304,
-    1426
+    2306,
+    1652
   ],
   "weekly_timestamps": [
     1741478400,
@@ -472,13 +472,13 @@
     1771718400,
     1772323200
   ],
-  "commits_30d": 8998,
-  "commits_90d": 17234,
+  "commits_30d": 9226,
+  "commits_90d": 17462,
   "commit_trend": "surging",
-  "commit_growth_pct": 81.3,
-  "total_commits": 16740,
+  "commit_growth_pct": 86.2,
+  "total_commits": 16914,
   "first_commit_date": "2025-11-24T10:16:47Z",
-  "commit_span_days": 99,
+  "commit_span_days": 100,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 100,
   "security_advisories": [
@@ -1384,7 +1384,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-03-03T17:56:39.247714+00:00",
+  "fetched_at": "2026-03-05T08:27:17.582722+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }
