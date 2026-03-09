@@ -5,9 +5,9 @@
   "description": "Fast, small, and fully autonomous AI assistant infrastructure \u2014 deploy anywhere, swap anything \ud83e\udd80",
   "homepage": "https://www.zeroclawlabs.ai/",
   "github_url": "https://github.com/zeroclaw-labs/zeroclaw",
-  "stars": 22330,
-  "forks": 2952,
-  "watchers": 7,
+  "stars": 24998,
+  "forks": 3202,
+  "watchers": 21,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [
@@ -18,57 +18,43 @@
   ],
   "is_archived": false,
   "is_fork": false,
-  "default_branch": "dev",
+  "default_branch": "master",
   "created_at": "2026-02-13T08:56:04Z",
-  "updated_at": "2026-03-05T08:19:24Z",
-  "pushed_at": "2026-03-05T07:28:57Z",
-  "age_days": 19,
+  "updated_at": "2026-03-09T08:46:08Z",
+  "pushed_at": "2026-03-08T23:36:46Z",
+  "age_days": 23,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "Rust": 6801940,
-    "Python": 385317,
-    "TypeScript": 247118,
-    "Shell": 127981,
-    "CSS": 38981,
-    "JavaScript": 12831
+    "Rust": 5487579,
+    "TypeScript": 143196,
+    "Shell": 88202,
+    "Python": 45596,
+    "Dockerfile": 6908,
+    "C++": 4188
   },
   "top_3_languages": [
     "Rust",
-    "Python",
-    "TypeScript"
+    "TypeScript",
+    "Shell"
   ],
-  "total_code_bytes": 7631652,
-  "approx_loc": 191782,
-  "issues_open": 59,
-  "issues_closed": 656,
-  "issues_new_30d": 27,
-  "issues_new_90d": 27,
-  "issues_active_30d": 27,
-  "issues_closed_30d": 19,
-  "prs_open": 134,
-  "prs_closed": 604,
-  "prs_merged": 1350,
+  "total_code_bytes": 5781114,
+  "approx_loc": 144730,
+  "issues_open": 95,
+  "issues_closed": 681,
+  "issues_new_30d": 35,
+  "issues_new_90d": 35,
+  "issues_active_30d": 35,
+  "issues_closed_30d": 27,
+  "prs_open": 218,
+  "prs_closed": 651,
+  "prs_merged": 1382,
   "prs_active_30d": 100,
-  "release_count": 7,
-  "latest_release_tag": "v0.1.8",
-  "latest_release_date": "2026-03-05T06:34:22Z",
-  "avg_days_between_releases": 2.0,
+  "release_count": 5,
+  "latest_release_tag": "v0.1.7",
+  "latest_release_date": "2026-02-24T09:03:54Z",
+  "avg_days_between_releases": 0.5,
   "releases": [
-    {
-      "tag_name": "v0.1.8",
-      "name": "v0.1.8",
-      "published_at": "2026-03-05T06:34:22Z",
-      "prerelease": false,
-      "url": "https://github.com/zeroclaw-labs/zeroclaw/releases/tag/v0.1.8"
-    },
-    {
-      "tag_name": "v0.1.8-alpha.1",
-      "name": "v0.1.8-alpha.1",
-      "published_at": "2026-03-03T17:39:18Z",
-      "prerelease": true,
-      "url": "https://github.com/zeroclaw-labs/zeroclaw/releases/tag/v0.1.8-alpha.1"
-    },
     {
       "tag_name": "v0.1.7",
       "name": "v0.1.7",
@@ -111,28 +97,28 @@
       "login": "chumyin",
       "avatar_url": "https://avatars.githubusercontent.com/u/183474434?v=4",
       "html_url": "https://github.com/chumyin",
-      "contributions": 645,
-      "additions": 156205,
-      "deletions": 36986,
-      "commits_count": 604
+      "contributions": 465,
+      "additions": 76117,
+      "deletions": 12320,
+      "commits_count": 428
     },
     {
       "login": "theonlyhennygod",
       "avatar_url": "https://avatars.githubusercontent.com/u/144828210?v=4",
       "html_url": "https://github.com/theonlyhennygod",
-      "contributions": 286,
-      "additions": 81820,
-      "deletions": 12759,
-      "commits_count": 219
+      "contributions": 181,
+      "additions": 70604,
+      "deletions": 6958,
+      "commits_count": 148
     },
     {
       "login": "willsarg",
       "avatar_url": "https://avatars.githubusercontent.com/u/12886992?v=4",
       "html_url": "https://github.com/willsarg",
-      "contributions": 123,
-      "additions": 11025,
-      "deletions": 6285,
-      "commits_count": 116
+      "contributions": 121,
+      "additions": 11009,
+      "deletions": 6278,
+      "commits_count": 114
     },
     {
       "login": "agorevski",
@@ -156,28 +142,19 @@
       "login": "ecschoye",
       "avatar_url": "https://avatars.githubusercontent.com/u/99178202?v=4",
       "html_url": "https://github.com/ecschoye",
-      "contributions": 40,
-      "additions": 6186,
-      "deletions": 593,
-      "commits_count": 42
+      "contributions": 39,
+      "additions": 6174,
+      "deletions": 590,
+      "commits_count": 41
     },
     {
       "login": "dependabot[bot]",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 32,
-      "additions": 382,
-      "deletions": 485,
-      "commits_count": 32
-    },
-    {
-      "login": "reidliu41",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61492567?v=4",
-      "html_url": "https://github.com/reidliu41",
-      "contributions": 26,
-      "additions": 6892,
-      "deletions": 119,
-      "commits_count": 26
+      "contributions": 29,
+      "additions": 342,
+      "deletions": 451,
+      "commits_count": 29
     },
     {
       "login": "zverozabr",
@@ -189,19 +166,27 @@
       "commits_count": 21
     },
     {
-      "login": "vernonstinebaker",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8304954?v=4",
-      "html_url": "https://github.com/vernonstinebaker",
-      "contributions": 19,
-      "additions": 4203,
-      "deletions": 187,
+      "login": "JordanTheJet",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24375129?v=4",
+      "html_url": "https://github.com/JordanTheJet",
+      "contributions": 21,
+      "additions": 990,
+      "deletions": 4516,
       "commits_count": 19
+    },
+    {
+      "login": "reidliu41",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61492567?v=4",
+      "html_url": "https://github.com/reidliu41",
+      "contributions": 20,
+      "additions": 4906,
+      "deletions": 71,
+      "commits_count": 20
     }
   ],
-  "commits_last_year": 1507,
-  "commits_per_week_avg": 376.75,
+  "commits_last_year": 1231,
+  "commits_per_week_avg": 307.75,
   "weekly_commits": [
-    0,
     0,
     0,
     0,
@@ -251,11 +236,11 @@
     0,
     66,
     1045,
-    345,
-    51
+    100,
+    20,
+    0
   ],
   "weekly_timestamps": [
-    1741478400,
     1742079600,
     1742684400,
     1743289200,
@@ -306,20 +291,21 @@
     1770508800,
     1771113600,
     1771718400,
-    1772323200
+    1772323200,
+    1772928000
   ],
-  "commits_30d": 1507,
-  "commits_90d": 1507,
+  "commits_30d": 1231,
+  "commits_90d": 1231,
   "commit_trend": "surging",
-  "commit_growth_pct": 100.0,
-  "total_commits": 1715,
+  "commit_growth_pct": 1665.2,
+  "total_commits": 1401,
   "first_commit_date": "2026-02-13T17:19:14Z",
-  "commit_span_days": 19,
+  "commit_span_days": 23,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-03-05T08:28:01.633000+00:00",
+  "fetched_at": "2026-03-09T08:47:04.572018+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }
