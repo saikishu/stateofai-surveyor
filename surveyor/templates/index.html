@@ -503,9 +503,12 @@
   <div x-show="!selectedRepo" class="grid grid-cols-1 lg:grid-cols-2 gap-6 fade-in">
       <!-- Stars ranking -->
       <div class="bg-card border border-border rounded-xl p-5">
-        <h3 class="font-semibold text-white mb-4 flex items-center gap-2">
-          <span>★</span> Stars Ranking (Top 20)
-        </h3>
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-white flex items-center gap-2"><span>★</span> Stars Ranking (Top 20)</h3>
+          <button @click="openFullscreen('chart-stars', '★ Stars Ranking (Top 20)')" class="btn-icon !p-1" title="Expand">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+          </button>
+        </div>
         <div class="chart-container" style="height:360px">
           <canvas id="chart-stars"></canvas>
         </div>
@@ -513,9 +516,12 @@
 
       <!-- License distribution -->
       <div class="bg-card border border-border rounded-xl p-5">
-        <h3 class="font-semibold text-white mb-4 flex items-center gap-2">
-          <span>⚖️</span> License Distribution
-        </h3>
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-white flex items-center gap-2"><span>⚖️</span> License Distribution</h3>
+          <button @click="openFullscreen('chart-licenses', '⚖️ License Distribution')" class="btn-icon !p-1" title="Expand">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+          </button>
+        </div>
         <div class="chart-container" style="height:360px">
           <canvas id="chart-licenses"></canvas>
         </div>
@@ -523,7 +529,12 @@
 
       <!-- Activity status -->
       <div class="bg-card border border-border rounded-xl p-5">
-        <h3 class="font-semibold text-white mb-4">📡 Activity Status</h3>
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-white">📡 Activity Status</h3>
+          <button @click="openFullscreen('chart-activity', '📡 Activity Status')" class="btn-icon !p-1" title="Expand">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+          </button>
+        </div>
         <div class="chart-container" style="height:280px">
           <canvas id="chart-activity"></canvas>
         </div>
@@ -531,7 +542,12 @@
 
       <!-- Language popularity -->
       <div class="bg-card border border-border rounded-xl p-5">
-        <h3 class="font-semibold text-white mb-4">🔤 Language Popularity</h3>
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-white">🔤 Language Popularity</h3>
+          <button @click="openFullscreen('chart-languages', '🔤 Language Popularity')" class="btn-icon !p-1" title="Expand">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+          </button>
+        </div>
         <div class="chart-container" style="height:280px">
           <canvas id="chart-languages"></canvas>
         </div>
@@ -665,6 +681,9 @@
           <div class="flex items-center gap-2 mb-3 min-w-0">
             <h4 class="text-sm font-semibold text-white whitespace-nowrap">📈 Commits</h4>
             <span class="text-xs text-slate-500 whitespace-nowrap">52 weeks</span>
+            <button @click="openFullscreen('detail-commits', '📈 Commit Activity — ' + selectedRepo.name)" class="btn-icon !p-1 ml-auto flex-shrink-0" title="Expand">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+            </button>
             <template x-if="selectedRepo.commit_trend && selectedRepo.commit_trend !== 'unknown'">
               <div class="flex items-center gap-1.5 ml-auto flex-shrink-0">
                 <span class="badge" :style="{
@@ -704,7 +723,12 @@
 
         <!-- Language distribution -->
         <div class="bg-card border border-border rounded-xl p-4">
-          <h4 class="text-sm font-semibold text-white mb-3">🔤 Languages (by bytes)</h4>
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="text-sm font-semibold text-white">🔤 Languages (by bytes)</h4>
+            <button @click="openFullscreen('detail-languages', '🔤 Languages — ' + selectedRepo.name)" class="btn-icon !p-1" title="Expand">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+            </button>
+          </div>
           <template x-if="Object.keys(selectedRepo.languages||{}).length">
             <div class="chart-container" style="height:150px">
               <canvas id="detail-languages"></canvas>
@@ -720,7 +744,12 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <!-- Issues & PRs -->
         <div class="bg-card border border-border rounded-xl p-4">
-          <h4 class="text-sm font-semibold text-white mb-3">🐛 Issues &amp; Pull Requests</h4>
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="text-sm font-semibold text-white">🐛 Issues &amp; Pull Requests</h4>
+            <button @click="openFullscreen('detail-issues', '🐛 Issues & PRs — ' + selectedRepo.name)" class="btn-icon !p-1" title="Expand">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+            </button>
+          </div>
           <div class="chart-container" style="height:140px">
             <canvas id="detail-issues"></canvas>
           </div>
@@ -762,11 +791,16 @@
 
         <!-- Top contributors -->
         <div class="bg-card border border-border rounded-xl p-4">
-          <h4 class="text-sm font-semibold text-white mb-3">
-            👥 Top Contributors
-            <span class="text-slate-500 font-normal text-xs ml-1"
-                  x-text="selectedRepo.contributor_count ? `(${fmt(selectedRepo.contributor_count)} total)` : ''"></span>
-          </h4>
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="text-sm font-semibold text-white">
+              👥 Top Contributors
+              <span class="text-slate-500 font-normal text-xs ml-1"
+                    x-text="selectedRepo.contributor_count ? `(${fmt(selectedRepo.contributor_count)} total)` : ''"></span>
+            </h4>
+            <button @click="openFullscreen('detail-contributors', '👥 Top Contributors — ' + selectedRepo.name)" class="btn-icon !p-1 flex-shrink-0" title="Expand">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+            </button>
+          </div>
           <template x-if="(selectedRepo.top_contributors||[]).length">
             <div>
               <div class="chart-container" style="height:120px">
@@ -942,6 +976,7 @@ function app() {
     progress: { total: 0, completed: 0, current: null, errors: [], done: true },
     isDark: localStorage.theme !== 'light',
     readOnly: false,
+    expandedChart: null,
 
     async init() {
       const cfg = await fetch('/api/config').then(r => r.json()).catch(() => ({}));
@@ -1126,6 +1161,33 @@ function app() {
       this.drawContributorsChart(repo);
     },
 
+    // ── Fullscreen chart ─────────────────────────────────────────────
+    openFullscreen(key, title) {
+      this.expandedChart = { key, title };
+      this.$nextTick(() => this.drawFullscreenChart(key));
+    },
+
+    closeFullscreen() {
+      if (_charts['fullscreen-canvas']) {
+        try { _charts['fullscreen-canvas'].destroy(); } catch(_) {}
+        delete _charts['fullscreen-canvas'];
+      }
+      this.expandedChart = null;
+    },
+
+    drawFullscreenChart(key) {
+      switch (key) {
+        case 'chart-stars':         this.drawStarsChart('fullscreen-canvas'); break;
+        case 'chart-licenses':      this.drawLicenseChart('fullscreen-canvas'); break;
+        case 'chart-activity':      this.drawActivityChart('fullscreen-canvas'); break;
+        case 'chart-languages':     this.drawLanguagesOverviewChart('fullscreen-canvas'); break;
+        case 'detail-commits':      if (this.selectedRepo) this.drawCommitChart(this.selectedRepo, 'fullscreen-canvas'); break;
+        case 'detail-languages':    if (this.selectedRepo) this.drawLanguageChart(this.selectedRepo, 'fullscreen-canvas'); break;
+        case 'detail-issues':       if (this.selectedRepo) this.drawIssuesChart(this.selectedRepo, 'fullscreen-canvas'); break;
+        case 'detail-contributors': if (this.selectedRepo) this.drawContributorsChart(this.selectedRepo, 'fullscreen-canvas'); break;
+      }
+    },
+
     _getCanvas(id) {
       const el = document.getElementById(id);
       if (!el) return null;
@@ -1137,13 +1199,13 @@ function app() {
       return el;
     },
 
-    drawCommitChart(repo) {
-      const el = this._getCanvas('detail-commits');
+    drawCommitChart(repo, targetId = 'detail-commits') {
+      const el = this._getCanvas(targetId);
       if (!el) return;
       const tc = this._tc();
       const weeks = repo.weekly_commits || [];
       const labels = weeks.map((_, i) => i === weeks.length - 1 ? 'now' : '');
-      _charts['detail-commits'] = new Chart(el, {
+      _charts[targetId] = new Chart(el, {
         type: 'line',
         data: {
           labels,
@@ -1171,15 +1233,15 @@ function app() {
       });
     },
 
-    drawLanguageChart(repo) {
-      const el = this._getCanvas('detail-languages');
+    drawLanguageChart(repo, targetId = 'detail-languages') {
+      const el = this._getCanvas(targetId);
       if (!el) return;
       const tc = this._tc();
       const langs = repo.languages || {};
       const sorted = Object.entries(langs).sort((a,b) => b[1]-a[1]).slice(0,6);
       if (!sorted.length) return;
       const total = sorted.reduce((s,[,v]) => s+v, 0);
-      _charts['detail-languages'] = new Chart(el, {
+      _charts[targetId] = new Chart(el, {
         type: 'doughnut',
         data: {
           labels: sorted.map(([k]) => k),
@@ -1198,11 +1260,11 @@ function app() {
       });
     },
 
-    drawIssuesChart(repo) {
-      const el = this._getCanvas('detail-issues');
+    drawIssuesChart(repo, targetId = 'detail-issues') {
+      const el = this._getCanvas(targetId);
       if (!el) return;
       const tc = this._tc();
-      _charts['detail-issues'] = new Chart(el, {
+      _charts[targetId] = new Chart(el, {
         type: 'bar',
         data: {
           labels: ['Issues', 'Pull Requests'],
@@ -1223,13 +1285,13 @@ function app() {
       });
     },
 
-    drawContributorsChart(repo) {
-      const el = this._getCanvas('detail-contributors');
+    drawContributorsChart(repo, targetId = 'detail-contributors') {
+      const el = this._getCanvas(targetId);
       if (!el) return;
       const tc = this._tc();
       const top = (repo.top_contributors || []).slice(0, 10);
       if (!top.length) return;
-      _charts['detail-contributors'] = new Chart(el, {
+      _charts[targetId] = new Chart(el, {
         type: 'bar',
         data: {
           labels: top.map(c => c.login),
@@ -1287,15 +1349,15 @@ function app() {
       this.drawLanguagesOverviewChart();
     },
 
-    drawStarsChart() {
-      const el = this._getCanvas('chart-stars');
+    drawStarsChart(targetId = 'chart-stars') {
+      const el = this._getCanvas(targetId);
       if (!el) return;
       const tc = this._tc();
       const sorted = [...this.repos]
         .filter(r => r.stars > 0)
         .sort((a,b) => (b.stars||0)-(a.stars||0))
         .slice(0, 20);
-      _charts['chart-stars'] = new Chart(el, {
+      _charts[targetId] = new Chart(el, {
         type: 'bar',
         data: {
           labels: sorted.map(r => r.name),
@@ -1319,8 +1381,8 @@ function app() {
       });
     },
 
-    drawLicenseChart() {
-      const el = this._getCanvas('chart-licenses');
+    drawLicenseChart(targetId = 'chart-licenses') {
+      const el = this._getCanvas(targetId);
       if (!el) return;
       const tc = this._tc();
       const counts = {};
@@ -1330,7 +1392,7 @@ function app() {
         else counts['Unknown'] = (counts['Unknown']||0) + 1;
       });
       const entries = Object.entries(counts).sort((a,b) => b[1]-a[1]);
-      _charts['chart-licenses'] = new Chart(el, {
+      _charts[targetId] = new Chart(el, {
         type: 'doughnut',
         data: {
           labels: entries.map(([k])=>k),
@@ -1351,8 +1413,8 @@ function app() {
       });
     },
 
-    drawActivityChart() {
-      const el = this._getCanvas('chart-activity');
+    drawActivityChart(targetId = 'chart-activity') {
+      const el = this._getCanvas(targetId);
       if (!el) return;
       const tc = this._tc();
       const statuses = ['active','recent','stale','dormant','archived','pending'];
@@ -1360,7 +1422,7 @@ function app() {
       const counts = statuses.map(s =>
         this.repos.filter(r => r.activity_status === s || (!r.activity_status && s==='pending')).length
       );
-      _charts['chart-activity'] = new Chart(el, {
+      _charts[targetId] = new Chart(el, {
         type: 'doughnut',
         data: {
           labels: statuses.map(s => s.charAt(0).toUpperCase()+s.slice(1)),
@@ -1376,8 +1438,8 @@ function app() {
       });
     },
 
-    drawLanguagesOverviewChart() {
-      const el = this._getCanvas('chart-languages');
+    drawLanguagesOverviewChart(targetId = 'chart-languages') {
+      const el = this._getCanvas(targetId);
       if (!el) return;
       const tc = this._tc();
       const counts = {};
@@ -1385,7 +1447,7 @@ function app() {
         (r.top_3_languages||[]).forEach(l => { counts[l] = (counts[l]||0)+1; });
       });
       const entries = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,10);
-      _charts['chart-languages'] = new Chart(el, {
+      _charts[targetId] = new Chart(el, {
         type: 'bar',
         data: {
           labels: entries.map(([k])=>k),
@@ -1435,5 +1497,36 @@ function app() {
   };
 }
 </script>
+
+<!-- ═══════════════════════ FULLSCREEN CHART MODAL ═══════════════════════ -->
+<div x-show="expandedChart"
+     x-transition:enter="transition ease-out duration-200"
+     x-transition:enter-start="opacity-0"
+     x-transition:enter-end="opacity-100"
+     x-transition:leave="transition ease-in duration-150"
+     x-transition:leave-start="opacity-100"
+     x-transition:leave-end="opacity-0"
+     @click.self="closeFullscreen()"
+     @keydown.escape.window="closeFullscreen()"
+     class="fixed inset-0 z-[100] bg-black/75 backdrop-blur-sm flex items-center justify-center p-6"
+     style="display:none">
+  <div class="bg-card border border-border rounded-2xl w-full max-w-5xl shadow-2xl flex flex-col"
+       style="max-height:88vh">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-border flex-shrink-0">
+      <h3 class="font-semibold text-white" x-text="expandedChart?.title"></h3>
+      <button @click="closeFullscreen()" class="btn-icon !p-1.5" title="Close">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="p-8 flex-1 min-h-0">
+      <div class="chart-container w-full h-full" style="min-height:480px">
+        <canvas id="fullscreen-canvas"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
