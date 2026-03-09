@@ -178,8 +178,19 @@
       <span class="text-slate-500 text-sm hidden sm:block">· OWASP State of Agentic AI Security and Governance 2026</span>
     </div>
 
+    <!-- Read-only badge -->
+    <template x-if="readOnly">
+      <div class="flex items-center gap-1.5 text-xs px-2 py-1 rounded-lg bg-slate-700/60 text-slate-400 border border-slate-600/40">
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+        </svg>
+        Read-only
+      </div>
+    </template>
+
     <!-- Rate limit badge -->
-    <template x-if="rateLimit.remaining !== null">
+    <template x-if="!readOnly && rateLimit.remaining !== null">
       <div class="flex items-center gap-1.5 text-xs text-slate-400">
         <div :class="rateLimit.remaining > 100 ? 'bg-green-500' : 'bg-yellow-500'"
              class="w-2 h-2 rounded-full"></div>
@@ -264,7 +275,8 @@
   <!-- ── TOOLBAR ── -->
   <div class="flex flex-wrap gap-3 items-center">
     <!-- Fetch All -->
-    <button @click="fetchAll()"
+    <button x-show="!readOnly"
+            @click="fetchAll()"
             :disabled="fetching"
             class="btn-primary flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
       <template x-if="!fetching">
@@ -280,7 +292,7 @@
     </button>
 
     <!-- Refresh rate limit -->
-    <button @click="loadRateLimit()" class="btn-secondary flex items-center gap-1.5">
+    <button x-show="!readOnly" @click="loadRateLimit()" class="btn-secondary flex items-center gap-1.5">
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -329,7 +341,7 @@
   </div>
 
   <!-- ── FETCH PROGRESS BAR ── -->
-  <template x-if="fetching || (progress.total > 0 && !progress.done)">
+  <template x-if="!readOnly && (fetching || (progress.total > 0 && !progress.done))">
     <div class="bg-card border border-border rounded-xl p-4">
       <div class="flex items-center justify-between mb-2">
         <div class="flex items-center gap-2">
@@ -569,7 +581,8 @@
             </template>
           </div>
         </div>
-        <button @click="refreshRepo(selectedRepo.full_name)"
+        <button x-show="!readOnly"
+                @click="refreshRepo(selectedRepo.full_name)"
                 :disabled="refreshing"
                 class="btn-secondary flex-shrink-0 flex items-center gap-1.5 text-xs">
           <svg class="w-3.5 h-3.5" :class="refreshing?'animate-spin':''" fill="none"
@@ -928,10 +941,13 @@ function app() {
     rateLimit: { remaining: null, limit: null },
     progress: { total: 0, completed: 0, current: null, errors: [], done: true },
     isDark: localStorage.theme !== 'light',
+    readOnly: false,
 
     async init() {
+      const cfg = await fetch('/api/config').then(r => r.json()).catch(() => ({}));
+      this.readOnly = cfg.read_only || false;
       await this.loadRepos();
-      await this.loadRateLimit();
+      if (!this.readOnly) await this.loadRateLimit();
       // setTimeout lets Alpine finish its own render pass before Chart.js
       // queries the canvas elements (x-show keeps them in the DOM, but we
       // still need layout to settle before Chart.js measures dimensions).

@@ -31,6 +31,7 @@ ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 GIT_USER_NAME  = os.getenv("GIT_USER_NAME",  "OWASP Surveyor Bot")
 GIT_USER_EMAIL = os.getenv("GIT_USER_EMAIL", "surveyor@owasp.org")
 GITHUB_REPO    = os.getenv("GITHUB_REPO",    "")
+READ_ONLY      = os.getenv("READ_ONLY", "true").lower() not in ("0", "false", "no")
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s  %(name)s  %(message)s")
 logger = logging.getLogger(__name__)
@@ -73,6 +74,19 @@ def _require_token() -> str:
     return GITHUB_TOKEN
 
 
+def _require_writable() -> None:
+    if READ_ONLY:
+        raise HTTPException(
+            status_code=503,
+            detail="This instance is read-only. Fetch operations are disabled.",
+        )
+
+
+@app.get("/api/config")
+async def get_config() -> Dict:
+    return {"read_only": READ_ONLY}
+
+
 # ── Routes ────────────────────────────────────────────────────────────────────
 
 @app.get("/", include_in_schema=False)
@@ -111,6 +125,7 @@ async def get_repo(owner: str, repo: str) -> Dict:
 @app.post("/api/repos/{owner}/{repo}/fetch")
 async def fetch_repo(owner: str, repo: str) -> Dict:
     """Fetch (or re-fetch) a single repo from GitHub."""
+    _require_writable()
     token = _require_token()
     full_name = f"{owner}/{repo}"
 
@@ -125,6 +140,7 @@ async def fetch_repo(owner: str, repo: str) -> Dict:
 @app.post("/api/repos/fetch-all")
 async def fetch_all(background_tasks: BackgroundTasks) -> Dict:
     """Trigger background bulk fetch of every repo in the text file."""
+    _require_writable()
     global _progress
     if not _fetch_lock.locked():
         full_names = load_repos_txt()
@@ -192,6 +208,7 @@ async def export_csv() -> StreamingResponse:
 
 @app.delete("/api/data/repos/{owner}/{repo}")
 async def clear_repo_data(owner: str, repo: str) -> Dict:
+    _require_writable()
     storage.delete(f"{owner}/{repo}")
     return {"cleared": True}
 
@@ -229,6 +246,7 @@ async def admin_save_repos(
     background_tasks: BackgroundTasks,
     _: None = Depends(_admin_auth),
 ) -> Dict:
+    _require_writable()
     body = await request.json()
     content = body.get("content", "")
 
@@ -288,6 +306,7 @@ async def admin_git_status(_: None = Depends(_admin_auth)) -> Dict:
 @app.post("/api/admin/git-sync")
 async def admin_git_sync(_: None = Depends(_admin_auth)) -> Dict:
     """Commit pending data/ changes to a new branch and open a GitHub PR."""
+    _require_writable()
     if not GITHUB_TOKEN:
         raise HTTPException(status_code=503, detail="GITHUB_TOKEN not set in .env")
     if not GITHUB_REPO:
