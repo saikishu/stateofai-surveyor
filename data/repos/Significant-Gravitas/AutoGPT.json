@@ -5,7 +5,7 @@
   "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
   "homepage": "https://agpt.co",
   "github_url": "https://github.com/Significant-Gravitas/AutoGPT",
-  "stars": 182292,
+  "stars": 182294,
   "forks": 46198,
   "watchers": 1533,
   "license_name": "Other",
@@ -23,8 +23,8 @@
   "is_fork": false,
   "default_branch": "master",
   "created_at": "2023-03-16T09:21:07Z",
-  "updated_at": "2026-03-09T08:26:43Z",
-  "pushed_at": "2026-03-09T08:39:21Z",
+  "updated_at": "2026-03-09T08:52:46Z",
+  "pushed_at": "2026-03-09T08:55:44Z",
   "age_days": 1088,
   "days_since_push": 0,
   "activity_status": "active",
@@ -619,7 +619,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-03-09T08:49:04.785413+00:00",
+  "fetched_at": "2026-03-09T09:03:55.661967+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

@@ -1,0 +1,489 @@
+{
+  "full_name": "google-gemini/gemini-cli",
+  "name": "gemini-cli",
+  "owner": "google-gemini",
+  "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+  "homepage": "https://geminicli.com",
+  "github_url": "https://github.com/google-gemini/gemini-cli",
+  "stars": 96965,
+  "forks": 12053,
+  "watchers": 510,
+  "license_name": "Apache License 2.0",
+  "license_spdx": "Apache-2.0",
+  "topics": [
+    "gemini",
+    "gemini-api",
+    "ai",
+    "ai-agents",
+    "cli",
+    "mcp-client",
+    "mcp-server"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2025-04-17T17:04:31Z",
+  "updated_at": "2026-03-09T08:56:16Z",
+  "pushed_at": "2026-03-09T07:50:05Z",
+  "age_days": 325,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "TypeScript": 15148770,
+    "JavaScript": 281245,
+    "Shell": 7258,
+    "Dockerfile": 1580,
+    "Makefile": 1336,
+    "HTML": 592
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "JavaScript",
+    "Shell"
+  ],
+  "total_code_bytes": 15440781,
+  "approx_loc": 368028,
+  "issues_open": 2102,
+  "issues_closed": 8829,
+  "issues_new_30d": 53,
+  "issues_new_90d": 53,
+  "issues_active_30d": 53,
+  "issues_closed_30d": 69,
+  "prs_open": 624,
+  "prs_closed": 3059,
+  "prs_merged": 5325,
+  "prs_active_30d": 100,
+  "release_count": 398,
+  "latest_release_tag": "v0.32.1",
+  "latest_release_date": "2026-03-04T03:46:12Z",
+  "avg_days_between_releases": 1.0,
+  "releases": [
+    {
+      "tag_name": "v0.34.0-nightly.20260307.6c3a90645",
+      "name": "Release v0.34.0-nightly.20260307.6c3a90645",
+      "published_at": "2026-03-07T02:00:02Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260307.6c3a90645"
+    },
+    {
+      "tag_name": "v0.33.0-preview.5",
+      "name": "Release v0.33.0-preview.5",
+      "published_at": "2026-03-07T01:40:11Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.5"
+    },
+    {
+      "tag_name": "v0.34.0-nightly.20260306.a8f507352",
+      "name": "Release v0.34.0-nightly.20260306.a8f507352",
+      "published_at": "2026-03-06T03:25:16Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260306.a8f507352"
+    },
+    {
+      "tag_name": "v0.33.0-preview.4",
+      "name": "Release v0.33.0-preview.4",
+      "published_at": "2026-03-06T01:28:36Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.4"
+    },
+    {
+      "tag_name": "v0.34.0-nightly.20260305.348103298",
+      "name": "Release v0.34.0-nightly.20260305.348103298",
+      "published_at": "2026-03-05T01:11:57Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260305.348103298"
+    },
+    {
+      "tag_name": "v0.33.0-preview.3",
+      "name": "Release v0.33.0-preview.3",
+      "published_at": "2026-03-06T00:03:28Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.3"
+    },
+    {
+      "tag_name": "v0.33.0-preview.2",
+      "name": "Release v0.33.0-preview.2",
+      "published_at": "2026-03-05T22:17:51Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.2"
+    },
+    {
+      "tag_name": "v0.34.0-nightly.20260304.28af4e127",
+      "name": "Release v0.34.0-nightly.20260304.28af4e127",
+      "published_at": "2026-03-04T03:48:36Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260304.28af4e127"
+    },
+    {
+      "tag_name": "v0.33.0-preview.1",
+      "name": "Release v0.33.0-preview.1",
+      "published_at": "2026-03-04T04:20:14Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.1"
+    },
+    {
+      "tag_name": "v0.32.1",
+      "name": "Release v0.32.1",
+      "published_at": "2026-03-04T03:46:12Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.32.1"
+    },
+    {
+      "tag_name": "v0.33.0-preview.0",
+      "name": "Release v0.33.0-preview.0",
+      "published_at": "2026-03-03T23:28:35Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.0"
+    },
+    {
+      "tag_name": "v0.32.0",
+      "name": "Release v0.32.0",
+      "published_at": "2026-03-03T23:50:37Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.32.0"
+    },
+    {
+      "tag_name": "v0.33.0-nightly.20260228.1ca5c05d0",
+      "name": "Release v0.33.0-nightly.20260228.1ca5c05d0",
+      "published_at": "2026-02-28T02:00:49Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-nightly.20260228.1ca5c05d0"
+    },
+    {
+      "tag_name": "v0.32.0-preview.0",
+      "name": "Release v0.32.0-preview.0",
+      "published_at": "2026-02-27T23:01:16Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.32.0-preview.0"
+    },
+    {
+      "tag_name": "v0.31.0",
+      "name": "Release v0.31.0",
+      "published_at": "2026-02-27T23:13:40Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0"
+    },
+    {
+      "tag_name": "v0.31.0-preview.3",
+      "name": "Release v0.31.0-preview.3",
+      "published_at": "2026-02-27T22:20:45Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.3"
+    },
+    {
+      "tag_name": "v0.31.0-preview.2",
+      "name": "Release v0.31.0-preview.2",
+      "published_at": "2026-02-27T20:46:41Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.2"
+    },
+    {
+      "tag_name": "v0.31.0-preview.1",
+      "name": "Release v0.31.0-preview.1",
+      "published_at": "2026-02-27T18:35:56Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.1"
+    },
+    {
+      "tag_name": "v0.30.1",
+      "name": "Release v0.30.1",
+      "published_at": "2026-02-27T18:33:34Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.1"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260227.9b7852f11",
+      "name": "Release v0.30.0-nightly.20260227.9b7852f11",
+      "published_at": "2026-02-27T19:13:55Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260227.9b7852f11"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260226.f9f916e1d",
+      "name": "Release v0.30.0-nightly.20260226.f9f916e1d",
+      "published_at": "2026-02-26T01:43:10Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260226.f9f916e1d"
+    },
+    {
+      "tag_name": "v0.31.0-preview.0",
+      "name": "Release v0.31.0-preview.0",
+      "published_at": "2026-02-25T02:47:43Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.0"
+    },
+    {
+      "tag_name": "v0.30.0",
+      "name": "Release v0.30.0",
+      "published_at": "2026-02-25T03:05:56Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0"
+    },
+    {
+      "tag_name": "v0.30.0-preview.6",
+      "name": "Release v0.30.0-preview.6",
+      "published_at": "2026-02-24T03:17:10Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.6"
+    },
+    {
+      "tag_name": "v0.30.0-preview.5",
+      "name": "Release v0.30.0-preview.5",
+      "published_at": "2026-02-24T01:10:42Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.5"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260224.544df749a",
+      "name": "Release v0.30.0-nightly.20260224.544df749a",
+      "published_at": "2026-02-24T01:55:14Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260224.544df749a"
+    },
+    {
+      "tag_name": "v0.29.7",
+      "name": "Release v0.29.7",
+      "published_at": "2026-02-24T03:16:44Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.7"
+    },
+    {
+      "tag_name": "v0.30.0-preview.4",
+      "name": "Release v0.30.0-preview.4",
+      "published_at": "2026-02-23T20:56:48Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.4"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260223.c537fd5ae",
+      "name": "Release v0.30.0-nightly.20260223.c537fd5ae",
+      "published_at": "2026-02-23T02:01:34Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260223.c537fd5ae"
+    },
+    {
+      "tag_name": "v0.29.6",
+      "name": "Release v0.29.6",
+      "published_at": "2026-02-23T20:53:46Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.6"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "scidomino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13950003?v=4",
+      "html_url": "https://github.com/scidomino",
+      "contributions": 333,
+      "additions": 95347,
+      "deletions": 91084,
+      "commits_count": 401
+    },
+    {
+      "login": "NTaylorMullen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2008729?v=4",
+      "html_url": "https://github.com/NTaylorMullen",
+      "contributions": 319,
+      "additions": 85377,
+      "deletions": 36157,
+      "commits_count": 369
+    },
+    {
+      "login": "jacob314",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1226812?v=4",
+      "html_url": "https://github.com/jacob314",
+      "contributions": 242,
+      "additions": 142174,
+      "deletions": 61657,
+      "commits_count": 430
+    },
+    {
+      "login": "abhipatel12",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43648792?v=4",
+      "html_url": "https://github.com/abhipatel12",
+      "contributions": 220,
+      "additions": 76774,
+      "deletions": 31667,
+      "commits_count": 252
+    },
+    {
+      "login": "SandyTao520",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12478482?v=4",
+      "html_url": "https://github.com/SandyTao520",
+      "contributions": 183,
+      "additions": 41713,
+      "deletions": 14866,
+      "commits_count": 211
+    },
+    {
+      "login": "olcan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/747196?v=4",
+      "html_url": "https://github.com/olcan",
+      "contributions": 170,
+      "additions": 5520,
+      "deletions": 1974,
+      "commits_count": 170
+    },
+    {
+      "login": "mattKorwel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1538695?v=4",
+      "html_url": "https://github.com/mattKorwel",
+      "contributions": 159,
+      "additions": 30346,
+      "deletions": 12493,
+      "commits_count": 229
+    },
+    {
+      "login": "jerop",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18076400?v=4",
+      "html_url": "https://github.com/jerop",
+      "contributions": 154,
+      "additions": 29657,
+      "deletions": 7553,
+      "commits_count": 168
+    },
+    {
+      "login": "chrstnb",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22881644?v=4",
+      "html_url": "https://github.com/chrstnb",
+      "contributions": 152,
+      "additions": 33333,
+      "deletions": 9184,
+      "commits_count": 163
+    },
+    {
+      "login": "skeshive",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22923227?v=4",
+      "html_url": "https://github.com/skeshive",
+      "contributions": 150,
+      "additions": 32504,
+      "deletions": 17968,
+      "commits_count": 174
+    }
+  ],
+  "commits_last_year": 5096,
+  "commits_per_week_avg": 106.16666666666667,
+  "weekly_commits": [
+    0,
+    0,
+    0,
+    0,
+    58,
+    115,
+    63,
+    58,
+    84,
+    82,
+    87,
+    113,
+    146,
+    113,
+    152,
+    90,
+    111,
+    97,
+    96,
+    74,
+    135,
+    132,
+    131,
+    129,
+    100,
+    99,
+    181,
+    120,
+    98,
+    94,
+    131,
+    145,
+    116,
+    92,
+    85,
+    89,
+    48,
+    95,
+    68,
+    65,
+    32,
+    27,
+    142,
+    143,
+    161,
+    152,
+    128,
+    163,
+    136,
+    158,
+    159,
+    3
+  ],
+  "weekly_timestamps": [
+    1742083200,
+    1742688000,
+    1743292800,
+    1743897600,
+    1744502400,
+    1745107200,
+    1745712000,
+    1746316800,
+    1746921600,
+    1747526400,
+    1748131200,
+    1748736000,
+    1749340800,
+    1749945600,
+    1750550400,
+    1751155200,
+    1751760000,
+    1752364800,
+    1752969600,
+    1753574400,
+    1754179200,
+    1754784000,
+    1755388800,
+    1755993600,
+    1756598400,
+    1757203200,
+    1757808000,
+    1758412800,
+    1759017600,
+    1759622400,
+    1760227200,
+    1760832000,
+    1761436800,
+    1762041600,
+    1762646400,
+    1763251200,
+    1763856000,
+    1764460800,
+    1765065600,
+    1765670400,
+    1766275200,
+    1766880000,
+    1767484800,
+    1768089600,
+    1768694400,
+    1769299200,
+    1769904000,
+    1770508800,
+    1771113600,
+    1771718400,
+    1772323200,
+    1772928000
+  ],
+  "commits_30d": 619,
+  "commits_90d": 1469,
+  "commit_trend": "declining",
+  "commit_growth_pct": -24.5,
+  "total_commits": 5105,
+  "first_commit_date": "2025-04-16T04:41:08Z",
+  "commit_span_days": 327,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-03-09T09:04:12.472406+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

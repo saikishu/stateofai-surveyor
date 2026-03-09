@@ -1,0 +1,497 @@
+{
+  "full_name": "browser-use/browser-use",
+  "name": "browser-use",
+  "owner": "browser-use",
+  "description": "\ud83c\udf10 Make websites accessible for AI agents. Automate tasks online with ease.",
+  "homepage": "https://browser-use.com",
+  "github_url": "https://github.com/browser-use/browser-use",
+  "stars": 79983,
+  "forks": 9448,
+  "watchers": 405,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [
+    "llm",
+    "ai-agents",
+    "ai-tools",
+    "browser-automation",
+    "python",
+    "browser-use",
+    "playwright"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2024-10-31T16:00:56Z",
+  "updated_at": "2026-03-09T08:54:53Z",
+  "pushed_at": "2026-03-09T06:49:21Z",
+  "age_days": 493,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "Python": 3155528,
+    "Shell": 37706,
+    "Dockerfile": 11201,
+    "HTML": 7953
+  },
+  "top_3_languages": [
+    "Python",
+    "Shell",
+    "Dockerfile"
+  ],
+  "total_code_bytes": 3212388,
+  "approx_loc": 91739,
+  "issues_open": 109,
+  "issues_closed": 1296,
+  "issues_new_30d": 32,
+  "issues_new_90d": 33,
+  "issues_active_30d": 33,
+  "issues_closed_30d": 49,
+  "prs_open": 111,
+  "prs_closed": 807,
+  "prs_merged": 1671,
+  "prs_active_30d": 91,
+  "release_count": 118,
+  "latest_release_tag": "0.12.1",
+  "latest_release_date": "2026-03-03T01:52:58Z",
+  "avg_days_between_releases": 4.482758620689655,
+  "releases": [
+    {
+      "tag_name": "0.12.1",
+      "name": "0.12.1",
+      "published_at": "2026-03-03T01:52:58Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.12.1"
+    },
+    {
+      "tag_name": "0.12.0",
+      "name": "0.12.0",
+      "published_at": "2026-02-26T01:48:40Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.12.0"
+    },
+    {
+      "tag_name": "0.11.13",
+      "name": "0.11.13",
+      "published_at": "2026-02-25T05:19:15Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.13"
+    },
+    {
+      "tag_name": "0.11.12",
+      "name": "0.11.12",
+      "published_at": "2026-02-23T04:37:32Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.12"
+    },
+    {
+      "tag_name": "0.11.11",
+      "name": "0.11.11",
+      "published_at": "2026-02-20T02:54:58Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.11"
+    },
+    {
+      "tag_name": "0.11.10a2",
+      "name": "0.11.10a2",
+      "published_at": "2026-02-17T02:38:51Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.10a2"
+    },
+    {
+      "tag_name": "0.11.10a1",
+      "name": "0.11.10a1",
+      "published_at": "2026-02-12T20:28:14Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.10a1"
+    },
+    {
+      "tag_name": "0.11.9",
+      "name": "0.11.9",
+      "published_at": "2026-02-06T05:28:02Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.9"
+    },
+    {
+      "tag_name": "0.11.8",
+      "name": "0.11.8 - Profiles in Browser Use CLI",
+      "published_at": "2026-02-03T02:00:33Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.8"
+    },
+    {
+      "tag_name": "0.11.7",
+      "name": "0.11.7 - Agent performance boost",
+      "published_at": "2026-02-01T06:45:23Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.7"
+    },
+    {
+      "tag_name": "0.11.6",
+      "name": "0.11.6",
+      "published_at": "2026-02-01T01:08:14Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.6"
+    },
+    {
+      "tag_name": "0.11.5",
+      "name": "0.11.5",
+      "published_at": "2026-01-28T04:52:32Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.5"
+    },
+    {
+      "tag_name": "0.11.4",
+      "name": "0.11.4 - CLI",
+      "published_at": "2026-01-22T08:38:44Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.4"
+    },
+    {
+      "tag_name": "0.11.3",
+      "name": "0.11.3",
+      "published_at": "2026-01-16T20:55:40Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.3"
+    },
+    {
+      "tag_name": "0.11.2",
+      "name": "BROWSER USE OSS MODEL!!!",
+      "published_at": "2025-12-16T22:06:55Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.2"
+    },
+    {
+      "tag_name": "0.11.1",
+      "name": "More Stable",
+      "published_at": "2025-12-12T23:42:21Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.1"
+    },
+    {
+      "tag_name": "0.11.0",
+      "name": "0.11.0 - Skills",
+      "published_at": "2025-12-10T01:06:42Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.0"
+    },
+    {
+      "tag_name": "0.10.1",
+      "name": "0.10.1",
+      "published_at": "2025-11-29T22:10:15Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.10.1"
+    },
+    {
+      "tag_name": "0.10.0",
+      "name": "Browser Use with Community!",
+      "published_at": "2025-11-29T22:04:59Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.10.0"
+    },
+    {
+      "tag_name": "0.9.7",
+      "name": "0.9.7 - Gemini 3 available",
+      "published_at": "2025-11-18T16:35:07Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.9.7"
+    },
+    {
+      "tag_name": "0.9.6",
+      "name": "0.9.6 - Automatic llm as a judge for your agent runs to monitor success ",
+      "published_at": "2025-11-15T19:53:23Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.9.6"
+    },
+    {
+      "tag_name": "0.9.5",
+      "name": "0.9.5 - Sandboxes",
+      "published_at": "2025-11-01T02:20:40Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.9.5"
+    },
+    {
+      "tag_name": "0.9.4",
+      "name": "0.9.4",
+      "published_at": "2025-10-29T04:38:17Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.9.4"
+    },
+    {
+      "tag_name": "0.9.3",
+      "name": "0.9.3",
+      "published_at": "2025-10-28T20:04:36Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.9.3"
+    },
+    {
+      "tag_name": "0.9.2",
+      "name": "0.9.2",
+      "published_at": "2025-10-28T00:01:28Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.9.2"
+    },
+    {
+      "tag_name": "0.9.1",
+      "name": "Bugfixes and Better Docs",
+      "published_at": "2025-10-24T09:48:28Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.9.1"
+    },
+    {
+      "tag_name": "0.9.0",
+      "name": "0.9.0 - Code Use - Built for data collection",
+      "published_at": "2025-10-22T21:51:42Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.9.0"
+    },
+    {
+      "tag_name": "0.8.1",
+      "name": "0.8.1 - Faster than ever before! Try ChatBrowserUse - its flying",
+      "published_at": "2025-10-14T22:00:51Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.8.1"
+    },
+    {
+      "tag_name": "0.8.0",
+      "name": "0.8.0",
+      "published_at": "2025-10-09T07:03:10Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.8.0"
+    },
+    {
+      "tag_name": "0.7.12",
+      "name": "0.7.12",
+      "published_at": "2025-10-09T06:48:18Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/browser-use/releases/tag/0.7.12"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "MagMueller",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67061560?v=4",
+      "html_url": "https://github.com/MagMueller",
+      "contributions": 3098,
+      "additions": 259666,
+      "deletions": 86861,
+      "commits_count": 2094
+    },
+    {
+      "login": "pirate",
+      "avatar_url": "https://avatars.githubusercontent.com/u/511499?v=4",
+      "html_url": "https://github.com/pirate",
+      "contributions": 1810,
+      "additions": 145673,
+      "deletions": 110619,
+      "commits_count": 1338
+    },
+    {
+      "login": "mertunsall",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22038471?v=4",
+      "html_url": "https://github.com/mertunsall",
+      "contributions": 817,
+      "additions": 16343,
+      "deletions": 10213,
+      "commits_count": 413
+    },
+    {
+      "login": "gregpr07",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36313686?v=4",
+      "html_url": "https://github.com/gregpr07",
+      "contributions": 472,
+      "additions": 71967,
+      "deletions": 197919,
+      "commits_count": 362
+    },
+    {
+      "login": "sauravpanda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12201824?v=4",
+      "html_url": "https://github.com/sauravpanda",
+      "contributions": 452,
+      "additions": 27427,
+      "deletions": 4375,
+      "commits_count": 211
+    },
+    {
+      "login": "Alezander9",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43824272?v=4",
+      "html_url": "https://github.com/Alezander9",
+      "contributions": 169,
+      "additions": 15215,
+      "deletions": 14705,
+      "commits_count": 108
+    },
+    {
+      "login": "laithrw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70768382?v=4",
+      "html_url": "https://github.com/laithrw",
+      "contributions": 148,
+      "additions": 3504,
+      "deletions": 1399,
+      "commits_count": 65
+    },
+    {
+      "login": "ShawnPana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129362299?v=4",
+      "html_url": "https://github.com/ShawnPana",
+      "contributions": 134,
+      "additions": 16019,
+      "deletions": 8908,
+      "commits_count": 122
+    },
+    {
+      "login": "reformedot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44302869?v=4",
+      "html_url": "https://github.com/reformedot",
+      "contributions": 124,
+      "additions": 4635,
+      "deletions": 2733,
+      "commits_count": 83
+    },
+    {
+      "login": "kalil0321",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92564081?v=4",
+      "html_url": "https://github.com/kalil0321",
+      "contributions": 105,
+      "additions": 6436,
+      "deletions": 1815,
+      "commits_count": 60
+    }
+  ],
+  "commits_last_year": 4953,
+  "commits_per_week_avg": 95.25,
+  "weekly_commits": [
+    41,
+    162,
+    39,
+    28,
+    68,
+    54,
+    95,
+    63,
+    93,
+    228,
+    143,
+    149,
+    148,
+    166,
+    313,
+    251,
+    312,
+    100,
+    53,
+    73,
+    142,
+    144,
+    131,
+    233,
+    187,
+    110,
+    136,
+    39,
+    37,
+    99,
+    94,
+    177,
+    206,
+    56,
+    74,
+    52,
+    38,
+    11,
+    25,
+    21,
+    15,
+    1,
+    14,
+    14,
+    26,
+    75,
+    44,
+    92,
+    30,
+    25,
+    24,
+    2
+  ],
+  "weekly_timestamps": [
+    1742083200,
+    1742688000,
+    1743292800,
+    1743897600,
+    1744502400,
+    1745107200,
+    1745712000,
+    1746316800,
+    1746921600,
+    1747526400,
+    1748131200,
+    1748736000,
+    1749340800,
+    1749945600,
+    1750550400,
+    1751155200,
+    1751760000,
+    1752364800,
+    1752969600,
+    1753574400,
+    1754179200,
+    1754784000,
+    1755388800,
+    1755993600,
+    1756598400,
+    1757203200,
+    1757808000,
+    1758412800,
+    1759017600,
+    1759622400,
+    1760227200,
+    1760832000,
+    1761436800,
+    1762041600,
+    1762646400,
+    1763251200,
+    1763856000,
+    1764460800,
+    1765065600,
+    1765670400,
+    1766275200,
+    1766880000,
+    1767484800,
+    1768089600,
+    1768694400,
+    1769299200,
+    1769904000,
+    1770508800,
+    1771113600,
+    1771718400,
+    1772323200,
+    1772928000
+  ],
+  "commits_30d": 173,
+  "commits_90d": 383,
+  "commit_trend": "stalled",
+  "commit_growth_pct": -65.8,
+  "total_commits": 8749,
+  "first_commit_date": "2024-10-31T16:00:29Z",
+  "commit_span_days": 493,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 1,
+  "security_advisories": [
+    {
+      "ghsa_id": "GHSA-x39x-9qw5-ghrf",
+      "cve_id": "CVE-2025-47241",
+      "severity": "critical",
+      "summary": "`allowed_domains` can be bypassed by putting a decoy domain in http auth username portion of a URL",
+      "published_at": "2025-05-04T06:30:46Z",
+      "cvss_score": 9.3,
+      "url": "https://github.com/browser-use/browser-use/security/advisories/GHSA-x39x-9qw5-ghrf"
+    }
+  ],
+  "csv_row": null,
+  "fetched_at": "2026-03-09T09:04:27.834822+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}
