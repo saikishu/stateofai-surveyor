@@ -5,9 +5,9 @@
   "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
   "homepage": "https://openclaw.ai",
   "github_url": "https://github.com/openclaw/openclaw",
-  "stars": 262742,
-  "forks": 50301,
-  "watchers": 1355,
+  "stars": 285646,
+  "forks": 54290,
+  "watchers": 1450,
   "license_name": "MIT License",
   "license_spdx": "MIT",
   "topics": [
@@ -23,17 +23,17 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-11-24T10:16:47Z",
-  "updated_at": "2026-03-05T08:26:45Z",
-  "pushed_at": "2026-03-05T07:25:04Z",
-  "age_days": 100,
+  "updated_at": "2026-03-09T08:46:30Z",
+  "pushed_at": "2026-03-09T08:42:46Z",
+  "age_days": 104,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 32241161,
-    "Swift": 3302201,
-    "Kotlin": 785481,
-    "Shell": 382955,
-    "JavaScript": 250911,
+    "TypeScript": 34961112,
+    "Swift": 3408417,
+    "Kotlin": 765777,
+    "Shell": 393859,
+    "JavaScript": 262430,
     "CSS": 143788
   },
   "top_3_languages": [
@@ -41,23 +41,51 @@
     "Swift",
     "Kotlin"
   ],
-  "total_code_bytes": 37270344,
-  "approx_loc": 877145,
-  "issues_open": 5163,
-  "issues_closed": 9969,
-  "issues_new_30d": 10,
-  "issues_new_90d": 10,
-  "issues_active_30d": 10,
-  "issues_closed_30d": 21,
-  "prs_open": 6376,
-  "prs_closed": 10294,
-  "prs_merged": 2705,
+  "total_code_bytes": 40117250,
+  "approx_loc": 944472,
+  "issues_open": 6080,
+  "issues_closed": 10579,
+  "issues_new_30d": 44,
+  "issues_new_90d": 44,
+  "issues_active_30d": 44,
+  "issues_closed_30d": 37,
+  "prs_open": 5266,
+  "prs_closed": 14535,
+  "prs_merged": 2954,
   "prs_active_30d": 100,
-  "release_count": 59,
-  "latest_release_tag": "v2026.3.2",
-  "latest_release_date": "2026-03-03T04:43:07Z",
-  "avg_days_between_releases": 1.2083333333333333,
+  "release_count": 63,
+  "latest_release_tag": "v2026.3.8",
+  "latest_release_date": "2026-03-09T07:49:27Z",
+  "avg_days_between_releases": 1.3181818181818181,
   "releases": [
+    {
+      "tag_name": "v2026.3.8",
+      "name": "openclaw 2026.3.8",
+      "published_at": "2026-03-09T07:49:27Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.8"
+    },
+    {
+      "tag_name": "v2026.3.8-beta.1",
+      "name": "openclaw 2026.3.8-beta.1",
+      "published_at": "2026-03-09T07:19:52Z",
+      "prerelease": true,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.8-beta.1"
+    },
+    {
+      "tag_name": "v2026.3.7",
+      "name": "openclaw 2026.3.7",
+      "published_at": "2026-03-08T05:52:38Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.7"
+    },
+    {
+      "tag_name": "v2026.3.7-beta.1",
+      "name": "openclaw 2026.3.7-beta.1",
+      "published_at": "2026-03-08T04:54:08Z",
+      "prerelease": true,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.7-beta.1"
+    },
     {
       "tag_name": "v2026.3.2",
       "name": "openclaw 2026.3.2",
@@ -239,34 +267,6 @@
       "published_at": "2026-01-30T05:26:50Z",
       "prerelease": false,
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.29"
-    },
-    {
-      "tag_name": "v2026.1.24",
-      "name": "Clawdbot 2026.1.24",
-      "published_at": "2026-01-25T14:29:07Z",
-      "prerelease": false,
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.24"
-    },
-    {
-      "tag_name": "v2026.1.23",
-      "name": "Clawdbot 2026.1.23",
-      "published_at": "2026-01-24T13:04:16Z",
-      "prerelease": false,
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.23"
-    },
-    {
-      "tag_name": "v2026.1.22",
-      "name": "clawdbot 2026.1.22",
-      "published_at": "2026-01-23T08:59:57Z",
-      "prerelease": false,
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.22"
-    },
-    {
-      "tag_name": "v2026.1.21",
-      "name": "clawdbot 2026.1.21",
-      "published_at": "2026-01-22T12:26:44Z",
-      "prerelease": false,
-      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.21"
     }
   ],
   "contributor_count": 100,
@@ -275,55 +275,55 @@
       "login": "steipete",
       "avatar_url": "https://avatars.githubusercontent.com/u/58493?v=4",
       "html_url": "https://github.com/steipete",
-      "contributions": 11365,
+      "contributions": 11801,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 11509
+      "commits_count": 11945
     },
     {
       "login": "vignesh07",
       "avatar_url": "https://avatars.githubusercontent.com/u/1436853?v=4",
       "html_url": "https://github.com/vignesh07",
-      "contributions": 404,
+      "contributions": 436,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 410
-    },
-    {
-      "login": "obviyus",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22031114?v=4",
-      "html_url": "https://github.com/obviyus",
-      "contributions": 314,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 350
-    },
-    {
-      "login": "thewilloftheshadow",
-      "avatar_url": "https://avatars.githubusercontent.com/u/35580099?v=4",
-      "html_url": "https://github.com/thewilloftheshadow",
-      "contributions": 300,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 340
-    },
-    {
-      "login": "gumadeiras",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5599352?v=4",
-      "html_url": "https://github.com/gumadeiras",
-      "contributions": 256,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 342
+      "commits_count": 442
     },
     {
       "login": "vincentkoc",
       "avatar_url": "https://avatars.githubusercontent.com/u/25068?v=4",
       "html_url": "https://github.com/vincentkoc",
-      "contributions": 230,
+      "contributions": 416,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 297
+      "commits_count": 496
+    },
+    {
+      "login": "obviyus",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22031114?v=4",
+      "html_url": "https://github.com/obviyus",
+      "contributions": 358,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 396
+    },
+    {
+      "login": "thewilloftheshadow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35580099?v=4",
+      "html_url": "https://github.com/thewilloftheshadow",
+      "contributions": 308,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 351
+    },
+    {
+      "login": "gumadeiras",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5599352?v=4",
+      "html_url": "https://github.com/gumadeiras",
+      "contributions": 264,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 355
     },
     {
       "login": "sebslight",
@@ -344,6 +344,15 @@
       "commits_count": 161
     },
     {
+      "login": "Takhoffman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/781889?v=4",
+      "html_url": "https://github.com/Takhoffman",
+      "contributions": 120,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 349
+    },
+    {
       "login": "shakkernerd",
       "avatar_url": "https://avatars.githubusercontent.com/u/165377636?v=4",
       "html_url": "https://github.com/shakkernerd",
@@ -351,21 +360,11 @@
       "additions": 0,
       "deletions": 0,
       "commits_count": 139
-    },
-    {
-      "login": "Takhoffman",
-      "avatar_url": "https://avatars.githubusercontent.com/u/781889?v=4",
-      "html_url": "https://github.com/Takhoffman",
-      "contributions": 106,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 320
     }
   ],
-  "commits_last_year": 17999,
-  "commits_per_week_avg": 1199.9333333333334,
+  "commits_last_year": 18832,
+  "commits_per_week_avg": 1177.0,
   "weekly_commits": [
-    0,
     0,
     0,
     0,
@@ -411,15 +410,15 @@
     1929,
     1619,
     1507,
-    808,
-    664,
-    1536,
-    3068,
-    2306,
-    1652
+    807,
+    659,
+    1505,
+    3064,
+    2224,
+    2211,
+    397
   ],
   "weekly_timestamps": [
-    1741478400,
     1742083200,
     1742688000,
     1743292800,
@@ -470,18 +469,109 @@
     1770508800,
     1771113600,
     1771718400,
-    1772323200
+    1772323200,
+    1772928000
   ],
-  "commits_30d": 9226,
-  "commits_90d": 17462,
+  "commits_30d": 9401,
+  "commits_90d": 17480,
   "commit_trend": "surging",
-  "commit_growth_pct": 86.2,
-  "total_commits": 16914,
+  "commit_growth_pct": 76.3,
+  "total_commits": 17840,
   "first_commit_date": "2025-11-24T10:16:47Z",
-  "commit_span_days": 100,
+  "commit_span_days": 104,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 100,
   "security_advisories": [
+    {
+      "ghsa_id": "GHSA-rchv-x836-w7xp",
+      "cve_id": null,
+      "severity": "high",
+      "summary": "Dashboard leaked gateway auth material via browser URL/query and localStorage",
+      "published_at": "2026-03-08T14:26:54Z",
+      "cvss_score": 7.1,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-rchv-x836-w7xp"
+    },
+    {
+      "ghsa_id": "GHSA-6rmx-gvvg-vh6j",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "hooks count non-POST requests toward auth lockout",
+      "published_at": "2026-03-08T14:26:54Z",
+      "cvss_score": 5.3,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-6rmx-gvvg-vh6j"
+    },
+    {
+      "ghsa_id": "GHSA-6mgf-v5j7-45cr",
+      "cve_id": null,
+      "severity": "high",
+      "summary": "fetch-guard forwards custom authorization headers across cross-origin redirects",
+      "published_at": "2026-03-08T14:26:55Z",
+      "cvss_score": 7.5,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-6mgf-v5j7-45cr"
+    },
+    {
+      "ghsa_id": "GHSA-pjvx-rx66-r3fg",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "Cross-account sender authorization expansion in `/allowlist ... --store` account scoping",
+      "published_at": "2026-03-08T14:26:55Z",
+      "cvss_score": 5.4,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-pjvx-rx66-r3fg"
+    },
+    {
+      "ghsa_id": "GHSA-hfpr-jhpq-x4rm",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "`operator.write` chat.send could reach admin-only config writes",
+      "published_at": "2026-03-08T14:26:56Z",
+      "cvss_score": 4.3,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-hfpr-jhpq-x4rm"
+    },
+    {
+      "ghsa_id": "GHSA-j425-whc4-4jgc",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "`system.run` env override filtering allowed dangerous helper-command pivots",
+      "published_at": "2026-03-08T14:26:56Z",
+      "cvss_score": 6.3,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-j425-whc4-4jgc"
+    },
+    {
+      "ghsa_id": "GHSA-9q36-67vc-rrwg",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "Sandboxed /acp spawn requests could initialize host ACP sessions",
+      "published_at": "2026-03-08T14:26:57Z",
+      "cvss_score": 5.9,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-9q36-67vc-rrwg"
+    },
+    {
+      "ghsa_id": "GHSA-9q2p-vc84-2rwm",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "system.run allow-always persistence included shell-commented payload tails",
+      "published_at": "2026-03-08T14:26:57Z",
+      "cvss_score": 5.0,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-9q2p-vc84-2rwm"
+    },
+    {
+      "ghsa_id": "GHSA-r6qf-8968-wj9q",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "system.run wrapper-depth boundary could skip shell approval gating",
+      "published_at": "2026-03-08T14:26:58Z",
+      "cvss_score": 5.0,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-r6qf-8968-wj9q"
+    },
+    {
+      "ghsa_id": "GHSA-3h2q-j2v4-6w5r",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "system.run allowlist approval parsing missed PowerShell encoded-command wrappers",
+      "published_at": "2026-03-08T14:26:58Z",
+      "cvss_score": 5.0,
+      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-3h2q-j2v4-6w5r"
+    },
     {
       "ghsa_id": "GHSA-wpg9-4g4v-f9rc",
       "cve_id": null,
@@ -1291,100 +1381,10 @@
       "published_at": "2026-02-23T00:52:03Z",
       "cvss_score": null,
       "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-f6h3-846h-2r8w"
-    },
-    {
-      "ghsa_id": "GHSA-wpph-cjgr-7c39",
-      "cve_id": null,
-      "severity": "medium",
-      "summary": "Typed sender-key matching for toolsBySender prevents identity-collision policy bypass",
-      "published_at": "2026-02-23T00:52:04Z",
-      "cvss_score": null,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-wpph-cjgr-7c39"
-    },
-    {
-      "ghsa_id": "GHSA-j4xf-96qf-rx69",
-      "cve_id": null,
-      "severity": "medium",
-      "summary": "Feishu allowFrom authorization bypass via display-name collision",
-      "published_at": "2026-02-23T00:52:04Z",
-      "cvss_score": null,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-j4xf-96qf-rx69"
-    },
-    {
-      "ghsa_id": "GHSA-4rqq-w8v4-7p47",
-      "cve_id": null,
-      "severity": "low",
-      "summary": "Incomplete IPv4 special-use SSRF blocking in web fetch guard",
-      "published_at": "2026-02-23T00:52:05Z",
-      "cvss_score": null,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-4rqq-w8v4-7p47"
-    },
-    {
-      "ghsa_id": "GHSA-5h2c-8v84-qpvr",
-      "cve_id": null,
-      "severity": "medium",
-      "summary": "Shell-env fallback trusted startup env and could execute attacker-influenced login-shell paths",
-      "published_at": "2026-02-23T00:52:06Z",
-      "cvss_score": 5.3,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-5h2c-8v84-qpvr"
-    },
-    {
-      "ghsa_id": "GHSA-8mf7-vv8w-hjr2",
-      "cve_id": null,
-      "severity": "low",
-      "summary": "tools.exec.safeBins generic fallback allowed interpreter-style inline payload execution in allowlist mode",
-      "published_at": "2026-02-23T00:52:06Z",
-      "cvss_score": null,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-8mf7-vv8w-hjr2"
-    },
-    {
-      "ghsa_id": "GHSA-2fgq-7j6h-9rm4",
-      "cve_id": null,
-      "severity": "medium",
-      "summary": "system.run shell-wrapper env injection via SHELLOPTS/PS4 can bypass allowlist intent (RCE)",
-      "published_at": "2026-02-23T00:52:07Z",
-      "cvss_score": 6.6,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-2fgq-7j6h-9rm4"
-    },
-    {
-      "ghsa_id": "GHSA-5847-rm3g-23mw",
-      "cve_id": null,
-      "severity": "medium",
-      "summary": "Hook auth rate limiter bypass via IPv4-mapped IPv6 client key variants",
-      "published_at": "2026-02-23T00:52:08Z",
-      "cvss_score": null,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-5847-rm3g-23mw"
-    },
-    {
-      "ghsa_id": "GHSA-9mph-4f7v-fmvh",
-      "cve_id": null,
-      "severity": "medium",
-      "summary": "Agent avatar symlink traversal in gateway session metadata",
-      "published_at": "2026-02-23T00:52:08Z",
-      "cvss_score": null,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-9mph-4f7v-fmvh"
-    },
-    {
-      "ghsa_id": "GHSA-v6x2-2qvm-6gv8",
-      "cve_id": null,
-      "severity": "low",
-      "summary": "Gateway auth token reuse in owner ID prompt hashing fallback",
-      "published_at": "2026-02-23T00:52:09Z",
-      "cvss_score": null,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-v6x2-2qvm-6gv8"
-    },
-    {
-      "ghsa_id": "GHSA-659f-22xc-98f2",
-      "cve_id": null,
-      "severity": "medium",
-      "summary": "Hook transform path containment missed symlink-resolved escapes",
-      "published_at": "2026-02-23T00:52:09Z",
-      "cvss_score": null,
-      "url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-659f-22xc-98f2"
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-03-05T08:27:17.582722+00:00",
+  "fetched_at": "2026-03-09T08:46:41.486053+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }
