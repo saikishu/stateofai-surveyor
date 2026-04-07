@@ -5,9 +5,12 @@
   "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
   "homepage": "https://geminicli.com",
   "github_url": "https://github.com/google-gemini/gemini-cli",
-  "stars": 100449,
-  "forks": 12932,
-  "watchers": 528,
+  "stars": 100455,
+  "forks": 12933,
+  "watchers": 529,
+  "stars_added_30d": 0,
+  "stars_added_90d": 0,
+  "stars_added_90d_capped": false,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [
@@ -23,13 +26,13 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-04-17T17:04:31Z",
-  "updated_at": "2026-04-07T07:19:18Z",
-  "pushed_at": "2026-04-07T07:08:00Z",
+  "updated_at": "2026-04-07T08:24:27Z",
+  "pushed_at": "2026-04-07T08:19:55Z",
   "age_days": 354,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 17564430,
+    "TypeScript": 17578609,
     "JavaScript": 334886,
     "Shell": 27988,
     "C#": 19481,
@@ -41,22 +44,32 @@
     "JavaScript",
     "Shell"
   ],
-  "total_code_bytes": 17955175,
-  "approx_loc": 427903,
-  "issues_open": 2708,
+  "total_code_bytes": 17969354,
+  "approx_loc": 428241,
+  "issues_open": 2711,
   "issues_closed": 9706,
-  "issues_new_30d": 64,
-  "issues_new_90d": 64,
-  "issues_active_30d": 64,
-  "issues_closed_30d": 56,
+  "issues_new_30d": 676,
+  "issues_new_90d": 676,
+  "issues_new_capped": true,
+  "issues_active_30d": 298,
+  "issues_active_capped": true,
+  "issues_closed_30d": 5,
+  "issues_closed_90d": 5,
+  "issues_closed_capped": false,
   "prs_open": 484,
   "prs_closed": 4068,
-  "prs_merged": 5974,
-  "prs_active_30d": 100,
+  "prs_merged": 5975,
+  "prs_active_30d": 480,
+  "prs_active_capped": false,
+  "prs_opened_30d": 1000,
+  "prs_opened_90d": 1000,
+  "prs_opened_capped": true,
+  "prs_merged_90d": 391,
+  "prs_merged_capped": true,
   "release_count": 444,
   "latest_release_tag": "v0.36.0",
   "latest_release_date": "2026-04-01T20:29:23Z",
-  "avg_days_between_releases": 2.1666666666666665,
+  "avg_days_between_releases": 1.4615384615384615,
   "releases": [
     {
       "tag_name": "v0.36.0-nightly.20260406.15298b28c",
@@ -267,9 +280,499 @@
       "published_at": "2026-03-13T23:57:07Z",
       "prerelease": true,
       "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-preview.3"
+    },
+    {
+      "tag_name": "v0.34.0-preview.2",
+      "name": "Release v0.34.0-preview.2",
+      "published_at": "2026-03-12T21:07:46Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-preview.2"
+    },
+    {
+      "tag_name": "v0.34.0-preview.1",
+      "name": "Release v0.34.0-preview.1",
+      "published_at": "2026-03-12T18:28:42Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-preview.1"
+    },
+    {
+      "tag_name": "v0.33.1",
+      "name": "Release v0.33.1",
+      "published_at": "2026-03-12T22:20:34Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.1"
+    },
+    {
+      "tag_name": "v0.34.0-preview.0",
+      "name": "Release v0.34.0-preview.0",
+      "published_at": "2026-03-11T02:11:23Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-preview.0"
+    },
+    {
+      "tag_name": "v0.33.0",
+      "name": "Release v0.33.0",
+      "published_at": "2026-03-11T02:23:34Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0"
+    },
+    {
+      "tag_name": "v0.33.0-preview.15",
+      "name": "Release v0.33.0-preview.15",
+      "published_at": "2026-03-11T00:50:11Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.15"
+    },
+    {
+      "tag_name": "v0.34.0-nightly.20260310.4653b126f",
+      "name": "Release v0.34.0-nightly.20260310.4653b126f",
+      "published_at": "2026-03-10T02:58:17Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260310.4653b126f"
+    },
+    {
+      "tag_name": "v0.33.0-preview.9",
+      "name": "Release v0.33.0-preview.9",
+      "published_at": "2026-03-10T00:52:14Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.9"
+    },
+    {
+      "tag_name": "v0.33.0-preview.14",
+      "name": "Release v0.33.0-preview.14",
+      "published_at": "2026-03-10T22:24:15Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.14"
+    },
+    {
+      "tag_name": "v0.33.0-preview.13",
+      "name": "Release v0.33.0-preview.13",
+      "published_at": "2026-03-10T20:58:43Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.13"
+    },
+    {
+      "tag_name": "v0.33.0-preview.12",
+      "name": "Release v0.33.0-preview.12",
+      "published_at": "2026-03-10T15:29:45Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.12"
+    },
+    {
+      "tag_name": "v0.33.0-preview.11",
+      "name": "Release v0.33.0-preview.11",
+      "published_at": "2026-03-10T13:27:21Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.11"
+    },
+    {
+      "tag_name": "v0.33.0-preview.10",
+      "name": "Release v0.33.0-preview.10",
+      "published_at": "2026-03-10T02:03:14Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.10"
+    },
+    {
+      "tag_name": "v0.33.0-preview.7",
+      "name": "Release v0.33.0-preview.7",
+      "published_at": "2026-03-09T22:14:46Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.7"
+    },
+    {
+      "tag_name": "v0.33.0-preview.6",
+      "name": "Release v0.33.0-preview.6",
+      "published_at": "2026-03-09T22:13:45Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.6"
+    },
+    {
+      "tag_name": "v0.33.0-preview.8",
+      "name": "Release v0.33.0-preview.8",
+      "published_at": "2026-03-09T23:46:08Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.8"
+    },
+    {
+      "tag_name": "v0.34.0-nightly.20260307.6c3a90645",
+      "name": "Release v0.34.0-nightly.20260307.6c3a90645",
+      "published_at": "2026-03-07T02:00:02Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260307.6c3a90645"
+    },
+    {
+      "tag_name": "v0.33.0-preview.5",
+      "name": "Release v0.33.0-preview.5",
+      "published_at": "2026-03-07T01:40:11Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.5"
+    },
+    {
+      "tag_name": "v0.34.0-nightly.20260306.a8f507352",
+      "name": "Release v0.34.0-nightly.20260306.a8f507352",
+      "published_at": "2026-03-06T03:25:16Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260306.a8f507352"
+    },
+    {
+      "tag_name": "v0.33.0-preview.4",
+      "name": "Release v0.33.0-preview.4",
+      "published_at": "2026-03-06T01:28:36Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.4"
+    },
+    {
+      "tag_name": "v0.34.0-nightly.20260305.348103298",
+      "name": "Release v0.34.0-nightly.20260305.348103298",
+      "published_at": "2026-03-05T01:11:57Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260305.348103298"
+    },
+    {
+      "tag_name": "v0.33.0-preview.3",
+      "name": "Release v0.33.0-preview.3",
+      "published_at": "2026-03-06T00:03:28Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.3"
+    },
+    {
+      "tag_name": "v0.33.0-preview.2",
+      "name": "Release v0.33.0-preview.2",
+      "published_at": "2026-03-05T22:17:51Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.2"
+    },
+    {
+      "tag_name": "v0.34.0-nightly.20260304.28af4e127",
+      "name": "Release v0.34.0-nightly.20260304.28af4e127",
+      "published_at": "2026-03-04T03:48:36Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-nightly.20260304.28af4e127"
+    },
+    {
+      "tag_name": "v0.33.0-preview.1",
+      "name": "Release v0.33.0-preview.1",
+      "published_at": "2026-03-04T04:20:14Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.1"
+    },
+    {
+      "tag_name": "v0.32.1",
+      "name": "Release v0.32.1",
+      "published_at": "2026-03-04T03:46:12Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.32.1"
+    },
+    {
+      "tag_name": "v0.33.0-preview.0",
+      "name": "Release v0.33.0-preview.0",
+      "published_at": "2026-03-03T23:28:35Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.0"
+    },
+    {
+      "tag_name": "v0.32.0",
+      "name": "Release v0.32.0",
+      "published_at": "2026-03-03T23:50:37Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.32.0"
+    },
+    {
+      "tag_name": "v0.33.0-nightly.20260228.1ca5c05d0",
+      "name": "Release v0.33.0-nightly.20260228.1ca5c05d0",
+      "published_at": "2026-02-28T02:00:49Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-nightly.20260228.1ca5c05d0"
+    },
+    {
+      "tag_name": "v0.32.0-preview.0",
+      "name": "Release v0.32.0-preview.0",
+      "published_at": "2026-02-27T23:01:16Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.32.0-preview.0"
+    },
+    {
+      "tag_name": "v0.31.0",
+      "name": "Release v0.31.0",
+      "published_at": "2026-02-27T23:13:40Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0"
+    },
+    {
+      "tag_name": "v0.31.0-preview.3",
+      "name": "Release v0.31.0-preview.3",
+      "published_at": "2026-02-27T22:20:45Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.3"
+    },
+    {
+      "tag_name": "v0.31.0-preview.2",
+      "name": "Release v0.31.0-preview.2",
+      "published_at": "2026-02-27T20:46:41Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.2"
+    },
+    {
+      "tag_name": "v0.31.0-preview.1",
+      "name": "Release v0.31.0-preview.1",
+      "published_at": "2026-02-27T18:35:56Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.1"
+    },
+    {
+      "tag_name": "v0.30.1",
+      "name": "Release v0.30.1",
+      "published_at": "2026-02-27T18:33:34Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.1"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260227.9b7852f11",
+      "name": "Release v0.30.0-nightly.20260227.9b7852f11",
+      "published_at": "2026-02-27T19:13:55Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260227.9b7852f11"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260226.f9f916e1d",
+      "name": "Release v0.30.0-nightly.20260226.f9f916e1d",
+      "published_at": "2026-02-26T01:43:10Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260226.f9f916e1d"
+    },
+    {
+      "tag_name": "v0.31.0-preview.0",
+      "name": "Release v0.31.0-preview.0",
+      "published_at": "2026-02-25T02:47:43Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.0"
+    },
+    {
+      "tag_name": "v0.30.0",
+      "name": "Release v0.30.0",
+      "published_at": "2026-02-25T03:05:56Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0"
+    },
+    {
+      "tag_name": "v0.30.0-preview.6",
+      "name": "Release v0.30.0-preview.6",
+      "published_at": "2026-02-24T03:17:10Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.6"
+    },
+    {
+      "tag_name": "v0.30.0-preview.5",
+      "name": "Release v0.30.0-preview.5",
+      "published_at": "2026-02-24T01:10:42Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.5"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260224.544df749a",
+      "name": "Release v0.30.0-nightly.20260224.544df749a",
+      "published_at": "2026-02-24T01:55:14Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260224.544df749a"
+    },
+    {
+      "tag_name": "v0.29.7",
+      "name": "Release v0.29.7",
+      "published_at": "2026-02-24T03:16:44Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.7"
+    },
+    {
+      "tag_name": "v0.30.0-preview.4",
+      "name": "Release v0.30.0-preview.4",
+      "published_at": "2026-02-23T20:56:48Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.4"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260223.c537fd5ae",
+      "name": "Release v0.30.0-nightly.20260223.c537fd5ae",
+      "published_at": "2026-02-23T02:01:34Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260223.c537fd5ae"
+    },
+    {
+      "tag_name": "v0.29.6",
+      "name": "Release v0.29.6",
+      "published_at": "2026-02-23T20:53:46Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.6"
+    },
+    {
+      "tag_name": "v0.30.0-preview.3",
+      "name": "Release v0.30.0-preview.3",
+      "published_at": "2026-02-19T23:18:59Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.3"
+    },
+    {
+      "tag_name": "v0.30.0-preview.2",
+      "name": "Release v0.30.0-preview.2",
+      "published_at": "2026-02-19T15:42:52Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.2"
+    },
+    {
+      "tag_name": "v0.30.0-preview.1",
+      "name": "Release v0.30.0-preview.1",
+      "published_at": "2026-02-19T01:00:32Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.1"
+    },
+    {
+      "tag_name": "v0.29.5",
+      "name": "Release v0.29.5",
+      "published_at": "2026-02-19T21:04:21Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.5"
+    },
+    {
+      "tag_name": "v0.29.4",
+      "name": "Release v0.29.4",
+      "published_at": "2026-02-19T19:04:43Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.4"
+    },
+    {
+      "tag_name": "v0.29.3",
+      "name": "Release v0.29.3",
+      "published_at": "2026-02-19T15:43:22Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.3"
+    },
+    {
+      "tag_name": "v0.29.2",
+      "name": "Release v0.29.2",
+      "published_at": "2026-02-19T00:57:07Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.2"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260218.ce84b3cb5",
+      "name": "Release v0.30.0-nightly.20260218.ce84b3cb5",
+      "published_at": "2026-02-18T16:46:30Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260218.ce84b3cb5"
+    },
+    {
+      "tag_name": "v0.29.1",
+      "name": "Release v0.29.1",
+      "published_at": "2026-02-18T23:07:22Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.1"
+    },
+    {
+      "tag_name": "v0.30.0-preview.0",
+      "name": "Release v0.30.0-preview.0",
+      "published_at": "2026-02-17T23:50:13Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.0"
+    },
+    {
+      "tag_name": "v0.29.0",
+      "name": "Release v0.29.0",
+      "published_at": "2026-02-18T00:07:42Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0"
+    },
+    {
+      "tag_name": "v0.29.0-preview.5",
+      "name": "Release v0.29.0-preview.5",
+      "published_at": "2026-02-17T19:48:29Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.5"
+    },
+    {
+      "tag_name": "v0.29.0-preview.4",
+      "name": "Release v0.29.0-preview.4",
+      "published_at": "2026-02-17T18:55:06Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.4"
+    },
+    {
+      "tag_name": "v0.29.0-preview.3",
+      "name": "Release v0.29.0-preview.3",
+      "published_at": "2026-02-13T22:17:33Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.3"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260212.207ac6f2d",
+      "name": "Release v0.30.0-nightly.20260212.207ac6f2d",
+      "published_at": "2026-02-12T20:39:17Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260212.207ac6f2d"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260212.099aa9621",
+      "name": "Release v0.30.0-nightly.20260212.099aa9621",
+      "published_at": "2026-02-12T05:50:47Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260212.099aa9621"
+    },
+    {
+      "tag_name": "v0.29.0-preview.2",
+      "name": "Release v0.29.0-preview.2",
+      "published_at": "2026-02-12T16:18:39Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.2"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260211.f5dd1068f",
+      "name": "Release v0.30.0-nightly.20260211.f5dd1068f",
+      "published_at": "2026-02-11T17:11:43Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260211.f5dd1068f"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260211.0d034b8c1",
+      "name": "Release v0.30.0-nightly.20260211.0d034b8c1",
+      "published_at": "2026-02-11T05:09:41Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260211.0d034b8c1"
+    },
+    {
+      "tag_name": "v0.28.2",
+      "name": "Release v0.28.2",
+      "published_at": "2026-02-11T23:00:30Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.2"
+    },
+    {
+      "tag_name": "v0.28.1",
+      "name": "Release v0.28.1",
+      "published_at": "2026-02-11T17:14:33Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.1"
+    },
+    {
+      "tag_name": "v0.30.0-nightly.20260210.8257ec447",
+      "name": "Release v0.30.0-nightly.20260210.8257ec447",
+      "published_at": "2026-02-10T22:39:29Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260210.8257ec447"
+    },
+    {
+      "tag_name": "v0.29.0-preview.0",
+      "name": "Release v0.29.0-preview.0",
+      "published_at": "2026-02-10T21:52:04Z",
+      "prerelease": true,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.0"
+    },
+    {
+      "tag_name": "v0.28.0",
+      "name": "Release v0.28.0",
+      "published_at": "2026-02-10T21:59:54Z",
+      "prerelease": false,
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 445,
   "top_contributors": [
     {
       "login": "scidomino",
@@ -362,128 +865,23 @@
       "commits_count": 0
     }
   ],
-  "commits_last_year": 5717,
-  "commits_per_week_avg": 109.9423076923077,
-  "weekly_commits": [
-    58,
-    115,
-    63,
-    58,
-    84,
-    82,
-    87,
-    113,
-    146,
-    113,
-    152,
-    90,
-    111,
-    97,
-    96,
-    74,
-    135,
-    132,
-    131,
-    129,
-    100,
-    99,
-    181,
-    120,
-    98,
-    94,
-    131,
-    145,
-    116,
-    92,
-    85,
-    89,
-    48,
-    95,
-    68,
-    65,
-    32,
-    27,
-    142,
-    143,
-    161,
-    152,
-    128,
-    163,
-    136,
-    158,
-    159,
-    195,
-    128,
-    153,
-    134,
-    14
-  ],
-  "weekly_timestamps": [
-    1744502400,
-    1745107200,
-    1745712000,
-    1746316800,
-    1746921600,
-    1747526400,
-    1748131200,
-    1748736000,
-    1749340800,
-    1749945600,
-    1750550400,
-    1751155200,
-    1751760000,
-    1752364800,
-    1752969600,
-    1753574400,
-    1754179200,
-    1754784000,
-    1755388800,
-    1755993600,
-    1756598400,
-    1757203200,
-    1757808000,
-    1758412800,
-    1759017600,
-    1759622400,
-    1760227200,
-    1760832000,
-    1761436800,
-    1762041600,
-    1762646400,
-    1763251200,
-    1763856000,
-    1764460800,
-    1765065600,
-    1765670400,
-    1766275200,
-    1766880000,
-    1767484800,
-    1768089600,
-    1768694400,
-    1769299200,
-    1769904000,
-    1770508800,
-    1771113600,
-    1771718400,
-    1772323200,
-    1772928000,
-    1773532800,
-    1774137600,
-    1774742400,
-    1775347200
-  ],
-  "commits_30d": 624,
-  "commits_90d": 1824,
-  "commit_trend": "declining",
-  "commit_growth_pct": -33.8,
-  "total_commits": 5726,
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
+  "total_commits": 5727,
   "first_commit_date": "2025-04-16T04:41:08Z",
   "commit_span_days": 356,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:31:03.822508+00:00",
+  "fetched_at": "2026-04-07T08:28:48.097885+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

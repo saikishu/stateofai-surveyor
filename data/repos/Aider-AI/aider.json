@@ -5,9 +5,12 @@
   "description": "aider is AI pair programming in your terminal",
   "homepage": "https://aider.chat/",
   "github_url": "https://github.com/Aider-AI/aider",
-  "stars": 42930,
+  "stars": 42935,
   "forks": 4155,
   "watchers": 238,
+  "stars_added_30d": 0,
+  "stars_added_90d": 794,
+  "stars_added_90d_capped": false,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [
@@ -29,7 +32,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2023-05-09T18:57:49Z",
-  "updated_at": "2026-04-07T07:26:39Z",
+  "updated_at": "2026-04-07T08:15:10Z",
   "pushed_at": "2026-03-17T01:21:34Z",
   "age_days": 1063,
   "days_since_push": 21,
@@ -49,20 +52,30 @@
   ],
   "total_code_bytes": 1661887,
   "approx_loc": 45319,
-  "issues_open": 1193,
+  "issues_open": 1194,
   "issues_closed": 2846,
-  "issues_new_30d": 28,
-  "issues_new_90d": 45,
-  "issues_active_30d": 50,
-  "issues_closed_30d": 36,
+  "issues_new_30d": 29,
+  "issues_new_90d": 75,
+  "issues_new_capped": false,
+  "issues_active_30d": 66,
+  "issues_active_capped": false,
+  "issues_closed_30d": 8,
+  "issues_closed_90d": 8,
+  "issues_closed_capped": false,
   "prs_open": 278,
   "prs_closed": 354,
   "prs_merged": 286,
   "prs_active_30d": 50,
+  "prs_active_capped": false,
+  "prs_opened_30d": 46,
+  "prs_opened_90d": 93,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 7,
+  "prs_merged_capped": false,
   "release_count": 93,
   "latest_release_tag": "v0.86.0",
   "latest_release_date": "2025-08-09T17:42:19Z",
-  "avg_days_between_releases": 10.551724137931034,
+  "avg_days_between_releases": 8.119565217391305,
   "releases": [
     {
       "tag_name": "v0.86.0",
@@ -273,9 +286,450 @@
       "published_at": "2024-09-21T20:35:49Z",
       "prerelease": false,
       "url": "https://github.com/Aider-AI/aider/releases/tag/v0.57.0"
+    },
+    {
+      "tag_name": "v0.56.0",
+      "name": "Aider v0.56.0",
+      "published_at": "2024-09-09T21:52:33Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.56.0"
+    },
+    {
+      "tag_name": "v0.55.0",
+      "name": "Aider v0.55.0",
+      "published_at": "2024-09-04T16:14:58Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.55.0"
+    },
+    {
+      "tag_name": "v0.54.0",
+      "name": "Aider v0.54.0",
+      "published_at": "2024-08-28T14:14:20Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.54.0"
+    },
+    {
+      "tag_name": "v0.53.0",
+      "name": "Aider v0.53.0",
+      "published_at": "2024-08-27T14:00:04Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.53.0"
+    },
+    {
+      "tag_name": "v0.52.0",
+      "name": "Aider v0.52.0",
+      "published_at": "2024-08-23T15:54:30Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.52.0"
+    },
+    {
+      "tag_name": "v0.51.0",
+      "name": "Aider v0.51.0",
+      "published_at": "2024-08-20T16:10:35Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.51.0"
+    },
+    {
+      "tag_name": "v0.50.0",
+      "name": "Aider v0.50.0",
+      "published_at": "2024-08-13T19:23:50Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.50.0"
+    },
+    {
+      "tag_name": "v0.49.0",
+      "name": "Aider v0.49.0",
+      "published_at": "2024-08-10T20:34:36Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.49.0"
+    },
+    {
+      "tag_name": "v0.48.0",
+      "name": "Aider v0.48.0",
+      "published_at": "2024-08-06T13:46:38Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.48.0"
+    },
+    {
+      "tag_name": "v0.47.0",
+      "name": "Aider v0.47.0",
+      "published_at": "2024-07-31T14:22:09Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.47.0"
+    },
+    {
+      "tag_name": "v0.46.0",
+      "name": "Aider v0.46.0",
+      "published_at": "2024-07-29T13:45:09Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.46.0"
+    },
+    {
+      "tag_name": "v0.45.0",
+      "name": "Aider v0.45.0",
+      "published_at": "2024-07-18T19:13:33Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.45.0"
+    },
+    {
+      "tag_name": "v0.44.0",
+      "name": "Aider v0.44.0",
+      "published_at": "2024-07-16T14:55:08Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.44.0"
+    },
+    {
+      "tag_name": "v0.43.0",
+      "name": "Aider v0.43.0",
+      "published_at": "2024-07-07T13:28:24Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.43.0"
+    },
+    {
+      "tag_name": "v0.42.0",
+      "name": "Aider v0.42.0",
+      "published_at": "2024-07-04T14:24:13Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.42.0"
+    },
+    {
+      "tag_name": "v0.41.0",
+      "name": "Aider v0.41.0",
+      "published_at": "2024-07-01T19:20:27Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.41.0"
+    },
+    {
+      "tag_name": "v0.40.0",
+      "name": "Aider v0.40.0",
+      "published_at": "2024-06-24T20:40:12Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.40.0"
+    },
+    {
+      "tag_name": "v0.39.0",
+      "name": "v0.39.0",
+      "published_at": "2024-06-20T21:49:49Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.39.0"
+    },
+    {
+      "tag_name": "v0.38.0",
+      "name": "v0.38.0",
+      "published_at": "2024-06-17T03:58:42Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.38.0"
+    },
+    {
+      "tag_name": "v0.37.0",
+      "name": "v0.37.0",
+      "published_at": "2024-06-04T17:32:29Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.37.0"
+    },
+    {
+      "tag_name": "v0.36.0",
+      "name": "v0.36.0",
+      "published_at": "2024-05-22T19:19:18Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.36.0"
+    },
+    {
+      "tag_name": "v0.35.0",
+      "name": "v0.35.0",
+      "published_at": "2024-05-13T18:20:38Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.35.0"
+    },
+    {
+      "tag_name": "v0.34.0",
+      "name": "v0.34.0",
+      "published_at": "2024-05-10T16:16:18Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.34.0"
+    },
+    {
+      "tag_name": "v0.33.0",
+      "name": "v0.33.0",
+      "published_at": "2024-05-08T16:39:35Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.33.0"
+    },
+    {
+      "tag_name": "v0.32.0",
+      "name": "v0.32.0",
+      "published_at": "2024-05-07T23:37:44Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.32.0"
+    },
+    {
+      "tag_name": "v0.31.0",
+      "name": "v0.31.0",
+      "published_at": "2024-05-02T17:56:40Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.31.0"
+    },
+    {
+      "tag_name": "v0.30.0",
+      "name": "v0.30.0",
+      "published_at": "2024-04-24T00:42:18Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.30.0"
+    },
+    {
+      "tag_name": "v0.29.0",
+      "name": "v0.29.0",
+      "published_at": "2024-04-21T20:05:52Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.29.0"
+    },
+    {
+      "tag_name": "v0.28.0",
+      "name": "v0.28.0",
+      "published_at": "2024-04-09T23:07:23Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.28.0"
+    },
+    {
+      "tag_name": "v0.27.0",
+      "name": "v0.27.0",
+      "published_at": "2024-03-22T18:06:03Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.27.0"
+    },
+    {
+      "tag_name": "v0.26.0",
+      "name": "v0.26.0",
+      "published_at": "2024-03-08T21:17:07Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.26.0"
+    },
+    {
+      "tag_name": "v0.25.0",
+      "name": "v0.25.0",
+      "published_at": "2024-03-04T20:39:43Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.25.0"
+    },
+    {
+      "tag_name": "v0.24.0",
+      "name": "v0.24.0",
+      "published_at": "2024-02-10T15:36:11Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.24.0"
+    },
+    {
+      "tag_name": "v0.23.0",
+      "name": "v0.23.0",
+      "published_at": "2024-02-03T16:41:32Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.23.0"
+    },
+    {
+      "tag_name": "v0.22.0",
+      "name": "v0.22.0",
+      "published_at": "2024-01-23T01:52:36Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.22.0"
+    },
+    {
+      "tag_name": "v0.21.0",
+      "name": "v0.21.0",
+      "published_at": "2024-01-08T18:45:34Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.21.0"
+    },
+    {
+      "tag_name": "v0.20.0",
+      "name": "v0.20.0",
+      "published_at": "2024-01-04T15:44:25Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.20.0"
+    },
+    {
+      "tag_name": "v0.19.0",
+      "name": "v0.19.0",
+      "published_at": "2023-12-20T02:14:35Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.19.0"
+    },
+    {
+      "tag_name": "v0.18.1",
+      "name": "v0.18.1",
+      "published_at": "2023-12-14T20:23:37Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.18.1"
+    },
+    {
+      "tag_name": "v0.18.0",
+      "name": "v0.18.0",
+      "published_at": "2023-11-17T23:52:18Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.18.0"
+    },
+    {
+      "tag_name": "v0.17.0",
+      "name": "v0.17.0",
+      "published_at": "2023-11-07T04:29:53Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.17.0"
+    },
+    {
+      "tag_name": "v0.16.1",
+      "name": "v0.16.1",
+      "published_at": "2023-10-31T21:15:42Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.16.1"
+    },
+    {
+      "tag_name": "v0.16.0",
+      "name": "v0.16.0",
+      "published_at": "2023-10-29T20:25:27Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.16.0"
+    },
+    {
+      "tag_name": "v0.15.0",
+      "name": "v0.15.0",
+      "published_at": "2023-10-20T16:56:34Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.15.0"
+    },
+    {
+      "tag_name": "v0.14.2",
+      "name": "v0.14.2",
+      "published_at": "2023-10-18T16:40:16Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.14.2"
+    },
+    {
+      "tag_name": "v0.14.1",
+      "name": "v0.14.1",
+      "published_at": "2023-09-30T00:22:33Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.14.1"
+    },
+    {
+      "tag_name": "v0.14.0",
+      "name": "v0.14.0",
+      "published_at": "2023-09-08T17:02:50Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.14.0"
+    },
+    {
+      "tag_name": "v0.13.0",
+      "name": "v0.13.0",
+      "published_at": "2023-08-22T15:05:14Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.13.0"
+    },
+    {
+      "tag_name": "v0.12.0",
+      "name": "v0.12.0",
+      "published_at": "2023-08-11T11:59:30Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.12.0"
+    },
+    {
+      "tag_name": "v0.11.1",
+      "name": "v0.11.1",
+      "published_at": "2023-08-08T15:37:42Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.11.1"
+    },
+    {
+      "tag_name": "v0.11.0",
+      "name": "v0.11.0",
+      "published_at": "2023-08-02T19:25:03Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.11.0"
+    },
+    {
+      "tag_name": "v0.10.1",
+      "name": "v0.10.1",
+      "published_at": "2023-07-24T18:17:55Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.10.1"
+    },
+    {
+      "tag_name": "v0.10.0",
+      "name": "v0.10.0",
+      "published_at": "2023-07-22T12:08:42Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.10.0"
+    },
+    {
+      "tag_name": "v0.9.0",
+      "name": "v0.9.0",
+      "published_at": "2023-07-16T12:48:19Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.9.0"
+    },
+    {
+      "tag_name": "v0.8.3",
+      "name": "v0.8.3",
+      "published_at": "2023-07-12T01:51:59Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.8.3"
+    },
+    {
+      "tag_name": "v0.8.2",
+      "name": "v0.8.2",
+      "published_at": "2023-07-08T13:14:06Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.8.2"
+    },
+    {
+      "tag_name": "v0.8.1",
+      "name": "v0.8.1",
+      "published_at": "2023-07-08T04:24:27Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.8.1"
+    },
+    {
+      "tag_name": "v0.8.0",
+      "name": "v0.8.0",
+      "published_at": "2023-07-06T21:09:57Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.8.0"
+    },
+    {
+      "tag_name": "v0.7.2",
+      "name": "v0.7.2",
+      "published_at": "2023-06-26T17:25:04Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.7.2"
+    },
+    {
+      "tag_name": "v0.7.1",
+      "name": "v0.7.1",
+      "published_at": "2023-06-26T00:56:03Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.7.1"
+    },
+    {
+      "tag_name": "v0.7.0",
+      "name": "v0.7.0",
+      "published_at": "2023-06-25T15:37:56Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.7.0"
+    },
+    {
+      "tag_name": "v0.6.2",
+      "name": "v0.6.2",
+      "published_at": "2023-06-17T13:50:48Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.6.2"
+    },
+    {
+      "tag_name": "v0.5.0",
+      "name": "v0.5.0",
+      "published_at": "2023-06-07T23:29:47Z",
+      "prerelease": false,
+      "url": "https://github.com/Aider-AI/aider/releases/tag/v0.5.0"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 170,
   "top_contributors": [
     {
       "login": "paul-gauthier",
@@ -482,6 +936,7 @@
   "commits_90d": 82,
   "commit_trend": "rising",
   "commit_growth_pct": 21.1,
+  "commit_growth_90d_pct": 148.5,
   "total_commits": 13119,
   "first_commit_date": "2023-04-04T02:05:33Z",
   "commit_span_days": 1099,
@@ -489,7 +944,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:28:08.678086+00:00",
+  "fetched_at": "2026-04-07T08:23:38.816733+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

@@ -53,6 +53,11 @@ class RepoStats(BaseModel):
     forks: int = 0
     watchers: int = 0
 
+    # ── Star growth (time-windowed) ───────────────────────────────────
+    stars_added_30d: int = 0
+    stars_added_90d: int = 0
+    stars_added_90d_capped: bool = False   # True when count hit the fetch limit
+
     # ── License & metadata ───────────────────────────────────────────
     license_name: Optional[str] = None
     license_spdx: Optional[str] = None
@@ -82,14 +87,26 @@ class RepoStats(BaseModel):
     # ── Issue trends (time-windowed) ─────────────────────────────────
     issues_new_30d: int = 0        # issues opened in last 30 days
     issues_new_90d: int = 0        # issues opened in last 90 days
+    issues_new_capped: bool = False
     issues_active_30d: int = 0     # open issues updated in last 30 days
+    issues_active_capped: bool = False
     issues_closed_30d: int = 0     # issues closed in last 30 days
+    issues_closed_90d: int = 0     # issues closed in last 90 days
+    issues_closed_capped: bool = False
 
     # ── Pull Requests ─────────────────────────────────────────────────
     prs_open: int = 0
     prs_closed: int = 0
     prs_merged: int = 0
     prs_active_30d: int = 0        # open PRs updated in last 30 days
+    prs_active_capped: bool = False
+
+    # ── PR open-rate trends (time-windowed) ───────────────────────────
+    prs_opened_30d: int = 0        # PRs opened in last 30 days
+    prs_opened_90d: int = 0        # PRs opened in last 90 days
+    prs_opened_capped: bool = False
+    prs_merged_90d: int = 0        # PRs merged in last 90 days
+    prs_merged_capped: bool = False
 
     # ── Releases ─────────────────────────────────────────────────────
     release_count: int = 0
@@ -113,6 +130,7 @@ class RepoStats(BaseModel):
     commits_90d: int = 0
     commit_trend: str = "unknown"      # surging | rising | flat | declining | stalled
     commit_growth_pct: float = 0.0     # % change: last 4 weeks vs prior 4 weeks
+    commit_growth_90d_pct: float = 0.0 # % change: last 13 weeks vs prior 13 weeks
 
     # ── Commit span ──────────────────────────────────────────────────
     total_commits: int = 0             # lifetime total (from GraphQL history)

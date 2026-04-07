@@ -6,8 +6,11 @@
   "homepage": "http://openinterpreter.com/",
   "github_url": "https://github.com/openinterpreter/open-interpreter",
   "stars": 63021,
-  "forks": 5442,
+  "forks": 5443,
   "watchers": 458,
+  "stars_added_30d": 0,
+  "stars_added_90d": 0,
+  "stars_added_90d_capped": false,
   "license_name": "GNU Affero General Public License v3.0",
   "license_spdx": "AGPL-3.0",
   "topics": [
@@ -44,12 +47,22 @@
   "issues_closed": 804,
   "issues_new_30d": 8,
   "issues_new_90d": 15,
+  "issues_new_capped": false,
   "issues_active_30d": 11,
+  "issues_active_capped": false,
   "issues_closed_30d": 0,
+  "issues_closed_90d": 1,
+  "issues_closed_capped": false,
   "prs_open": 59,
   "prs_closed": 183,
   "prs_merged": 384,
   "prs_active_30d": 7,
+  "prs_active_capped": false,
+  "prs_opened_30d": 7,
+  "prs_opened_90d": 22,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 1,
+  "prs_merged_capped": false,
   "release_count": 48,
   "latest_release_tag": null,
   "latest_release_date": null,
@@ -264,9 +277,135 @@
       "published_at": "2023-11-09T16:52:55Z",
       "prerelease": true,
       "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.11"
+    },
+    {
+      "tag_name": "v0.1.10",
+      "name": "v0.1.10",
+      "published_at": "2023-10-19T01:13:54Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.10"
+    },
+    {
+      "tag_name": "v0.1.9",
+      "name": "v0.1.9",
+      "published_at": "2023-10-12T08:08:28Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.9"
+    },
+    {
+      "tag_name": "v0.1.8",
+      "name": "The Local Update (Part I)",
+      "published_at": "2023-10-11T23:20:32Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.8"
+    },
+    {
+      "tag_name": "v0.1.7",
+      "name": "v0.1.7",
+      "published_at": "2023-09-29T04:30:01Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.7"
+    },
+    {
+      "tag_name": "v0.1.6",
+      "name": "v0.1.6",
+      "published_at": "2023-09-27T02:58:13Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.6"
+    },
+    {
+      "tag_name": "v0.1.5",
+      "name": "The Generator Update",
+      "published_at": "2023-09-24T02:33:26Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.5"
+    },
+    {
+      "tag_name": "v0.1.4",
+      "name": "v0.1.4",
+      "published_at": "2023-09-14T08:40:32Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.4"
+    },
+    {
+      "tag_name": "v0.1.3",
+      "name": "v0.1.3",
+      "published_at": "2023-09-11T00:24:06Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.3"
+    },
+    {
+      "tag_name": "v0.1.2",
+      "name": "v0.1.2",
+      "published_at": "2023-09-10T14:43:06Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.2"
+    },
+    {
+      "tag_name": "v0.1.1",
+      "name": "v0.1.1",
+      "published_at": "2023-09-07T07:26:51Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.1"
+    },
+    {
+      "tag_name": "v0.1.0",
+      "name": "v0.1.0",
+      "published_at": "2023-09-05T14:08:25Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.0"
+    },
+    {
+      "tag_name": "v0.0.297",
+      "name": "v0.0.297",
+      "published_at": "2023-09-03T18:12:21Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.0.297"
+    },
+    {
+      "tag_name": "v0.0.296",
+      "name": "v0.0.296",
+      "published_at": "2023-08-29T01:20:08Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.0.296"
+    },
+    {
+      "tag_name": "v0.0.295",
+      "name": "v0.0.295",
+      "published_at": "2023-08-24T00:43:40Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.0.295"
+    },
+    {
+      "tag_name": "v0.0.294",
+      "name": "v0.0.294",
+      "published_at": "2023-08-20T03:10:07Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.0.294"
+    },
+    {
+      "tag_name": "v0.0.293",
+      "name": "v0.0.293",
+      "published_at": "2023-08-13T09:32:22Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.0.293"
+    },
+    {
+      "tag_name": "v0.0.290",
+      "name": "v0.0.290",
+      "published_at": "2023-08-11T07:18:03Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.0.290"
+    },
+    {
+      "tag_name": "v0.0.289",
+      "name": "v0.0.289",
+      "published_at": "2023-08-11T04:49:20Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.0.289"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 122,
   "top_contributors": [
     {
       "login": "KillianLucas",
@@ -473,6 +612,7 @@
   "commits_90d": 1,
   "commit_trend": "flat",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": -92.3,
   "total_commits": 3103,
   "first_commit_date": "2023-07-14T07:10:44Z",
   "commit_span_days": 998,
@@ -480,7 +620,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:28:22.120934+00:00",
+  "fetched_at": "2026-04-07T08:23:48.246695+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

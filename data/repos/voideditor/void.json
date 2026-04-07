@@ -8,6 +8,9 @@
   "stars": 28511,
   "forks": 2393,
   "watchers": 161,
+  "stars_added_30d": 319,
+  "stars_added_90d": 831,
+  "stars_added_90d_capped": false,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [
@@ -52,12 +55,22 @@
   "issues_closed": 255,
   "issues_new_30d": 1,
   "issues_new_90d": 5,
+  "issues_new_capped": false,
   "issues_active_30d": 1,
+  "issues_active_capped": false,
   "issues_closed_30d": 0,
+  "issues_closed_90d": 1,
+  "issues_closed_capped": false,
   "prs_open": 49,
   "prs_closed": 96,
   "prs_merged": 256,
   "prs_active_30d": 2,
+  "prs_active_capped": false,
+  "prs_opened_30d": 2,
+  "prs_opened_90d": 12,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 0,
+  "prs_merged_capped": false,
   "release_count": 3,
   "latest_release_tag": null,
   "latest_release_date": null,
@@ -92,90 +105,90 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/43356051?v=4",
       "html_url": "https://github.com/andrewpareles",
       "contributions": 1917,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 3332811,
+      "deletions": 683678,
+      "commits_count": 1576
     },
     {
       "login": "mathewpareles",
       "avatar_url": "https://avatars.githubusercontent.com/u/51329589?v=4",
       "html_url": "https://github.com/mathewpareles",
       "contributions": 468,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 33244,
+      "deletions": 20582,
+      "commits_count": 449
     },
     {
       "login": "jcommaret",
       "avatar_url": "https://avatars.githubusercontent.com/u/242889?v=4",
       "html_url": "https://github.com/jcommaret",
       "contributions": 112,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 8247,
+      "deletions": 4994,
+      "commits_count": 63
     },
     {
       "login": "bjoaquinc",
       "avatar_url": "https://avatars.githubusercontent.com/u/75667013?v=4",
       "html_url": "https://github.com/bjoaquinc",
       "contributions": 81,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 11803,
+      "deletions": 4907,
+      "commits_count": 69
     },
     {
       "login": "w1gs",
       "avatar_url": "https://avatars.githubusercontent.com/u/69286736?v=4",
       "html_url": "https://github.com/w1gs",
       "contributions": 26,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 1281,
+      "deletions": 908,
+      "commits_count": 13
     },
     {
       "login": "anetaj",
       "avatar_url": "https://avatars.githubusercontent.com/u/1544710?v=4",
       "html_url": "https://github.com/anetaj",
       "contributions": 25,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 1206,
+      "deletions": 661,
+      "commits_count": 23
     },
     {
       "login": "steaks",
       "avatar_url": "https://avatars.githubusercontent.com/u/1373752?v=4",
       "html_url": "https://github.com/steaks",
       "contributions": 19,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 725,
+      "deletions": 228,
+      "commits_count": 16
     },
     {
       "login": "Piyu-Pika",
       "avatar_url": "https://avatars.githubusercontent.com/u/162677885?v=4",
       "html_url": "https://github.com/Piyu-Pika",
       "contributions": 13,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 16067,
+      "deletions": 6070,
+      "commits_count": 5
     },
     {
       "login": "okxiaoliang4",
       "avatar_url": "https://avatars.githubusercontent.com/u/22525904?v=4",
       "html_url": "https://github.com/okxiaoliang4",
       "contributions": 10,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 2057,
+      "deletions": 1003,
+      "commits_count": 10
     },
     {
       "login": "IDLe-Engineering",
       "avatar_url": "https://avatars.githubusercontent.com/u/35257265?v=4",
       "html_url": "https://github.com/IDLe-Engineering",
       "contributions": 8,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 370,
+      "deletions": 24,
+      "commits_count": 8
     }
   ],
   "commits_last_year": 0,
@@ -186,6 +199,7 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
   "total_commits": 2771,
   "first_commit_date": "2024-09-11T02:37:36Z",
   "commit_span_days": 573,
@@ -193,7 +207,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:29:25.106372+00:00",
+  "fetched_at": "2026-04-07T08:24:48.411069+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

@@ -5,9 +5,12 @@
   "description": "Automate browser based workflows with AI",
   "homepage": "https://www.skyvern.com",
   "github_url": "https://github.com/Skyvern-AI/skyvern",
-  "stars": 21070,
+  "stars": 21071,
   "forks": 1900,
   "watchers": 102,
+  "stars_added_30d": 432,
+  "stars_added_90d": 971,
+  "stars_added_90d_capped": true,
   "license_name": "GNU Affero General Public License v3.0",
   "license_spdx": "AGPL-3.0",
   "topics": [
@@ -32,7 +35,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-02-28T15:45:19Z",
-  "updated_at": "2026-04-07T07:12:40Z",
+  "updated_at": "2026-04-07T08:17:56Z",
   "pushed_at": "2026-04-07T06:15:27Z",
   "age_days": 768,
   "days_since_push": 0,
@@ -56,16 +59,26 @@
   "issues_closed": 281,
   "issues_new_30d": 2,
   "issues_new_90d": 10,
+  "issues_new_capped": false,
   "issues_active_30d": 4,
-  "issues_closed_30d": 5,
+  "issues_active_capped": false,
+  "issues_closed_30d": 9,
+  "issues_closed_90d": 41,
+  "issues_closed_capped": true,
   "prs_open": 91,
   "prs_closed": 552,
   "prs_merged": 4356,
   "prs_active_30d": 23,
+  "prs_active_capped": false,
+  "prs_opened_30d": 378,
+  "prs_opened_90d": 972,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 750,
+  "prs_merged_capped": false,
   "release_count": 133,
   "latest_release_tag": "v1.0.29",
   "latest_release_date": "2026-04-02T14:37:55Z",
-  "avg_days_between_releases": 4.310344827586207,
+  "avg_days_between_releases": 4.818181818181818,
   "releases": [
     {
       "tag_name": "v1.0.29",
@@ -276,6 +289,496 @@
       "published_at": "2025-11-15T17:15:15Z",
       "prerelease": false,
       "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v1.0.0"
+    },
+    {
+      "tag_name": "v0.2.23",
+      "name": "v0.2.23",
+      "published_at": "2025-11-14T16:16:11Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.23"
+    },
+    {
+      "tag_name": "v0.2.22",
+      "name": "v0.2.22",
+      "published_at": "2025-11-11T00:43:35Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.22"
+    },
+    {
+      "tag_name": "v0.2.21",
+      "name": "v0.2.21",
+      "published_at": "2025-11-07T14:59:41Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.21"
+    },
+    {
+      "tag_name": "v0.2.20",
+      "name": "v0.2.20",
+      "published_at": "2025-10-30T16:07:55Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.20"
+    },
+    {
+      "tag_name": "v0.2.19",
+      "name": "v0.2.19",
+      "published_at": "2025-10-28T18:46:16Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.19"
+    },
+    {
+      "tag_name": "v0.2.18",
+      "name": "v0.2.18",
+      "published_at": "2025-10-24T06:17:11Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.18"
+    },
+    {
+      "tag_name": "v0.2.17",
+      "name": "v0.2.17",
+      "published_at": "2025-10-17T18:15:23Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.17"
+    },
+    {
+      "tag_name": "v0.2.16",
+      "name": "v0.2.16",
+      "published_at": "2025-10-09T03:37:31Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.16"
+    },
+    {
+      "tag_name": "v0.2.15",
+      "name": "v0.2.15",
+      "published_at": "2025-09-24T15:58:57Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.15"
+    },
+    {
+      "tag_name": "v0.2.14",
+      "name": "v0.2.14",
+      "published_at": "2025-09-16T06:24:16Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.14"
+    },
+    {
+      "tag_name": "v0.2.13",
+      "name": "v0.2.13",
+      "published_at": "2025-09-10T07:56:34Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.13"
+    },
+    {
+      "tag_name": "v0.2.12",
+      "name": "v0.2.12",
+      "published_at": "2025-09-08T20:27:22Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.12"
+    },
+    {
+      "tag_name": "v0.2.11",
+      "name": "v0.2.11",
+      "published_at": "2025-08-27T18:55:28Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.11"
+    },
+    {
+      "tag_name": "v0.2.10",
+      "name": "v0.2.10",
+      "published_at": "2025-08-21T21:13:28Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.10"
+    },
+    {
+      "tag_name": "v0.2.9",
+      "name": "v0.2.9",
+      "published_at": "2025-08-11T17:18:18Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.9"
+    },
+    {
+      "tag_name": "v0.2.8",
+      "name": "v0.2.8",
+      "published_at": "2025-08-09T00:30:51Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.8"
+    },
+    {
+      "tag_name": "v0.2.7",
+      "name": "v0.2.7",
+      "published_at": "2025-08-05T06:51:47Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.7"
+    },
+    {
+      "tag_name": "v0.2.6",
+      "name": "v0.2.6",
+      "published_at": "2025-07-23T07:24:18Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.6"
+    },
+    {
+      "tag_name": "v0.2.5",
+      "name": "v0.2.5",
+      "published_at": "2025-07-15T09:33:05Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.5"
+    },
+    {
+      "tag_name": "v0.2.4",
+      "name": "v0.2.4",
+      "published_at": "2025-07-09T20:06:59Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.4"
+    },
+    {
+      "tag_name": "v0.2.3",
+      "name": "v0.2.3",
+      "published_at": "2025-06-17T18:02:37Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.3"
+    },
+    {
+      "tag_name": "v0.2.2",
+      "name": "v0.2.2",
+      "published_at": "2025-06-10T07:41:28Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.2"
+    },
+    {
+      "tag_name": "v0.2.1",
+      "name": "v0.2.1",
+      "published_at": "2025-06-10T03:33:54Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.2.1"
+    },
+    {
+      "tag_name": "v0.1.85",
+      "name": "v0.1.85",
+      "published_at": "2025-05-22T04:34:48Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.85"
+    },
+    {
+      "tag_name": "v0.1.84",
+      "name": "v0.1.84",
+      "published_at": "2025-05-19T05:56:43Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.84"
+    },
+    {
+      "tag_name": "v0.1.83",
+      "name": "v0.1.83",
+      "published_at": "2025-05-18T22:46:37Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.83"
+    },
+    {
+      "tag_name": "v0.1.82",
+      "name": "v0.1.82",
+      "published_at": "2025-05-09T07:31:38Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.82"
+    },
+    {
+      "tag_name": "v0.1.81",
+      "name": "v0.1.81",
+      "published_at": "2025-05-06T19:24:44Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.81"
+    },
+    {
+      "tag_name": "v0.1.80",
+      "name": "v0.1.80",
+      "published_at": "2025-05-06T00:45:34Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.80"
+    },
+    {
+      "tag_name": "v0.1.79",
+      "name": "v0.1.79",
+      "published_at": "2025-04-30T10:53:54Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.79"
+    },
+    {
+      "tag_name": "v0.1.77",
+      "name": "v0.1.77",
+      "published_at": "2025-04-18T20:45:04Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.77"
+    },
+    {
+      "tag_name": "v0.1.76",
+      "name": "v0.1.76",
+      "published_at": "2025-04-16T23:54:33Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.76"
+    },
+    {
+      "tag_name": "v0.1.75",
+      "name": "v0.1.75",
+      "published_at": "2025-04-12T19:04:50Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.75"
+    },
+    {
+      "tag_name": "v0.1.73",
+      "name": "v0.1.73",
+      "published_at": "2025-04-07T17:00:27Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.73"
+    },
+    {
+      "tag_name": "v0.1.71",
+      "name": "v0.1.71",
+      "published_at": "2025-04-03T07:44:30Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.71"
+    },
+    {
+      "tag_name": "v0.1.68",
+      "name": "v0.1.68",
+      "published_at": "2025-04-01T16:29:01Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.68"
+    },
+    {
+      "tag_name": "v0.1.67",
+      "name": "v0.1.67",
+      "published_at": "2025-04-01T05:21:39Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.67"
+    },
+    {
+      "tag_name": "v0.1.66",
+      "name": "v0.1.66",
+      "published_at": "2025-04-01T03:05:30Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.66"
+    },
+    {
+      "tag_name": "v0.1.65",
+      "name": "v0.1.65",
+      "published_at": "2025-03-19T18:32:45Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.65"
+    },
+    {
+      "tag_name": "v0.1.64",
+      "name": "v0.1.64",
+      "published_at": "2025-03-17T22:48:58Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.64"
+    },
+    {
+      "tag_name": "v0.1.63",
+      "name": "v0.1.63",
+      "published_at": "2025-03-17T19:54:32Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.63"
+    },
+    {
+      "tag_name": "v0.1.62",
+      "name": "v0.1.62",
+      "published_at": "2025-03-17T16:24:17Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.62"
+    },
+    {
+      "tag_name": "v0.1.61",
+      "name": "v0.1.61",
+      "published_at": "2025-03-10T17:12:03Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.61"
+    },
+    {
+      "tag_name": "v0.1.60",
+      "name": "v0.1.60",
+      "published_at": "2025-03-05T17:33:19Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.60"
+    },
+    {
+      "tag_name": "v0.1.59",
+      "name": "v0.1.59",
+      "published_at": "2025-03-02T05:17:12Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.59"
+    },
+    {
+      "tag_name": "v0.1.58",
+      "name": "v0.1.58",
+      "published_at": "2025-02-24T20:12:56Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.58"
+    },
+    {
+      "tag_name": "v0.1.57",
+      "name": "v0.1.57",
+      "published_at": "2025-02-17T18:15:22Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.57"
+    },
+    {
+      "tag_name": "v0.1.56",
+      "name": "v0.1.56",
+      "published_at": "2025-02-10T18:10:23Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.56"
+    },
+    {
+      "tag_name": "v0.1.55",
+      "name": "v0.1.55",
+      "published_at": "2025-02-06T18:51:33Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.55"
+    },
+    {
+      "tag_name": "v0.1.54",
+      "name": "v0.1.54",
+      "published_at": "2025-02-03T18:07:59Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.54"
+    },
+    {
+      "tag_name": "v0.1.53",
+      "name": "v0.1.53",
+      "published_at": "2025-02-01T02:52:57Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.53"
+    },
+    {
+      "tag_name": "v0.1.52",
+      "name": "v0.1.52",
+      "published_at": "2025-01-30T13:55:48Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.52"
+    },
+    {
+      "tag_name": "v0.1.51",
+      "name": "v0.1.51",
+      "published_at": "2025-01-20T04:25:07Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.51"
+    },
+    {
+      "tag_name": "v0.1.50",
+      "name": "v0.1.50",
+      "published_at": "2025-01-17T15:34:10Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.50"
+    },
+    {
+      "tag_name": "v0.1.49",
+      "name": "v0.1.49",
+      "published_at": "2025-01-13T18:29:00Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.49"
+    },
+    {
+      "tag_name": "v0.1.48",
+      "name": "v0.1.48",
+      "published_at": "2025-01-07T13:23:17Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.48"
+    },
+    {
+      "tag_name": "v0.1.47",
+      "name": "v0.1.47",
+      "published_at": "2025-01-06T16:35:43Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.47"
+    },
+    {
+      "tag_name": "v0.1.46",
+      "name": "v0.1.46",
+      "published_at": "2024-12-17T04:21:51Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.46"
+    },
+    {
+      "tag_name": "v0.1.45",
+      "name": "v0.1.45",
+      "published_at": "2024-12-11T15:44:17Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.45"
+    },
+    {
+      "tag_name": "v0.1.44",
+      "name": "v0.1.44",
+      "published_at": "2024-12-09T18:04:45Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.44"
+    },
+    {
+      "tag_name": "v0.1.43",
+      "name": "v0.1.43",
+      "published_at": "2024-12-05T19:48:30Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.43"
+    },
+    {
+      "tag_name": "v0.1.42",
+      "name": "v0.1.42",
+      "published_at": "2024-12-02T23:02:25Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.42"
+    },
+    {
+      "tag_name": "v0.1.41",
+      "name": "v0.1.41",
+      "published_at": "2024-11-25T19:23:53Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.41"
+    },
+    {
+      "tag_name": "v0.1.40",
+      "name": "v0.1.40",
+      "published_at": "2024-11-18T20:13:13Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.40"
+    },
+    {
+      "tag_name": "v0.1.39",
+      "name": "v0.1.39",
+      "published_at": "2024-11-12T06:27:09Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.39"
+    },
+    {
+      "tag_name": "v0.1.38",
+      "name": "v0.1.38",
+      "published_at": "2024-11-06T22:04:06Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.38"
+    },
+    {
+      "tag_name": "v0.1.37",
+      "name": "v0.1.37",
+      "published_at": "2024-10-29T06:53:38Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.37"
+    },
+    {
+      "tag_name": "v0.1.36",
+      "name": "v0.1.36",
+      "published_at": "2024-10-28T17:02:14Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.36"
+    },
+    {
+      "tag_name": "v0.1.35",
+      "name": "v0.1.35",
+      "published_at": "2024-10-24T03:12:41Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.35"
+    },
+    {
+      "tag_name": "v0.1.34",
+      "name": "v0.1.34",
+      "published_at": "2024-10-21T16:42:56Z",
+      "prerelease": false,
+      "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v0.1.34"
     }
   ],
   "contributor_count": 82,
@@ -379,6 +882,7 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
   "total_commits": 4378,
   "first_commit_date": "2024-02-28T15:45:20Z",
   "commit_span_days": 768,
@@ -386,7 +890,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:29:28.147356+00:00",
+  "fetched_at": "2026-04-07T08:25:55.432047+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

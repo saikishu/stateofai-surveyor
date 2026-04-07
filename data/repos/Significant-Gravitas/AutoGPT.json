@@ -5,9 +5,12 @@
   "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
   "homepage": "https://agpt.co",
   "github_url": "https://github.com/Significant-Gravitas/AutoGPT",
-  "stars": 183200,
-  "forks": 46208,
+  "stars": 183199,
+  "forks": 46210,
   "watchers": 1518,
+  "stars_added_30d": 0,
+  "stars_added_90d": 0,
+  "stars_added_90d_capped": false,
   "license_name": "Other",
   "license_spdx": "NOASSERTION",
   "topics": [
@@ -27,8 +30,8 @@
   "is_fork": false,
   "default_branch": "master",
   "created_at": "2023-03-16T09:21:07Z",
-  "updated_at": "2026-04-07T07:04:34Z",
-  "pushed_at": "2026-04-07T06:32:25Z",
+  "updated_at": "2026-04-07T08:16:27Z",
+  "pushed_at": "2026-04-07T08:25:38Z",
   "age_days": 1117,
   "days_since_push": 0,
   "activity_status": "active",
@@ -50,17 +53,27 @@
   "issues_open": 238,
   "issues_closed": 3536,
   "issues_new_30d": 17,
-  "issues_new_90d": 19,
-  "issues_active_30d": 18,
-  "issues_closed_30d": 7,
-  "prs_open": 145,
+  "issues_new_90d": 57,
+  "issues_new_capped": false,
+  "issues_active_30d": 36,
+  "issues_active_capped": false,
+  "issues_closed_30d": 27,
+  "issues_closed_90d": 64,
+  "issues_closed_capped": false,
+  "prs_open": 146,
   "prs_closed": 3332,
   "prs_merged": 4174,
-  "prs_active_30d": 100,
+  "prs_active_30d": 112,
+  "prs_active_capped": false,
+  "prs_opened_30d": 314,
+  "prs_opened_90d": 840,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 497,
+  "prs_merged_capped": false,
   "release_count": 97,
   "latest_release_tag": "autogpt-platform-beta-v0.6.53",
   "latest_release_date": "2026-03-25T05:17:45Z",
-  "avg_days_between_releases": 6.931034482758621,
+  "avg_days_between_releases": 11.053763440860216,
   "releases": [
     {
       "tag_name": "autogpt-platform-beta-v0.6.53",
@@ -271,9 +284,478 @@
       "published_at": "2025-08-20T13:34:24Z",
       "prerelease": false,
       "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.23"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.22",
+      "name": "autogpt-platform-beta-v0.6.22",
+      "published_at": "2025-08-13T14:11:37Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.22"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.21",
+      "name": "autogpt-platform-beta-v0.6.21",
+      "published_at": "2025-08-08T16:40:14Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.21"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.20",
+      "name": "autogpt-platform-beta-v0.6.20",
+      "published_at": "2025-08-08T12:58:07Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.20"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.19",
+      "name": "autogpt-platform-beta-v0.6.19",
+      "published_at": "2025-08-06T11:41:21Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.19"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.18",
+      "name": "\ud83d\ude80 AutoGPT Platform v0.6.18",
+      "published_at": "2025-07-30T16:21:44Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.18"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.17",
+      "name": "autogpt-platform-beta-v0.6.17",
+      "published_at": "2025-07-25T00:31:37Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.17"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.16",
+      "name": "autogpt-platform-beta-v0.6.16",
+      "published_at": "2025-07-16T04:30:24Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.16"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.15",
+      "name": "autogpt-platform-beta-v0.6.15",
+      "published_at": "2025-07-08T18:32:04Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.15"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.14",
+      "name": "autogpt-platform-beta-v0.6.14",
+      "published_at": "2025-06-25T17:40:55Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.14"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.13",
+      "name": "autogpt-platform-beta-v0.6.13",
+      "published_at": "2025-06-18T16:54:07Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.13"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.12",
+      "name": "autogpt-platform-beta-v0.6.12",
+      "published_at": "2025-06-05T06:28:16Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.12"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.11",
+      "name": "autogpt-platform-beta-v0.6.11",
+      "published_at": "2025-05-28T09:43:05Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.11"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.10",
+      "name": "\ud83d\ude80 AutoGPT Platform v0.6.10",
+      "published_at": "2025-05-15T19:41:11Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.10"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.9",
+      "name": "\ud83d\ude80 AutoGPT Platform v0.6.9",
+      "published_at": "2025-05-09T10:50:11Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.9"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.8",
+      "name": "autogpt-platform-beta-v0.6.8",
+      "published_at": "2025-04-30T18:02:08Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.8"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.7",
+      "name": "autogpt-platform-beta-v0.6.7",
+      "published_at": "2025-04-24T21:23:32Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.7"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.6",
+      "name": "autogpt-platform-beta-v0.6.6",
+      "published_at": "2025-04-22T10:37:15Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.6"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.5",
+      "name": "autogpt-platform-beta-v0.6.5",
+      "published_at": "2025-04-18T20:35:07Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.5"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.4",
+      "name": "autogpt-platform-beta-v0.6.4",
+      "published_at": "2025-04-15T20:44:39Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.4"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.3",
+      "name": "autogpt-platform-beta-v0.6.3",
+      "published_at": "2025-04-10T22:14:33Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.3"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.2",
+      "name": "autogpt-platform-beta-v0.6.2",
+      "published_at": "2025-04-09T22:56:32Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.2"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.1",
+      "name": "autogpt-platform-beta-v0.6.1",
+      "published_at": "2025-03-26T17:05:41Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.1"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.6.0",
+      "name": "autogpt-platform-beta-v0.6.0",
+      "published_at": "2025-03-19T17:08:28Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.6.0"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.5.1",
+      "name": "autogpt-platform-beta-v0.5.1",
+      "published_at": "2025-03-12T11:58:23Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.5.1"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.5.0",
+      "name": "AutoGPT Platform v0.5.0",
+      "published_at": "2025-03-06T23:32:09Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.5.0"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.11",
+      "name": "autogpt-platform-beta-v0.4.11",
+      "published_at": "2025-02-20T15:03:13Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.11"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.10",
+      "name": "autogpt-platform-beta-v0.4.10",
+      "published_at": "2025-02-12T18:06:32Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.10"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.9",
+      "name": "autogpt-platform-beta-v0.4.9",
+      "published_at": "2025-02-06T10:45:42Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.9"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.8",
+      "name": "autogpt-platform-beta-v0.4.8",
+      "published_at": "2025-02-05T21:30:32Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.8"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.7",
+      "name": "Hotfix for duplicate pins",
+      "published_at": "2025-02-04T14:47:26Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.7"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.6",
+      "name": "autogpt-platform-beta-v0.4.6",
+      "published_at": "2025-02-03T13:46:14Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.6"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.5",
+      "name": "autogpt-platform-beta-v0.4.5",
+      "published_at": "2025-01-29T14:44:27Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.5"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.4",
+      "name": "autogpt-platform-beta-v0.4.4",
+      "published_at": "2025-01-29T13:37:46Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.4"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.3",
+      "name": "autogpt-platform-beta-v0.4.3",
+      "published_at": "2025-01-13T19:02:16Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.3"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.2",
+      "name": "autogpt-platform-beta-v0.4.2",
+      "published_at": "2025-01-10T08:52:12Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.2"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.1",
+      "name": "autogpt-platform-beta-v0.4.1",
+      "published_at": "2024-12-31T10:17:54Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.1"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.4.0",
+      "name": "autogpt-platform-beta-v0.4.0",
+      "published_at": "2024-12-20T14:42:21Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.4.0"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.3.4",
+      "name": "autogpt-platform-beta-v0.3.4",
+      "published_at": "2024-12-02T02:17:23Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.3.4"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.3.3",
+      "name": "AutoGPT Platform v0.3.3",
+      "published_at": "2024-11-20T23:33:24Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.3.3"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.3.2",
+      "name": "autogpt-platform-beta-v0.3.2",
+      "published_at": "2024-11-18T21:01:57Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.3.2"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.3.1",
+      "name": "AutoGPT Platform v0.3.1",
+      "published_at": "2024-11-18T11:19:52Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.3.1"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.2.2",
+      "name": "autogpt-platform-beta-v0.2.2",
+      "published_at": "2024-11-11T00:34:29Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.2.2"
+    },
+    {
+      "tag_name": "autogpt-platform-beta-v0.2.1",
+      "name": "autogpt-platform-beta-v0.2.1",
+      "published_at": "2024-11-08T04:49:33Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-platform-beta-v0.2.1"
+    },
+    {
+      "tag_name": "agpt-platform-beta-v0.2.0",
+      "name": "agpt-platform-beta-v0.2.0",
+      "published_at": "2024-10-31T02:50:12Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/agpt-platform-beta-v0.2.0"
+    },
+    {
+      "tag_name": "agpt-platform-beta-v0.1.1",
+      "name": "agpt-platform-beta-v0.1.1",
+      "published_at": "2024-10-24T18:55:07Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/agpt-platform-beta-v0.1.1"
+    },
+    {
+      "tag_name": "agpt-platform-beta-v0.1.0",
+      "name": "agpt-platform-beta-v0.1.0",
+      "published_at": "2024-10-17T11:55:10Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/agpt-platform-beta-v0.1.0"
+    },
+    {
+      "tag_name": "autogpt-v0.5.1",
+      "name": "AutoGPT v0.5.1",
+      "published_at": "2024-04-26T20:15:57Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-v0.5.1"
+    },
+    {
+      "tag_name": "autogpt-v0.5.0",
+      "name": "AutoGPT v0.5.0",
+      "published_at": "2023-12-14T15:17:16Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/autogpt-v0.5.0"
+    },
+    {
+      "tag_name": "agbenchmark-v0.0.10",
+      "name": "agbenchmark-v0.0.10",
+      "published_at": "2023-09-17T00:02:08Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/agbenchmark-v0.0.10"
+    },
+    {
+      "tag_name": "v0.4.7",
+      "name": "AutoGPT v0.4.7",
+      "published_at": "2023-08-11T17:55:06Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.7"
+    },
+    {
+      "tag_name": "v0.4.6",
+      "name": "Auto-GPT v0.4.6",
+      "published_at": "2023-07-28T12:42:29Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.6"
+    },
+    {
+      "tag_name": "v0.4.5",
+      "name": "Auto-GPT v0.4.5",
+      "published_at": "2023-07-19T18:18:47Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.5"
+    },
+    {
+      "tag_name": "v0.4.4",
+      "name": "Auto-GPT v0.4.4",
+      "published_at": "2023-07-11T22:01:35Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.4"
+    },
+    {
+      "tag_name": "v0.4.3",
+      "name": "Auto-GPT v0.4.3",
+      "published_at": "2023-06-28T08:16:40Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.3"
+    },
+    {
+      "tag_name": "v0.4.3-alpha",
+      "name": "Auto-GPT v0.4.3-alpha ",
+      "published_at": "2023-06-27T10:03:51Z",
+      "prerelease": true,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.3-alpha"
+    },
+    {
+      "tag_name": "v0.4.2",
+      "name": "Auto-GPT v0.4.2 (hotfix)",
+      "published_at": "2023-06-19T20:45:18Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.2"
+    },
+    {
+      "tag_name": "v0.4.1",
+      "name": "Auto-GPT v0.4.1",
+      "published_at": "2023-06-19T17:39:49Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.1"
+    },
+    {
+      "tag_name": "v0.4.0",
+      "name": "Auto-GPT v0.4.0",
+      "published_at": "2023-06-05T14:13:49Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.4.0"
+    },
+    {
+      "tag_name": "v0.3.1",
+      "name": "Auto-GPT v0.3.1",
+      "published_at": "2023-05-15T12:12:04Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.3.1"
+    },
+    {
+      "tag_name": "v0.3.0",
+      "name": "Auto-GPT v0.3.0",
+      "published_at": "2023-05-02T16:41:43Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.3.0"
+    },
+    {
+      "tag_name": "v0.2.2",
+      "name": "Auto-GPT v0.2.2",
+      "published_at": "2023-04-20T05:04:45Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.2.2"
+    },
+    {
+      "tag_name": "v0.2.1",
+      "name": "Auto-GPT v0.2.1",
+      "published_at": "2023-04-16T18:24:20Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.2.1"
+    },
+    {
+      "tag_name": "v0.2.0",
+      "name": "Auto-GPT v0.2.0",
+      "published_at": "2023-04-15T05:19:14Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.2.0"
+    },
+    {
+      "tag_name": "v0.1.3",
+      "name": "Auto-GPT v0.1.3",
+      "published_at": "2023-04-14T17:19:48Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.1.3"
+    },
+    {
+      "tag_name": "v0.1.2",
+      "name": "Auto-GPT v0.1.2",
+      "published_at": "2023-04-13T18:02:15Z",
+      "prerelease": false,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.1.2"
+    },
+    {
+      "tag_name": "v0.1.1",
+      "name": "v0.1.1",
+      "published_at": "2023-04-12T23:25:31Z",
+      "prerelease": true,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.1.1"
+    },
+    {
+      "tag_name": "v0.1.0",
+      "name": "v0.1.0",
+      "published_at": "2023-04-12T14:13:24Z",
+      "prerelease": true,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v0.1.0"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 430,
   "top_contributors": [
     {
       "login": "Auto-GPT-Bot",
@@ -366,14 +848,121 @@
       "commits_count": 0
     }
   ],
-  "commits_last_year": 0,
-  "commits_per_week_avg": 0.0,
-  "weekly_commits": [],
-  "weekly_timestamps": [],
-  "commits_30d": 0,
-  "commits_90d": 0,
-  "commit_trend": "unknown",
-  "commit_growth_pct": 0.0,
+  "commits_last_year": 1474,
+  "commits_per_week_avg": 29.48,
+  "weekly_commits": [
+    25,
+    17,
+    17,
+    18,
+    21,
+    22,
+    15,
+    38,
+    21,
+    26,
+    30,
+    39,
+    26,
+    40,
+    35,
+    37,
+    42,
+    26,
+    33,
+    32,
+    37,
+    21,
+    27,
+    15,
+    26,
+    32,
+    55,
+    24,
+    31,
+    31,
+    23,
+    20,
+    24,
+    52,
+    17,
+    20,
+    3,
+    6,
+    28,
+    31,
+    24,
+    43,
+    34,
+    56,
+    33,
+    25,
+    41,
+    47,
+    61,
+    27,
+    0,
+    0
+  ],
+  "weekly_timestamps": [
+    1744502400,
+    1745107200,
+    1745712000,
+    1746316800,
+    1746921600,
+    1747526400,
+    1748131200,
+    1748736000,
+    1749340800,
+    1749945600,
+    1750550400,
+    1751155200,
+    1751760000,
+    1752364800,
+    1752969600,
+    1753574400,
+    1754179200,
+    1754784000,
+    1755388800,
+    1755993600,
+    1756598400,
+    1757203200,
+    1757808000,
+    1758412800,
+    1759017600,
+    1759622400,
+    1760227200,
+    1760832000,
+    1761436800,
+    1762041600,
+    1762646400,
+    1763251200,
+    1763856000,
+    1764460800,
+    1765065600,
+    1765670400,
+    1766275200,
+    1766880000,
+    1767484800,
+    1768089600,
+    1768694400,
+    1769299200,
+    1769904000,
+    1770508800,
+    1771113600,
+    1771718400,
+    1772323200,
+    1772928000,
+    1773532800,
+    1774137600,
+    1774742400,
+    1775347200
+  ],
+  "commits_30d": 135,
+  "commits_90d": 422,
+  "commit_trend": "declining",
+  "commit_growth_pct": -39.7,
+  "commit_growth_90d_pct": 26.3,
   "total_commits": 8150,
   "first_commit_date": "2023-03-16T02:58:21Z",
   "commit_span_days": 1118,
@@ -517,7 +1106,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:31:00.474686+00:00",
+  "fetched_at": "2026-04-07T08:28:05.369128+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

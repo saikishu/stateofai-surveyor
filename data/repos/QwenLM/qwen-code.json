@@ -5,9 +5,12 @@
   "description": "An open-source AI agent that lives in your terminal.",
   "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
   "github_url": "https://github.com/QwenLM/qwen-code",
-  "stars": 21979,
+  "stars": 21989,
   "forks": 2016,
   "watchers": 116,
+  "stars_added_30d": 989,
+  "stars_added_90d": 989,
+  "stars_added_90d_capped": true,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [],
@@ -15,14 +18,14 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-06-26T01:37:46Z",
-  "updated_at": "2026-04-07T07:24:05Z",
-  "pushed_at": "2026-04-07T07:27:28Z",
+  "updated_at": "2026-04-07T08:24:23Z",
+  "pushed_at": "2026-04-07T08:21:34Z",
   "age_days": 285,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 14067085,
-    "JavaScript": 897963,
+    "TypeScript": 14084123,
+    "JavaScript": 899883,
     "Java": 408903,
     "CSS": 84238,
     "Python": 44154,
@@ -33,23 +36,40 @@
     "JavaScript",
     "Java"
   ],
-  "total_code_bytes": 15571987,
-  "approx_loc": 368431,
-  "issues_open": 581,
-  "issues_closed": 962,
-  "issues_new_30d": 63,
-  "issues_new_90d": 63,
-  "issues_active_30d": 63,
-  "issues_closed_30d": 29,
-  "prs_open": 145,
+  "total_code_bytes": 15590945,
+  "approx_loc": 368885,
+  "issues_open": 579,
+  "issues_closed": 967,
+  "issues_new_30d": 189,
+  "issues_new_90d": 279,
+  "issues_new_capped": false,
+  "issues_active_30d": 239,
+  "issues_active_capped": false,
+  "issues_closed_30d": 288,
+  "issues_closed_90d": 356,
+  "issues_closed_capped": false,
+  "prs_open": 142,
   "prs_closed": 307,
-  "prs_merged": 739,
-  "prs_active_30d": 100,
-  "release_count": 371,
+  "prs_merged": 742,
+  "prs_active_30d": 97,
+  "prs_active_capped": false,
+  "prs_opened_30d": 337,
+  "prs_opened_90d": 736,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 456,
+  "prs_merged_capped": false,
+  "release_count": 372,
   "latest_release_tag": "v0.14.0",
   "latest_release_date": "2026-04-03T00:41:40Z",
-  "avg_days_between_releases": 2.0,
+  "avg_days_between_releases": 1.0606060606060606,
   "releases": [
+    {
+      "tag_name": "v0.14.1-preview.0",
+      "name": "Release v0.14.1-preview.0",
+      "published_at": "2026-04-07T08:21:15Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.1-preview.0"
+    },
     {
       "tag_name": "v0.14.0",
       "name": "Release v0.14.0",
@@ -259,15 +279,498 @@
       "published_at": "2026-03-21T00:23:13Z",
       "prerelease": true,
       "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-nightly.20260321.38caa0b21"
+    },
+    {
+      "tag_name": "v0.13.0-preview.1",
+      "name": "Release v0.13.0-preview.1",
+      "published_at": "2026-03-20T09:45:26Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-preview.1"
+    },
+    {
+      "tag_name": "v0.13.0-nightly.20260320.b8dda154d",
+      "name": "Release v0.13.0-nightly.20260320.b8dda154d",
+      "published_at": "2026-03-20T00:25:09Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-nightly.20260320.b8dda154d"
+    },
+    {
+      "tag_name": "v0.13.0-preview.0",
+      "name": "Release v0.13.0-preview.0",
+      "published_at": "2026-03-19T03:22:24Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-preview.0"
+    },
+    {
+      "tag_name": "v0.12.6-nightly.20260318.ac30c98a2",
+      "name": "Release v0.12.6-nightly.20260318.ac30c98a2",
+      "published_at": "2026-03-18T00:29:01Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.6-nightly.20260318.ac30c98a2"
+    },
+    {
+      "tag_name": "v0.12.5-preview.0",
+      "name": "Release v0.12.5-preview.0",
+      "published_at": "2026-03-18T00:32:34Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.5-preview.0"
+    },
+    {
+      "tag_name": "sdk-typescript-v0.1.6-preview.0",
+      "name": "SDK TypeScript Release v0.1.6-preview.0",
+      "published_at": "2026-03-18T11:50:33Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.6-preview.0"
+    },
+    {
+      "tag_name": "v0.12.6",
+      "name": "Release v0.12.6",
+      "published_at": "2026-03-17T11:55:27Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.6"
+    },
+    {
+      "tag_name": "v0.12.5-nightly.20260317.dbfa5b3e8",
+      "name": "Release v0.12.5-nightly.20260317.dbfa5b3e8",
+      "published_at": "2026-03-17T00:27:41Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.5-nightly.20260317.dbfa5b3e8"
+    },
+    {
+      "tag_name": "v0.12.5",
+      "name": "Release v0.12.5",
+      "published_at": "2026-03-16T15:38:58Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.5"
+    },
+    {
+      "tag_name": "v0.12.4",
+      "name": "Release v0.12.4",
+      "published_at": "2026-03-16T10:04:59Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.4"
+    },
+    {
+      "tag_name": "v0.12.4-preview.0",
+      "name": "Release v0.12.4-preview.0",
+      "published_at": "2026-03-16T02:21:04Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.4-preview.0"
+    },
+    {
+      "tag_name": "v0.12.4-nightly.20260316.110fcd7b7",
+      "name": "Release v0.12.4-nightly.20260316.110fcd7b7",
+      "published_at": "2026-03-16T00:28:02Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.4-nightly.20260316.110fcd7b7"
+    },
+    {
+      "tag_name": "v0.12.3-nightly.20260315.b2c9e641",
+      "name": "Release v0.12.3-nightly.20260315.b2c9e641",
+      "published_at": "2026-03-15T00:29:18Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.3-nightly.20260315.b2c9e641"
+    },
+    {
+      "tag_name": "v0.12.3-nightly.20260314.f1ee4638",
+      "name": "Release v0.12.3-nightly.20260314.f1ee4638",
+      "published_at": "2026-03-14T00:29:35Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.3-nightly.20260314.f1ee4638"
+    },
+    {
+      "tag_name": "v0.12.3",
+      "name": "Release v0.12.3",
+      "published_at": "2026-03-13T12:49:43Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.3"
+    },
+    {
+      "tag_name": "v0.12.2-preview.1",
+      "name": "Release v0.12.2-preview.1",
+      "published_at": "2026-03-13T10:36:30Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.2-preview.1"
+    },
+    {
+      "tag_name": "v0.12.2-nightly.20260313.46d57afb",
+      "name": "Release v0.12.2-nightly.20260313.46d57afb",
+      "published_at": "2026-03-13T00:27:31Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.2-nightly.20260313.46d57afb"
+    },
+    {
+      "tag_name": "v0.12.2",
+      "name": "Release v0.12.2",
+      "published_at": "2026-03-12T14:37:48Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.2"
+    },
+    {
+      "tag_name": "v0.12.2-preview.0",
+      "name": "Release v0.12.2-preview.0",
+      "published_at": "2026-03-12T11:24:12Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.2-preview.0"
+    },
+    {
+      "tag_name": "v0.12.1-nightly.20260312.2a836639",
+      "name": "Release v0.12.1-nightly.20260312.2a836639",
+      "published_at": "2026-03-12T00:27:29Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.1-nightly.20260312.2a836639"
+    },
+    {
+      "tag_name": "v0.12.1",
+      "name": "Release v0.12.1",
+      "published_at": "2026-03-11T13:42:04Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.1"
+    },
+    {
+      "tag_name": "v0.12.1-preview.0",
+      "name": "Release v0.12.1-preview.0",
+      "published_at": "2026-03-11T12:32:34Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.1-preview.0"
+    },
+    {
+      "tag_name": "v0.12.1-nightly.20260311.bf99f956",
+      "name": "Release v0.12.1-nightly.20260311.bf99f956",
+      "published_at": "2026-03-11T00:28:31Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.1-nightly.20260311.bf99f956"
+    },
+    {
+      "tag_name": "v0.12.0-preview.2",
+      "name": "Release v0.12.0-preview.2",
+      "published_at": "2026-03-11T00:30:18Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0-preview.2"
+    },
+    {
+      "tag_name": "v0.12.0",
+      "name": "Release v0.12.0",
+      "published_at": "2026-03-09T13:06:08Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0"
+    },
+    {
+      "tag_name": "v0.12.0-nightly.20260309.d63798cc",
+      "name": "Release v0.12.0-nightly.20260309.d63798cc",
+      "published_at": "2026-03-09T00:25:44Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0-nightly.20260309.d63798cc"
+    },
+    {
+      "tag_name": "v0.12.0-preview.1",
+      "name": "Release v0.12.0-preview.1",
+      "published_at": "2026-03-08T15:46:35Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0-preview.1"
+    },
+    {
+      "tag_name": "v0.12.0-nightly.20260308.0b7ad066",
+      "name": "Release v0.12.0-nightly.20260308.0b7ad066",
+      "published_at": "2026-03-08T00:23:57Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0-nightly.20260308.0b7ad066"
+    },
+    {
+      "tag_name": "v0.12.0-nightly.20260307.0b7ad066",
+      "name": "Release v0.12.0-nightly.20260307.0b7ad066",
+      "published_at": "2026-03-07T00:27:29Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0-nightly.20260307.0b7ad066"
+    },
+    {
+      "tag_name": "v0.12.0-preview.0",
+      "name": "Release v0.12.0-preview.0",
+      "published_at": "2026-03-06T04:29:19Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0-preview.0"
+    },
+    {
+      "tag_name": "v0.12.0-nightly.20260306.ff264038",
+      "name": "Release v0.12.0-nightly.20260306.ff264038",
+      "published_at": "2026-03-06T00:26:33Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0-nightly.20260306.ff264038"
+    },
+    {
+      "tag_name": "v0.12.0-nightly.20260305.991ae9fe",
+      "name": "Release v0.12.0-nightly.20260305.991ae9fe",
+      "published_at": "2026-03-05T00:21:12Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.12.0-nightly.20260305.991ae9fe"
+    },
+    {
+      "tag_name": "v0.11.1-preview.2",
+      "name": "Release v0.11.1-preview.2",
+      "published_at": "2026-03-04T00:25:08Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.1-preview.2"
+    },
+    {
+      "tag_name": "v0.11.1-nightly.20260304.9d8921db",
+      "name": "Release v0.11.1-nightly.20260304.9d8921db",
+      "published_at": "2026-03-04T00:21:11Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.1-nightly.20260304.9d8921db"
+    },
+    {
+      "tag_name": "v0.11.1",
+      "name": "Release v0.11.1",
+      "published_at": "2026-03-03T13:08:44Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.1"
+    },
+    {
+      "tag_name": "v0.11.1-preview.1",
+      "name": "Release v0.11.1-preview.1",
+      "published_at": "2026-03-03T01:41:43Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.1-preview.1"
+    },
+    {
+      "tag_name": "v0.11.1-nightly.20260303.407a66c9",
+      "name": "Release v0.11.1-nightly.20260303.407a66c9",
+      "published_at": "2026-03-03T00:22:30Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.1-nightly.20260303.407a66c9"
+    },
+    {
+      "tag_name": "v0.11.1-preview.0",
+      "name": "Release v0.11.1-preview.0",
+      "published_at": "2026-03-02T14:28:36Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.1-preview.0"
+    },
+    {
+      "tag_name": "v0.11.1-nightly.20260302.1f46ed28",
+      "name": "Release v0.11.1-nightly.20260302.1f46ed28",
+      "published_at": "2026-03-02T00:21:58Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.1-nightly.20260302.1f46ed28"
+    },
+    {
+      "tag_name": "v0.11.0-nightly.20260301.14df5a57",
+      "name": "Release v0.11.0-nightly.20260301.14df5a57",
+      "published_at": "2026-03-01T00:21:33Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.0-nightly.20260301.14df5a57"
+    },
+    {
+      "tag_name": "v0.11.0",
+      "name": "Release v0.11.0",
+      "published_at": "2026-02-28T10:43:42Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.0"
+    },
+    {
+      "tag_name": "v0.11.0-preview.1",
+      "name": "Release v0.11.0-preview.1",
+      "published_at": "2026-02-28T00:58:44Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.0-preview.1"
+    },
+    {
+      "tag_name": "v0.11.0-nightly.20260228.e93b2873",
+      "name": "Release v0.11.0-nightly.20260228.e93b2873",
+      "published_at": "2026-02-28T00:20:11Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.0-nightly.20260228.e93b2873"
+    },
+    {
+      "tag_name": "v0.11.0-nightly.20260227.f6a90dd2",
+      "name": "Release v0.11.0-nightly.20260227.f6a90dd2",
+      "published_at": "2026-02-27T00:20:41Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.0-nightly.20260227.f6a90dd2"
+    },
+    {
+      "tag_name": "v0.11.0-preview.0",
+      "name": "Release v0.11.0-preview.0",
+      "published_at": "2026-02-26T15:31:06Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.11.0-preview.0"
+    },
+    {
+      "tag_name": "v0.10.5-preview.0",
+      "name": "Release v0.10.5-preview.0",
+      "published_at": "2026-02-25T00:23:03Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.5-preview.0"
+    },
+    {
+      "tag_name": "v0.10.5-nightly.20260225.229c4431",
+      "name": "Release v0.10.5-nightly.20260225.229c4431",
+      "published_at": "2026-02-25T00:19:18Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.5-nightly.20260225.229c4431"
+    },
+    {
+      "tag_name": "v0.10.6",
+      "name": "Release v0.10.6",
+      "published_at": "2026-02-24T16:21:17Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.6"
+    },
+    {
+      "tag_name": "v0.10.5-nightly.20260224.a13d88ac",
+      "name": "Release v0.10.5-nightly.20260224.a13d88ac",
+      "published_at": "2026-02-24T00:19:28Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.5-nightly.20260224.a13d88ac"
+    },
+    {
+      "tag_name": "v0.10.5-nightly.20260222.fc04ba1e",
+      "name": "Release v0.10.5-nightly.20260222.fc04ba1e",
+      "published_at": "2026-02-22T00:18:46Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.5-nightly.20260222.fc04ba1e"
+    },
+    {
+      "tag_name": "sdk-typescript-v0.1.5",
+      "name": "SDK TypeScript Release v0.1.5",
+      "published_at": "2026-02-22T04:44:47Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.5"
+    },
+    {
+      "tag_name": "v0.10.5-nightly.20260221.fc04ba1e",
+      "name": "Release v0.10.5-nightly.20260221.fc04ba1e",
+      "published_at": "2026-02-21T00:19:07Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.5-nightly.20260221.fc04ba1e"
+    },
+    {
+      "tag_name": "v0.10.4-nightly.20260220.c6a723ef",
+      "name": "Release v0.10.4-nightly.20260220.c6a723ef",
+      "published_at": "2026-02-20T00:19:57Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.4-nightly.20260220.c6a723ef"
+    },
+    {
+      "tag_name": "v0.10.4-nightly.20260219.c6a723ef",
+      "name": "Release v0.10.4-nightly.20260219.c6a723ef",
+      "published_at": "2026-02-19T00:20:04Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.4-nightly.20260219.c6a723ef"
+    },
+    {
+      "tag_name": "v0.10.5",
+      "name": "Release v0.10.5",
+      "published_at": "2026-02-18T13:05:57Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.5"
+    },
+    {
+      "tag_name": "v0.10.4-preview.0",
+      "name": "Release v0.10.4-preview.0",
+      "published_at": "2026-02-18T02:43:05Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.4-preview.0"
+    },
+    {
+      "tag_name": "v0.10.4",
+      "name": "Release v0.10.4",
+      "published_at": "2026-02-18T04:45:38Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.4"
+    },
+    {
+      "tag_name": "v0.10.2-preview.0",
+      "name": "Release v0.10.2-preview.0",
+      "published_at": "2026-02-18T00:22:53Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.2-preview.0"
+    },
+    {
+      "tag_name": "v0.10.2-nightly.20260218.a0a0a70b",
+      "name": "Release v0.10.2-nightly.20260218.a0a0a70b",
+      "published_at": "2026-02-18T00:19:35Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.2-nightly.20260218.a0a0a70b"
+    },
+    {
+      "tag_name": "sdk-typescript-v0.1.5-preview.2",
+      "name": "SDK TypeScript Release v0.1.5-preview.2",
+      "published_at": "2026-02-18T02:03:29Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.5-preview.2"
+    },
+    {
+      "tag_name": "v0.10.2-nightly.20260217.a0a0a70b",
+      "name": "Release v0.10.2-nightly.20260217.a0a0a70b",
+      "published_at": "2026-02-17T00:18:55Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.2-nightly.20260217.a0a0a70b"
+    },
+    {
+      "tag_name": "v0.10.3",
+      "name": "Release v0.10.3",
+      "published_at": "2026-02-16T09:47:00Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.3"
+    },
+    {
+      "tag_name": "v0.10.2-nightly.20260216.f467c249",
+      "name": "Release v0.10.2-nightly.20260216.f467c249",
+      "published_at": "2026-02-16T00:17:45Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.2-nightly.20260216.f467c249"
+    },
+    {
+      "tag_name": "v0.10.1-nightly.20260215.03c38899",
+      "name": "Release v0.10.1-nightly.20260215.03c38899",
+      "published_at": "2026-02-15T00:15:14Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.1-nightly.20260215.03c38899"
+    },
+    {
+      "tag_name": "v0.10.2",
+      "name": "Release v0.10.2",
+      "published_at": "2026-02-14T11:14:49Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.2"
+    },
+    {
+      "tag_name": "v0.10.1-nightly.20260214.03c38899",
+      "name": "Release v0.10.1-nightly.20260214.03c38899",
+      "published_at": "2026-02-14T00:19:21Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.1-nightly.20260214.03c38899"
+    },
+    {
+      "tag_name": "v0.10.1-nightly.20260213.51fdf3c1",
+      "name": "Release v0.10.1-nightly.20260213.51fdf3c1",
+      "published_at": "2026-02-13T00:19:36Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.1-nightly.20260213.51fdf3c1"
+    },
+    {
+      "tag_name": "v0.10.1-nightly.20260212.fb9f3fb4",
+      "name": "Release v0.10.1-nightly.20260212.fb9f3fb4",
+      "published_at": "2026-02-12T00:18:02Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.1-nightly.20260212.fb9f3fb4"
+    },
+    {
+      "tag_name": "v0.10.1",
+      "name": "Release v0.10.1",
+      "published_at": "2026-02-11T09:41:17Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.10.1"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 357,
   "top_contributors": [
     {
       "login": "tanzhenxin",
       "avatar_url": "https://avatars.githubusercontent.com/u/480123?v=4",
       "html_url": "https://github.com/tanzhenxin",
-      "contributions": 913,
+      "contributions": 921,
       "additions": 0,
       "deletions": 0,
       "commits_count": 0
@@ -362,14 +865,15 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
-  "total_commits": 5187,
+  "commit_growth_90d_pct": 0.0,
+  "total_commits": 5199,
   "first_commit_date": "2025-04-16T04:41:08Z",
   "commit_span_days": 356,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:29:46.948510+00:00",
+  "fetched_at": "2026-04-07T08:26:15.981574+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

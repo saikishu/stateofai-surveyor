@@ -75,6 +75,15 @@ def _compute_commit_trends(s: RepoStats) -> None:
 
     s.commit_growth_pct = round(pct, 1)
 
+    # 90-day growth: last 13 weeks vs prior 13 weeks
+    last13 = sum(w[-13:]) / 13 if len(w) >= 13 else 0
+    prev13 = sum(w[-26:-13]) / 13 if len(w) >= 26 else 0
+    if prev13 == 0:
+        pct90 = 100.0 if last13 > 0 else 0.0
+    else:
+        pct90 = (last13 - prev13) / prev13 * 100
+    s.commit_growth_90d_pct = round(pct90, 1)
+
     if pct >= 50:
         s.commit_trend = "surging"
     elif pct >= 10:
@@ -235,6 +244,8 @@ class GitHubClient:
             await self._apply_first_commit(stats, owner, name)
             await self._apply_security_advisories(stats, owner, name)
             await self._apply_issue_trends(stats, owner, name)
+            await self._apply_pr_trends(stats, owner, name)
+            await self._apply_star_growth(stats, owner, name)
             stats.fetch_status = "complete"
         except httpx.HTTPStatusError as exc:
             msg = f"HTTP {exc.response.status_code}: {exc.request.url}"
@@ -318,10 +329,11 @@ class GitHubClient:
     # ── Commit activity (52 weeks) ────────────────────────────────────────────
 
     async def _apply_commit_activity(self, s: RepoStats, owner: str, name: str) -> None:
-        for attempt in range(6):
+        for attempt in range(10):
             raw = await self._rest(f"/repos/{owner}/{name}/stats/commit_activity")
-            if raw is None and attempt < 5:
-                await asyncio.sleep(5)
+            if raw is None and attempt < 9:
+                # GitHub stats API returns 202 while computing; back off progressively
+                await asyncio.sleep(5 + attempt * 3)
                 continue
             if isinstance(raw, list) and raw:
                 s.weekly_commits    = [w["total"] for w in raw]
@@ -334,13 +346,28 @@ class GitHubClient:
     # ── Contributors (basic list) ─────────────────────────────────────────────
 
     async def _apply_contributors(self, s: RepoStats, owner: str, name: str) -> None:
-        raw = await self._rest(
+        resp = await self._rest(
             f"/repos/{owner}/{name}/contributors",
             params={"per_page": 100, "anon": "false"},
+            return_response=True,
         )
+        if resp is None or not hasattr(resp, "json"):
+            return
+        raw = resp.json()
         if not isinstance(raw, list):
             return
-        s.contributor_count = len(raw)
+        # Use Link header to get true contributor count without fetching all pages
+        last_page = _parse_last_page(resp.headers.get("Link", ""))
+        if last_page and last_page > 1:
+            # Fetch last page to get exact remainder count
+            last_raw = await self._rest(
+                f"/repos/{owner}/{name}/contributors",
+                params={"per_page": 100, "anon": "false", "page": last_page},
+            )
+            remainder = len(last_raw) if isinstance(last_raw, list) else 0
+            s.contributor_count = (last_page - 1) * 100 + remainder
+        else:
+            s.contributor_count = len(raw)
         s.top_contributors = [
             ContributorInfo(
                 login=c.get("login", "anon"),
@@ -437,7 +464,7 @@ class GitHubClient:
 
     async def _apply_releases(self, s: RepoStats, owner: str, name: str) -> None:
         raw = await self._rest(
-            f"/repos/{owner}/{name}/releases", params={"per_page": 30}
+            f"/repos/{owner}/{name}/releases", params={"per_page": 100}
         )
         if not isinstance(raw, list):
             return
@@ -490,60 +517,214 @@ class GitHubClient:
         since_30d = (now - timedelta(days=30)).isoformat()
         since_90d = (now - timedelta(days=90)).isoformat()
 
-        # 1. New issues opened in last 30d / 90d
-        #    Fetch 100 most-recently-created open issues, filter client-side.
-        recent_open = await self._rest(
-            f"/repos/{owner}/{name}/issues",
-            params={"state": "open", "sort": "created", "direction": "desc",
-                    "per_page": 100},
-        )
-        if isinstance(recent_open, list):
-            cutoff_30 = now - timedelta(days=30)
-            cutoff_90 = now - timedelta(days=90)
-            for item in recent_open:
-                if item.get("pull_request"):   # skip PRs
+        cutoff_30 = now - timedelta(days=30)
+        cutoff_90 = now - timedelta(days=90)
+
+        # 1. New issues opened in last 30d / 90d — paginate until outside window
+        _hit_cutoff = False
+        for pg in range(1, 11):   # cap at 10 pages (1000 issues)
+            page = await self._rest(
+                f"/repos/{owner}/{name}/issues",
+                params={"state": "open", "sort": "created", "direction": "desc",
+                        "per_page": 100, "page": pg},
+            )
+            if not isinstance(page, list) or not page:
+                _hit_cutoff = True
+                break
+            done = False
+            for item in page:
+                if item.get("pull_request"):
                     continue
                 created = _parse_dt(item.get("created_at"))
-                if created and created >= cutoff_90:
-                    s.issues_new_90d += 1
-                    if created >= cutoff_30:
-                        s.issues_new_30d += 1
+                if created is None:
+                    continue
+                if created < cutoff_90:
+                    done = True
+                    break
+                s.issues_new_90d += 1
+                if created >= cutoff_30:
+                    s.issues_new_30d += 1
+            if done or len(page) < 100:
+                _hit_cutoff = True
+                break
+        s.issues_new_capped = not _hit_cutoff and s.issues_new_90d > 0
 
-        # 2. Active open issues (updated in last 30d)
-        active_open = await self._rest(
-            f"/repos/{owner}/{name}/issues",
-            params={"state": "open", "since": since_30d, "per_page": 100},
-        )
-        if isinstance(active_open, list):
-            s.issues_active_30d = sum(
-                1 for i in active_open if not i.get("pull_request")
+        # 2. Active open issues (updated in last 30d) — paginate
+        _hit_cutoff = False
+        for pg in range(1, 6):   # cap at 5 pages (500 issues)
+            page = await self._rest(
+                f"/repos/{owner}/{name}/issues",
+                params={"state": "open", "since": since_30d,
+                        "per_page": 100, "page": pg},
             )
+            if not isinstance(page, list) or not page:
+                _hit_cutoff = True
+                break
+            s.issues_active_30d += sum(1 for i in page if not i.get("pull_request"))
+            if len(page) < 100:
+                _hit_cutoff = True
+                break
+        s.issues_active_capped = not _hit_cutoff and s.issues_active_30d > 0
 
-        # 3. Issues closed in last 30d
-        closed_recent = await self._rest(
-            f"/repos/{owner}/{name}/issues",
-            params={"state": "closed", "since": since_30d,
-                    "sort": "updated", "direction": "desc", "per_page": 100},
-        )
-        if isinstance(closed_recent, list):
-            cutoff_30 = now - timedelta(days=30)
-            for item in closed_recent:
+        # 3. Issues closed in last 90d (also derives 30d count) — paginate
+        _hit_cutoff = False
+        for pg in range(1, 11):   # cap at 10 pages (1000 issues)
+            page = await self._rest(
+                f"/repos/{owner}/{name}/issues",
+                params={"state": "closed", "since": since_90d,
+                        "sort": "updated", "direction": "desc",
+                        "per_page": 100, "page": pg},
+            )
+            if not isinstance(page, list) or not page:
+                _hit_cutoff = True
+                break
+            done = False
+            for item in page:
                 if item.get("pull_request"):
                     continue
                 closed_at = _parse_dt(item.get("closed_at"))
-                if closed_at and closed_at >= cutoff_30:
+                if closed_at is None:
+                    continue
+                if closed_at < cutoff_90:
+                    done = True
+                    break
+                s.issues_closed_90d += 1
+                if closed_at >= cutoff_30:
                     s.issues_closed_30d += 1
+            if done or len(page) < 100:
+                _hit_cutoff = True
+                break
+        s.issues_closed_capped = not _hit_cutoff and s.issues_closed_90d > 0
 
-        # 4. Active open PRs (updated in last 30d)
-        active_prs = await self._rest(
-            f"/repos/{owner}/{name}/pulls",
-            params={"state": "open", "sort": "updated", "direction": "desc",
-                    "per_page": 100},
-        )
-        if isinstance(active_prs, list):
-            cutoff_30 = now - timedelta(days=30)
-            s.prs_active_30d = sum(
-                1 for pr in active_prs
-                if _parse_dt(pr.get("updated_at")) and
-                   _parse_dt(pr.get("updated_at")) >= cutoff_30
+        # 4. Active open PRs (updated in last 30d) — paginate
+        _hit_cutoff = False
+        for pg in range(1, 6):   # cap at 5 pages (500 PRs)
+            page = await self._rest(
+                f"/repos/{owner}/{name}/pulls",
+                params={"state": "open", "sort": "updated", "direction": "desc",
+                        "per_page": 100, "page": pg},
             )
+            if not isinstance(page, list) or not page:
+                _hit_cutoff = True
+                break
+            s.prs_active_30d += sum(
+                1 for pr in page
+                if (_parse_dt(pr.get("updated_at")) or now - timedelta(days=999)) >= cutoff_30
+            )
+            if len(page) < 100:
+                _hit_cutoff = True
+                break
+        s.prs_active_capped = not _hit_cutoff and s.prs_active_30d > 0
+
+    # ── PR open-rate trends ───────────────────────────────────────────────────
+
+    async def _apply_pr_trends(self, s: RepoStats, owner: str, name: str) -> None:
+        """Count PRs opened in the last 30d / 90d and PRs merged in the last 90d."""
+        now = datetime.now(timezone.utc)
+        cutoff_30 = now - timedelta(days=30)
+        cutoff_90 = now - timedelta(days=90)
+
+        # Opened counts — paginate sorted by created desc, break when outside window
+        _hit_cutoff = False
+        for pg in range(1, 11):   # cap at 10 pages (1000 PRs)
+            page = await self._rest(
+                f"/repos/{owner}/{name}/pulls",
+                params={"state": "all", "sort": "created", "direction": "desc",
+                        "per_page": 100, "page": pg},
+            )
+            if not isinstance(page, list) or not page:
+                _hit_cutoff = True
+                break
+            done = False
+            for pr in page:
+                created = _parse_dt(pr.get("created_at"))
+                if created is None:
+                    continue
+                if created < cutoff_90:
+                    done = True
+                    break
+                s.prs_opened_90d += 1
+                if created >= cutoff_30:
+                    s.prs_opened_30d += 1
+            if done or len(page) < 100:
+                _hit_cutoff = True
+                break
+        s.prs_opened_capped = not _hit_cutoff and s.prs_opened_90d > 0
+
+        # Merged counts — paginate closed PRs sorted by update, break when outside window
+        _hit_cutoff = False
+        for pg in range(1, 11):   # cap at 10 pages (1000 PRs)
+            page = await self._rest(
+                f"/repos/{owner}/{name}/pulls",
+                params={"state": "closed", "sort": "updated", "direction": "desc",
+                        "per_page": 100, "page": pg},
+            )
+            if not isinstance(page, list) or not page:
+                _hit_cutoff = True
+                break
+            done = False
+            for pr in page:
+                updated = _parse_dt(pr.get("updated_at"))
+                if updated and updated < cutoff_90:
+                    done = True
+                    break
+                merged_at = _parse_dt(pr.get("merged_at"))
+                if merged_at and merged_at >= cutoff_90:
+                    s.prs_merged_90d += 1
+            if done or len(page) < 100:
+                _hit_cutoff = True
+                break
+        s.prs_merged_capped = not _hit_cutoff and s.prs_merged_90d > 0
+
+    # ── Star growth (time-windowed) ───────────────────────────────────────────
+
+    async def _apply_star_growth(self, s: RepoStats, owner: str, name: str) -> None:
+        """Count stars gained in the last 30d / 90d using tail-page pagination."""
+        now = datetime.now(timezone.utc)
+        cutoff_30 = now - timedelta(days=30)
+        cutoff_90 = now - timedelta(days=90)
+        path = f"/repos/{owner}/{name}/stargazers"
+        accept = "application/vnd.github.star+json"
+
+        # Probe page 1 to discover total pages via Link header
+        resp = await self._rest(path, params={"per_page": 100, "page": 1},
+                                accept=accept, return_response=True)
+        if resp is None or not hasattr(resp, "headers"):
+            return
+
+        last_page = _parse_last_page(resp.headers.get("Link", ""))
+
+        if last_page is None:
+            # All stars fit on a single page
+            data = resp.json() if callable(getattr(resp, "json", None)) else []
+            pages_data = [data] if isinstance(data, list) else []
+        else:
+            start = max(1, last_page - 9)   # fetch at most 10 tail pages (1000 stars)
+            pages_data = []
+            if start == 1:
+                data = resp.json() if callable(getattr(resp, "json", None)) else []
+                if isinstance(data, list):
+                    pages_data.append(data)
+                start = 2
+            for pg in range(start, last_page + 1):
+                raw = await self._rest(path, params={"per_page": 100, "page": pg},
+                                       accept=accept)
+                if isinstance(raw, list):
+                    pages_data.append(raw)
+
+        # Iterate newest-first; exit early once outside the 90d window.
+        # If we exhaust all fetched pages without hitting the cutoff, the count is capped.
+        hit_cutoff = False
+        for page in reversed(pages_data):
+            for entry in reversed(page):
+                starred = _parse_dt(entry.get("starred_at"))
+                if starred is None:
+                    continue
+                if starred < cutoff_90:
+                    hit_cutoff = True
+                    return
+                s.stars_added_90d += 1
+                if starred >= cutoff_30:
+                    s.stars_added_30d += 1
+        if not hit_cutoff and s.stars_added_90d > 0:
+            s.stars_added_90d_capped = True

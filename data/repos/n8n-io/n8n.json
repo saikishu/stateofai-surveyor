@@ -5,9 +5,12 @@
   "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
   "homepage": "https://n8n.io",
   "github_url": "https://github.com/n8n-io/n8n",
-  "stars": 182762,
-  "forks": 56549,
-  "watchers": 1057,
+  "stars": 182766,
+  "forks": 56548,
+  "watchers": 1058,
+  "stars_added_30d": 0,
+  "stars_added_90d": 0,
+  "stars_added_90d_capped": false,
   "license_name": "Other",
   "license_spdx": "NOASSERTION",
   "topics": [
@@ -36,16 +39,16 @@
   "is_fork": false,
   "default_branch": "master",
   "created_at": "2019-06-22T09:24:21Z",
-  "updated_at": "2026-04-07T07:28:16Z",
-  "pushed_at": "2026-04-07T07:27:37Z",
+  "updated_at": "2026-04-07T08:20:13Z",
+  "pushed_at": "2026-04-07T08:24:03Z",
   "age_days": 2480,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 63453817,
-    "Vue": 5157379,
+    "TypeScript": 63475375,
+    "Vue": 5157970,
     "SCSS": 330435,
-    "JavaScript": 291082,
+    "JavaScript": 291436,
     "Python": 230535,
     "Handlebars": 75950
   },
@@ -54,22 +57,32 @@
     "Vue",
     "SCSS"
   ],
-  "total_code_bytes": 69579516,
-  "approx_loc": 1649434,
-  "issues_open": 394,
-  "issues_closed": 8204,
-  "issues_new_30d": 30,
-  "issues_new_90d": 30,
-  "issues_active_30d": 30,
-  "issues_closed_30d": 13,
-  "prs_open": 1102,
-  "prs_closed": 3554,
-  "prs_merged": 14763,
-  "prs_active_30d": 100,
+  "total_code_bytes": 69602019,
+  "approx_loc": 1649968,
+  "issues_open": 392,
+  "issues_closed": 8206,
+  "issues_new_30d": 129,
+  "issues_new_90d": 233,
+  "issues_new_capped": false,
+  "issues_active_30d": 167,
+  "issues_active_capped": true,
+  "issues_closed_30d": 10,
+  "issues_closed_90d": 10,
+  "issues_closed_capped": false,
+  "prs_open": 1098,
+  "prs_closed": 3557,
+  "prs_merged": 14767,
+  "prs_active_30d": 500,
+  "prs_active_capped": true,
+  "prs_opened_30d": 984,
+  "prs_opened_90d": 1000,
+  "prs_opened_capped": true,
+  "prs_merged_90d": 745,
+  "prs_merged_capped": true,
   "release_count": 572,
   "latest_release_tag": "n8n@2.15.0",
   "latest_release_date": "2026-03-30T18:16:53Z",
-  "avg_days_between_releases": 1.6842105263157894,
+  "avg_days_between_releases": 1.5087719298245614,
   "releases": [
     {
       "tag_name": "n8n@2.16.0",
@@ -280,9 +293,499 @@
       "published_at": "2026-02-27T12:00:33Z",
       "prerelease": false,
       "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.10.2"
+    },
+    {
+      "tag_name": "n8n@2.9.4-exp.0",
+      "name": "n8n@2.9.4-exp.0",
+      "published_at": "2026-02-27T13:30:23Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.9.4-exp.0"
+    },
+    {
+      "tag_name": "n8n@2.9.4",
+      "name": "n8n@2.9.4",
+      "published_at": "2026-02-25T15:12:34Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.9.4"
+    },
+    {
+      "tag_name": "n8n@2.9.3",
+      "name": "n8n@2.9.3",
+      "published_at": "2026-02-25T11:30:22Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.9.3"
+    },
+    {
+      "tag_name": "n8n@1.123.22",
+      "name": "n8n@1.123.22",
+      "published_at": "2026-02-25T11:49:37Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.22"
+    },
+    {
+      "tag_name": "n8n@2.9.3-exp.0",
+      "name": "n8n@2.9.3-exp.0",
+      "published_at": "2026-02-25T13:28:54Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.9.3-exp.0"
+    },
+    {
+      "tag_name": "n8n@2.10.1",
+      "name": "n8n@2.10.1",
+      "published_at": "2026-02-25T09:46:41Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.10.1"
+    },
+    {
+      "tag_name": "n8n@2.9.2-exp.0",
+      "name": "n8n@2.9.2-exp.0",
+      "published_at": "2026-02-24T11:34:23Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.9.2-exp.0"
+    },
+    {
+      "tag_name": "n8n@2.9.2",
+      "name": "n8n@2.9.2",
+      "published_at": "2026-02-23T13:38:32Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.9.2"
+    },
+    {
+      "tag_name": "n8n@2.8.4",
+      "name": "n8n@2.8.4",
+      "published_at": "2026-02-23T13:12:20Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.8.4"
+    },
+    {
+      "tag_name": "n8n@2.10.0",
+      "name": "n8n@2.10.0",
+      "published_at": "2026-02-23T17:55:01Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.10.0"
+    },
+    {
+      "tag_name": "n8n@1.123.21",
+      "name": "n8n@1.123.21",
+      "published_at": "2026-02-20T11:57:29Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.21"
+    },
+    {
+      "tag_name": "n8n@2.9.1",
+      "name": "n8n@2.9.1",
+      "published_at": "2026-02-18T13:09:24Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.9.1"
+    },
+    {
+      "tag_name": "n8n@2.9.0",
+      "name": "n8n@2.9.0",
+      "published_at": "2026-02-16T19:07:12Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.9.0"
+    },
+    {
+      "tag_name": "n8n@2.8.3",
+      "name": "n8n@2.8.3",
+      "published_at": "2026-02-13T16:57:38Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.8.3"
+    },
+    {
+      "tag_name": "n8n@2.7.5",
+      "name": "n8n@2.7.5",
+      "published_at": "2026-02-13T17:31:31Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.7.5"
+    },
+    {
+      "tag_name": "n8n@2.8.2",
+      "name": "n8n@2.8.2",
+      "published_at": "2026-02-12T14:45:45Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.8.2"
+    },
+    {
+      "tag_name": "n8n@2.8.1",
+      "name": "n8n@2.8.1",
+      "published_at": "2026-02-11T13:40:30Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.8.1"
+    },
+    {
+      "tag_name": "n8n@2.7.4",
+      "name": "n8n@2.7.4",
+      "published_at": "2026-02-11T12:57:16Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.7.4"
+    },
+    {
+      "tag_name": "n8n@2.8.0",
+      "name": "n8n@2.8.0",
+      "published_at": "2026-02-11T09:15:04Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.8.0"
+    },
+    {
+      "tag_name": "n8n@2.7.3",
+      "name": "n8n@2.7.3",
+      "published_at": "2026-02-09T08:18:12Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.7.3"
+    },
+    {
+      "tag_name": "n8n@2.6.4",
+      "name": "n8n@2.6.4",
+      "published_at": "2026-02-06T12:54:52Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.6.4"
+    },
+    {
+      "tag_name": "n8n@1.123.20",
+      "name": "n8n@1.123.20",
+      "published_at": "2026-02-06T13:53:28Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.20"
+    },
+    {
+      "tag_name": "n8n@1.123.19",
+      "name": "n8n@1.123.19",
+      "published_at": "2026-02-06T09:39:18Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.19"
+    },
+    {
+      "tag_name": "n8n@2.7.2",
+      "name": "n8n@2.7.2",
+      "published_at": "2026-02-05T13:34:09Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.7.2"
+    },
+    {
+      "tag_name": "n8n@2.7.1",
+      "name": "n8n@2.7.1",
+      "published_at": "2026-02-03T11:29:21Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.7.1"
+    },
+    {
+      "tag_name": "n8n@2.6.3",
+      "name": "n8n@2.6.3",
+      "published_at": "2026-02-02T12:48:12Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.6.3"
+    },
+    {
+      "tag_name": "n8n@2.7.0",
+      "name": "n8n@2.7.0",
+      "published_at": "2026-02-02T13:52:00Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.7.0"
+    },
+    {
+      "tag_name": "n8n@2.4.8",
+      "name": "n8n@2.4.8",
+      "published_at": "2026-01-29T16:58:13Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.8"
+    },
+    {
+      "tag_name": "n8n@2.4.8-exp.0",
+      "name": "n8n@2.4.8-exp.0",
+      "published_at": "2026-01-29T19:55:48Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.8-exp.0"
+    },
+    {
+      "tag_name": "n8n@2.4.7-exp.0",
+      "name": "n8n@2.4.7-exp.0",
+      "published_at": "2026-01-29T13:27:22Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.7-exp.0"
+    },
+    {
+      "tag_name": "n8n@2.4.6-exp.0",
+      "name": "n8n@2.4.6-exp.0",
+      "published_at": "2026-01-29T10:47:25Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.6-exp.0"
+    },
+    {
+      "tag_name": "n8n@1.123.18",
+      "name": "n8n@1.123.18",
+      "published_at": "2026-01-29T17:00:37Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.18"
+    },
+    {
+      "tag_name": "n8n@2.4.7",
+      "name": "n8n@2.4.7",
+      "published_at": "2026-01-29T09:35:52Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.7"
+    },
+    {
+      "tag_name": "n8n@2.6.2",
+      "name": "n8n@2.6.2",
+      "published_at": "2026-01-28T18:40:21Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.6.2"
+    },
+    {
+      "tag_name": "n8n@2.6.1",
+      "name": "n8n@2.6.1",
+      "published_at": "2026-01-27T18:39:08Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.6.1"
+    },
+    {
+      "tag_name": "n8n@2.6.0",
+      "name": "n8n@2.6.0",
+      "published_at": "2026-01-26T15:56:27Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.6.0"
+    },
+    {
+      "tag_name": "n8n@2.5.2",
+      "name": "n8n@2.5.2",
+      "published_at": "2026-01-23T14:40:38Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.5.2"
+    },
+    {
+      "tag_name": "n8n@2.4.6",
+      "name": "n8n@2.4.6",
+      "published_at": "2026-01-23T15:32:50Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.6"
+    },
+    {
+      "tag_name": "n8n@1.123.17",
+      "name": "n8n@1.123.17",
+      "published_at": "2026-01-23T14:07:51Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.17"
+    },
+    {
+      "tag_name": "n8n@2.4.5",
+      "name": "n8n@2.4.5",
+      "published_at": "2026-01-22T14:32:55Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.5"
+    },
+    {
+      "tag_name": "n8n@2.5.1",
+      "name": "n8n@2.5.1",
+      "published_at": "2026-01-22T12:09:18Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.5.1"
+    },
+    {
+      "tag_name": "n8n@2.5.0",
+      "name": "n8n@2.5.0",
+      "published_at": "2026-01-20T13:51:16Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.5.0"
+    },
+    {
+      "tag_name": "n8n@2.4.4",
+      "name": "n8n@2.4.4",
+      "published_at": "2026-01-16T14:57:23Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.4"
+    },
+    {
+      "tag_name": "n8n@2.3.6",
+      "name": "n8n@2.3.6",
+      "published_at": "2026-01-16T15:00:42Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.3.6"
+    },
+    {
+      "tag_name": "n8n@1.123.16",
+      "name": "n8n@1.123.16",
+      "published_at": "2026-01-16T17:21:23Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.16"
+    },
+    {
+      "tag_name": "n8n@2.4.3",
+      "name": "n8n@2.4.3",
+      "published_at": "2026-01-15T11:51:02Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.3"
+    },
+    {
+      "tag_name": "n8n@1.123.15",
+      "name": "n8n@1.123.15",
+      "published_at": "2026-01-15T16:47:53Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.15"
+    },
+    {
+      "tag_name": "n8n@2.3.5",
+      "name": "n8n@2.3.5",
+      "published_at": "2026-01-14T16:37:38Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.3.5"
+    },
+    {
+      "tag_name": "n8n@2.4.2",
+      "name": "n8n@2.4.2",
+      "published_at": "2026-01-14T17:38:03Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.2"
+    },
+    {
+      "tag_name": "n8n@1.123.14",
+      "name": "n8n@1.123.14",
+      "published_at": "2026-01-14T16:58:29Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.14"
+    },
+    {
+      "tag_name": "n8n@2.3.4",
+      "name": "n8n@2.3.4",
+      "published_at": "2026-01-13T16:37:15Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.3.4"
+    },
+    {
+      "tag_name": "n8n@2.3.3",
+      "name": "n8n@2.3.3",
+      "published_at": "2026-01-13T13:35:31Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.3.3"
+    },
+    {
+      "tag_name": "n8n@1.123.12",
+      "name": "n8n@1.123.12",
+      "published_at": "2026-01-13T12:14:36Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.12"
+    },
+    {
+      "tag_name": "n8n@2.4.1",
+      "name": "n8n@2.4.1",
+      "published_at": "2026-01-13T17:29:13Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.1"
+    },
+    {
+      "tag_name": "n8n@1.123.13",
+      "name": "n8n@1.123.13",
+      "published_at": "2026-01-13T15:34:40Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.13"
+    },
+    {
+      "tag_name": "n8n@2.4.0",
+      "name": "n8n@2.4.0",
+      "published_at": "2026-01-12T14:36:30Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.0"
+    },
+    {
+      "tag_name": "n8n@2.3.2",
+      "name": "n8n@2.3.2",
+      "published_at": "2026-01-09T14:00:00Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.3.2"
+    },
+    {
+      "tag_name": "n8n@2.2.6",
+      "name": "n8n@2.2.6",
+      "published_at": "2026-01-09T13:53:10Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.2.6"
+    },
+    {
+      "tag_name": "n8n@2.2.5",
+      "name": "n8n@2.2.5",
+      "published_at": "2026-01-08T12:08:46Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.2.5"
+    },
+    {
+      "tag_name": "n8n@1.123.11",
+      "name": "n8n@1.123.11",
+      "published_at": "2026-01-08T15:58:42Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.11"
+    },
+    {
+      "tag_name": "n8n@2.3.1",
+      "name": "n8n@2.3.1",
+      "published_at": "2026-01-07T17:20:10Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.3.1"
+    },
+    {
+      "tag_name": "n8n@2.2.4",
+      "name": "n8n@2.2.4",
+      "published_at": "2026-01-06T15:44:26Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.2.4"
+    },
+    {
+      "tag_name": "n8n@2.2.3",
+      "name": "n8n@2.2.3",
+      "published_at": "2026-01-05T15:11:22Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.2.3"
+    },
+    {
+      "tag_name": "n8n@2.3.0",
+      "name": "n8n@2.3.0",
+      "published_at": "2026-01-05T15:13:35Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.3.0"
+    },
+    {
+      "tag_name": "n8n@2.2.2",
+      "name": "n8n@2.2.2",
+      "published_at": "2026-01-02T08:27:46Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.2.2"
+    },
+    {
+      "tag_name": "n8n@2.1.5",
+      "name": "n8n@2.1.5",
+      "published_at": "2026-01-02T09:10:15Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.1.5"
+    },
+    {
+      "tag_name": "n8n@1.123.10",
+      "name": "n8n@1.123.10",
+      "published_at": "2026-01-02T09:11:45Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.10"
+    },
+    {
+      "tag_name": "n8n@2.2.1",
+      "name": "n8n@2.2.1",
+      "published_at": "2025-12-23T14:59:22Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.2.1"
+    },
+    {
+      "tag_name": "n8n@2.1.4",
+      "name": "n8n@2.1.4",
+      "published_at": "2025-12-23T20:53:07Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.1.4"
+    },
+    {
+      "tag_name": "n8n@2.1.3",
+      "name": "n8n@2.1.3",
+      "published_at": "2025-12-23T14:58:01Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.1.3"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 426,
   "top_contributors": [
     {
       "login": "janober",
@@ -360,10 +863,10 @@
       "login": "OlegIvaniv",
       "avatar_url": "https://avatars.githubusercontent.com/u/12657221?v=4",
       "html_url": "https://github.com/OlegIvaniv",
-      "contributions": 411,
+      "contributions": 412,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 474
+      "commits_count": 475
     },
     {
       "login": "Joffcom",
@@ -375,8 +878,8 @@
       "commits_count": 467
     }
   ],
-  "commits_last_year": 6246,
-  "commits_per_week_avg": 120.11538461538461,
+  "commits_last_year": 6249,
+  "commits_per_week_avg": 120.17307692307692,
   "weekly_commits": [
     85,
     56,
@@ -429,7 +932,7 @@
     164,
     171,
     156,
-    13
+    16
   ],
   "weekly_timestamps": [
     1744502400,
@@ -485,11 +988,12 @@
     1774742400,
     1775347200
   ],
-  "commits_30d": 667,
-  "commits_90d": 2088,
+  "commits_30d": 670,
+  "commits_90d": 2091,
   "commit_trend": "declining",
-  "commit_growth_pct": -33.9,
-  "total_commits": 18747,
+  "commit_growth_pct": -33.5,
+  "commit_growth_90d_pct": 35.0,
+  "total_commits": 18750,
   "first_commit_date": "2019-06-23T10:35:23Z",
   "commit_span_days": 2479,
   "vulnerability_alert_count": 0,
@@ -1010,7 +1514,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:30:57.598528+00:00",
+  "fetched_at": "2026-04-07T08:29:05.334407+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

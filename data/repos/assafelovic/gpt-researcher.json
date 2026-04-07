@@ -5,9 +5,12 @@
   "description": "An autonomous agent that conducts deep research on any data using any LLM providers",
   "homepage": "https://gptr.dev",
   "github_url": "https://github.com/assafelovic/gpt-researcher",
-  "stars": 26268,
+  "stars": 26269,
   "forks": 3507,
   "watchers": 168,
+  "stars_added_30d": 743,
+  "stars_added_90d": 969,
+  "stars_added_90d_capped": true,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [
@@ -27,7 +30,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2023-05-12T10:33:54Z",
-  "updated_at": "2026-04-07T06:44:31Z",
+  "updated_at": "2026-04-07T08:04:22Z",
   "pushed_at": "2026-03-14T13:16:21Z",
   "age_days": 1060,
   "days_since_push": 23,
@@ -51,16 +54,26 @@
   "issues_closed": 506,
   "issues_new_30d": 28,
   "issues_new_90d": 39,
+  "issues_new_capped": false,
   "issues_active_30d": 29,
+  "issues_active_capped": false,
   "issues_closed_30d": 8,
+  "issues_closed_90d": 12,
+  "issues_closed_capped": false,
   "prs_open": 43,
   "prs_closed": 291,
   "prs_merged": 481,
   "prs_active_30d": 16,
+  "prs_active_capped": false,
+  "prs_opened_30d": 21,
+  "prs_opened_90d": 80,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 40,
+  "prs_merged_capped": false,
   "release_count": 68,
   "latest_release_tag": "v3.4.3",
   "latest_release_date": "2026-03-13T14:06:38Z",
-  "avg_days_between_releases": 16.0,
+  "avg_days_between_releases": 14.059701492537313,
   "releases": [
     {
       "tag_name": "v3.4.3",
@@ -271,9 +284,275 @@
       "published_at": "2024-11-17T12:35:41Z",
       "prerelease": false,
       "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.1.4"
+    },
+    {
+      "tag_name": "v3.1.3",
+      "name": "New UX + Performance improvements",
+      "published_at": "2024-11-03T06:17:55Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.1.3"
+    },
+    {
+      "tag_name": "v3.1.2",
+      "name": "Performance and bug fixes",
+      "published_at": "2024-10-25T06:18:00Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.1.2"
+    },
+    {
+      "tag_name": "v3.1.1",
+      "name": "\ud83d\uddbc\ufe0f Image support and mega refactor",
+      "published_at": "2024-10-20T11:00:28Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.1.1"
+    },
+    {
+      "tag_name": "v.3.1.0",
+      "name": "v.3.1.0",
+      "published_at": "2024-10-11T07:44:46Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v.3.1.0"
+    },
+    {
+      "tag_name": "v3.0.8",
+      "name": "Improved quality and scraping support",
+      "published_at": "2024-09-15T05:22:02Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.0.8"
+    },
+    {
+      "tag_name": "v3.0.7",
+      "name": "v3.0.7",
+      "published_at": "2024-09-07T18:04:47Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.0.7"
+    },
+    {
+      "tag_name": "v3.0.6",
+      "name": "New NextJS front end application and more!",
+      "published_at": "2024-08-26T08:05:27Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.0.6"
+    },
+    {
+      "tag_name": "v.3.0.5",
+      "name": "Performance Boost",
+      "published_at": "2024-08-18T06:11:13Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v.3.0.5"
+    },
+    {
+      "tag_name": "v3.0.4",
+      "name": "Hybrid Research support",
+      "published_at": "2024-08-12T12:38:17Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.0.4"
+    },
+    {
+      "tag_name": "v3.0.3",
+      "name": "v3.0.3",
+      "published_at": "2024-08-04T07:47:28Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.0.3"
+    },
+    {
+      "tag_name": "v3.0.2",
+      "name": "v3.0.2",
+      "published_at": "2024-07-29T05:42:41Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v3.0.2"
+    },
+    {
+      "tag_name": "v.0.3.1",
+      "name": "v.0.3.1",
+      "published_at": "2024-07-21T07:50:51Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v.0.3.1"
+    },
+    {
+      "tag_name": "v0.3.0",
+      "name": "v0.3.0",
+      "published_at": "2024-07-15T10:22:43Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.3.0"
+    },
+    {
+      "tag_name": "v0.2.8",
+      "name": "Stability and Quality improvements",
+      "published_at": "2024-07-06T13:54:54Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.2.8"
+    },
+    {
+      "tag_name": "v0.2.7",
+      "name": "Stability improvements",
+      "published_at": "2024-06-23T09:53:26Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.2.7"
+    },
+    {
+      "tag_name": "v.0.2.6",
+      "name": "v.0.2.6",
+      "published_at": "2024-06-16T08:33:04Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v.0.2.6"
+    },
+    {
+      "tag_name": "v.0.2.5",
+      "name": "Stability improvements",
+      "published_at": "2024-06-09T06:25:06Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v.0.2.5"
+    },
+    {
+      "tag_name": "v0.2.4",
+      "name": "LLMs support \ud83e\udd16",
+      "published_at": "2024-05-27T10:41:15Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.2.4"
+    },
+    {
+      "tag_name": "v0.2.3",
+      "name": "Research Local Documents \ud83d\udcc4\ud83e\udd2f",
+      "published_at": "2024-05-20T06:44:41Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.2.3"
+    },
+    {
+      "tag_name": "v.0.2.2",
+      "name": "Stability improvements \ud83d\udcaa",
+      "published_at": "2024-05-09T12:45:51Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v.0.2.2"
+    },
+    {
+      "tag_name": "v0.2.1",
+      "name": "Multi Agent Research \ud83d\udd0e\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66",
+      "published_at": "2024-05-05T07:31:40Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.2.1"
+    },
+    {
+      "tag_name": "v0.2.0",
+      "name": "Detailed reports \ud83e\udd2f\ud83d\ude80",
+      "published_at": "2024-04-02T07:10:35Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.2.0"
+    },
+    {
+      "tag_name": "v.0.1.6",
+      "name": "Gemini and Docx support! \ud83c\udf89",
+      "published_at": "2024-03-24T07:40:51Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v.0.1.6"
+    },
+    {
+      "tag_name": "v0.1.5",
+      "name": "New embeddings, pdf styling and newspaper3k support \ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66",
+      "published_at": "2024-03-18T12:12:21Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.1.5"
+    },
+    {
+      "tag_name": "v0.1.4",
+      "name": "Stability and Poetry support \ud83c\udf89",
+      "published_at": "2024-02-25T09:14:12Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.1.4"
+    },
+    {
+      "tag_name": "0.1.3",
+      "name": "Quick installation fix",
+      "published_at": "2024-01-07T14:08:56Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/0.1.3"
+    },
+    {
+      "tag_name": "v0.1.2",
+      "name": "New features and stability \ud83c\udf89",
+      "published_at": "2024-01-04T12:05:11Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.1.2"
+    },
+    {
+      "tag_name": "v0.1.1",
+      "name": "Performance boost \ud83d\ude80",
+      "published_at": "2023-11-25T15:11:58Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.1.1"
+    },
+    {
+      "tag_name": "v0.1.0",
+      "name": "Mega refactor for optimized modularity \ud83c\udf89\ud83c\udf86",
+      "published_at": "2023-11-13T18:35:18Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.1.0"
+    },
+    {
+      "tag_name": "v0.0.8",
+      "name": "GPT-4 Turbo Integration \ud83d\ude80",
+      "published_at": "2023-11-07T15:19:37Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.0.8"
+    },
+    {
+      "tag_name": "v0.0.7",
+      "name": "Added features for improved research quality",
+      "published_at": "2023-10-21T11:26:16Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.0.7"
+    },
+    {
+      "tag_name": "v.0.0.6",
+      "name": "Quality + Performance improvements",
+      "published_at": "2023-10-03T14:21:15Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v.0.0.6"
+    },
+    {
+      "tag_name": "v0.0.5",
+      "name": "Stability Improvements",
+      "published_at": "2023-09-10T15:13:41Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.0.5"
+    },
+    {
+      "tag_name": "v0.0.4",
+      "name": "v0.0.4 \ud83d\ude80",
+      "published_at": "2023-08-14T06:34:22Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.0.4"
+    },
+    {
+      "tag_name": "v0.0.3",
+      "name": "v0.0.3",
+      "published_at": "2023-07-26T05:24:53Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v0.0.3"
+    },
+    {
+      "tag_name": "v1.0.2",
+      "name": "Stability improvements \ud83d\ude80",
+      "published_at": "2023-07-15T07:09:28Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v1.0.2"
+    },
+    {
+      "tag_name": "v1.0.1",
+      "name": "Stability releases \ud83d\ude80",
+      "published_at": "2023-07-10T16:00:15Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v1.0.1"
+    },
+    {
+      "tag_name": "v1.0.0",
+      "name": "Initial Alpha",
+      "published_at": "2023-07-09T17:19:46Z",
+      "prerelease": false,
+      "url": "https://github.com/assafelovic/gpt-researcher/releases/tag/v1.0.0"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 206,
   "top_contributors": [
     {
       "login": "assafelovic",
@@ -374,6 +653,7 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
   "total_commits": 2912,
   "first_commit_date": "2023-05-12T10:33:55Z",
   "commit_span_days": 1060,
@@ -381,7 +661,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:29:26.659508+00:00",
+  "fetched_at": "2026-04-07T08:25:19.296992+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

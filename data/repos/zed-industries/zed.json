@@ -5,9 +5,12 @@
   "description": "Code at the speed of thought \u2013 Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
   "homepage": "https://zed.dev",
   "github_url": "https://github.com/zed-industries/zed",
-  "stars": 78608,
-  "forks": 7717,
+  "stars": 78611,
+  "forks": 7719,
   "watchers": 291,
+  "stars_added_30d": 0,
+  "stars_added_90d": 0,
+  "stars_added_90d_capped": false,
   "license_name": "Other",
   "license_spdx": "NOASSERTION",
   "topics": [
@@ -20,13 +23,13 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2021-02-20T03:01:06Z",
-  "updated_at": "2026-04-07T07:08:36Z",
-  "pushed_at": "2026-04-07T06:46:13Z",
+  "updated_at": "2026-04-07T08:19:39Z",
+  "pushed_at": "2026-04-07T08:23:04Z",
   "age_days": 1872,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "Rust": 44660739,
+    "Rust": 44660562,
     "Inno Setup": 209540,
     "Tree-sitter Query": 163983,
     "Shell": 157374,
@@ -38,22 +41,32 @@
     "Inno Setup",
     "Tree-sitter Query"
   ],
-  "total_code_bytes": 45672437,
-  "approx_loc": 1135516,
-  "issues_open": 2687,
+  "total_code_bytes": 45672260,
+  "approx_loc": 1135512,
+  "issues_open": 2688,
   "issues_closed": 16665,
-  "issues_new_30d": 46,
-  "issues_new_90d": 46,
-  "issues_active_30d": 46,
-  "issues_closed_30d": 25,
+  "issues_new_30d": 368,
+  "issues_new_90d": 583,
+  "issues_new_capped": true,
+  "issues_active_30d": 271,
+  "issues_active_capped": true,
+  "issues_closed_30d": 1,
+  "issues_closed_90d": 1,
+  "issues_closed_capped": false,
   "prs_open": 515,
   "prs_closed": 3394,
-  "prs_merged": 23099,
-  "prs_active_30d": 100,
+  "prs_merged": 23100,
+  "prs_active_30d": 423,
+  "prs_active_capped": true,
+  "prs_opened_30d": 1000,
+  "prs_opened_90d": 1000,
+  "prs_opened_capped": true,
+  "prs_merged_90d": 717,
+  "prs_merged_capped": true,
   "release_count": 1000,
   "latest_release_tag": "v0.230.2",
   "latest_release_date": "2026-04-06T17:52:55Z",
-  "avg_days_between_releases": 3.1666666666666665,
+  "avg_days_between_releases": 2.311111111111111,
   "releases": [
     {
       "tag_name": "v0.230.2",
@@ -264,9 +277,499 @@
       "published_at": "2026-02-20T17:24:56Z",
       "prerelease": true,
       "url": "https://github.com/zed-industries/zed/releases/tag/v0.225.5-pre"
+    },
+    {
+      "tag_name": "v0.225.4-pre",
+      "name": "v0.225.4-pre",
+      "published_at": "2026-02-20T10:48:54Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.225.4-pre"
+    },
+    {
+      "tag_name": "v0.225.3-pre",
+      "name": "v0.225.3-pre",
+      "published_at": "2026-02-20T04:21:33Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.225.3-pre"
+    },
+    {
+      "tag_name": "v0.224.10",
+      "name": "v0.224.10",
+      "published_at": "2026-02-20T17:42:55Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.10"
+    },
+    {
+      "tag_name": "v0.224.9",
+      "name": "v0.224.9",
+      "published_at": "2026-02-20T10:56:25Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.9"
+    },
+    {
+      "tag_name": "v0.224.8",
+      "name": "v0.224.8",
+      "published_at": "2026-02-20T04:54:23Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.8"
+    },
+    {
+      "tag_name": "v0.225.2-pre",
+      "name": "v0.225.2-pre",
+      "published_at": "2026-02-19T19:19:13Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.225.2-pre"
+    },
+    {
+      "tag_name": "v0.225.1-pre",
+      "name": "v0.225.1-pre",
+      "published_at": "2026-02-19T03:06:08Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.225.1-pre"
+    },
+    {
+      "tag_name": "v0.224.7",
+      "name": "v0.224.7",
+      "published_at": "2026-02-19T19:51:29Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.7"
+    },
+    {
+      "tag_name": "v0.224.6",
+      "name": "v0.224.6",
+      "published_at": "2026-02-19T03:30:11Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.6"
+    },
+    {
+      "tag_name": "v0.225.0-pre",
+      "name": "v0.225.0-pre",
+      "published_at": "2026-02-18T20:26:10Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.225.0-pre"
+    },
+    {
+      "tag_name": "v0.224.5",
+      "name": "v0.224.5",
+      "published_at": "2026-02-18T19:33:36Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.5"
+    },
+    {
+      "tag_name": "v0.224.4",
+      "name": "v0.224.4",
+      "published_at": "2026-02-18T17:51:00Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.4"
+    },
+    {
+      "tag_name": "v0.224.4-pre",
+      "name": "v0.224.4-pre",
+      "published_at": "2026-02-17T21:13:29Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.4-pre"
+    },
+    {
+      "tag_name": "v0.224.3-pre",
+      "name": "v0.224.3-pre",
+      "published_at": "2026-02-17T10:43:54Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.3-pre"
+    },
+    {
+      "tag_name": "v0.223.5",
+      "name": "v0.223.5",
+      "published_at": "2026-02-17T21:37:19Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.223.5"
+    },
+    {
+      "tag_name": "v0.223.4",
+      "name": "v0.223.4",
+      "published_at": "2026-02-17T10:51:46Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.223.4"
+    },
+    {
+      "tag_name": "v0.224.2-pre",
+      "name": "v0.224.2-pre",
+      "published_at": "2026-02-16T08:46:23Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.2-pre"
+    },
+    {
+      "tag_name": "v0.224.1-pre",
+      "name": "v0.224.1-pre",
+      "published_at": "2026-02-13T21:53:21Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.1-pre"
+    },
+    {
+      "tag_name": "v0.224.0-pre",
+      "name": "v0.224.0-pre",
+      "published_at": "2026-02-11T20:03:02Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.224.0-pre"
+    },
+    {
+      "tag_name": "v0.223.3",
+      "name": "v0.223.3",
+      "published_at": "2026-02-11T21:52:59Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.223.3"
+    },
+    {
+      "tag_name": "v0.223.2-pre",
+      "name": "v0.223.2-pre",
+      "published_at": "2026-02-06T04:41:59Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.223.2-pre"
+    },
+    {
+      "tag_name": "v0.222.4",
+      "name": "v0.222.4",
+      "published_at": "2026-02-06T05:13:37Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.222.4"
+    },
+    {
+      "tag_name": "v0.223.1-pre",
+      "name": "v0.223.1-pre",
+      "published_at": "2026-02-05T23:27:28Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.223.1-pre"
+    },
+    {
+      "tag_name": "v0.222.3",
+      "name": "v0.222.3",
+      "published_at": "2026-02-05T23:58:55Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.222.3"
+    },
+    {
+      "tag_name": "v0.223.0-pre",
+      "name": "v0.223.0-pre",
+      "published_at": "2026-02-04T19:31:35Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.223.0-pre"
+    },
+    {
+      "tag_name": "v0.222.2",
+      "name": "v0.222.2",
+      "published_at": "2026-02-04T18:08:05Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.222.2"
+    },
+    {
+      "tag_name": "v0.222.1-pre",
+      "name": "v0.222.1-pre",
+      "published_at": "2026-01-29T22:28:11Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.222.1-pre"
+    },
+    {
+      "tag_name": "v0.221.5",
+      "name": "v0.221.5",
+      "published_at": "2026-01-29T23:29:13Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.221.5"
+    },
+    {
+      "tag_name": "v0.222.0-pre",
+      "name": "v0.222.0-pre",
+      "published_at": "2026-01-28T18:34:34Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.222.0-pre"
+    },
+    {
+      "tag_name": "v0.221.4",
+      "name": "v0.221.4",
+      "published_at": "2026-01-28T16:55:37Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.221.4"
+    },
+    {
+      "tag_name": "v0.221.4-pre",
+      "name": "v0.221.4-pre",
+      "published_at": "2026-01-27T20:01:13Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.221.4-pre"
+    },
+    {
+      "tag_name": "v0.220.7",
+      "name": "v0.220.7",
+      "published_at": "2026-01-27T20:29:17Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.220.7"
+    },
+    {
+      "tag_name": "v0.221.3-pre",
+      "name": "v0.221.3-pre",
+      "published_at": "2026-01-25T13:17:22Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.221.3-pre"
+    },
+    {
+      "tag_name": "v0.220.6",
+      "name": "v0.220.6",
+      "published_at": "2026-01-25T14:39:10Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.220.6"
+    },
+    {
+      "tag_name": "v0.221.2-pre",
+      "name": "v0.221.2-pre",
+      "published_at": "2026-01-23T19:33:53Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.221.2-pre"
+    },
+    {
+      "tag_name": "v0.220.5",
+      "name": "v0.220.5",
+      "published_at": "2026-01-24T20:49:15Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.220.5"
+    },
+    {
+      "tag_name": "v0.220.3",
+      "name": "v0.220.3",
+      "published_at": "2026-01-22T17:20:31Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.220.3"
+    },
+    {
+      "tag_name": "v0.221.0-pre",
+      "name": "v0.221.0-pre",
+      "published_at": "2026-01-21T18:25:47Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.221.0-pre"
+    },
+    {
+      "tag_name": "v0.220.2",
+      "name": "v0.220.2",
+      "published_at": "2026-01-21T17:29:48Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.220.2"
+    },
+    {
+      "tag_name": "v0.220.2-pre",
+      "name": "v0.220.2-pre",
+      "published_at": "2026-01-20T10:40:25Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.220.2-pre"
+    },
+    {
+      "tag_name": "v0.219.5",
+      "name": "v0.219.5",
+      "published_at": "2026-01-20T11:05:23Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.219.5"
+    },
+    {
+      "tag_name": "v0.220.1-pre",
+      "name": "v0.220.1-pre",
+      "published_at": "2026-01-15T13:58:30Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.220.1-pre"
+    },
+    {
+      "tag_name": "v0.220.0-pre",
+      "name": "v0.220.0-pre",
+      "published_at": "2026-01-14T18:55:05Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.220.0-pre"
+    },
+    {
+      "tag_name": "v0.219.4",
+      "name": "v0.219.4",
+      "published_at": "2026-01-14T16:44:22Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.219.4"
+    },
+    {
+      "tag_name": "v0.219.4-pre",
+      "name": "v0.219.4-pre",
+      "published_at": "2026-01-12T23:30:01Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.219.4-pre"
+    },
+    {
+      "tag_name": "v0.218.7",
+      "name": "v0.218.7",
+      "published_at": "2026-01-12T23:30:52Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.7"
+    },
+    {
+      "tag_name": "v0.219.3-pre",
+      "name": "v0.219.3-pre",
+      "published_at": "2026-01-09T02:19:54Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.219.3-pre"
+    },
+    {
+      "tag_name": "v0.219.2-pre",
+      "name": "v0.219.2-pre",
+      "published_at": "2026-01-08T01:24:03Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.219.2-pre"
+    },
+    {
+      "tag_name": "v0.218.6",
+      "name": "v0.218.6",
+      "published_at": "2026-01-08T02:19:05Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.6"
+    },
+    {
+      "tag_name": "v0.219.1-pre",
+      "name": "v0.219.1-pre",
+      "published_at": "2026-01-07T22:21:24Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.219.1-pre"
+    },
+    {
+      "tag_name": "v0.219.0-pre",
+      "name": "v0.219.0-pre",
+      "published_at": "2026-01-07T20:17:03Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.219.0-pre"
+    },
+    {
+      "tag_name": "v0.218.5",
+      "name": "v0.218.5",
+      "published_at": "2026-01-07T16:50:51Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.5"
+    },
+    {
+      "tag_name": "v0.218.5-pre",
+      "name": "v0.218.5-pre",
+      "published_at": "2026-01-05T20:44:30Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.5-pre"
+    },
+    {
+      "tag_name": "v0.218.4-pre",
+      "name": "v0.218.4-pre",
+      "published_at": "2026-01-05T18:16:02Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.4-pre"
+    },
+    {
+      "tag_name": "v0.217.4",
+      "name": "v0.217.4",
+      "published_at": "2026-01-05T17:34:08Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.217.4"
+    },
+    {
+      "tag_name": "v0.218.3-pre",
+      "name": "v0.218.3-pre",
+      "published_at": "2025-12-18T18:17:48Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.3-pre"
+    },
+    {
+      "tag_name": "v0.217.3",
+      "name": "v0.217.3",
+      "published_at": "2025-12-18T18:58:54Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.217.3"
+    },
+    {
+      "tag_name": "v0.218.2-pre",
+      "name": "v0.218.2-pre",
+      "published_at": "2025-12-17T22:27:36Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.2-pre"
+    },
+    {
+      "tag_name": "v0.218.1-pre",
+      "name": "v0.218.1-pre",
+      "published_at": "2025-12-17T20:32:22Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.1-pre"
+    },
+    {
+      "tag_name": "v0.217.2",
+      "name": "v0.217.2",
+      "published_at": "2025-12-17T20:52:35Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.217.2"
+    },
+    {
+      "tag_name": "v0.218.0-pre",
+      "name": "v0.218.0-pre",
+      "published_at": "2025-12-16T21:15:46Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.218.0-pre"
+    },
+    {
+      "tag_name": "v0.217.1",
+      "name": "v0.217.1",
+      "published_at": "2025-12-16T18:11:28Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.217.1"
+    },
+    {
+      "tag_name": "v0.217.1-pre",
+      "name": "v0.217.1-pre",
+      "published_at": "2025-12-11T22:48:44Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.217.1-pre"
+    },
+    {
+      "tag_name": "v0.216.1",
+      "name": "v0.216.1",
+      "published_at": "2025-12-11T22:42:47Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.216.1"
+    },
+    {
+      "tag_name": "v0.217.0-pre",
+      "name": "v0.217.0-pre",
+      "published_at": "2025-12-10T18:30:34Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.217.0-pre"
+    },
+    {
+      "tag_name": "v0.216.0",
+      "name": "v0.216.0",
+      "published_at": "2025-12-10T16:33:17Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.216.0"
+    },
+    {
+      "tag_name": "v0.216.0-pre",
+      "name": "v0.216.0-pre",
+      "published_at": "2025-12-03T18:54:23Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.216.0-pre"
+    },
+    {
+      "tag_name": "v0.215.3",
+      "name": "v0.215.3",
+      "published_at": "2025-12-03T17:36:17Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.215.3"
+    },
+    {
+      "tag_name": "v0.215.3-pre",
+      "name": "v0.215.3-pre",
+      "published_at": "2025-11-29T09:00:36Z",
+      "prerelease": true,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.215.3-pre"
+    },
+    {
+      "tag_name": "v0.214.7",
+      "name": "v0.214.7",
+      "published_at": "2025-11-29T13:15:23Z",
+      "prerelease": false,
+      "url": "https://github.com/zed-industries/zed/releases/tag/v0.214.7"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 483,
   "top_contributors": [
     {
       "login": "as-cii",
@@ -359,8 +862,8 @@
       "commits_count": 1249
     }
   ],
-  "commits_last_year": 12223,
-  "commits_per_week_avg": 235.05769230769232,
+  "commits_last_year": 12224,
+  "commits_per_week_avg": 235.07692307692307,
   "weekly_commits": [
     284,
     241,
@@ -413,7 +916,7 @@
     321,
     238,
     257,
-    59
+    60
   ],
   "weekly_timestamps": [
     1744502400,
@@ -469,11 +972,12 @@
     1774742400,
     1775347200
   ],
-  "commits_30d": 1111,
-  "commits_90d": 3299,
+  "commits_30d": 1112,
+  "commits_90d": 3300,
   "commit_trend": "declining",
-  "commit_growth_pct": -22.4,
-  "total_commits": 36725,
+  "commit_growth_pct": -22.3,
+  "commit_growth_90d_pct": 11.4,
+  "total_commits": 36726,
   "first_commit_date": "2021-02-20T17:02:34Z",
   "commit_span_days": 1871,
   "vulnerability_alert_count": 0,
@@ -544,7 +1048,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:28:11.597538+00:00",
+  "fetched_at": "2026-04-07T08:24:39.418721+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

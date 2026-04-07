@@ -8,6 +8,9 @@
   "stars": 26478,
   "forks": 2443,
   "watchers": 132,
+  "stars_added_30d": 723,
+  "stars_added_90d": 978,
+  "stars_added_90d_capped": true,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [],
@@ -33,17 +36,27 @@
   "issues_open": 242,
   "issues_closed": 514,
   "issues_new_30d": 28,
-  "issues_new_90d": 34,
+  "issues_new_90d": 48,
+  "issues_new_capped": false,
   "issues_active_30d": 43,
+  "issues_active_capped": false,
   "issues_closed_30d": 7,
+  "issues_closed_90d": 12,
+  "issues_closed_capped": false,
   "prs_open": 235,
   "prs_closed": 263,
   "prs_merged": 839,
-  "prs_active_30d": 54,
+  "prs_active_30d": 53,
+  "prs_active_capped": false,
+  "prs_opened_30d": 71,
+  "prs_opened_90d": 175,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 28,
+  "prs_merged_capped": false,
   "release_count": 34,
   "latest_release_tag": "v1.24.0",
   "latest_release_date": "2026-01-16T05:38:28Z",
-  "avg_days_between_releases": 12.172413793103448,
+  "avg_days_between_releases": 11.242424242424242,
   "releases": [
     {
       "tag_name": "v1.24.0",
@@ -254,9 +267,37 @@
       "published_at": "2025-01-15T16:30:32Z",
       "prerelease": false,
       "url": "https://github.com/huggingface/smolagents/releases/tag/v1.3.0"
+    },
+    {
+      "tag_name": "v1.2.0",
+      "name": "v1.2.0",
+      "published_at": "2025-01-10T15:30:59Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.2.0"
+    },
+    {
+      "tag_name": "v1.1.0",
+      "name": "v1.1.0",
+      "published_at": "2025-01-06T22:19:25Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.1.0"
+    },
+    {
+      "tag_name": "v1.0.0",
+      "name": "v1.0.0",
+      "published_at": "2024-12-31T18:36:27Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.0.0"
+    },
+    {
+      "tag_name": "v0.1.0",
+      "name": "v0.1.0: First ever release!",
+      "published_at": "2024-12-27T15:59:12Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v0.1.0"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 197,
   "top_contributors": [
     {
       "login": "albertvillanova",
@@ -357,6 +398,7 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
   "total_commits": 1035,
   "first_commit_date": "2024-12-05T11:28:04Z",
   "commit_span_days": 487,
@@ -364,7 +406,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:31:30.993107+00:00",
+  "fetched_at": "2026-04-07T08:28:21.062077+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

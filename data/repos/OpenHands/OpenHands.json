@@ -5,9 +5,12 @@
   "description": "\ud83d\ude4c OpenHands: AI-Driven Development",
   "homepage": "https://openhands.dev",
   "github_url": "https://github.com/OpenHands/OpenHands",
-  "stars": 70714,
+  "stars": 70719,
   "forks": 8868,
   "watchers": 432,
+  "stars_added_30d": 0,
+  "stars_added_90d": 0,
+  "stars_added_90d_capped": false,
   "license_name": "Other",
   "license_spdx": "NOASSERTION",
   "topics": [
@@ -25,7 +28,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-03-13T03:33:31Z",
-  "updated_at": "2026-04-07T06:39:05Z",
+  "updated_at": "2026-04-07T08:22:20Z",
   "pushed_at": "2026-04-07T03:50:36Z",
   "age_days": 755,
   "days_since_push": 0,
@@ -47,18 +50,28 @@
   "approx_loc": 391804,
   "issues_open": 200,
   "issues_closed": 3745,
-  "issues_new_30d": 29,
-  "issues_new_90d": 29,
-  "issues_active_30d": 29,
-  "issues_closed_30d": 4,
+  "issues_new_30d": 64,
+  "issues_new_90d": 151,
+  "issues_new_capped": false,
+  "issues_active_30d": 160,
+  "issues_active_capped": false,
+  "issues_closed_30d": 0,
+  "issues_closed_90d": 0,
+  "issues_closed_capped": false,
   "prs_open": 167,
   "prs_closed": 2693,
   "prs_merged": 6688,
-  "prs_active_30d": 100,
+  "prs_active_30d": 153,
+  "prs_active_capped": false,
+  "prs_opened_30d": 390,
+  "prs_opened_90d": 1000,
+  "prs_opened_capped": true,
+  "prs_merged_90d": 625,
+  "prs_merged_capped": true,
   "release_count": 101,
   "latest_release_tag": "1.6.0",
   "latest_release_date": "2026-03-30T16:01:39Z",
-  "avg_days_between_releases": 8.172413793103448,
+  "avg_days_between_releases": 6.252525252525253,
   "releases": [
     {
       "tag_name": "1.6.0",
@@ -269,99 +282,589 @@
       "published_at": "2025-07-24T12:59:27Z",
       "prerelease": false,
       "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.50.0"
+    },
+    {
+      "tag_name": "0.49.0",
+      "name": "0.49.0 - 2025-07-16",
+      "published_at": "2025-07-16T12:46:57Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.49.0"
+    },
+    {
+      "tag_name": "0.48.0",
+      "name": "0.48.0 - 2025-07-02",
+      "published_at": "2025-07-02T20:21:52Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.48.0"
+    },
+    {
+      "tag_name": "0.47.0",
+      "name": "0.47.0 - 2025-06-27",
+      "published_at": "2025-06-27T17:59:42Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.47.0"
+    },
+    {
+      "tag_name": "0.46.0",
+      "name": "0.46.0 - 2025-06-24",
+      "published_at": "2025-06-24T20:47:25Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.46.0"
+    },
+    {
+      "tag_name": "0.45.0",
+      "name": "0.45.0 - 2025-06-20",
+      "published_at": "2025-06-20T21:48:39Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.45.0"
+    },
+    {
+      "tag_name": "0.44.0",
+      "name": "0.44.0 - 2025-06-16",
+      "published_at": "2025-06-20T21:37:34Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.44.0"
+    },
+    {
+      "tag_name": "0.43.0",
+      "name": "0.43.0 - 2025-06-13",
+      "published_at": "2025-06-20T21:26:33Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.43.0"
+    },
+    {
+      "tag_name": "0.42.0",
+      "name": "0.42.0 - 2025-06-10",
+      "published_at": "2025-06-10T20:34:14Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.42.0"
+    },
+    {
+      "tag_name": "0.41.0",
+      "name": "0.41.0 - 2025-06-04",
+      "published_at": "2025-06-05T17:33:54Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.41.0"
+    },
+    {
+      "tag_name": "0.40.0",
+      "name": "0.40.0 - 2025-05-28",
+      "published_at": "2025-06-01T20:38:20Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.40.0"
+    },
+    {
+      "tag_name": "0.39.1",
+      "name": "0.39.1 - 2025-05-22",
+      "published_at": "2025-05-22T20:19:02Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.39.1"
+    },
+    {
+      "tag_name": "0.39.0",
+      "name": "0.39.0 - 2025-05-20",
+      "published_at": "2025-05-20T15:40:06Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.39.0"
+    },
+    {
+      "tag_name": "0.38.0",
+      "name": "0.38.0",
+      "published_at": "2025-05-12T19:41:21Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.38.0"
+    },
+    {
+      "tag_name": "0.37.0",
+      "name": "0.37.0 - 2025-05-07",
+      "published_at": "2025-05-07T17:31:44Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.37.0"
+    },
+    {
+      "tag_name": "0.36.1",
+      "name": "0.36.1 - 2025-05-05",
+      "published_at": "2025-05-05T20:15:29Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.36.1"
+    },
+    {
+      "tag_name": "0.36.0",
+      "name": "0.36.0 - 2025-05-01",
+      "published_at": "2025-05-01T19:34:58Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.36.0"
+    },
+    {
+      "tag_name": "0.35.0",
+      "name": "0.35.0 - 2025-04-29",
+      "published_at": "2025-04-29T21:45:49Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.35.0"
+    },
+    {
+      "tag_name": "0.34.0",
+      "name": "0.34.0 - 2025-04-23",
+      "published_at": "2025-04-23T15:06:38Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.34.0"
+    },
+    {
+      "tag_name": "0.33.0",
+      "name": "0.33.0",
+      "published_at": "2025-04-16T21:03:08Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.33.0"
+    },
+    {
+      "tag_name": "0.32.0",
+      "name": "0.32.0 - 2025-04-10",
+      "published_at": "2025-04-10T12:45:08Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.32.0"
+    },
+    {
+      "tag_name": "0.31.0",
+      "name": "0.31.0 - 2025-04-02",
+      "published_at": "2025-04-02T19:30:54Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.31.0"
+    },
+    {
+      "tag_name": "0.30.1",
+      "name": "0.30.1",
+      "published_at": "2025-03-27T17:26:33Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.30.1"
+    },
+    {
+      "tag_name": "0.30.0",
+      "name": "0.30.0 - 2025-03-25",
+      "published_at": "2025-03-25T22:39:42Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.30.0"
+    },
+    {
+      "tag_name": "0.29.1",
+      "name": "0.29.1 - 2025-03-19",
+      "published_at": "2025-03-19T20:01:20Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.29.1"
+    },
+    {
+      "tag_name": "0.29.0",
+      "name": "0.29.0 - 2025-03-18",
+      "published_at": "2025-03-18T15:52:43Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.29.0"
+    },
+    {
+      "tag_name": "0.28.1",
+      "name": "0.28.1 - 2025-03-10",
+      "published_at": "2025-03-10T17:22:43Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.28.1"
+    },
+    {
+      "tag_name": "0.28.0",
+      "name": "0.28.0 - 2025-03-07",
+      "published_at": "2025-03-07T14:17:11Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.28.0"
+    },
+    {
+      "tag_name": "0.27.0",
+      "name": "0.27.0 - 2025-02-27",
+      "published_at": "2025-02-27T18:40:10Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.27.0"
+    },
+    {
+      "tag_name": "0.26.0",
+      "name": "0.26.0 - 2025-02-24",
+      "published_at": "2025-02-24T20:34:42Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.26.0"
+    },
+    {
+      "tag_name": "0.25.0",
+      "name": "0.25.0 - 2025-02-19",
+      "published_at": "2025-02-19T19:30:21Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.25.0"
+    },
+    {
+      "tag_name": "0.24.0",
+      "name": "0.24.0 - 2025-02-13",
+      "published_at": "2025-02-13T15:22:12Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.24.0"
+    },
+    {
+      "tag_name": "0.23.0",
+      "name": "0.23.0 - 2025-02-04",
+      "published_at": "2025-02-04T20:54:21Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.23.0"
+    },
+    {
+      "tag_name": "0.22.0",
+      "name": "0.22.0 - 2025-01-29",
+      "published_at": "2025-01-29T19:51:54Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.22.0"
+    },
+    {
+      "tag_name": "0.21.0",
+      "name": "0.21.0 - 2025-01-22",
+      "published_at": "2025-01-22T16:26:21Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.21.0"
+    },
+    {
+      "tag_name": "0.20.0",
+      "name": "0.20.0 - 2025-01-13",
+      "published_at": "2025-01-13T19:58:13Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.20.0"
+    },
+    {
+      "tag_name": "0.19.0",
+      "name": "0.19.0 - 2025-01-07",
+      "published_at": "2025-01-07T21:19:50Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.19.0"
+    },
+    {
+      "tag_name": "0.18.0",
+      "name": "0.18.0 - 2025-01-02",
+      "published_at": "2025-01-02T16:03:22Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.18.0"
+    },
+    {
+      "tag_name": "0.17.0",
+      "name": "0.17.0 - 2024-12-26",
+      "published_at": "2024-12-26T17:16:10Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.17.0"
+    },
+    {
+      "tag_name": "0.16.1",
+      "name": "0.16.1 - 2024-12-19",
+      "published_at": "2024-12-19T18:52:03Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.16.1"
+    },
+    {
+      "tag_name": "0.16.0",
+      "name": "0.16.0 - 2024-12-18",
+      "published_at": "2024-12-18T21:35:08Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.16.0"
+    },
+    {
+      "tag_name": "0.15.3",
+      "name": "0.15.3 - 2024-12-17",
+      "published_at": "2024-12-17T19:12:50Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.15.3"
+    },
+    {
+      "tag_name": "0.15.2",
+      "name": "0.15.2 - 2024-12-12",
+      "published_at": "2024-12-12T15:14:52Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.15.2"
+    },
+    {
+      "tag_name": "0.15.1",
+      "name": "0.15.1 - 2024-12-06",
+      "published_at": "2024-12-06T19:06:09Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.15.1"
+    },
+    {
+      "tag_name": "0.15.0",
+      "name": "0.15.0 - 2025-12-04",
+      "published_at": "2024-12-04T15:10:05Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.15.0"
+    },
+    {
+      "tag_name": "0.14.3",
+      "name": "0.14.3 - 2024-11-26",
+      "published_at": "2024-11-26T20:22:38Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.14.3"
+    },
+    {
+      "tag_name": "0.14.2",
+      "name": "0.14.2 - 2024-11-21",
+      "published_at": "2024-11-21T19:47:13Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.14.2"
+    },
+    {
+      "tag_name": "0.14.1",
+      "name": "0.14.1 - 2024-11-19",
+      "published_at": "2024-11-19T19:56:17Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.14.1"
+    },
+    {
+      "tag_name": "0.14.0",
+      "name": "0.14.0 - 2024-11-15",
+      "published_at": "2024-11-15T16:04:03Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.14.0"
+    },
+    {
+      "tag_name": "0.13.1",
+      "name": "0.13.1 - 2024-11-12",
+      "published_at": "2024-11-12T20:11:48Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.13.1"
+    },
+    {
+      "tag_name": "0.13.0",
+      "name": "0.13.0",
+      "published_at": "2024-11-08T22:32:22Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.13.0"
+    },
+    {
+      "tag_name": "0.12.2",
+      "name": "0.12.2",
+      "published_at": "2024-11-04T21:39:08Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.12.2"
+    },
+    {
+      "tag_name": "0.12.0",
+      "name": "0.12.0",
+      "published_at": "2024-10-31T13:15:04Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.12.0"
+    },
+    {
+      "tag_name": "0.11.0",
+      "name": "0.11.0 - 2024-10-22",
+      "published_at": "2024-10-22T20:43:31Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.11.0"
+    },
+    {
+      "tag_name": "0.10.0",
+      "name": "0.10.0 - 2024-10-17",
+      "published_at": "2024-10-17T22:24:03Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.10.0"
+    },
+    {
+      "tag_name": "0.9.8",
+      "name": "0.9.8 - 2024-10-03",
+      "published_at": "2024-10-03T15:05:17Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.8"
+    },
+    {
+      "tag_name": "0.9.7",
+      "name": "0.9.7 - 2024-09-30",
+      "published_at": "2024-09-30T16:21:01Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.7"
+    },
+    {
+      "tag_name": "0.9.6",
+      "name": "0.9.6 - 2024-09-26",
+      "published_at": "2024-09-30T13:56:51Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.6"
+    },
+    {
+      "tag_name": "0.9.5",
+      "name": "0.9.5 - 2024-09-26",
+      "published_at": "2024-09-26T12:59:18Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.5"
+    },
+    {
+      "tag_name": "0.9.4",
+      "name": "0.9.4 - 2024-09-20",
+      "published_at": "2024-09-20T18:19:59Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.4"
+    },
+    {
+      "tag_name": "0.9.3",
+      "name": "0.9.3 - 2024-09-12",
+      "published_at": "2024-09-13T00:51:46Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.3"
+    },
+    {
+      "tag_name": "0.9.2",
+      "name": "0.9.2 - 2024-09-04",
+      "published_at": "2024-09-04T18:32:26Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.2"
+    },
+    {
+      "tag_name": "0.9.1",
+      "name": "0.9.1 - 2024-08-29",
+      "published_at": "2024-08-29T18:00:56Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.1"
+    },
+    {
+      "tag_name": "0.9.0",
+      "name": "0.9.0",
+      "published_at": "2024-08-23T20:29:02Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.9.0"
+    },
+    {
+      "tag_name": "0.8.3",
+      "name": "0.8.3",
+      "published_at": "2024-08-01T18:25:28Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.8.3"
+    },
+    {
+      "tag_name": "0.8.2",
+      "name": "0.8.2",
+      "published_at": "2024-07-27T17:54:58Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.8.2"
+    },
+    {
+      "tag_name": "0.8.1",
+      "name": "0.8.1",
+      "published_at": "2024-07-19T19:13:54Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.8.1"
+    },
+    {
+      "tag_name": "0.8.0",
+      "name": "0.8.0",
+      "published_at": "2024-07-13T17:33:02Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.8.0"
+    },
+    {
+      "tag_name": "0.7.1",
+      "name": "0.7.1",
+      "published_at": "2024-07-05T16:02:37Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.7.1"
+    },
+    {
+      "tag_name": "0.7.0",
+      "name": "0.7.0",
+      "published_at": "2024-06-29T19:25:38Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.7.0"
+    },
+    {
+      "tag_name": "0.6.2",
+      "name": "0.6.2",
+      "published_at": "2024-06-05T18:34:45Z",
+      "prerelease": false,
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/0.6.2"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 462,
   "top_contributors": [
     {
       "login": "dependabot[bot]",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
       "contributions": 954,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 74825,
+      "deletions": 71430,
+      "commits_count": 966
     },
     {
       "login": "xingyaoww",
       "avatar_url": "https://avatars.githubusercontent.com/u/38853559?v=4",
       "html_url": "https://github.com/xingyaoww",
       "contributions": 611,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 298671,
+      "deletions": 280422,
+      "commits_count": 765
     },
     {
       "login": "rbren",
       "avatar_url": "https://avatars.githubusercontent.com/u/7611973?v=4",
       "html_url": "https://github.com/rbren",
       "contributions": 478,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 198909,
+      "deletions": 90006,
+      "commits_count": 613
     },
     {
       "login": "tofarr",
       "avatar_url": "https://avatars.githubusercontent.com/u/17094895?v=4",
       "html_url": "https://github.com/tofarr",
       "contributions": 475,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 134781,
+      "deletions": 64096,
+      "commits_count": 538
     },
     {
       "login": "hieptl",
       "avatar_url": "https://avatars.githubusercontent.com/u/69354317?v=4",
       "html_url": "https://github.com/hieptl",
       "contributions": 383,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 172023,
+      "deletions": 52083,
+      "commits_count": 424
     },
     {
       "login": "amanape",
       "avatar_url": "https://avatars.githubusercontent.com/u/83104063?v=4",
       "html_url": "https://github.com/amanape",
       "contributions": 376,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 231577,
+      "deletions": 137794,
+      "commits_count": 554
     },
     {
       "login": "enyst",
       "avatar_url": "https://avatars.githubusercontent.com/u/6080905?v=4",
       "html_url": "https://github.com/enyst",
       "contributions": 325,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 307179,
+      "deletions": 233111,
+      "commits_count": 599
     },
     {
       "login": "malhotra5",
       "avatar_url": "https://avatars.githubusercontent.com/u/30446202?v=4",
       "html_url": "https://github.com/malhotra5",
       "contributions": 319,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 139700,
+      "deletions": 83462,
+      "commits_count": 374
     },
     {
       "login": "neubig",
       "avatar_url": "https://avatars.githubusercontent.com/u/398875?v=4",
       "html_url": "https://github.com/neubig",
       "contributions": 306,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 195505,
+      "deletions": 150080,
+      "commits_count": 462
     },
     {
       "login": "mamoodi",
       "avatar_url": "https://avatars.githubusercontent.com/u/169627366?v=4",
       "html_url": "https://github.com/mamoodi",
       "contributions": 295,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 27310,
+      "deletions": 12758,
+      "commits_count": 347
     }
   ],
   "commits_last_year": 0,
@@ -372,6 +875,7 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
   "total_commits": 6437,
   "first_commit_date": "2024-03-13T03:36:30Z",
   "commit_span_days": 755,
@@ -389,7 +893,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:28:44.057085+00:00",
+  "fetched_at": "2026-04-07T08:24:32.107080+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

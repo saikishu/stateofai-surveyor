@@ -8,6 +8,9 @@
   "stars": 19229,
   "forks": 10384,
   "watchers": 304,
+  "stars_added_30d": 193,
+  "stars_added_90d": 597,
+  "stars_added_90d_capped": false,
   "license_name": "MIT License",
   "license_spdx": "MIT",
   "topics": [],
@@ -39,12 +42,22 @@
   "issues_closed": 886,
   "issues_new_30d": 2,
   "issues_new_90d": 16,
+  "issues_new_capped": false,
   "issues_active_30d": 5,
+  "issues_active_capped": false,
   "issues_closed_30d": 0,
+  "issues_closed_90d": 0,
+  "issues_closed_capped": false,
   "prs_open": 31,
   "prs_closed": 727,
   "prs_merged": 406,
   "prs_active_30d": 7,
+  "prs_active_capped": false,
+  "prs_opened_30d": 8,
+  "prs_opened_90d": 51,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 5,
+  "prs_merged_capped": false,
   "release_count": 8,
   "latest_release_tag": "v1.0.0",
   "latest_release_date": "2025-05-12T02:15:57Z",
@@ -107,7 +120,7 @@
       "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v0.0.1"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 112,
   "top_contributors": [
     {
       "login": "thecodacus",
@@ -314,6 +327,7 @@
   "commits_90d": 4,
   "commit_trend": "flat",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
   "total_commits": 1629,
   "first_commit_date": "2024-07-10T16:44:39Z",
   "commit_span_days": 635,
@@ -321,7 +335,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:29:42.352722+00:00",
+  "fetched_at": "2026-04-07T08:25:32.850985+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

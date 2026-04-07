@@ -5,9 +5,12 @@
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
   "homepage": "https://goose-docs.ai/",
   "github_url": "https://github.com/block/goose",
-  "stars": 38413,
-  "forks": 3730,
-  "watchers": 199,
+  "stars": 38472,
+  "forks": 3742,
+  "watchers": 200,
+  "stars_added_30d": 972,
+  "stars_added_90d": 972,
+  "stars_added_90d_capped": true,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [
@@ -20,8 +23,8 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-08-23T19:03:36Z",
-  "updated_at": "2026-04-07T07:27:18Z",
-  "pushed_at": "2026-04-07T07:18:20Z",
+  "updated_at": "2026-04-07T08:23:22Z",
+  "pushed_at": "2026-04-07T07:52:08Z",
   "age_days": 591,
   "days_since_push": 0,
   "activity_status": "active",
@@ -29,7 +32,7 @@
     "Rust": 4798054,
     "TypeScript": 2804280,
     "Shell": 155079,
-    "JavaScript": 148328,
+    "JavaScript": 148343,
     "Python": 123330,
     "HTML": 106850
   },
@@ -38,22 +41,32 @@
     "TypeScript",
     "Shell"
   ],
-  "total_code_bytes": 8217026,
+  "total_code_bytes": 8217041,
   "approx_loc": 200160,
   "issues_open": 210,
   "issues_closed": 1765,
-  "issues_new_30d": 58,
-  "issues_new_90d": 58,
-  "issues_active_30d": 58,
-  "issues_closed_30d": 23,
-  "prs_open": 78,
+  "issues_new_30d": 102,
+  "issues_new_90d": 178,
+  "issues_new_capped": false,
+  "issues_active_30d": 206,
+  "issues_active_capped": false,
+  "issues_closed_30d": 3,
+  "issues_closed_90d": 6,
+  "issues_closed_capped": false,
+  "prs_open": 77,
   "prs_closed": 1470,
-  "prs_merged": 4583,
-  "prs_active_30d": 78,
+  "prs_merged": 4584,
+  "prs_active_30d": 77,
+  "prs_active_capped": false,
+  "prs_opened_30d": 457,
+  "prs_opened_90d": 1000,
+  "prs_opened_capped": true,
+  "prs_merged_90d": 667,
+  "prs_merged_capped": true,
   "release_count": 126,
   "latest_release_tag": "v1.29.1",
   "latest_release_date": "2026-04-03T14:30:40Z",
-  "avg_days_between_releases": 3.3793103448275863,
+  "avg_days_between_releases": 3.967032967032967,
   "releases": [
     {
       "tag_name": "v1.29.1",
@@ -264,9 +277,499 @@
       "published_at": "2025-12-10T20:04:25Z",
       "prerelease": false,
       "url": "https://github.com/aaif-goose/goose/releases/tag/v1.16.1"
+    },
+    {
+      "tag_name": "v1.16.0",
+      "name": "v1.16.0",
+      "published_at": "2025-12-10T02:01:53Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.16.0"
+    },
+    {
+      "tag_name": "v1.15.0",
+      "name": "v1.15.0",
+      "published_at": "2025-11-19T18:54:40Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.15.0"
+    },
+    {
+      "tag_name": "v1.14.0",
+      "name": "v1.14.0",
+      "published_at": "2025-11-12T02:04:42Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.14.0"
+    },
+    {
+      "tag_name": "v1.13.2",
+      "name": "v1.13.2",
+      "published_at": "2025-11-11T01:27:10Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.13.2"
+    },
+    {
+      "tag_name": "v1.13.1",
+      "name": "v1.13.1",
+      "published_at": "2025-11-07T17:41:42Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.13.1"
+    },
+    {
+      "tag_name": "v1.13.0",
+      "name": "v1.13.0",
+      "published_at": "2025-11-06T22:54:24Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.13.0"
+    },
+    {
+      "tag_name": "v1.12.1",
+      "name": "v1.12.1",
+      "published_at": "2025-10-28T15:41:28Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.12.1"
+    },
+    {
+      "tag_name": "v1.12.0",
+      "name": "v1.12.0",
+      "published_at": "2025-10-24T00:43:27Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.12.0"
+    },
+    {
+      "tag_name": "1.11.0-nightly.20251023.8d9c19f2c2",
+      "name": "Nightly 1.11.0-nightly.20251023.8d9c19f2c2",
+      "published_at": "2025-10-23T05:44:03Z",
+      "prerelease": true,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/1.11.0-nightly.20251023.8d9c19f2c2"
+    },
+    {
+      "tag_name": "1.11.0-nightly.20251022.23412e270f",
+      "name": "Nightly 1.11.0-nightly.20251022.23412e270f",
+      "published_at": "2025-10-22T21:09:28Z",
+      "prerelease": true,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/1.11.0-nightly.20251022.23412e270f"
+    },
+    {
+      "tag_name": "v1.11.1",
+      "name": "v1.11.1",
+      "published_at": "2025-10-20T15:13:08Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.11.1"
+    },
+    {
+      "tag_name": "v1.11.0",
+      "name": "v1.11.0",
+      "published_at": "2025-10-17T18:27:09Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.11.0"
+    },
+    {
+      "tag_name": "v1.10.3",
+      "name": "v1.10.3",
+      "published_at": "2025-10-17T13:31:30Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.10.3"
+    },
+    {
+      "tag_name": "v1.10.2",
+      "name": "v1.10.2",
+      "published_at": "2025-10-15T15:41:36Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.10.2"
+    },
+    {
+      "tag_name": "v1.10.1",
+      "name": "v1.10.1",
+      "published_at": "2025-10-14T22:00:58Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.10.1"
+    },
+    {
+      "tag_name": "v1.10.0",
+      "name": "v1.10.0",
+      "published_at": "2025-10-14T17:26:04Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.10.0"
+    },
+    {
+      "tag_name": "v1.9.3",
+      "name": "v1.9.3",
+      "published_at": "2025-10-10T21:05:15Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.9.3"
+    },
+    {
+      "tag_name": "v1.9.2",
+      "name": "v1.9.2",
+      "published_at": "2025-10-09T15:10:02Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.9.2"
+    },
+    {
+      "tag_name": "v1.9.1",
+      "name": "v1.9.1",
+      "published_at": "2025-09-30T19:44:22Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.9.1"
+    },
+    {
+      "tag_name": "v1.9.0",
+      "name": "v1.9.0",
+      "published_at": "2025-09-24T13:53:49Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.9.0"
+    },
+    {
+      "tag_name": "v1.8.0",
+      "name": "v1.8.0",
+      "published_at": "2025-09-11T15:55:27Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.8.0"
+    },
+    {
+      "tag_name": "v1.7.0",
+      "name": "v1.7.0",
+      "published_at": "2025-08-29T19:11:35Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.7.0"
+    },
+    {
+      "tag_name": "v1.6.0",
+      "name": "v1.6.0",
+      "published_at": "2025-08-22T16:49:53Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.6.0"
+    },
+    {
+      "tag_name": "v1.5.0",
+      "name": "v1.5.0",
+      "published_at": "2025-08-19T15:36:32Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.5.0"
+    },
+    {
+      "tag_name": "v1.4.1",
+      "name": "v1.4.1",
+      "published_at": "2025-08-18T17:09:13Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.4.1"
+    },
+    {
+      "tag_name": "v1.4.0",
+      "name": "v1.4.0",
+      "published_at": "2025-08-16T01:56:40Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.4.0"
+    },
+    {
+      "tag_name": "v1.3.1",
+      "name": "v1.3.1",
+      "published_at": "2025-08-13T16:20:37Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.3.1"
+    },
+    {
+      "tag_name": "v1.3.0",
+      "name": "v1.3.0",
+      "published_at": "2025-08-11T15:33:42Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.3.0"
+    },
+    {
+      "tag_name": "v1.2.0",
+      "name": "v1.2.0",
+      "published_at": "2025-08-06T15:41:59Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.2.0"
+    },
+    {
+      "tag_name": "v1.2.0-rc0",
+      "name": "v1.2.0 rc 0",
+      "published_at": "2025-08-04T18:54:28Z",
+      "prerelease": true,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.2.0-rc0"
+    },
+    {
+      "tag_name": "v1.1.4",
+      "name": "v1.1.4",
+      "published_at": "2025-07-24T20:05:20Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.4"
+    },
+    {
+      "tag_name": "v1.1.3",
+      "name": "v1.1.3",
+      "published_at": "2025-07-18T15:59:00Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.3"
+    },
+    {
+      "tag_name": "v1.1.2",
+      "name": "v1.1.2",
+      "published_at": "2025-07-18T03:35:21Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.2"
+    },
+    {
+      "tag_name": "v1.1.1",
+      "name": "v1.1.1",
+      "published_at": "2025-07-17T02:49:42Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.1"
+    },
+    {
+      "tag_name": "v1.1.0",
+      "name": "v1.1.0",
+      "published_at": "2025-07-16T21:49:45Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.0"
+    },
+    {
+      "tag_name": "v1.0.37",
+      "name": "v1.0.37",
+      "published_at": "2025-07-16T15:53:04Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.37"
+    },
+    {
+      "tag_name": "v1.1.0-alpha.4",
+      "name": "v1.1.0-alpha.4",
+      "published_at": "2025-07-15T23:46:37Z",
+      "prerelease": true,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.0-alpha.4"
+    },
+    {
+      "tag_name": "v1.0.36",
+      "name": "v1.0.36",
+      "published_at": "2025-07-15T18:44:57Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.36"
+    },
+    {
+      "tag_name": "v1.1.0-alpha.3",
+      "name": "v1.1.0-alpha.3",
+      "published_at": "2025-07-14T02:46:38Z",
+      "prerelease": true,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.0-alpha.3"
+    },
+    {
+      "tag_name": "v1.1.0-alpha.2",
+      "name": "v1.1.0-alpha.2",
+      "published_at": "2025-07-13T17:44:25Z",
+      "prerelease": true,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.0-alpha.2"
+    },
+    {
+      "tag_name": "v1.1.0-alpha.1",
+      "name": "v1.1.0-alpha.1",
+      "published_at": "2025-07-12T00:18:33Z",
+      "prerelease": true,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.0-alpha.1"
+    },
+    {
+      "tag_name": "v1.1.0-alpha",
+      "name": "v1.1.0-alpha",
+      "published_at": "2025-07-11T18:19:16Z",
+      "prerelease": true,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.1.0-alpha"
+    },
+    {
+      "tag_name": "v1.0.35",
+      "name": "v1.0.35",
+      "published_at": "2025-07-08T02:36:55Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.35"
+    },
+    {
+      "tag_name": "v1.0.34",
+      "name": "v1.0.34",
+      "published_at": "2025-07-07T22:15:14Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.34"
+    },
+    {
+      "tag_name": "v1.0.33",
+      "name": "v1.0.33",
+      "published_at": "2025-07-07T20:30:07Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.33"
+    },
+    {
+      "tag_name": "v1.0.32",
+      "name": "v1.0.32 - 2025-07-03",
+      "published_at": "2025-07-03T21:59:36Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.32"
+    },
+    {
+      "tag_name": "v1.0.31",
+      "name": "v1.0.31 - 2025-06-30",
+      "published_at": "2025-07-01T01:37:19Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.31"
+    },
+    {
+      "tag_name": "v1.0.30",
+      "name": "v1.0.30",
+      "published_at": "2025-06-27T22:37:43Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.30"
+    },
+    {
+      "tag_name": "v1.0.29",
+      "name": "v1.0.29 - 2025-06-18",
+      "published_at": "2025-06-18T16:56:45Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.29"
+    },
+    {
+      "tag_name": "v1.0.28",
+      "name": "v1.0.28 - 2025-06-13",
+      "published_at": "2025-06-14T00:11:02Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.28"
+    },
+    {
+      "tag_name": "v1.0.27",
+      "name": "v1.0.27 - 2025-06-09",
+      "published_at": "2025-06-10T00:54:48Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.27"
+    },
+    {
+      "tag_name": "v1.0.26",
+      "name": "v1.0.26 - 2025-06-09",
+      "published_at": "2025-06-09T18:47:42Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.26"
+    },
+    {
+      "tag_name": "v1.0.25",
+      "name": "v1.0.25",
+      "published_at": "2026-02-26T04:15:20Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.25"
+    },
+    {
+      "tag_name": "v1.0.24",
+      "name": "v1.0.24 - 2025-05-15",
+      "published_at": "2025-05-15T21:57:32Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.24"
+    },
+    {
+      "tag_name": "v1.0.23",
+      "name": "v1.0.23",
+      "published_at": "2025-05-08T21:03:40Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.23"
+    },
+    {
+      "tag_name": "v1.0.22",
+      "name": "v1.0.22",
+      "published_at": "2025-05-06T19:28:44Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.22"
+    },
+    {
+      "tag_name": "v1.0.21",
+      "name": "v1.0.21",
+      "published_at": "2025-04-29T20:55:42Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.21"
+    },
+    {
+      "tag_name": "v1.0.20",
+      "name": "v1.0.20",
+      "published_at": "2025-04-23T06:18:57Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.20"
+    },
+    {
+      "tag_name": "v1.0.19",
+      "name": "v1.0.19",
+      "published_at": "2025-04-19T00:02:15Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.19"
+    },
+    {
+      "tag_name": "v1.0.18",
+      "name": "v1.0.18",
+      "published_at": "2025-04-16T00:56:59Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.18"
+    },
+    {
+      "tag_name": "v1.0.17",
+      "name": "v1.0.17",
+      "published_at": "2025-04-01T21:39:47Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.17"
+    },
+    {
+      "tag_name": "v1.0.16",
+      "name": "v1.0.16",
+      "published_at": "2025-03-26T22:34:48Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.16"
+    },
+    {
+      "tag_name": "v1.0.15",
+      "name": "v1.0.15",
+      "published_at": "2025-03-18T22:06:40Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.15"
+    },
+    {
+      "tag_name": "v1.0.14",
+      "name": "v1.0.14 - 2025-03-13",
+      "published_at": "2025-03-13T22:55:49Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.14"
+    },
+    {
+      "tag_name": "v1.0.13",
+      "name": "v1.0.13 - 2025-03-11",
+      "published_at": "2025-03-12T00:46:29Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.13"
+    },
+    {
+      "tag_name": "v1.0.12",
+      "name": "v1.0.12 - 2025-03-04",
+      "published_at": "2025-03-04T19:41:24Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.12"
+    },
+    {
+      "tag_name": "v1.0.11",
+      "name": "v1.0.11 - 2025-03-03",
+      "published_at": "2025-03-04T00:31:47Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.11"
+    },
+    {
+      "tag_name": "v1.0.10",
+      "name": "v1.0.10 - 2025-02-26",
+      "published_at": "2025-02-26T23:58:00Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.10"
+    },
+    {
+      "tag_name": "v1.0.9",
+      "name": "v1.0.9 - 2025-02-21",
+      "published_at": "2025-02-21T23:06:26Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.9"
+    },
+    {
+      "tag_name": "v1.0.8",
+      "name": "v1.0.8 - 2025-02-20",
+      "published_at": "2025-02-20T22:55:10Z",
+      "prerelease": false,
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.0.8"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 408,
   "top_contributors": [
     {
       "login": "zanesq",
@@ -290,7 +793,7 @@
       "login": "michaelneale",
       "avatar_url": "https://avatars.githubusercontent.com/u/14976?v=4",
       "html_url": "https://github.com/michaelneale",
-      "contributions": 202,
+      "contributions": 203,
       "additions": 0,
       "deletions": 0,
       "commits_count": 0
@@ -367,14 +870,15 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
-  "total_commits": 4088,
+  "commit_growth_90d_pct": 0.0,
+  "total_commits": 4089,
   "first_commit_date": "2024-08-23T23:39:04Z",
   "commit_span_days": 591,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:29:06.724128+00:00",
+  "fetched_at": "2026-04-07T08:25:29.088429+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

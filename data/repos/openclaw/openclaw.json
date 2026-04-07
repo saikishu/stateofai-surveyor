@@ -5,9 +5,12 @@
   "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
   "homepage": "https://openclaw.ai",
   "github_url": "https://github.com/openclaw/openclaw",
-  "stars": 350500,
-  "forks": 70385,
+  "stars": 350566,
+  "forks": 70408,
   "watchers": 1727,
+  "stars_added_30d": 0,
+  "stars_added_90d": 1000,
+  "stars_added_90d_capped": true,
   "license_name": "MIT License",
   "license_spdx": "MIT",
   "topics": [
@@ -23,40 +26,50 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-11-24T10:16:47Z",
-  "updated_at": "2026-04-07T07:29:55Z",
-  "pushed_at": "2026-04-07T07:26:23Z",
+  "updated_at": "2026-04-07T08:26:33Z",
+  "pushed_at": "2026-04-07T08:25:55Z",
   "age_days": 133,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 63266790,
+    "TypeScript": 63400075,
     "Swift": 3892677,
     "Kotlin": 1063242,
-    "Shell": 716215,
-    "JavaScript": 640832,
-    "CSS": 310265
+    "Shell": 717666,
+    "JavaScript": 640964,
+    "CSS": 310764
   },
   "top_3_languages": [
     "TypeScript",
     "Swift",
     "Kotlin"
   ],
-  "total_code_bytes": 70167852,
-  "approx_loc": 1657496,
-  "issues_open": 10828,
-  "issues_closed": 15751,
-  "issues_new_30d": 66,
-  "issues_new_90d": 66,
-  "issues_active_30d": 66,
-  "issues_closed_30d": 16,
-  "prs_open": 6371,
-  "prs_closed": 22741,
+  "total_code_bytes": 70303932,
+  "approx_loc": 1660725,
+  "issues_open": 10841,
+  "issues_closed": 15755,
+  "issues_new_30d": 602,
+  "issues_new_90d": 602,
+  "issues_new_capped": true,
+  "issues_active_30d": 312,
+  "issues_active_capped": true,
+  "issues_closed_30d": 590,
+  "issues_closed_90d": 590,
+  "issues_closed_capped": true,
+  "prs_open": 6381,
+  "prs_closed": 22742,
   "prs_merged": 4820,
-  "prs_active_30d": 100,
+  "prs_active_30d": 500,
+  "prs_active_capped": true,
+  "prs_opened_30d": 1000,
+  "prs_opened_90d": 1000,
+  "prs_opened_capped": true,
+  "prs_merged_90d": 230,
+  "prs_merged_capped": true,
   "release_count": 82,
   "latest_release_tag": "v2026.4.5",
   "latest_release_date": "2026-04-06T03:04:54Z",
-  "avg_days_between_releases": 1.8823529411764706,
+  "avg_days_between_releases": 1.6153846153846154,
   "releases": [
     {
       "tag_name": "v2026.4.5",
@@ -267,27 +280,391 @@
       "published_at": "2026-02-25T03:31:17Z",
       "prerelease": false,
       "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.24"
+    },
+    {
+      "tag_name": "v2026.2.24-beta.1",
+      "name": "openclaw 2026.2.24-beta.1",
+      "published_at": "2026-02-25T03:01:17Z",
+      "prerelease": true,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.24-beta.1"
+    },
+    {
+      "tag_name": "v2026.2.23",
+      "name": "openclaw 2026.2.23",
+      "published_at": "2026-02-24T05:41:47Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.23"
+    },
+    {
+      "tag_name": "v2026.2.22",
+      "name": "openclaw 2026.2.22",
+      "published_at": "2026-02-23T04:09:40Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.22"
+    },
+    {
+      "tag_name": "v2026.2.21",
+      "name": "openclaw 2026.2.21",
+      "published_at": "2026-02-21T16:56:48Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.21"
+    },
+    {
+      "tag_name": "v2026.2.19",
+      "name": "openclaw 2026.2.19",
+      "published_at": "2026-02-19T17:35:21Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.19"
+    },
+    {
+      "tag_name": "v2026.2.19-beta.1",
+      "name": "openclaw 2026.2.19",
+      "published_at": "2026-02-19T16:21:06Z",
+      "prerelease": true,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.19-beta.1"
+    },
+    {
+      "tag_name": "v2026.2.17",
+      "name": "openclaw 2026.2.17",
+      "published_at": "2026-02-18T02:55:29Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.17"
+    },
+    {
+      "tag_name": "v2026.2.15",
+      "name": "openclaw 2026.2.15",
+      "published_at": "2026-02-16T04:43:47Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.15"
+    },
+    {
+      "tag_name": "v2026.2.15-beta.1",
+      "name": "openclaw 2026.2.15-beta.1",
+      "published_at": "2026-02-16T04:12:20Z",
+      "prerelease": true,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.15-beta.1"
+    },
+    {
+      "tag_name": "v2026.2.14",
+      "name": "openclaw 2026.2.14",
+      "published_at": "2026-02-15T03:18:52Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+    },
+    {
+      "tag_name": "v2026.2.13",
+      "name": "openclaw 2026.2.13",
+      "published_at": "2026-02-14T03:32:02Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.13"
+    },
+    {
+      "tag_name": "v2026.2.12",
+      "name": "openclaw 2026.2.12",
+      "published_at": "2026-02-13T02:18:50Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.12"
+    },
+    {
+      "tag_name": "v2026.2.9",
+      "name": "openclaw 2026.2.9",
+      "published_at": "2026-02-09T19:23:20Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.9"
+    },
+    {
+      "tag_name": "v2026.2.6",
+      "name": "openclaw 2026.2.6",
+      "published_at": "2026-02-07T02:27:43Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.6"
+    },
+    {
+      "tag_name": "v2026.2.3",
+      "name": "openclaw 2026.2.3",
+      "published_at": "2026-02-05T01:57:22Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.3"
+    },
+    {
+      "tag_name": "v2026.2.2",
+      "name": "openclaw 2026.2.2",
+      "published_at": "2026-02-04T01:05:25Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.2"
+    },
+    {
+      "tag_name": "v2026.2.1",
+      "name": "openclaw 2026.2.1",
+      "published_at": "2026-02-02T11:54:07Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.1"
+    },
+    {
+      "tag_name": "v2026.1.30",
+      "name": "openclaw 2026.1.30",
+      "published_at": "2026-01-31T15:22:30Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.30"
+    },
+    {
+      "tag_name": "v2026.1.29",
+      "name": "openclaw 2026.1.29",
+      "published_at": "2026-01-30T05:26:50Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.29"
+    },
+    {
+      "tag_name": "v2026.1.24",
+      "name": "Clawdbot 2026.1.24",
+      "published_at": "2026-01-25T14:29:07Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.24"
+    },
+    {
+      "tag_name": "v2026.1.23",
+      "name": "Clawdbot 2026.1.23",
+      "published_at": "2026-01-24T13:04:16Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.23"
+    },
+    {
+      "tag_name": "v2026.1.22",
+      "name": "clawdbot 2026.1.22",
+      "published_at": "2026-01-23T08:59:57Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.22"
+    },
+    {
+      "tag_name": "v2026.1.21",
+      "name": "clawdbot 2026.1.21",
+      "published_at": "2026-01-22T12:26:44Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.21"
+    },
+    {
+      "tag_name": "v2026.1.20",
+      "name": "clawdbot 2026.1.20",
+      "published_at": "2026-01-21T08:26:28Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.20"
+    },
+    {
+      "tag_name": "v2026.1.16-2",
+      "name": "clawdbot 2026.1.16-2",
+      "published_at": "2026-01-17T12:37:10Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.16-2"
+    },
+    {
+      "tag_name": "v2026.1.15",
+      "name": "clawdbot 2026.1.15",
+      "published_at": "2026-01-16T10:38:11Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.15"
+    },
+    {
+      "tag_name": "v2026.1.14-1",
+      "name": "clawdbot 2026.1.14-1",
+      "published_at": "2026-01-15T11:16:55Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.14-1"
+    },
+    {
+      "tag_name": "v2026.1.12-2",
+      "name": "clawdbot 2026.1.12-2",
+      "published_at": "2026-01-13T09:39:17Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.12-2"
+    },
+    {
+      "tag_name": "v2026.1.12",
+      "name": "clawdbot 2026.1.12",
+      "published_at": "2026-01-13T09:30:05Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.12"
+    },
+    {
+      "tag_name": "v2026.1.11-3",
+      "name": "clawdbot 2026.1.11-3",
+      "published_at": "2026-01-12T10:41:03Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.11-3"
+    },
+    {
+      "tag_name": "v2026.1.11-2",
+      "name": "clawdbot 2026.1.11-2",
+      "published_at": "2026-01-12T10:26:45Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.11-2"
+    },
+    {
+      "tag_name": "v2026.1.11-1",
+      "name": "clawdbot 2026.1.11-1",
+      "published_at": "2026-01-12T09:54:49Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.11-1"
+    },
+    {
+      "tag_name": "v2026.1.11",
+      "name": "clawdbot 2026.1.11",
+      "published_at": "2026-01-12T09:40:39Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.11"
+    },
+    {
+      "tag_name": "v2026.1.10",
+      "name": "clawdbot 2026.1.10",
+      "published_at": "2026-01-11T04:50:22Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.10"
+    },
+    {
+      "tag_name": "v2026.1.9",
+      "name": "clawdbot 2026.1.9",
+      "published_at": "2026-01-10T04:22:03Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.9"
+    },
+    {
+      "tag_name": "v2026.1.8",
+      "name": "clawdbot 2026.1.8",
+      "published_at": "2026-01-08T08:29:30Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.8"
+    },
+    {
+      "tag_name": "v2026.1.5-3",
+      "name": "v2026.1.5-3",
+      "published_at": "2026-01-05T03:09:20Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.5-3"
+    },
+    {
+      "tag_name": "v2026.1.5-1",
+      "name": "clawdbot 2026.1.5-1",
+      "published_at": "2026-01-05T02:36:29Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.5-1"
+    },
+    {
+      "tag_name": "v2026.1.5",
+      "name": "clawdbot 2026.1.5",
+      "published_at": "2026-01-05T02:15:26Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.1.5"
+    },
+    {
+      "tag_name": "v2.0.0-beta5",
+      "name": "clawdis 2.0.0-beta5",
+      "published_at": "2026-01-03T04:56:30Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2.0.0-beta5"
+    },
+    {
+      "tag_name": "v2.0.0-beta4",
+      "name": "clawdis 2.0.0-beta4",
+      "published_at": "2025-12-27T18:46:18Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2.0.0-beta4"
+    },
+    {
+      "tag_name": "v2.0.0-beta3",
+      "name": "clawdis 2.0.0-beta3",
+      "published_at": "2025-12-27T18:04:07Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2.0.0-beta3"
+    },
+    {
+      "tag_name": "v2.0.0-beta2",
+      "name": "clawdis 2.0.0-beta2",
+      "published_at": "2025-12-21T02:30:25Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2.0.0-beta2"
+    },
+    {
+      "tag_name": "v2.0.0-beta1",
+      "name": "clawdis 2.0.0-beta1",
+      "published_at": "2025-12-19T17:25:54Z",
+      "prerelease": true,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2.0.0-beta1"
+    },
+    {
+      "tag_name": "v1.3.0",
+      "name": "warelay 1.3.0",
+      "published_at": "2025-12-02T12:59:39Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v1.3.0"
+    },
+    {
+      "tag_name": "v1.2.2",
+      "name": "warelay 1.2.2",
+      "published_at": "2025-11-28T07:18:45Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v1.2.2"
+    },
+    {
+      "tag_name": "v1.2.1",
+      "name": "warelay 1.2.1",
+      "published_at": "2025-11-28T07:12:01Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v1.2.1"
+    },
+    {
+      "tag_name": "v1.2.0",
+      "name": "warelay 1.2.0",
+      "published_at": "2025-11-27T18:11:41Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v1.2.0"
+    },
+    {
+      "tag_name": "v1.1.0",
+      "name": "warelay 1.1.0",
+      "published_at": "2025-11-26T02:18:54Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v1.1.0"
+    },
+    {
+      "tag_name": "v0.1.3",
+      "name": "warelay 0.1.3",
+      "published_at": "2025-11-25T15:55:06Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v0.1.3"
+    },
+    {
+      "tag_name": "v0.1.2",
+      "name": "warelay 0.1.2",
+      "published_at": "2025-11-25T13:27:55Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v0.1.2"
+    },
+    {
+      "tag_name": "v0.1.1",
+      "name": "warelay 0.1.1",
+      "published_at": "2025-11-25T13:24:35Z",
+      "prerelease": false,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v0.1.1"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 355,
   "top_contributors": [
     {
       "login": "steipete",
       "avatar_url": "https://avatars.githubusercontent.com/u/58493?v=4",
       "html_url": "https://github.com/steipete",
-      "contributions": 16956,
+      "contributions": 16985,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 17082
+      "commits_count": 17111
     },
     {
       "login": "vincentkoc",
       "avatar_url": "https://avatars.githubusercontent.com/u/25068?v=4",
       "html_url": "https://github.com/vincentkoc",
-      "contributions": 2577,
+      "contributions": 2590,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 2697
+      "commits_count": 2710
     },
     {
       "login": "obviyus",
@@ -362,8 +739,8 @@
       "commits_count": 161
     }
   ],
-  "commits_last_year": 30412,
-  "commits_per_week_avg": 1520.6,
+  "commits_last_year": 30454,
+  "commits_per_week_avg": 1522.7,
   "weekly_commits": [
     0,
     0,
@@ -416,7 +793,7 @@
     1896,
     2690,
     3319,
-    1876
+    1918
   ],
   "weekly_timestamps": [
     1744502400,
@@ -472,11 +849,12 @@
     1774742400,
     1775347200
   ],
-  "commits_30d": 11586,
-  "commits_90d": 25573,
+  "commits_30d": 11628,
+  "commits_90d": 25615,
   "commit_trend": "flat",
-  "commit_growth_pct": 1.8,
-  "total_commits": 28471,
+  "commit_growth_pct": 2.2,
+  "commit_growth_90d_pct": 429.3,
+  "total_commits": 28513,
   "first_commit_date": "2025-11-24T10:16:47Z",
   "commit_span_days": 133,
   "vulnerability_alert_count": 0,
@@ -1384,7 +1762,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:30:20.147768+00:00",
+  "fetched_at": "2026-04-07T08:28:19.728917+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

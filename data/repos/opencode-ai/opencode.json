@@ -5,9 +5,12 @@
   "description": "A powerful AI coding agent. Built for the terminal.",
   "homepage": null,
   "github_url": "https://github.com/opencode-ai/opencode",
-  "stars": 11868,
+  "stars": 11869,
   "forks": 1227,
   "watchers": 78,
+  "stars_added_30d": 642,
+  "stars_added_90d": 969,
+  "stars_added_90d_capped": true,
   "license_name": "MIT License",
   "license_spdx": "MIT",
   "topics": [
@@ -21,7 +24,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-03-16T23:38:55Z",
-  "updated_at": "2026-04-07T07:15:36Z",
+  "updated_at": "2026-04-07T07:43:44Z",
   "pushed_at": "2025-09-18T02:54:28Z",
   "age_days": 386,
   "days_since_push": 201,
@@ -40,16 +43,26 @@
   "issues_closed": 68,
   "issues_new_30d": 0,
   "issues_new_90d": 0,
+  "issues_new_capped": false,
   "issues_active_30d": 0,
+  "issues_active_capped": false,
   "issues_closed_30d": 0,
+  "issues_closed_90d": 0,
+  "issues_closed_capped": false,
   "prs_open": 42,
   "prs_closed": 37,
   "prs_merged": 62,
   "prs_active_30d": 0,
+  "prs_active_capped": false,
+  "prs_opened_30d": 0,
+  "prs_opened_90d": 0,
+  "prs_opened_capped": false,
+  "prs_merged_90d": 0,
+  "prs_merged_capped": false,
   "release_count": 50,
   "latest_release_tag": "v0.0.55",
   "latest_release_date": "2025-06-27T06:51:34Z",
-  "avg_days_between_releases": 1.793103448275862,
+  "avg_days_between_releases": 1.0612244897959184,
   "releases": [
     {
       "tag_name": "v0.0.55",
@@ -260,6 +273,146 @@
       "published_at": "2025-04-24T20:19:50Z",
       "prerelease": false,
       "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.24"
+    },
+    {
+      "tag_name": "v0.0.21",
+      "name": "v0.0.21",
+      "published_at": "2025-04-24T16:31:36Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.21"
+    },
+    {
+      "tag_name": "v0.0.20",
+      "name": "v0.0.20",
+      "published_at": "2025-04-24T16:27:58Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.20"
+    },
+    {
+      "tag_name": "v0.0.19",
+      "name": "v0.0.19",
+      "published_at": "2025-04-24T11:14:54Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.19"
+    },
+    {
+      "tag_name": "v0.0.18",
+      "name": "v0.0.18",
+      "published_at": "2025-04-24T11:02:40Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.18"
+    },
+    {
+      "tag_name": "v0.0.17",
+      "name": "v0.0.17",
+      "published_at": "2025-04-23T16:21:55Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.17"
+    },
+    {
+      "tag_name": "v0.0.16",
+      "name": "v0.0.16",
+      "published_at": "2025-04-23T01:24:36Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.16"
+    },
+    {
+      "tag_name": "v0.0.15",
+      "name": "v0.0.15",
+      "published_at": "2025-04-23T01:23:40Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.15"
+    },
+    {
+      "tag_name": "v0.0.14",
+      "name": "v0.0.14",
+      "published_at": "2025-04-23T01:20:26Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.14"
+    },
+    {
+      "tag_name": "v0.0.13",
+      "name": "v0.0.13",
+      "published_at": "2025-04-23T01:13:46Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.13"
+    },
+    {
+      "tag_name": "v0.0.12",
+      "name": "v0.0.12",
+      "published_at": "2025-04-23T01:11:34Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.12"
+    },
+    {
+      "tag_name": "v0.0.11",
+      "name": "v0.0.11",
+      "published_at": "2025-04-23T01:10:53Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.11"
+    },
+    {
+      "tag_name": "v0.0.10",
+      "name": "v0.0.10",
+      "published_at": "2025-04-22T01:38:07Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.10"
+    },
+    {
+      "tag_name": "v0.0.9",
+      "name": "v0.0.9",
+      "published_at": "2025-04-22T00:52:58Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.9"
+    },
+    {
+      "tag_name": "v0.0.7",
+      "name": "v0.0.7",
+      "published_at": "2025-04-22T00:49:55Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.7"
+    },
+    {
+      "tag_name": "v0.0.6",
+      "name": "v0.0.6",
+      "published_at": "2025-04-22T00:53:14Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.6"
+    },
+    {
+      "tag_name": "v0.0.5",
+      "name": "v0.0.5",
+      "published_at": "2025-04-22T00:46:12Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.5"
+    },
+    {
+      "tag_name": "v0.0.4",
+      "name": "v0.0.4",
+      "published_at": "2025-04-22T00:45:04Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.4"
+    },
+    {
+      "tag_name": "v0.0.3",
+      "name": "v0.0.3",
+      "published_at": "2025-04-22T00:35:38Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.3"
+    },
+    {
+      "tag_name": "v0.0.2",
+      "name": "v0.0.2",
+      "published_at": "2025-04-22T00:20:33Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.2"
+    },
+    {
+      "tag_name": "v0.0.1",
+      "name": "v0.0.1",
+      "published_at": "2025-04-22T00:13:01Z",
+      "prerelease": false,
+      "url": "https://github.com/opencode-ai/opencode/releases/tag/v0.0.1"
     }
   ],
   "contributor_count": 29,
@@ -363,6 +516,7 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
   "total_commits": 185,
   "first_commit_date": "2025-03-21T17:20:28Z",
   "commit_span_days": 381,
@@ -370,7 +524,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:30:26.193983+00:00",
+  "fetched_at": "2026-04-07T08:26:51.751849+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

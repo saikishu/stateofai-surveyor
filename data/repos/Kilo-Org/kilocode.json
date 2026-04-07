@@ -5,9 +5,12 @@
   "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent. #1 coding agent on OpenRouter. 1.5M+ Kilo Coders. 25T+ tokens processed",
   "homepage": "https://kilo.ai/",
   "github_url": "https://github.com/Kilo-Org/kilocode",
-  "stars": 17774,
-  "forks": 2339,
+  "stars": 17779,
+  "forks": 2340,
   "watchers": 93,
+  "stars_added_30d": 979,
+  "stars_added_90d": 979,
+  "stars_added_90d_capped": true,
   "license_name": "MIT License",
   "license_spdx": "MIT",
   "topics": [
@@ -28,8 +31,8 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-03-10T15:34:26Z",
-  "updated_at": "2026-04-07T06:53:43Z",
-  "pushed_at": "2026-04-07T07:25:03Z",
+  "updated_at": "2026-04-07T08:10:30Z",
+  "pushed_at": "2026-04-07T08:23:00Z",
   "age_days": 392,
   "days_since_push": 0,
   "activity_status": "active",
@@ -48,20 +51,30 @@
   ],
   "total_code_bytes": 11620077,
   "approx_loc": 275565,
-  "issues_open": 619,
+  "issues_open": 621,
   "issues_closed": 2148,
-  "issues_new_30d": 67,
-  "issues_new_90d": 67,
-  "issues_active_30d": 67,
-  "issues_closed_30d": 49,
-  "prs_open": 315,
+  "issues_new_30d": 428,
+  "issues_new_90d": 607,
+  "issues_new_capped": false,
+  "issues_active_30d": 320,
+  "issues_active_capped": true,
+  "issues_closed_30d": 431,
+  "issues_closed_90d": 432,
+  "issues_closed_capped": false,
+  "prs_open": 316,
   "prs_closed": 1158,
-  "prs_merged": 3155,
-  "prs_active_30d": 100,
+  "prs_merged": 3156,
+  "prs_active_30d": 316,
+  "prs_active_capped": false,
+  "prs_opened_30d": 995,
+  "prs_opened_90d": 1000,
+  "prs_opened_capped": true,
+  "prs_merged_90d": 660,
+  "prs_merged_capped": true,
   "release_count": 48,
   "latest_release_tag": "v7.1.22",
   "latest_release_date": "2026-04-06T16:10:36Z",
-  "avg_days_between_releases": 0.5517241379310345,
+  "avg_days_between_releases": 0.5531914893617021,
   "releases": [
     {
       "tag_name": "v7.1.22",
@@ -272,9 +285,135 @@
       "published_at": "2026-03-11T14:25:06Z",
       "prerelease": false,
       "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.45"
+    },
+    {
+      "tag_name": "v7.0.44",
+      "name": "v7.0.44",
+      "published_at": "2026-03-11T10:03:21Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.44"
+    },
+    {
+      "tag_name": "v7.0.43",
+      "name": "v7.0.43",
+      "published_at": "2026-03-10T18:19:02Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.43"
+    },
+    {
+      "tag_name": "v7.0.42",
+      "name": "v7.0.42",
+      "published_at": "2026-03-10T17:30:47Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.42"
+    },
+    {
+      "tag_name": "v7.0.41",
+      "name": "v7.0.41",
+      "published_at": "2026-03-10T11:44:10Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.41"
+    },
+    {
+      "tag_name": "v7.0.40",
+      "name": "v7.0.40",
+      "published_at": "2026-03-06T22:43:36Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.40"
+    },
+    {
+      "tag_name": "v7.0.39",
+      "name": "v7.0.39",
+      "published_at": "2026-03-05T15:53:41Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.39"
+    },
+    {
+      "tag_name": "v7.0.38",
+      "name": "v7.0.38",
+      "published_at": "2026-03-04T22:28:19Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.38"
+    },
+    {
+      "tag_name": "v7.0.37",
+      "name": "v7.0.37",
+      "published_at": "2026-03-03T19:00:10Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.37"
+    },
+    {
+      "tag_name": "v7.0.36",
+      "name": "v7.0.36",
+      "published_at": "2026-03-03T15:00:00Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.36"
+    },
+    {
+      "tag_name": "v7.0.35",
+      "name": "v7.0.35",
+      "published_at": "2026-03-03T11:03:18Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.35"
+    },
+    {
+      "tag_name": "v7.0.34",
+      "name": "v7.0.34",
+      "published_at": "2026-03-03T09:14:15Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.34"
+    },
+    {
+      "tag_name": "v7.0.33",
+      "name": "v7.0.33",
+      "published_at": "2026-02-27T19:40:49Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.33"
+    },
+    {
+      "tag_name": "v7.0.30",
+      "name": "v7.0.30",
+      "published_at": "2026-02-25T19:52:25Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.30"
+    },
+    {
+      "tag_name": "v7.0.29",
+      "name": "v7.0.29",
+      "published_at": "2026-02-25T12:19:41Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.29"
+    },
+    {
+      "tag_name": "v7.0.28",
+      "name": "v7.0.28",
+      "published_at": "2026-02-25T07:09:34Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.28"
+    },
+    {
+      "tag_name": "v7.0.27",
+      "name": "v7.0.27",
+      "published_at": "2026-02-23T16:32:02Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.27"
+    },
+    {
+      "tag_name": "v7.0.26",
+      "name": "v7.0.26",
+      "published_at": "2026-02-23T15:43:21Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.0.26"
+    },
+    {
+      "tag_name": "v1.0.25",
+      "name": "v1.0.25",
+      "published_at": "2026-02-23T15:31:21Z",
+      "prerelease": false,
+      "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v1.0.25"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 429,
   "top_contributors": [
     {
       "login": "thdxr",
@@ -298,10 +437,10 @@
       "login": "markijbema",
       "avatar_url": "https://avatars.githubusercontent.com/u/624143?v=4",
       "html_url": "https://github.com/markijbema",
-      "contributions": 1165,
+      "contributions": 1166,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 1168
+      "commits_count": 1169
     },
     {
       "login": "rekram1-node",
@@ -367,8 +506,8 @@
       "commits_count": 362
     }
   ],
-  "commits_last_year": 14859,
-  "commits_per_week_avg": 285.75,
+  "commits_last_year": 14861,
+  "commits_per_week_avg": 285.78846153846155,
   "weekly_commits": [
     28,
     43,
@@ -421,7 +560,7 @@
     558,
     473,
     372,
-    38
+    40
   ],
   "weekly_timestamps": [
     1744502400,
@@ -477,18 +616,19 @@
     1774742400,
     1775347200
   ],
-  "commits_30d": 1904,
-  "commits_90d": 7873,
+  "commits_30d": 1906,
+  "commits_90d": 7875,
   "commit_trend": "stalled",
   "commit_growth_pct": -50.9,
-  "total_commits": 15089,
+  "commit_growth_90d_pct": 89.3,
+  "total_commits": 15091,
   "first_commit_date": "2025-03-21T17:20:28Z",
   "commit_span_days": 381,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:29:33.809452+00:00",
+  "fetched_at": "2026-04-07T08:26:15.175784+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

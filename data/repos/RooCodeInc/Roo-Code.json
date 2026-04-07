@@ -5,9 +5,12 @@
   "description": "Roo Code gives you a whole dev team of AI agents in your code editor.",
   "homepage": "https://roocode.com",
   "github_url": "https://github.com/RooCodeInc/Roo-Code",
-  "stars": 23009,
+  "stars": 23011,
   "forks": 2968,
   "watchers": 134,
+  "stars_added_30d": 554,
+  "stars_added_90d": 911,
+  "stars_added_90d_capped": true,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [],
@@ -15,7 +18,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-10-31T17:56:50Z",
-  "updated_at": "2026-04-07T07:08:32Z",
+  "updated_at": "2026-04-07T08:11:03Z",
   "pushed_at": "2026-04-07T01:58:54Z",
   "age_days": 522,
   "days_since_push": 0,
@@ -36,18 +39,28 @@
   "approx_loc": 301567,
   "issues_open": 438,
   "issues_closed": 3000,
-  "issues_new_30d": 59,
-  "issues_new_90d": 59,
-  "issues_active_30d": 59,
-  "issues_closed_30d": 5,
+  "issues_new_30d": 95,
+  "issues_new_90d": 353,
+  "issues_new_capped": false,
+  "issues_active_30d": 135,
+  "issues_active_capped": false,
+  "issues_closed_30d": 0,
+  "issues_closed_90d": 1,
+  "issues_closed_capped": false,
   "prs_open": 380,
   "prs_closed": 2859,
   "prs_merged": 4295,
   "prs_active_30d": 97,
+  "prs_active_capped": false,
+  "prs_opened_30d": 78,
+  "prs_opened_90d": 1000,
+  "prs_opened_capped": true,
+  "prs_merged_90d": 486,
+  "prs_merged_capped": false,
   "release_count": 277,
   "latest_release_tag": "v3.51.1",
   "latest_release_date": "2026-03-08T02:25:17Z",
-  "avg_days_between_releases": 1.5,
+  "avg_days_between_releases": 1.1343283582089552,
   "releases": [
     {
       "tag_name": "v3.51.1",
@@ -258,9 +271,499 @@
       "published_at": "2026-02-17T21:09:18Z",
       "prerelease": true,
       "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.55"
+    },
+    {
+      "tag_name": "cli-v0.0.54",
+      "name": "Roo Code CLI v0.0.54",
+      "published_at": "2026-02-15T07:44:56Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.54"
+    },
+    {
+      "tag_name": "cli-v0.0.53",
+      "name": "Roo Code CLI v0.0.53",
+      "published_at": "2026-02-12T00:50:26Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.53"
+    },
+    {
+      "tag_name": "cli-v0.0.52",
+      "name": "Roo Code CLI v0.0.52",
+      "published_at": "2026-02-09T05:10:52Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.52"
+    },
+    {
+      "tag_name": "v3.47.3",
+      "name": "Release v3.47.3",
+      "published_at": "2026-02-06T16:42:23Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.47.3"
+    },
+    {
+      "tag_name": "v3.47.2",
+      "name": "Release v3.47.2",
+      "published_at": "2026-02-06T02:04:09Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.47.2"
+    },
+    {
+      "tag_name": "v3.47.1",
+      "name": "Release v3.47.1",
+      "published_at": "2026-02-06T00:20:43Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.47.1"
+    },
+    {
+      "tag_name": "cli-v0.0.51",
+      "name": "Roo Code CLI v0.0.51",
+      "published_at": "2026-02-06T21:59:42Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.51"
+    },
+    {
+      "tag_name": "v3.47.0",
+      "name": "Release v3.47.0",
+      "published_at": "2026-02-05T20:57:15Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.47.0"
+    },
+    {
+      "tag_name": "cli-v0.0.50",
+      "name": "Roo Code CLI v0.0.50",
+      "published_at": "2026-02-05T02:32:01Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.50"
+    },
+    {
+      "tag_name": "v3.46.2",
+      "name": "Release v3.46.2",
+      "published_at": "2026-02-03T17:00:31Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.46.2"
+    },
+    {
+      "tag_name": "cli-v0.0.49",
+      "name": "Roo Code CLI v0.0.49",
+      "published_at": "2026-02-03T06:46:21Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.49"
+    },
+    {
+      "tag_name": "v3.46.1",
+      "name": "Release v3.46.1",
+      "published_at": "2026-01-31T05:40:20Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.46.1"
+    },
+    {
+      "tag_name": "v3.46.0",
+      "name": "Release v3.46.0",
+      "published_at": "2026-01-30T20:29:18Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.46.0"
+    },
+    {
+      "tag_name": "v3.45.0",
+      "name": "Release v3.45.0",
+      "published_at": "2026-01-28T04:07:27Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.45.0"
+    },
+    {
+      "tag_name": "v3.44.2",
+      "name": "Release v3.44.2",
+      "published_at": "2026-01-27T20:54:47Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.44.2"
+    },
+    {
+      "tag_name": "v3.44.1",
+      "name": "Release v3.44.1",
+      "published_at": "2026-01-27T15:30:45Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.44.1"
+    },
+    {
+      "tag_name": "v3.44.0",
+      "name": "Release v3.44.0",
+      "published_at": "2026-01-27T04:28:52Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.44.0"
+    },
+    {
+      "tag_name": "v3.43.0",
+      "name": "Release v3.43.0",
+      "published_at": "2026-01-24T04:59:34Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.43.0"
+    },
+    {
+      "tag_name": "v3.42.0",
+      "name": "Release v3.42.0",
+      "published_at": "2026-01-23T04:59:04Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.42.0"
+    },
+    {
+      "tag_name": "v3.41.3",
+      "name": "Release v3.41.3",
+      "published_at": "2026-01-18T13:07:28Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.41.3"
+    },
+    {
+      "tag_name": "cli-v0.0.48",
+      "name": "Roo Code CLI v0.0.48",
+      "published_at": "2026-01-17T07:30:37Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.48"
+    },
+    {
+      "tag_name": "cli-v0.0.47",
+      "name": "Roo Code CLI v0.0.47",
+      "published_at": "2026-01-17T06:58:22Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.47"
+    },
+    {
+      "tag_name": "v3.41.2",
+      "name": "Release v3.41.2",
+      "published_at": "2026-01-16T23:05:34Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.41.2"
+    },
+    {
+      "tag_name": "v3.41.1",
+      "name": "Release v3.41.1",
+      "published_at": "2026-01-16T05:50:59Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.41.1"
+    },
+    {
+      "tag_name": "v3.41.0",
+      "name": "Release v3.41.0",
+      "published_at": "2026-01-15T05:47:17Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.41.0"
+    },
+    {
+      "tag_name": "v3.40.1",
+      "name": "Release v3.40.1",
+      "published_at": "2026-01-14T05:03:22Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.40.1"
+    },
+    {
+      "tag_name": "v3.40.0",
+      "name": "Release v3.40.0",
+      "published_at": "2026-01-13T23:37:40Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.40.0"
+    },
+    {
+      "tag_name": "cli-v0.0.46",
+      "name": "Roo Code CLI v0.0.46",
+      "published_at": "2026-01-13T00:22:29Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.46"
+    },
+    {
+      "tag_name": "v3.39.3",
+      "name": "Release v3.39.3",
+      "published_at": "2026-01-10T18:37:23Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.39.3"
+    },
+    {
+      "tag_name": "v3.39.2",
+      "name": "Release v3.39.2",
+      "published_at": "2026-01-10T02:51:30Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.39.2"
+    },
+    {
+      "tag_name": "v3.39.1",
+      "name": "Release v3.39.1",
+      "published_at": "2026-01-08T22:51:31Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.39.1"
+    },
+    {
+      "tag_name": "v3.39.0",
+      "name": "Release v3.39.0",
+      "published_at": "2026-01-08T14:56:07Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.39.0"
+    },
+    {
+      "tag_name": "cli-v0.0.45",
+      "name": "Roo Code CLI v0.0.45",
+      "published_at": "2026-01-08T11:19:36Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.45"
+    },
+    {
+      "tag_name": "cli-v0.0.44",
+      "name": "Roo Code CLI v0.0.44",
+      "published_at": "2026-01-08T07:54:46Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.44"
+    },
+    {
+      "tag_name": "cli-v0.0.43",
+      "name": "Roo Code CLI v0.0.43",
+      "published_at": "2026-01-07T20:51:51Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.43"
+    },
+    {
+      "tag_name": "cli-v0.0.42",
+      "name": "Roo Code CLI v0.0.42",
+      "published_at": "2026-01-07T19:38:47Z",
+      "prerelease": true,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/cli-v0.0.42"
+    },
+    {
+      "tag_name": "v3.38.3",
+      "name": "Release v3.38.3",
+      "published_at": "2026-01-04T00:25:32Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.38.3"
+    },
+    {
+      "tag_name": "v3.38.2",
+      "name": "Release v3.38.2",
+      "published_at": "2025-12-31T08:23:41Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.38.2"
+    },
+    {
+      "tag_name": "v3.38.1",
+      "name": "Release v3.38.1",
+      "published_at": "2025-12-29T23:53:52Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.38.1"
+    },
+    {
+      "tag_name": "v3.38.0",
+      "name": "Release v3.38.0",
+      "published_at": "2025-12-27T20:27:49Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.38.0"
+    },
+    {
+      "tag_name": "v3.37.1",
+      "name": "Release v3.37.1",
+      "published_at": "2025-12-23T23:15:22Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.37.1"
+    },
+    {
+      "tag_name": "v3.37.0",
+      "name": "Release v3.37.0",
+      "published_at": "2025-12-23T05:09:21Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.37.0"
+    },
+    {
+      "tag_name": "v3.36.16",
+      "name": "Release v3.36.16",
+      "published_at": "2025-12-20T04:01:03Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.16"
+    },
+    {
+      "tag_name": "v3.36.15",
+      "name": "Release v3.36.15",
+      "published_at": "2025-12-19T20:43:12Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.15"
+    },
+    {
+      "tag_name": "v3.36.14",
+      "name": "Release v3.36.14",
+      "published_at": "2025-12-19T02:54:19Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.14"
+    },
+    {
+      "tag_name": "v3.36.13",
+      "name": "Release v3.36.13",
+      "published_at": "2025-12-18T21:13:56Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.13"
+    },
+    {
+      "tag_name": "v3.36.12",
+      "name": "Release v3.36.12",
+      "published_at": "2025-12-18T09:17:19Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.12"
+    },
+    {
+      "tag_name": "v3.36.11",
+      "name": "Release v3.36.11",
+      "published_at": "2025-12-17T21:30:36Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.11"
+    },
+    {
+      "tag_name": "v3.36.10",
+      "name": "Release v3.36.10",
+      "published_at": "2025-12-17T16:25:30Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.10"
+    },
+    {
+      "tag_name": "v3.36.9",
+      "name": "Release v3.36.9",
+      "published_at": "2025-12-16T21:18:20Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.9"
+    },
+    {
+      "tag_name": "v3.36.8",
+      "name": "Release v3.36.8",
+      "published_at": "2025-12-16T20:46:31Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.8"
+    },
+    {
+      "tag_name": "v3.36.7",
+      "name": "Release v3.36.7",
+      "published_at": "2025-12-15T14:49:47Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.7"
+    },
+    {
+      "tag_name": "v3.36.6",
+      "name": "Release v3.36.6",
+      "published_at": "2025-12-12T22:06:33Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.6"
+    },
+    {
+      "tag_name": "v3.36.5",
+      "name": "Release v3.36.5",
+      "published_at": "2025-12-11T22:53:03Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.5"
+    },
+    {
+      "tag_name": "v3.36.4",
+      "name": "Release v3.36.4",
+      "published_at": "2025-12-10T19:48:43Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.4"
+    },
+    {
+      "tag_name": "v3.36.3",
+      "name": "Release v3.36.3",
+      "published_at": "2025-12-10T06:14:19Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.3"
+    },
+    {
+      "tag_name": "v3.36.2",
+      "name": "Release v3.36.2",
+      "published_at": "2025-12-05T06:09:48Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.2"
+    },
+    {
+      "tag_name": "v3.36.1",
+      "name": "Release v3.36.1",
+      "published_at": "2025-12-05T03:46:32Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.1"
+    },
+    {
+      "tag_name": "v3.36.0",
+      "name": "Release v3.36.0",
+      "published_at": "2025-12-04T14:24:33Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.36.0"
+    },
+    {
+      "tag_name": "v3.35.5",
+      "name": "Release v3.35.5",
+      "published_at": "2025-12-03T16:29:45Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.35.5"
+    },
+    {
+      "tag_name": "v3.35.4",
+      "name": "Release v3.35.4",
+      "published_at": "2025-12-03T00:52:00Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.35.4"
+    },
+    {
+      "tag_name": "v3.35.3",
+      "name": "Release v3.35.3",
+      "published_at": "2025-12-02T15:39:48Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.35.3"
+    },
+    {
+      "tag_name": "v3.35.2",
+      "name": "Release v3.35.2",
+      "published_at": "2025-12-02T05:39:48Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.35.2"
+    },
+    {
+      "tag_name": "v3.35.1",
+      "name": "Release v3.35.1",
+      "published_at": "2025-12-01T23:33:51Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.35.1"
+    },
+    {
+      "tag_name": "v3.35.0",
+      "name": "Release v3.35.0",
+      "published_at": "2025-12-01T21:53:39Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.35.0"
+    },
+    {
+      "tag_name": "v3.34.8",
+      "name": "Release v3.34.8",
+      "published_at": "2025-11-27T18:04:41Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.34.8"
+    },
+    {
+      "tag_name": "v3.34.7",
+      "name": "Release v3.34.7",
+      "published_at": "2025-11-27T15:59:51Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.34.7"
+    },
+    {
+      "tag_name": "v3.34.6",
+      "name": "Release v3.34.6",
+      "published_at": "2025-11-26T23:11:56Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.34.6"
+    },
+    {
+      "tag_name": "v3.34.5",
+      "name": "Release v3.34.5",
+      "published_at": "2025-11-26T05:53:26Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.34.5"
+    },
+    {
+      "tag_name": "v3.34.4",
+      "name": "Release v3.34.4",
+      "published_at": "2025-11-25T20:29:50Z",
+      "prerelease": false,
+      "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.34.4"
     }
   ],
-  "contributor_count": 100,
+  "contributor_count": 286,
   "top_contributors": [
     {
       "login": "mrubens",
@@ -361,6 +864,7 @@
   "commits_90d": 0,
   "commit_trend": "unknown",
   "commit_growth_pct": 0.0,
+  "commit_growth_90d_pct": 0.0,
   "total_commits": 7038,
   "first_commit_date": "2024-07-06T00:51:41Z",
   "commit_span_days": 640,
@@ -468,7 +972,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:29:27.281648+00:00",
+  "fetched_at": "2026-04-07T08:26:02.695277+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }
