@@ -5,7 +5,7 @@
   "description": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight Personal AI Agent\"",
   "homepage": "https://nanobot.wiki",
   "github_url": "https://github.com/HKUDS/nanobot",
-  "stars": 38269,
+  "stars": 38270,
   "forks": 6658,
   "watchers": 192,
   "license_name": "MIT License",
@@ -15,7 +15,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2026-02-01T07:16:15Z",
-  "updated_at": "2026-04-07T07:18:00Z",
+  "updated_at": "2026-04-07T07:22:33Z",
   "pushed_at": "2026-04-07T07:15:13Z",
   "age_days": 65,
   "days_since_push": 0,
@@ -140,16 +140,7 @@
       "login": "Re-bin",
       "avatar_url": "https://avatars.githubusercontent.com/u/52506698?v=4",
       "html_url": "https://github.com/Re-bin",
-      "contributions": 1007,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
-    },
-    {
-      "login": "chengyongru",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61816729?v=4",
-      "html_url": "https://github.com/chengyongru",
-      "contributions": 52,
+      "contributions": 1005,
       "additions": 0,
       "deletions": 0,
       "commits_count": 0
@@ -158,6 +149,15 @@
       "login": "Athemis",
       "avatar_url": "https://avatars.githubusercontent.com/u/552653?v=4",
       "html_url": "https://github.com/Athemis",
+      "contributions": 47,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "chengyongru",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61816729?v=4",
+      "html_url": "https://github.com/chengyongru",
       "contributions": 47,
       "additions": 0,
       "deletions": 0,
@@ -261,7 +261,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:21:17.796628+00:00",
+  "fetched_at": "2026-04-07T07:31:02.546192+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

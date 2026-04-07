@@ -409,7 +409,7 @@
               Commits/yr <span x-show="sortBy==='commits_last_year'" x-text="sortDesc?'↓':'↑'"></span>
             </th>
             <th class="px-4 py-3 text-left hidden xl:table-cell">Activity</th>
-            <th class="px-4 py-3 text-left hidden xl:table-cell">License</th>
+            <!-- License column hidden -->
             <th class="px-4 py-3 text-center">Status</th>
           </tr>
         </thead>
@@ -470,9 +470,7 @@
                           width="80" height="24" class="sparkline"></canvas>
                 </template>
               </td>
-              <!-- License -->
-              <td class="px-4 py-3 hidden xl:table-cell text-xs text-slate-400"
-                  x-text="repo.license_spdx || repo.license_name || repo.csv_row?.license || '–'"></td>
+              <!-- License column hidden -->
               <!-- Status -->
               <td class="px-4 py-3 text-center">
                 <div class="flex flex-col items-center gap-1">
@@ -546,18 +544,7 @@
         </div>
       </div>
 
-      <!-- License distribution -->
-      <div class="bg-card border border-border rounded-xl p-5">
-        <div class="flex items-center justify-between mb-4">
-          <h3 class="font-semibold text-white flex items-center gap-2"><span>⚖️</span> License Distribution</h3>
-          <button @click="openFullscreen('chart-licenses', '⚖️ License Distribution')" class="btn-icon !p-1" title="Expand">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
-          </button>
-        </div>
-        <div class="chart-container" style="height:360px">
-          <canvas id="chart-licenses"></canvas>
-        </div>
-      </div>
+      <!-- License distribution hidden -->
 
       <!-- Activity status -->
       <div class="bg-card border border-border rounded-xl p-5">
@@ -794,9 +781,14 @@
               </div>
             </template>
           </div>
-          <div class="chart-container" style="height:130px">
-            <canvas id="detail-commits"></canvas>
-          </div>
+          <template x-if="selectedRepo.weekly_commits && selectedRepo.weekly_commits.some(v => v > 0)">
+            <div class="chart-container" style="height:130px">
+              <canvas id="detail-commits"></canvas>
+            </div>
+          </template>
+          <template x-if="!selectedRepo.weekly_commits || !selectedRepo.weekly_commits.some(v => v > 0)">
+            <div class="flex items-center justify-center text-slate-500 text-xs" style="height:130px">No commit data available</div>
+          </template>
           <div class="grid grid-cols-4 gap-1 mt-2 text-xs text-center">
             <div>
               <p class="text-slate-500">52w ago</p>

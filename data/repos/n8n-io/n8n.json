@@ -6,7 +6,7 @@
   "homepage": "https://n8n.io",
   "github_url": "https://github.com/n8n-io/n8n",
   "stars": 182762,
-  "forks": 56550,
+  "forks": 56549,
   "watchers": 1057,
   "license_name": "Other",
   "license_spdx": "NOASSERTION",
@@ -36,14 +36,14 @@
   "is_fork": false,
   "default_branch": "master",
   "created_at": "2019-06-22T09:24:21Z",
-  "updated_at": "2026-04-07T07:09:09Z",
-  "pushed_at": "2026-04-07T07:21:05Z",
+  "updated_at": "2026-04-07T07:28:16Z",
+  "pushed_at": "2026-04-07T07:27:37Z",
   "age_days": 2480,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 63453719,
-    "Vue": 5156424,
+    "TypeScript": 63453817,
+    "Vue": 5157379,
     "SCSS": 330435,
     "JavaScript": 291082,
     "Python": 230535,
@@ -54,17 +54,17 @@
     "Vue",
     "SCSS"
   ],
-  "total_code_bytes": 69578463,
-  "approx_loc": 1649410,
+  "total_code_bytes": 69579516,
+  "approx_loc": 1649434,
   "issues_open": 394,
   "issues_closed": 8204,
   "issues_new_30d": 30,
   "issues_new_90d": 30,
   "issues_active_30d": 30,
-  "issues_closed_30d": 14,
-  "prs_open": 1103,
+  "issues_closed_30d": 13,
+  "prs_open": 1102,
   "prs_closed": 3554,
-  "prs_merged": 14762,
+  "prs_merged": 14763,
   "prs_active_30d": 100,
   "release_count": 572,
   "latest_release_tag": "n8n@2.15.0",
@@ -375,8 +375,8 @@
       "commits_count": 467
     }
   ],
-  "commits_last_year": 6244,
-  "commits_per_week_avg": 120.07692307692308,
+  "commits_last_year": 6246,
+  "commits_per_week_avg": 120.11538461538461,
   "weekly_commits": [
     85,
     56,
@@ -429,7 +429,7 @@
     164,
     171,
     156,
-    11
+    13
   ],
   "weekly_timestamps": [
     1744502400,
@@ -485,11 +485,11 @@
     1774742400,
     1775347200
   ],
-  "commits_30d": 665,
-  "commits_90d": 2086,
+  "commits_30d": 667,
+  "commits_90d": 2088,
   "commit_trend": "declining",
-  "commit_growth_pct": -34.1,
-  "total_commits": 18746,
+  "commit_growth_pct": -33.9,
+  "total_commits": 18747,
   "first_commit_date": "2019-06-23T10:35:23Z",
   "commit_span_days": 2479,
   "vulnerability_alert_count": 0,
@@ -1010,7 +1010,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:21:14.891101+00:00",
+  "fetched_at": "2026-04-07T07:30:57.598528+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

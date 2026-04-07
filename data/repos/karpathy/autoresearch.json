@@ -5,8 +5,8 @@
   "description": "AI agents running research on single-GPU nanochat training automatically",
   "homepage": null,
   "github_url": "https://github.com/karpathy/autoresearch",
-  "stars": 67571,
-  "forks": 9735,
+  "stars": 67573,
+  "forks": 9736,
   "watchers": 557,
   "license_name": null,
   "license_spdx": null,
@@ -15,7 +15,7 @@
   "is_fork": false,
   "default_branch": "master",
   "created_at": "2026-03-06T22:00:43Z",
-  "updated_at": "2026-04-07T07:20:15Z",
+  "updated_at": "2026-04-07T07:30:29Z",
   "pushed_at": "2026-03-26T00:07:37Z",
   "age_days": 31,
   "days_since_push": 12,
@@ -52,72 +52,72 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/241138?v=4",
       "html_url": "https://github.com/karpathy",
       "contributions": 28,
-      "additions": 3953,
-      "deletions": 341,
-      "commits_count": 21
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "dipeshbabu",
       "avatar_url": "https://avatars.githubusercontent.com/u/59379458?v=4",
       "html_url": "https://github.com/dipeshbabu",
       "contributions": 1,
-      "additions": 3,
-      "deletions": 3,
-      "commits_count": 1
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "hughdbrown",
       "avatar_url": "https://avatars.githubusercontent.com/u/90322?v=4",
       "html_url": "https://github.com/hughdbrown",
       "contributions": 1,
-      "additions": 2,
-      "deletions": 1,
-      "commits_count": 1
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "marcinbogdanski",
       "avatar_url": "https://avatars.githubusercontent.com/u/487323?v=4",
       "html_url": "https://github.com/marcinbogdanski",
       "contributions": 1,
-      "additions": 4,
-      "deletions": 1,
-      "commits_count": 1
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "dumko2001",
       "avatar_url": "https://avatars.githubusercontent.com/u/138385787?v=4",
       "html_url": "https://github.com/dumko2001",
       "contributions": 1,
-      "additions": 4,
-      "deletions": 3,
-      "commits_count": 1
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "haosenwang1018",
       "avatar_url": "https://avatars.githubusercontent.com/u/167664334?v=4",
       "html_url": "https://github.com/haosenwang1018",
       "contributions": 1,
-      "additions": 2,
-      "deletions": 2,
-      "commits_count": 1
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "indianspeedster",
       "avatar_url": "https://avatars.githubusercontent.com/u/38083203?v=4",
       "html_url": "https://github.com/indianspeedster",
       "contributions": 1,
-      "additions": 1,
+      "additions": 0,
       "deletions": 0,
-      "commits_count": 1
+      "commits_count": 0
     },
     {
       "login": "kaizen-38",
       "avatar_url": "https://avatars.githubusercontent.com/u/233480802?v=4",
       "html_url": "https://github.com/kaizen-38",
       "contributions": 1,
-      "additions": 3,
-      "deletions": 2,
-      "commits_count": 1
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     }
   ],
   "commits_last_year": 0,
@@ -135,7 +135,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:21:28.393440+00:00",
+  "fetched_at": "2026-04-07T07:31:40.469132+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

@@ -5,7 +5,7 @@
   "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
   "homepage": "https://crewai.com",
   "github_url": "https://github.com/crewAIInc/crewAI",
-  "stars": 48208,
+  "stars": 48210,
   "forks": 6572,
   "watchers": 345,
   "license_name": "MIT License",
@@ -21,7 +21,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2023-10-27T03:26:59Z",
-  "updated_at": "2026-04-07T07:17:14Z",
+  "updated_at": "2026-04-07T07:30:22Z",
   "pushed_at": "2026-04-07T07:17:20Z",
   "age_days": 893,
   "days_since_push": 0,
@@ -374,7 +374,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:21:32.408425+00:00",
+  "fetched_at": "2026-04-07T07:31:31.953584+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

@@ -5,7 +5,7 @@
   "description": "Open-source Agent Operating System",
   "homepage": "https://www.openfang.sh/",
   "github_url": "https://github.com/RightNow-AI/openfang",
-  "stars": 16408,
+  "stars": 16409,
   "forks": 2053,
   "watchers": 125,
   "license_name": "Apache License 2.0",
@@ -24,7 +24,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2026-02-24T23:12:38Z",
-  "updated_at": "2026-04-07T07:17:35Z",
+  "updated_at": "2026-04-07T07:27:41Z",
   "pushed_at": "2026-04-03T00:53:07Z",
   "age_days": 41,
   "days_since_push": 4,
@@ -277,54 +277,54 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/103749727?v=4",
       "html_url": "https://github.com/jaberjaber23",
       "contributions": 200,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 239438,
+      "deletions": 6428,
+      "commits_count": 137
     },
     {
       "login": "dependabot[bot]",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
       "contributions": 12,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 260,
+      "deletions": 146,
+      "commits_count": 12
     },
     {
       "login": "Fail-Safe",
       "avatar_url": "https://avatars.githubusercontent.com/u/10307870?v=4",
       "html_url": "https://github.com/Fail-Safe",
       "contributions": 9,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 92,
+      "deletions": 19,
+      "commits_count": 9
     },
     {
       "login": "lc-soft",
       "avatar_url": "https://avatars.githubusercontent.com/u/1730073?v=4",
       "html_url": "https://github.com/lc-soft",
       "contributions": 8,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 241,
+      "deletions": 143,
+      "commits_count": 8
     },
     {
       "login": "vnz",
       "avatar_url": "https://avatars.githubusercontent.com/u/1267662?v=4",
       "html_url": "https://github.com/vnz",
       "contributions": 7,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 581,
+      "deletions": 203,
+      "commits_count": 7
     },
     {
       "login": "skymoore",
       "avatar_url": "https://avatars.githubusercontent.com/u/20386670?v=4",
       "html_url": "https://github.com/skymoore",
       "contributions": 5,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 1049,
+      "deletions": 780,
+      "commits_count": 5
     },
     {
       "login": "Copilot",
@@ -333,34 +333,34 @@
       "contributions": 5,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 0
+      "commits_count": 5
     },
     {
       "login": "felix307253927",
       "avatar_url": "https://avatars.githubusercontent.com/u/9459249?v=4",
       "html_url": "https://github.com/felix307253927",
       "contributions": 4,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 117,
+      "deletions": 31,
+      "commits_count": 4
     },
     {
       "login": "szponeczek",
       "avatar_url": "https://avatars.githubusercontent.com/u/266308501?v=4",
       "html_url": "https://github.com/szponeczek",
       "contributions": 3,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 787,
+      "deletions": 7,
+      "commits_count": 3
     },
     {
       "login": "tytsxai",
       "avatar_url": "https://avatars.githubusercontent.com/u/183002805?v=4",
       "html_url": "https://github.com/tytsxai",
       "contributions": 2,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 212,
+      "deletions": 5,
+      "commits_count": 2
     }
   ],
   "commits_last_year": 0,
@@ -378,7 +378,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:21:12.327644+00:00",
+  "fetched_at": "2026-04-07T07:30:49.403133+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

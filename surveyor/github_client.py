@@ -318,10 +318,10 @@ class GitHubClient:
     # ── Commit activity (52 weeks) ────────────────────────────────────────────
 
     async def _apply_commit_activity(self, s: RepoStats, owner: str, name: str) -> None:
-        for attempt in range(4):
+        for attempt in range(6):
             raw = await self._rest(f"/repos/{owner}/{name}/stats/commit_activity")
-            if raw is None and attempt < 3:
-                await asyncio.sleep(3)
+            if raw is None and attempt < 5:
+                await asyncio.sleep(5)
                 continue
             if isinstance(raw, list) and raw:
                 s.weekly_commits    = [w["total"] for w in raw]

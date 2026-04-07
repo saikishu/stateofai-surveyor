@@ -6,7 +6,7 @@
   "homepage": "https://huggingface.co/docs/smolagents",
   "github_url": "https://github.com/huggingface/smolagents",
   "stars": 26478,
-  "forks": 2442,
+  "forks": 2443,
   "watchers": 132,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
@@ -36,7 +36,7 @@
   "issues_new_90d": 34,
   "issues_active_30d": 43,
   "issues_closed_30d": 7,
-  "prs_open": 234,
+  "prs_open": 235,
   "prs_closed": 263,
   "prs_merged": 839,
   "prs_active_30d": 54,
@@ -364,7 +364,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:21:31.097068+00:00",
+  "fetched_at": "2026-04-07T07:31:30.993107+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

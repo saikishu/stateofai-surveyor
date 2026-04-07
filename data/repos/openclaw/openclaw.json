@@ -5,7 +5,7 @@
   "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
   "homepage": "https://openclaw.ai",
   "github_url": "https://github.com/openclaw/openclaw",
-  "stars": 350493,
+  "stars": 350500,
   "forks": 70385,
   "watchers": 1727,
   "license_name": "MIT License",
@@ -23,13 +23,13 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-11-24T10:16:47Z",
-  "updated_at": "2026-04-07T07:18:09Z",
-  "pushed_at": "2026-04-07T07:17:54Z",
+  "updated_at": "2026-04-07T07:29:55Z",
+  "pushed_at": "2026-04-07T07:26:23Z",
   "age_days": 133,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 63251291,
+    "TypeScript": 63266790,
     "Swift": 3892677,
     "Kotlin": 1063242,
     "Shell": 716215,
@@ -41,17 +41,17 @@
     "Swift",
     "Kotlin"
   ],
-  "total_code_bytes": 70152353,
-  "approx_loc": 1657127,
-  "issues_open": 10829,
-  "issues_closed": 15748,
+  "total_code_bytes": 70167852,
+  "approx_loc": 1657496,
+  "issues_open": 10828,
+  "issues_closed": 15751,
   "issues_new_30d": 66,
   "issues_new_90d": 66,
   "issues_active_30d": 66,
-  "issues_closed_30d": 13,
-  "prs_open": 6374,
-  "prs_closed": 22739,
-  "prs_merged": 4818,
+  "issues_closed_30d": 16,
+  "prs_open": 6371,
+  "prs_closed": 22741,
+  "prs_merged": 4820,
   "prs_active_30d": 100,
   "release_count": 82,
   "latest_release_tag": "v2026.4.5",
@@ -275,16 +275,16 @@
       "login": "steipete",
       "avatar_url": "https://avatars.githubusercontent.com/u/58493?v=4",
       "html_url": "https://github.com/steipete",
-      "contributions": 16934,
+      "contributions": 16956,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 17080
+      "commits_count": 17082
     },
     {
       "login": "vincentkoc",
       "avatar_url": "https://avatars.githubusercontent.com/u/25068?v=4",
       "html_url": "https://github.com/vincentkoc",
-      "contributions": 2542,
+      "contributions": 2577,
       "additions": 0,
       "deletions": 0,
       "commits_count": 2697
@@ -293,10 +293,10 @@
       "login": "obviyus",
       "avatar_url": "https://avatars.githubusercontent.com/u/22031114?v=4",
       "html_url": "https://github.com/obviyus",
-      "contributions": 702,
+      "contributions": 705,
       "additions": 0,
       "deletions": 0,
-      "commits_count": 861
+      "commits_count": 864
     },
     {
       "login": "Takhoffman",
@@ -362,8 +362,8 @@
       "commits_count": 161
     }
   ],
-  "commits_last_year": 30404,
-  "commits_per_week_avg": 1520.2,
+  "commits_last_year": 30412,
+  "commits_per_week_avg": 1520.6,
   "weekly_commits": [
     0,
     0,
@@ -416,7 +416,7 @@
     1896,
     2690,
     3319,
-    1868
+    1876
   ],
   "weekly_timestamps": [
     1744502400,
@@ -472,11 +472,11 @@
     1774742400,
     1775347200
   ],
-  "commits_30d": 11578,
-  "commits_90d": 25565,
+  "commits_30d": 11586,
+  "commits_90d": 25573,
   "commit_trend": "flat",
-  "commit_growth_pct": 1.7,
-  "total_commits": 28463,
+  "commit_growth_pct": 1.8,
+  "total_commits": 28471,
   "first_commit_date": "2025-11-24T10:16:47Z",
   "commit_span_days": 133,
   "vulnerability_alert_count": 0,
@@ -1384,7 +1384,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:20:52.407393+00:00",
+  "fetched_at": "2026-04-07T07:30:20.147768+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }
