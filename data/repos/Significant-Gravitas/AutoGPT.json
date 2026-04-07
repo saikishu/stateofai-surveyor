@@ -6,7 +6,7 @@
   "homepage": "https://agpt.co",
   "github_url": "https://github.com/Significant-Gravitas/AutoGPT",
   "stars": 183200,
-  "forks": 46207,
+  "forks": 46208,
   "watchers": 1518,
   "license_name": "Other",
   "license_spdx": "NOASSERTION",
@@ -280,90 +280,90 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/133978099?v=4",
       "html_url": "https://github.com/Auto-GPT-Bot",
       "contributions": 1076,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 1163104,
+      "deletions": 584366,
+      "commits_count": 1084
     },
     {
       "login": "Pwuts",
       "avatar_url": "https://avatars.githubusercontent.com/u/12185583?v=4",
       "html_url": "https://github.com/Pwuts",
       "contributions": 894,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 291096,
+      "deletions": 190046,
+      "commits_count": 1028
     },
     {
       "login": "majdyz",
       "avatar_url": "https://avatars.githubusercontent.com/u/76959103?v=4",
       "html_url": "https://github.com/majdyz",
       "contributions": 625,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 256867,
+      "deletions": 135206,
+      "commits_count": 727
     },
     {
       "login": "Swiftyos",
       "avatar_url": "https://avatars.githubusercontent.com/u/10382233?v=4",
       "html_url": "https://github.com/Swiftyos",
       "contributions": 518,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 2234506,
+      "deletions": 1311728,
+      "commits_count": 583
     },
     {
       "login": "Torantulino",
       "avatar_url": "https://avatars.githubusercontent.com/u/22963551?v=4",
       "html_url": "https://github.com/Torantulino",
       "contributions": 470,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 36402,
+      "deletions": 17833,
+      "commits_count": 374
     },
     {
       "login": "waynehamadi",
       "avatar_url": "https://avatars.githubusercontent.com/u/9652976?v=4",
       "html_url": "https://github.com/waynehamadi",
       "contributions": 457,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 225270,
+      "deletions": 780922,
+      "commits_count": 497
     },
     {
       "login": "ntindle",
       "avatar_url": "https://avatars.githubusercontent.com/u/8845353?v=4",
       "html_url": "https://github.com/ntindle",
       "contributions": 343,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 253443,
+      "deletions": 101201,
+      "commits_count": 585
     },
     {
       "login": "hunteraraujo",
       "avatar_url": "https://avatars.githubusercontent.com/u/28832557?v=4",
       "html_url": "https://github.com/hunteraraujo",
       "contributions": 283,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 308519,
+      "deletions": 284775,
+      "commits_count": 268
     },
     {
       "login": "richbeales",
       "avatar_url": "https://avatars.githubusercontent.com/u/1500012?v=4",
       "html_url": "https://github.com/richbeales",
       "contributions": 243,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 16886,
+      "deletions": 5031,
+      "commits_count": 85
     },
     {
       "login": "0ubbe",
       "avatar_url": "https://avatars.githubusercontent.com/u/5938217?v=4",
       "html_url": "https://github.com/0ubbe",
       "contributions": 228,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 200423,
+      "deletions": 153543,
+      "commits_count": 270
     }
   ],
   "commits_last_year": 0,
@@ -517,7 +517,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:10:13.619658+00:00",
+  "fetched_at": "2026-04-07T07:21:10.739677+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

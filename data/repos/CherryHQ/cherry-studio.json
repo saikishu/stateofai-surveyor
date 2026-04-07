@@ -5,7 +5,7 @@
   "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
   "homepage": "https://cherry-ai.com",
   "github_url": "https://github.com/CherryHQ/cherry-studio",
-  "stars": 43054,
+  "stars": 43055,
   "forks": 4038,
   "watchers": 188,
   "license_name": "GNU Affero General Public License v3.0",
@@ -26,7 +26,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-05-24T01:56:26Z",
-  "updated_at": "2026-04-07T06:55:09Z",
+  "updated_at": "2026-04-07T07:00:39Z",
   "pushed_at": "2026-04-07T06:45:00Z",
   "age_days": 683,
   "days_since_push": 0,
@@ -52,8 +52,8 @@
   "issues_new_90d": 70,
   "issues_active_30d": 70,
   "issues_closed_30d": 25,
-  "prs_open": 226,
-  "prs_closed": 733,
+  "prs_open": 225,
+  "prs_closed": 734,
   "prs_merged": 3267,
   "prs_active_30d": 100,
   "release_count": 253,
@@ -417,7 +417,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T06:56:30.671740+00:00",
+  "fetched_at": "2026-04-07T07:19:52.444240+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

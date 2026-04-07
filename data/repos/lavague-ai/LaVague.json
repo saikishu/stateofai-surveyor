@@ -5,7 +5,7 @@
   "description": "Large Action Model framework to develop AI Web Agents",
   "homepage": "https://docs.lavague.ai/en/latest/",
   "github_url": "https://github.com/lavague-ai/LaVague",
-  "stars": 6318,
+  "stars": 6319,
   "forks": 578,
   "watchers": 53,
   "license_name": "Apache License 2.0",
@@ -22,7 +22,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-02-26T23:40:23Z",
-  "updated_at": "2026-04-06T16:11:55Z",
+  "updated_at": "2026-04-07T07:12:08Z",
   "pushed_at": "2025-01-21T13:41:48Z",
   "age_days": 770,
   "days_since_push": 440,
@@ -64,90 +64,90 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/52970539?v=4",
       "html_url": "https://github.com/lyie28",
       "contributions": 261,
-      "additions": 60754,
-      "deletions": 23407,
-      "commits_count": 264
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "JoFrost",
       "avatar_url": "https://avatars.githubusercontent.com/u/20685007?v=4",
       "html_url": "https://github.com/JoFrost",
       "contributions": 111,
-      "additions": 54680,
-      "deletions": 13517,
-      "commits_count": 113
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "mbrunel",
       "avatar_url": "https://avatars.githubusercontent.com/u/56654600?v=4",
       "html_url": "https://github.com/mbrunel",
       "contributions": 80,
-      "additions": 72959,
-      "deletions": 65233,
-      "commits_count": 82
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "adeprez",
       "avatar_url": "https://avatars.githubusercontent.com/u/2982153?v=4",
       "html_url": "https://github.com/adeprez",
       "contributions": 68,
-      "additions": 50366,
-      "deletions": 13426,
-      "commits_count": 86
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "dhuynh95",
       "avatar_url": "https://avatars.githubusercontent.com/u/36925557?v=4",
       "html_url": "https://github.com/dhuynh95",
       "contributions": 68,
-      "additions": 5169,
-      "deletions": 3266,
-      "commits_count": 60
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "dhuynh-lovable",
       "avatar_url": "https://avatars.githubusercontent.com/u/196551124?v=4",
       "html_url": "https://github.com/dhuynh-lovable",
       "contributions": 45,
-      "additions": 9908,
-      "deletions": 5167,
-      "commits_count": 46
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "paulpalmieri",
       "avatar_url": "https://avatars.githubusercontent.com/u/22163205?v=4",
       "html_url": "https://github.com/paulpalmieri",
       "contributions": 41,
-      "additions": 13011,
-      "deletions": 2893,
-      "commits_count": 39
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "jashuajoy",
       "avatar_url": "https://avatars.githubusercontent.com/u/48681145?v=4",
       "html_url": "https://github.com/jashuajoy",
       "contributions": 6,
-      "additions": 293,
-      "deletions": 28,
-      "commits_count": 6
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "mattanapol",
       "avatar_url": "https://avatars.githubusercontent.com/u/11912381?v=4",
       "html_url": "https://github.com/mattanapol",
       "contributions": 2,
-      "additions": 61,
-      "deletions": 1,
-      "commits_count": 2
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "yunwoong7",
       "avatar_url": "https://avatars.githubusercontent.com/u/69428232?v=4",
       "html_url": "https://github.com/yunwoong7",
       "contributions": 2,
-      "additions": 382,
+      "additions": 0,
       "deletions": 0,
-      "commits_count": 2
+      "commits_count": 0
     }
   ],
   "commits_last_year": 0,
@@ -165,7 +165,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:12:09.977505+00:00",
+  "fetched_at": "2026-04-07T07:21:26.448562+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

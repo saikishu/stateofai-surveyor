@@ -278,90 +278,90 @@
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
       "contributions": 954,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 74825,
+      "deletions": 71430,
+      "commits_count": 966
     },
     {
       "login": "xingyaoww",
       "avatar_url": "https://avatars.githubusercontent.com/u/38853559?v=4",
       "html_url": "https://github.com/xingyaoww",
       "contributions": 611,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 298671,
+      "deletions": 280422,
+      "commits_count": 765
     },
     {
       "login": "rbren",
       "avatar_url": "https://avatars.githubusercontent.com/u/7611973?v=4",
       "html_url": "https://github.com/rbren",
       "contributions": 478,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 198909,
+      "deletions": 90006,
+      "commits_count": 613
     },
     {
       "login": "tofarr",
       "avatar_url": "https://avatars.githubusercontent.com/u/17094895?v=4",
       "html_url": "https://github.com/tofarr",
       "contributions": 475,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 134781,
+      "deletions": 64096,
+      "commits_count": 538
     },
     {
       "login": "hieptl",
       "avatar_url": "https://avatars.githubusercontent.com/u/69354317?v=4",
       "html_url": "https://github.com/hieptl",
       "contributions": 383,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 172023,
+      "deletions": 52083,
+      "commits_count": 424
     },
     {
       "login": "amanape",
       "avatar_url": "https://avatars.githubusercontent.com/u/83104063?v=4",
       "html_url": "https://github.com/amanape",
       "contributions": 376,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 231577,
+      "deletions": 137794,
+      "commits_count": 554
     },
     {
       "login": "enyst",
       "avatar_url": "https://avatars.githubusercontent.com/u/6080905?v=4",
       "html_url": "https://github.com/enyst",
       "contributions": 325,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 307179,
+      "deletions": 233111,
+      "commits_count": 599
     },
     {
       "login": "malhotra5",
       "avatar_url": "https://avatars.githubusercontent.com/u/30446202?v=4",
       "html_url": "https://github.com/malhotra5",
       "contributions": 319,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 139700,
+      "deletions": 83462,
+      "commits_count": 374
     },
     {
       "login": "neubig",
       "avatar_url": "https://avatars.githubusercontent.com/u/398875?v=4",
       "html_url": "https://github.com/neubig",
       "contributions": 306,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 195505,
+      "deletions": 150080,
+      "commits_count": 462
     },
     {
       "login": "mamoodi",
       "avatar_url": "https://avatars.githubusercontent.com/u/169627366?v=4",
       "html_url": "https://github.com/mamoodi",
       "contributions": 295,
-      "additions": 0,
-      "deletions": 0,
-      "commits_count": 0
+      "additions": 27310,
+      "deletions": 12758,
+      "commits_count": 347
     }
   ],
   "commits_last_year": 0,
@@ -389,7 +389,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T06:53:55.993891+00:00",
+  "fetched_at": "2026-04-07T07:19:41.246068+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

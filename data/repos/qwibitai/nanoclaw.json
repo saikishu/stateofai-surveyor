@@ -5,8 +5,8 @@
   "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
   "homepage": "https://nanoclaw.dev",
   "github_url": "https://github.com/qwibitai/nanoclaw",
-  "stars": 26725,
-  "forks": 10988,
+  "stars": 26727,
+  "forks": 10989,
   "watchers": 115,
   "license_name": "MIT License",
   "license_spdx": "MIT",
@@ -21,7 +21,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2026-01-31T15:47:22Z",
-  "updated_at": "2026-04-07T06:59:58Z",
+  "updated_at": "2026-04-07T07:10:01Z",
   "pushed_at": "2026-04-07T05:35:41Z",
   "age_days": 65,
   "days_since_push": 0,
@@ -63,90 +63,90 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/20087851?v=4",
       "html_url": "https://github.com/gavrielc",
       "contributions": 351,
-      "additions": 63444,
-      "deletions": 62765,
-      "commits_count": 243
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "github-actions[bot]",
       "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
       "html_url": "https://github.com/apps/github-actions",
       "contributions": 151,
-      "additions": 401,
-      "deletions": 401,
-      "commits_count": 116
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "gabi-simons",
       "avatar_url": "https://avatars.githubusercontent.com/u/263580637?v=4",
       "html_url": "https://github.com/gabi-simons",
       "contributions": 23,
-      "additions": 7138,
-      "deletions": 10125,
-      "commits_count": 20
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "glifocat",
       "avatar_url": "https://avatars.githubusercontent.com/u/12087426?v=4",
       "html_url": "https://github.com/glifocat",
       "contributions": 17,
-      "additions": 7592,
-      "deletions": 324,
-      "commits_count": 17
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "Koshkoshinsk",
       "avatar_url": "https://avatars.githubusercontent.com/u/163998153?v=4",
       "html_url": "https://github.com/Koshkoshinsk",
       "contributions": 15,
-      "additions": 6564,
-      "deletions": 8580,
-      "commits_count": 12
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "claude",
       "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
       "html_url": "https://github.com/claude",
       "contributions": 9,
-      "additions": 92661,
-      "deletions": 67768,
-      "commits_count": 327
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "guyb1",
       "avatar_url": "https://avatars.githubusercontent.com/u/6676322?v=4",
       "html_url": "https://github.com/guyb1",
       "contributions": 6,
-      "additions": 160,
-      "deletions": 123,
-      "commits_count": 6
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "TomGranot",
       "avatar_url": "https://avatars.githubusercontent.com/u/8835035?v=4",
       "html_url": "https://github.com/TomGranot",
       "contributions": 5,
-      "additions": 1577,
-      "deletions": 29,
-      "commits_count": 5
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "akshan-main",
       "avatar_url": "https://avatars.githubusercontent.com/u/97239696?v=4",
       "html_url": "https://github.com/akshan-main",
       "contributions": 5,
-      "additions": 2941,
-      "deletions": 24,
-      "commits_count": 5
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "Fritzzzz1",
       "avatar_url": "https://avatars.githubusercontent.com/u/102416383?v=4",
       "html_url": "https://github.com/Fritzzzz1",
       "contributions": 4,
-      "additions": 2716,
-      "deletions": 739,
-      "commits_count": 4
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     }
   ],
   "commits_last_year": 530,
@@ -270,7 +270,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:09:08.689536+00:00",
+  "fetched_at": "2026-04-07T07:21:06.202030+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

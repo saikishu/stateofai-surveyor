@@ -5,8 +5,8 @@
   "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
   "homepage": null,
   "github_url": "https://github.com/badlogic/pi-mono",
-  "stars": 32545,
-  "forks": 3556,
+  "stars": 32551,
+  "forks": 3558,
   "watchers": 134,
   "license_name": "MIT License",
   "license_spdx": "MIT",
@@ -15,7 +15,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-08-09T14:03:50Z",
-  "updated_at": "2026-04-07T07:02:29Z",
+  "updated_at": "2026-04-07T07:19:48Z",
   "pushed_at": "2026-04-06T14:51:25Z",
   "age_days": 240,
   "days_since_push": 0,
@@ -40,9 +40,9 @@
   "issues_new_30d": 12,
   "issues_new_90d": 12,
   "issues_active_30d": 13,
-  "issues_closed_30d": 68,
+  "issues_closed_30d": 67,
   "prs_open": 4,
-  "prs_closed": 859,
+  "prs_closed": 860,
   "prs_merged": 437,
   "prs_active_30d": 4,
   "release_count": 186,
@@ -268,90 +268,90 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/514052?v=4",
       "html_url": "https://github.com/badlogic",
       "contributions": 2750,
-      "additions": 474580,
-      "deletions": 313833,
-      "commits_count": 2594
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "hjanuschka",
       "avatar_url": "https://avatars.githubusercontent.com/u/2891702?v=4",
       "html_url": "https://github.com/hjanuschka",
       "contributions": 66,
-      "additions": 6049,
-      "deletions": 2874,
-      "commits_count": 66
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "github-actions[bot]",
       "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
       "html_url": "https://github.com/apps/github-actions",
       "contributions": 54,
-      "additions": 54,
+      "additions": 0,
       "deletions": 0,
-      "commits_count": 54
+      "commits_count": 0
     },
     {
       "login": "aliou",
       "avatar_url": "https://avatars.githubusercontent.com/u/980367?v=4",
       "html_url": "https://github.com/aliou",
       "contributions": 41,
-      "additions": 3094,
-      "deletions": 244,
-      "commits_count": 41
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "markusylisiurunen",
       "avatar_url": "https://avatars.githubusercontent.com/u/8409947?v=4",
       "html_url": "https://github.com/markusylisiurunen",
       "contributions": 40,
-      "additions": 5210,
-      "deletions": 2057,
-      "commits_count": 41
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "Perlence",
       "avatar_url": "https://avatars.githubusercontent.com/u/1044300?v=4",
       "html_url": "https://github.com/Perlence",
       "contributions": 34,
-      "additions": 4536,
-      "deletions": 593,
-      "commits_count": 35
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "nicobailon",
       "avatar_url": "https://avatars.githubusercontent.com/u/2958133?v=4",
       "html_url": "https://github.com/nicobailon",
       "contributions": 29,
-      "additions": 9714,
-      "deletions": 975,
-      "commits_count": 30
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "mitsuhiko",
       "avatar_url": "https://avatars.githubusercontent.com/u/7396?v=4",
       "html_url": "https://github.com/mitsuhiko",
       "contributions": 22,
-      "additions": 1307,
-      "deletions": 314,
-      "commits_count": 22
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "ferologics",
       "avatar_url": "https://avatars.githubusercontent.com/u/5576161?v=4",
       "html_url": "https://github.com/ferologics",
       "contributions": 21,
-      "additions": 2323,
-      "deletions": 765,
-      "commits_count": 21
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "dannote",
       "avatar_url": "https://avatars.githubusercontent.com/u/2206583?v=4",
       "html_url": "https://github.com/dannote",
       "contributions": 18,
-      "additions": 1502,
-      "deletions": 417,
-      "commits_count": 18
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     }
   ],
   "commits_last_year": 0,
@@ -369,7 +369,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:04:27.599711+00:00",
+  "fetched_at": "2026-04-07T07:20:42.595665+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

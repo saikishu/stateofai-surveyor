@@ -5,7 +5,7 @@
   "description": "Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way.",
   "homepage": "https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev",
   "github_url": "https://github.com/cline/cline",
-  "stars": 59986,
+  "stars": 59988,
   "forks": 6100,
   "watchers": 273,
   "license_name": "Apache License 2.0",
@@ -15,7 +15,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-07-06T07:28:10Z",
-  "updated_at": "2026-04-07T06:42:53Z",
+  "updated_at": "2026-04-07T07:06:16Z",
   "pushed_at": "2026-04-06T23:51:34Z",
   "age_days": 639,
   "days_since_push": 0,
@@ -485,7 +485,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T06:55:12.579877+00:00",
+  "fetched_at": "2026-04-07T07:19:51.722343+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

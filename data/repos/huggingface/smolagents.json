@@ -5,7 +5,7 @@
   "description": "\ud83e\udd17 smolagents: a barebones library for agents that think in code.",
   "homepage": "https://huggingface.co/docs/smolagents",
   "github_url": "https://github.com/huggingface/smolagents",
-  "stars": 26477,
+  "stars": 26478,
   "forks": 2442,
   "watchers": 132,
   "license_name": "Apache License 2.0",
@@ -15,7 +15,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-12-05T11:28:04Z",
-  "updated_at": "2026-04-07T06:58:23Z",
+  "updated_at": "2026-04-07T07:17:42Z",
   "pushed_at": "2026-04-02T14:29:38Z",
   "age_days": 487,
   "days_since_push": 4,
@@ -364,7 +364,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:12:37.960365+00:00",
+  "fetched_at": "2026-04-07T07:21:31.097068+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

@@ -176,90 +176,90 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/2885415?v=4",
       "html_url": "https://github.com/alexchenzl",
       "contributions": 306,
-      "additions": 48663,
-      "deletions": 20332,
-      "commits_count": 208
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "bsormagec",
       "avatar_url": "https://avatars.githubusercontent.com/u/965219?v=4",
       "html_url": "https://github.com/bsormagec",
       "contributions": 11,
-      "additions": 1563,
-      "deletions": 793,
-      "commits_count": 10
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "samuel871211",
       "avatar_url": "https://avatars.githubusercontent.com/u/55658154?v=4",
       "html_url": "https://github.com/samuel871211",
       "contributions": 10,
-      "additions": 265,
-      "deletions": 21,
-      "commits_count": 9
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "AbdullahAdeebx",
       "avatar_url": "https://avatars.githubusercontent.com/u/158824177?v=4",
       "html_url": "https://github.com/AbdullahAdeebx",
       "contributions": 6,
-      "additions": 198,
-      "deletions": 44,
-      "commits_count": 6
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "PeterDaveHello",
       "avatar_url": "https://avatars.githubusercontent.com/u/3691490?v=4",
       "html_url": "https://github.com/PeterDaveHello",
       "contributions": 4,
-      "additions": 1216,
-      "deletions": 122,
-      "commits_count": 4
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "PaperBoardOfficial",
       "avatar_url": "https://avatars.githubusercontent.com/u/151846514?v=4",
       "html_url": "https://github.com/PaperBoardOfficial",
       "contributions": 3,
-      "additions": 719,
-      "deletions": 75,
-      "commits_count": 2
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "sbenodiz",
       "avatar_url": "https://avatars.githubusercontent.com/u/1709324?v=4",
       "html_url": "https://github.com/sbenodiz",
       "contributions": 3,
-      "additions": 364,
-      "deletions": 133,
-      "commits_count": 3
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "hataiit9x",
       "avatar_url": "https://avatars.githubusercontent.com/u/28525203?v=4",
       "html_url": "https://github.com/hataiit9x",
       "contributions": 2,
-      "additions": 99,
-      "deletions": 7,
-      "commits_count": 2
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "hunkim",
       "avatar_url": "https://avatars.githubusercontent.com/u/901975?v=4",
       "html_url": "https://github.com/hunkim",
       "contributions": 2,
-      "additions": 146,
-      "deletions": 46,
-      "commits_count": 2
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "mostafaeweda",
       "avatar_url": "https://avatars.githubusercontent.com/u/264320?v=4",
       "html_url": "https://github.com/mostafaeweda",
       "contributions": 2,
-      "additions": 352,
-      "deletions": 93,
-      "commits_count": 2
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     }
   ],
   "commits_last_year": 0,
@@ -277,7 +277,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:06:34.419733+00:00",
+  "fetched_at": "2026-04-07T07:20:58.098409+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

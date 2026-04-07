@@ -475,36 +475,41 @@
                   x-text="repo.license_spdx || repo.license_name || repo.csv_row?.license || '–'"></td>
               <!-- Status -->
               <td class="px-4 py-3 text-center">
-                <template x-if="repo.fetch_status === 'pending'">
-                  <span class="badge bg-slate-700 text-slate-400">pending</span>
-                </template>
-                <template x-if="repo.fetch_status === 'fetching'">
-                  <span class="badge bg-blue-900 text-blue-300">
-                    <span class="pulse-dot inline-block w-1.5 h-1.5 rounded-full bg-blue-400 mr-1"></span>
-                    fetching
-                  </span>
-                </template>
-                <template x-if="repo.fetch_status === 'error'">
-                  <span class="badge bg-red-900 text-red-300">error</span>
-                </template>
-                <template x-if="repo.fetch_status === 'complete'">
-                  <span class="badge" :style="{
-                    active:   'border:1px solid #22c55e;color:#22c55e',
-                    recent:   'border:1px solid #84cc16;color:#84cc16',
-                    stale:    'border:1px solid #f97316;color:#f97316',
-                    dormant:  'border:1px solid #64748b;color:#64748b',
-                    archived: 'border:1px solid #ef4444;color:#ef4444',
-                  }[repo.activity_status] || 'border:1px solid #818cf8;color:#818cf8'">
-                    <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" :style="{
-                      active:   'background:#22c55e',
-                      recent:   'background:#84cc16',
-                      stale:    'background:#f97316',
-                      dormant:  'background:#64748b',
-                      archived: 'background:#ef4444',
-                    }[repo.activity_status] || 'background:#818cf8'"></span>
-                    <span x-text="repo.activity_status || 'ok'"></span>
-                  </span>
-                </template>
+                <div class="flex flex-col items-center gap-1">
+                  <template x-if="repo.fetch_status === 'pending'">
+                    <span class="badge bg-slate-700 text-slate-400">pending</span>
+                  </template>
+                  <template x-if="repo.fetch_status === 'fetching'">
+                    <span class="badge bg-blue-900 text-blue-300">
+                      <span class="pulse-dot inline-block w-1.5 h-1.5 rounded-full bg-blue-400 mr-1"></span>
+                      fetching
+                    </span>
+                  </template>
+                  <template x-if="repo.fetch_status === 'error'">
+                    <span class="badge bg-red-900 text-red-300">error</span>
+                  </template>
+                  <template x-if="repo.fetch_status === 'complete'">
+                    <span class="badge" :style="{
+                      active:   'border:1px solid #22c55e;color:#22c55e',
+                      recent:   'border:1px solid #84cc16;color:#84cc16',
+                      stale:    'border:1px solid #f97316;color:#f97316',
+                      dormant:  'border:1px solid #64748b;color:#64748b',
+                      archived: 'border:1px solid #ef4444;color:#ef4444',
+                    }[repo.activity_status] || 'border:1px solid #818cf8;color:#818cf8'">
+                      <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" :style="{
+                        active:   'background:#22c55e',
+                        recent:   'background:#84cc16',
+                        stale:    'background:#f97316',
+                        dormant:  'background:#64748b',
+                        archived: 'background:#ef4444',
+                      }[repo.activity_status] || 'background:#818cf8'"></span>
+                      <span x-text="repo.activity_status || 'ok'"></span>
+                    </span>
+                  </template>
+                  <template x-if="repo.fetched_at">
+                    <span class="text-xs text-slate-500" x-text="fmtRelative(repo.fetched_at)"></span>
+                  </template>
+                </div>
               </td>
             </tr>
           </template>
@@ -661,17 +666,24 @@
             </template>
           </div>
         </div>
-        <button x-show="!readOnly"
-                @click="refreshRepo(selectedRepo.full_name)"
-                :disabled="refreshing"
-                class="btn-secondary flex-shrink-0 flex items-center gap-1.5 text-xs">
-          <svg class="w-3.5 h-3.5" :class="refreshing?'animate-spin':''" fill="none"
-               stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-          </svg>
-          Refresh
-        </button>
+        <div class="flex flex-col items-end gap-1 flex-shrink-0">
+          <button x-show="!readOnly"
+                  @click="refreshRepo(selectedRepo.full_name)"
+                  :disabled="refreshing"
+                  class="btn-secondary flex items-center gap-1.5 text-xs">
+            <svg class="w-3.5 h-3.5" :class="refreshing?'animate-spin':''" fill="none"
+                 stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+            </svg>
+            Refresh
+          </button>
+          <template x-if="selectedRepo.fetched_at">
+            <span class="text-xs text-slate-500"
+                  :title="fmtDate(selectedRepo.fetched_at)"
+                  x-text="'Updated ' + fmtRelative(selectedRepo.fetched_at)"></span>
+          </template>
+        </div>
       </div>
 
       <!-- Core metric cards -->
@@ -1677,6 +1689,21 @@ function app() {
       if (b >= 1e6) return `${(b/1e6).toFixed(1)} MB`;
       if (b >= 1e3) return `${(b/1e3).toFixed(0)} KB`;
       return `${b} B`;
+    },
+
+    fmtRelative(s) {
+      if (!s) return '';
+      try {
+        const diff = Date.now() - new Date(s).getTime();
+        const mins  = Math.floor(diff / 60_000);
+        const hours = Math.floor(diff / 3_600_000);
+        const days  = Math.floor(diff / 86_400_000);
+        if (mins  <  1) return 'just now';
+        if (mins  < 60) return `${mins}m ago`;
+        if (hours < 24) return `${hours}h ago`;
+        if (days  <  7) return `${days}d ago`;
+        return this.fmtDate(s);
+      } catch (_) { return ''; }
     },
   };
 }

@@ -5,7 +5,7 @@
   "description": "Run agents that work for you based on what you do. AI finally knows what you are doing",
   "homepage": "https://screenpi.pe",
   "github_url": "https://github.com/screenpipe/screenpipe",
-  "stars": 18052,
+  "stars": 18054,
   "forks": 1600,
   "watchers": 101,
   "license_name": "Other",
@@ -25,7 +25,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2024-06-19T13:23:56Z",
-  "updated_at": "2026-04-07T06:41:39Z",
+  "updated_at": "2026-04-07T07:11:48Z",
   "pushed_at": "2026-04-07T05:27:52Z",
   "age_days": 656,
   "days_since_push": 0,
@@ -379,7 +379,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T07:03:56.319322+00:00",
+  "fetched_at": "2026-04-07T07:20:40.364036+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

@@ -24,10 +24,11 @@ from .models import FetchProgress, RepoStats
 # ── Env / config ──────────────────────────────────────────────────────────────
 load_dotenv()
 
-GITHUB_TOKEN   = os.getenv("GITHUB_TOKEN", "")
-REPOS_FILE     = Path(os.getenv("REPOS_FILE", "repos.csv"))
-PORT           = int(os.getenv("PORT", "8000"))
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
+GITHUB_TOKEN       = os.getenv("GITHUB_TOKEN", "")
+REPOS_FILE         = Path(os.getenv("REPOS_FILE", "repos.csv"))
+PORT               = int(os.getenv("PORT", "8000"))
+FETCH_CONCURRENCY  = int(os.getenv("FETCH_CONCURRENCY", "10"))
+ADMIN_PASSWORD     = os.getenv("ADMIN_PASSWORD", "")
 GIT_USER_NAME  = os.getenv("GIT_USER_NAME",  "OWASP Surveyor Bot")
 GIT_USER_EMAIL = os.getenv("GIT_USER_EMAIL", "surveyor@owasp.org")
 GITHUB_REPO    = os.getenv("GITHUB_REPO",    "")
@@ -95,7 +96,7 @@ def _require_writable() -> None:
 
 @app.get("/api/config")
 async def get_config() -> Dict:
-    return {"read_only": READ_ONLY}
+    return {"read_only": READ_ONLY, "fetch_concurrency": FETCH_CONCURRENCY}
 
 
 # ── Routes ────────────────────────────────────────────────────────────────────
@@ -346,8 +347,10 @@ async def _bulk_fetch_task(full_names: List[str]) -> None:
             _progress.done = True
             return
 
-        async with GitHubClient(token) as client:
-            for i, full_name in enumerate(full_names):
+        sem = asyncio.Semaphore(FETCH_CONCURRENCY)
+
+        async def _fetch_one(full_name: str, client: "GitHubClient") -> None:
+            async with sem:
                 _progress.current = full_name
                 try:
                     stats = await client.fetch_repo(full_name)
@@ -355,14 +358,18 @@ async def _bulk_fetch_task(full_names: List[str]) -> None:
                 except Exception as exc:
                     logger.error("bulk fetch %s: %s", full_name, exc)
                     _progress.errors.append(f"{full_name}: {exc}")
+                finally:
+                    _progress.completed += 1
 
-                _progress.completed = i + 1
-                # Small delay to be polite to GitHub API
-                await asyncio.sleep(0.5)
+        async with GitHubClient(token) as client:
+            await asyncio.gather(*[_fetch_one(n, client) for n in full_names])
 
         _progress.done = True
         _progress.current = None
-        logger.info("Bulk fetch complete: %d/%d repos", _progress.completed, _progress.total)
+        logger.info(
+            "Bulk fetch complete: %d/%d repos (concurrency=%d)",
+            _progress.completed, _progress.total, FETCH_CONCURRENCY,
+        )
 
 
 # ── CSV export helpers ────────────────────────────────────────────────────────

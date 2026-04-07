@@ -92,90 +92,90 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/43356051?v=4",
       "html_url": "https://github.com/andrewpareles",
       "contributions": 1917,
-      "additions": 3332811,
-      "deletions": 683678,
-      "commits_count": 1576
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "mathewpareles",
       "avatar_url": "https://avatars.githubusercontent.com/u/51329589?v=4",
       "html_url": "https://github.com/mathewpareles",
       "contributions": 468,
-      "additions": 33244,
-      "deletions": 20582,
-      "commits_count": 449
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "jcommaret",
       "avatar_url": "https://avatars.githubusercontent.com/u/242889?v=4",
       "html_url": "https://github.com/jcommaret",
       "contributions": 112,
-      "additions": 8247,
-      "deletions": 4994,
-      "commits_count": 63
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "bjoaquinc",
       "avatar_url": "https://avatars.githubusercontent.com/u/75667013?v=4",
       "html_url": "https://github.com/bjoaquinc",
       "contributions": 81,
-      "additions": 11803,
-      "deletions": 4907,
-      "commits_count": 69
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "w1gs",
       "avatar_url": "https://avatars.githubusercontent.com/u/69286736?v=4",
       "html_url": "https://github.com/w1gs",
       "contributions": 26,
-      "additions": 1281,
-      "deletions": 908,
-      "commits_count": 13
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "anetaj",
       "avatar_url": "https://avatars.githubusercontent.com/u/1544710?v=4",
       "html_url": "https://github.com/anetaj",
       "contributions": 25,
-      "additions": 1206,
-      "deletions": 661,
-      "commits_count": 23
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "steaks",
       "avatar_url": "https://avatars.githubusercontent.com/u/1373752?v=4",
       "html_url": "https://github.com/steaks",
       "contributions": 19,
-      "additions": 725,
-      "deletions": 228,
-      "commits_count": 16
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "Piyu-Pika",
       "avatar_url": "https://avatars.githubusercontent.com/u/162677885?v=4",
       "html_url": "https://github.com/Piyu-Pika",
       "contributions": 13,
-      "additions": 16067,
-      "deletions": 6070,
-      "commits_count": 5
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "okxiaoliang4",
       "avatar_url": "https://avatars.githubusercontent.com/u/22525904?v=4",
       "html_url": "https://github.com/okxiaoliang4",
       "contributions": 10,
-      "additions": 2057,
-      "deletions": 1003,
-      "commits_count": 10
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "IDLe-Engineering",
       "avatar_url": "https://avatars.githubusercontent.com/u/35257265?v=4",
       "html_url": "https://github.com/IDLe-Engineering",
       "contributions": 8,
-      "additions": 370,
-      "deletions": 24,
-      "commits_count": 8
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     }
   ],
   "commits_last_year": 0,
@@ -193,7 +193,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T06:58:51.895267+00:00",
+  "fetched_at": "2026-04-07T07:20:13.709469+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }
