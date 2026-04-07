@@ -1,0 +1,486 @@
+{
+  "full_name": "charmbracelet/crush",
+  "name": "crush",
+  "owner": "charmbracelet",
+  "description": "Glamourous agentic coding for all \ud83d\udc98",
+  "homepage": null,
+  "github_url": "https://github.com/charmbracelet/crush",
+  "stars": 22601,
+  "forks": 1464,
+  "watchers": 96,
+  "license_name": "Other",
+  "license_spdx": "NOASSERTION",
+  "topics": [
+    "agentic-ai",
+    "ai",
+    "llms",
+    "ravishing"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2025-05-21T12:14:57Z",
+  "updated_at": "2026-04-07T06:43:19Z",
+  "pushed_at": "2026-04-07T00:56:16Z",
+  "age_days": 320,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "Go": 1966868,
+    "Go Template": 31235,
+    "JavaScript": 10347,
+    "CSS": 4257,
+    "HTML": 4039,
+    "Shell": 706
+  },
+  "top_3_languages": [
+    "Go",
+    "Go Template",
+    "JavaScript"
+  ],
+  "total_code_bytes": 2017452,
+  "approx_loc": 44927,
+  "issues_open": 253,
+  "issues_closed": 607,
+  "issues_new_30d": 37,
+  "issues_new_90d": 55,
+  "issues_active_30d": 55,
+  "issues_closed_30d": 44,
+  "prs_open": 109,
+  "prs_closed": 366,
+  "prs_merged": 1034,
+  "prs_active_30d": 45,
+  "release_count": 138,
+  "latest_release_tag": "v0.55.1",
+  "latest_release_date": "2026-04-06T20:17:07Z",
+  "avg_days_between_releases": 1.4642857142857142,
+  "releases": [
+    {
+      "tag_name": "v0.55.1",
+      "name": "v0.55.1",
+      "published_at": "2026-04-06T20:17:07Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.55.1"
+    },
+    {
+      "tag_name": "nightly",
+      "name": "nightly",
+      "published_at": "2026-04-07T00:56:16Z",
+      "prerelease": true,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/nightly"
+    },
+    {
+      "tag_name": "v0.55.0",
+      "name": "v0.55.0",
+      "published_at": "2026-04-02T20:52:38Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.55.0"
+    },
+    {
+      "tag_name": "v0.54.0",
+      "name": "v0.54.0",
+      "published_at": "2026-03-31T20:38:22Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.54.0"
+    },
+    {
+      "tag_name": "v0.53.0",
+      "name": "v0.53.0",
+      "published_at": "2026-03-27T19:20:53Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.53.0"
+    },
+    {
+      "tag_name": "v0.52.0",
+      "name": "v0.52.0",
+      "published_at": "2026-03-25T20:18:38Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.52.0"
+    },
+    {
+      "tag_name": "v0.51.3",
+      "name": "v0.51.3",
+      "published_at": "2026-03-24T20:25:19Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.51.3"
+    },
+    {
+      "tag_name": "v0.51.2",
+      "name": "v0.51.2",
+      "published_at": "2026-03-20T20:28:57Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.51.2"
+    },
+    {
+      "tag_name": "v0.51.1",
+      "name": "v0.51.1",
+      "published_at": "2026-03-19T20:53:52Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.51.1"
+    },
+    {
+      "tag_name": "v0.51.0",
+      "name": "v0.51.0",
+      "published_at": "2026-03-19T17:56:04Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.51.0"
+    },
+    {
+      "tag_name": "v0.50.1",
+      "name": "v0.50.1",
+      "published_at": "2026-03-17T18:44:01Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.50.1"
+    },
+    {
+      "tag_name": "v0.50.0",
+      "name": "v0.50.0",
+      "published_at": "2026-03-16T20:52:26Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.50.0"
+    },
+    {
+      "tag_name": "v0.49.0",
+      "name": "v0.49.0",
+      "published_at": "2026-03-13T21:13:57Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.49.0"
+    },
+    {
+      "tag_name": "v0.48.0",
+      "name": "v0.48.0",
+      "published_at": "2026-03-12T17:33:48Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.48.0"
+    },
+    {
+      "tag_name": "v0.47.2",
+      "name": "v0.47.2",
+      "published_at": "2026-03-05T20:39:22Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.47.2"
+    },
+    {
+      "tag_name": "v0.47.1",
+      "name": "v0.47.1",
+      "published_at": "2026-03-05T14:33:01Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.47.1"
+    },
+    {
+      "tag_name": "v0.47.0",
+      "name": "v0.47.0",
+      "published_at": "2026-03-04T14:49:43Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.47.0"
+    },
+    {
+      "tag_name": "v0.46.2",
+      "name": "v0.46.2",
+      "published_at": "2026-03-02T20:22:39Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.46.2"
+    },
+    {
+      "tag_name": "v0.46.1",
+      "name": "v0.46.1",
+      "published_at": "2026-02-27T20:24:37Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.46.1"
+    },
+    {
+      "tag_name": "v0.46.0",
+      "name": "v0.46.0",
+      "published_at": "2026-02-26T20:14:51Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.46.0"
+    },
+    {
+      "tag_name": "v0.45.1",
+      "name": "v0.45.1",
+      "published_at": "2026-02-25T21:14:43Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.45.1"
+    },
+    {
+      "tag_name": "v0.45.0",
+      "name": "v0.45.0",
+      "published_at": "2026-02-24T21:06:33Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.45.0"
+    },
+    {
+      "tag_name": "v0.44.0",
+      "name": "v0.44.0",
+      "published_at": "2026-02-22T18:38:22Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.44.0"
+    },
+    {
+      "tag_name": "v0.43.4",
+      "name": "v0.43.4",
+      "published_at": "2026-02-20T18:28:58Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.43.4"
+    },
+    {
+      "tag_name": "v0.43.2",
+      "name": "v0.43.2",
+      "published_at": "2026-02-19T14:19:27Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.43.2"
+    },
+    {
+      "tag_name": "v0.43.1",
+      "name": "v0.43.1",
+      "published_at": "2026-02-18T20:56:27Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.43.1"
+    },
+    {
+      "tag_name": "v0.43.0",
+      "name": "v0.43.0",
+      "published_at": "2026-02-13T18:09:42Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.43.0"
+    },
+    {
+      "tag_name": "v0.42.0",
+      "name": "v0.42.0",
+      "published_at": "2026-02-11T21:18:35Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.42.0"
+    },
+    {
+      "tag_name": "v0.41.0",
+      "name": "v0.41.0",
+      "published_at": "2026-02-09T20:51:23Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.41.0"
+    },
+    {
+      "tag_name": "v0.40.0",
+      "name": "v0.40.0",
+      "published_at": "2026-02-09T14:50:52Z",
+      "prerelease": false,
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.40.0"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "kujtimiihoxha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14311743?v=4",
+      "html_url": "https://github.com/kujtimiihoxha",
+      "contributions": 874,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "andreynering",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7011819?v=4",
+      "html_url": "https://github.com/andreynering",
+      "contributions": 551,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "aymanbagabas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3187948?v=4",
+      "html_url": "https://github.com/aymanbagabas",
+      "contributions": 400,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "caarlos0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/245435?v=4",
+      "html_url": "https://github.com/caarlos0",
+      "contributions": 329,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "meowgorithm",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25087?v=4",
+      "html_url": "https://github.com/meowgorithm",
+      "contributions": 247,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "charmcli",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124303983?v=4",
+      "html_url": "https://github.com/charmcli",
+      "contributions": 209,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "dependabot[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 68,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "raphamorim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3630346?v=4",
+      "html_url": "https://github.com/raphamorim",
+      "contributions": 61,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "taigrr",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8261498?v=4",
+      "html_url": "https://github.com/taigrr",
+      "contributions": 33,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Amolith",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29460675?v=4",
+      "html_url": "https://github.com/Amolith",
+      "contributions": 30,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 2560,
+  "commits_per_week_avg": 49.23076923076923,
+  "weekly_commits": [
+    26,
+    40,
+    26,
+    6,
+    14,
+    21,
+    13,
+    54,
+    43,
+    76,
+    54,
+    90,
+    119,
+    110,
+    134,
+    167,
+    110,
+    64,
+    39,
+    46,
+    5,
+    49,
+    45,
+    44,
+    40,
+    19,
+    29,
+    69,
+    60,
+    43,
+    22,
+    25,
+    19,
+    32,
+    55,
+    100,
+    10,
+    11,
+    55,
+    65,
+    71,
+    58,
+    64,
+    65,
+    41,
+    38,
+    21,
+    35,
+    39,
+    47,
+    30,
+    2
+  ],
+  "weekly_timestamps": [
+    1744502400,
+    1745107200,
+    1745712000,
+    1746316800,
+    1746921600,
+    1747526400,
+    1748131200,
+    1748736000,
+    1749340800,
+    1749945600,
+    1750550400,
+    1751155200,
+    1751760000,
+    1752364800,
+    1752969600,
+    1753574400,
+    1754179200,
+    1754784000,
+    1755388800,
+    1755993600,
+    1756598400,
+    1757203200,
+    1757808000,
+    1758412800,
+    1759017600,
+    1759622400,
+    1760227200,
+    1760832000,
+    1761436800,
+    1762041600,
+    1762646400,
+    1763251200,
+    1763856000,
+    1764460800,
+    1765065600,
+    1765670400,
+    1766275200,
+    1766880000,
+    1767484800,
+    1768089600,
+    1768694400,
+    1769299200,
+    1769904000,
+    1770508800,
+    1771113600,
+    1771718400,
+    1772323200,
+    1772928000,
+    1773532800,
+    1774137600,
+    1774742400,
+    1775347200
+  ],
+  "commits_30d": 153,
+  "commits_90d": 576,
+  "commit_trend": "declining",
+  "commit_growth_pct": -12.6,
+  "total_commits": 3009,
+  "first_commit_date": "2025-03-21T17:20:28Z",
+  "commit_span_days": 381,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:01:20.199950+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

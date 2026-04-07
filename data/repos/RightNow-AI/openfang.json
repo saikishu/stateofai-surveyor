@@ -5,9 +5,9 @@
   "description": "Open-source Agent Operating System",
   "homepage": "https://www.openfang.sh/",
   "github_url": "https://github.com/RightNow-AI/openfang",
-  "stars": 12943,
-  "forks": 1456,
-  "watchers": 101,
+  "stars": 16407,
+  "forks": 2053,
+  "watchers": 125,
   "license_name": "Apache License 2.0",
   "license_spdx": "Apache-2.0",
   "topics": [
@@ -24,386 +24,361 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2026-02-24T23:12:38Z",
-  "updated_at": "2026-03-09T08:56:19Z",
-  "pushed_at": "2026-03-09T01:59:19Z",
-  "age_days": 12,
-  "days_since_push": 0,
+  "updated_at": "2026-04-07T07:00:49Z",
+  "pushed_at": "2026-04-03T00:53:07Z",
+  "age_days": 41,
+  "days_since_push": 4,
   "activity_status": "active",
   "languages": {
-    "Rust": 5463009,
-    "HTML": 328431,
-    "JavaScript": 300728,
-    "CSS": 93892,
-    "Python": 20380,
-    "PowerShell": 6955
+    "Rust": 6332847,
+    "HTML": 351440,
+    "JavaScript": 339385,
+    "CSS": 99389,
+    "Python": 39720,
+    "Shell": 7541
   },
   "top_3_languages": [
     "Rust",
     "HTML",
     "JavaScript"
   ],
-  "total_code_bytes": 6222616,
-  "approx_loc": 152407,
-  "issues_open": 93,
-  "issues_closed": 226,
-  "issues_new_30d": 62,
-  "issues_new_90d": 62,
-  "issues_active_30d": 62,
-  "issues_closed_30d": 63,
-  "prs_open": 87,
-  "prs_closed": 63,
-  "prs_merged": 0,
-  "prs_active_30d": 87,
-  "release_count": 55,
-  "latest_release_tag": "v0.3.34",
-  "latest_release_date": "2026-03-09T01:57:31Z",
-  "avg_days_between_releases": 0.034482758620689655,
+  "total_code_bytes": 7182292,
+  "approx_loc": 176219,
+  "issues_open": 100,
+  "issues_closed": 513,
+  "issues_new_30d": 63,
+  "issues_new_90d": 63,
+  "issues_active_30d": 63,
+  "issues_closed_30d": 27,
+  "prs_open": 54,
+  "prs_closed": 242,
+  "prs_merged": 89,
+  "prs_active_30d": 54,
+  "release_count": 86,
+  "latest_release_tag": "v0.5.6",
+  "latest_release_date": "2026-03-30T18:32:00Z",
+  "avg_days_between_releases": 0.3793103448275862,
   "releases": [
     {
-      "tag_name": "v0.3.34",
-      "name": "v0.3.34",
-      "published_at": "2026-03-09T01:57:31Z",
+      "tag_name": "v0.5.6",
+      "name": "v0.5.6",
+      "published_at": "2026-03-30T18:32:00Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.34"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.5.6"
     },
     {
-      "tag_name": "v0.3.33",
-      "name": "v0.3.33",
-      "published_at": "2026-03-08T23:19:03Z",
+      "tag_name": "v0.5.5",
+      "name": "v0.5.5",
+      "published_at": "2026-03-27T21:55:24Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.33"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.5.5"
     },
     {
-      "tag_name": "v0.3.32",
-      "name": "v0.3.32",
-      "published_at": "2026-03-08T19:53:59Z",
+      "tag_name": "v0.5.4",
+      "name": "v0.5.4",
+      "published_at": "2026-03-27T19:44:29Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.32"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.5.4"
     },
     {
-      "tag_name": "v0.3.31",
-      "name": "v0.3.31",
-      "published_at": "2026-03-08T19:30:30Z",
+      "tag_name": "v0.5.3",
+      "name": "v0.5.3 \u2014 19 Bug Fixes (3 rounds)",
+      "published_at": "2026-03-27T01:09:28Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.31"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.5.3"
     },
     {
-      "tag_name": "v0.3.30",
-      "name": "v0.3.30 \u2014 Security Hardening",
-      "published_at": "2026-03-08T14:02:57Z",
+      "tag_name": "v0.5.2",
+      "name": "v0.5.2 \u2014 12 Bug Fixes",
+      "published_at": "2026-03-26T02:33:27Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.30"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.5.2"
     },
     {
-      "tag_name": "v0.3.29",
-      "name": "v0.3.29",
-      "published_at": "2026-03-08T01:39:42Z",
+      "tag_name": "v0.5.1",
+      "name": "v0.5.1 \u2014 Community Contributions",
+      "published_at": "2026-03-20T00:53:04Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.29"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.5.1"
     },
     {
-      "tag_name": "v0.3.28",
-      "name": "v0.3.28",
-      "published_at": "2026-03-07T22:37:26Z",
+      "tag_name": "v0.5.0",
+      "name": "v0.5.0 \u2014 Milestone Release",
+      "published_at": "2026-03-19T21:47:33Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.28"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.5.0"
     },
     {
-      "tag_name": "v0.3.27",
-      "name": "v0.3.27",
-      "published_at": "2026-03-07T20:44:40Z",
+      "tag_name": "v0.4.9",
+      "name": "v0.4.9",
+      "published_at": "2026-03-18T23:05:02Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.27"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.9"
     },
     {
-      "tag_name": "v0.3.26",
-      "name": "v0.3.26",
-      "published_at": "2026-03-07T02:43:49Z",
+      "tag_name": "v0.4.8",
+      "name": "v0.4.8",
+      "published_at": "2026-03-18T21:14:18Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.26"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.8"
     },
     {
-      "tag_name": "v0.3.25",
-      "name": "v0.3.25",
-      "published_at": "2026-03-06T21:34:47Z",
+      "tag_name": "v0.4.7",
+      "name": "v0.4.7",
+      "published_at": "2026-03-18T19:51:41Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.25"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.7"
     },
     {
-      "tag_name": "v0.3.24",
-      "name": "v0.3.24",
-      "published_at": "2026-03-05T20:09:11Z",
+      "tag_name": "v0.4.6",
+      "name": "v0.4.6",
+      "published_at": "2026-03-18T03:14:01Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.24"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.6"
     },
     {
-      "tag_name": "v0.3.23",
-      "name": "v0.3.23",
-      "published_at": "2026-03-05T18:48:44Z",
+      "tag_name": "v0.4.5",
+      "name": "v0.4.5",
+      "published_at": "2026-03-18T02:54:07Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.23"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.5"
     },
     {
-      "tag_name": "v0.3.22",
-      "name": "v0.3.22",
-      "published_at": "2026-03-05T17:55:52Z",
+      "tag_name": "v0.4.4",
+      "name": "v0.4.4",
+      "published_at": "2026-03-15T03:00:17Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.22"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.4"
     },
     {
-      "tag_name": "v0.3.21",
-      "name": "v0.3.21",
-      "published_at": "2026-03-05T17:46:45Z",
+      "tag_name": "v0.4.3",
+      "name": "v0.4.3",
+      "published_at": "2026-03-14T22:25:46Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.21"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.3"
     },
     {
-      "tag_name": "v0.3.20",
-      "name": "v0.3.20",
-      "published_at": "2026-03-05T12:39:06Z",
+      "tag_name": "v0.4.2",
+      "name": "v0.4.2",
+      "published_at": "2026-03-14T21:19:08Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.20"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.2"
     },
     {
-      "tag_name": "v0.3.19",
-      "name": "v0.3.19",
-      "published_at": "2026-03-05T12:06:19Z",
+      "tag_name": "v0.4.1",
+      "name": "v0.4.1",
+      "published_at": "2026-03-14T19:50:17Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.19"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.1"
     },
     {
-      "tag_name": "v0.3.18",
-      "name": "v0.3.18",
-      "published_at": "2026-03-05T11:51:49Z",
+      "tag_name": "v0.4.0",
+      "name": "v0.4.0",
+      "published_at": "2026-03-12T20:45:28Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.18"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.4.0"
     },
     {
-      "tag_name": "v0.3.17",
-      "name": "v0.3.17",
-      "published_at": "2026-03-05T00:29:33Z",
+      "tag_name": "v0.3.49",
+      "name": "v0.3.49",
+      "published_at": "2026-03-12T15:46:26Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.17"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.49"
     },
     {
-      "tag_name": "v0.3.16",
-      "name": "v0.3.16",
-      "published_at": "2026-03-04T23:25:35Z",
+      "tag_name": "v0.3.48",
+      "name": "v0.3.48",
+      "published_at": "2026-03-12T13:52:16Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.16"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.48"
     },
     {
-      "tag_name": "v0.3.15",
-      "name": "v0.3.15",
-      "published_at": "2026-03-04T22:33:23Z",
+      "tag_name": "v0.3.47",
+      "name": "v0.3.47",
+      "published_at": "2026-03-11T22:24:44Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.15"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.47"
     },
     {
-      "tag_name": "v0.3.14",
-      "name": "v0.3.14",
-      "published_at": "2026-03-04T21:40:22Z",
+      "tag_name": "v0.3.46",
+      "name": "v0.3.46 \u2014 Community PR Batch",
+      "published_at": "2026-03-11T00:27:07Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.14"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.46"
     },
     {
-      "tag_name": "v0.3.13",
-      "name": "v0.3.13",
-      "published_at": "2026-03-04T12:34:53Z",
+      "tag_name": "v0.3.45",
+      "name": "v0.3.45 \u2014 Trading Hand + Bug Fixes",
+      "published_at": "2026-03-10T17:01:17Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.13"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.45"
     },
     {
-      "tag_name": "v0.3.12",
-      "name": "v0.3.12",
-      "published_at": "2026-03-04T02:55:57Z",
+      "tag_name": "v0.3.44",
+      "name": "v0.3.44",
+      "published_at": "2026-03-10T14:28:41Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.12"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.44"
     },
     {
-      "tag_name": "v0.3.11",
-      "name": "v0.3.11",
-      "published_at": "2026-03-04T01:24:15Z",
+      "tag_name": "v0.3.43",
+      "name": "v0.3.43",
+      "published_at": "2026-03-10T13:53:36Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.11"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.43"
     },
     {
-      "tag_name": "v0.3.10",
-      "name": "v0.3.10",
-      "published_at": "2026-03-04T00:46:44Z",
+      "tag_name": "v0.3.42",
+      "name": "v0.3.42",
+      "published_at": "2026-03-10T01:10:04Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.10"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.42"
     },
     {
-      "tag_name": "v0.3.9",
-      "name": "v0.3.9",
-      "published_at": "2026-03-03T23:22:53Z",
+      "tag_name": "v0.3.41",
+      "name": "v0.3.41",
+      "published_at": "2026-03-10T01:06:48Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.9"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.41"
     },
     {
-      "tag_name": "v0.3.8",
-      "name": "v0.3.8",
-      "published_at": "2026-03-03T22:30:23Z",
+      "tag_name": "v0.3.40",
+      "name": "v0.3.40",
+      "published_at": "2026-03-09T23:16:30Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.8"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.40"
     },
     {
-      "tag_name": "v0.3.7",
-      "name": "v0.3.7",
-      "published_at": "2026-03-03T18:29:42Z",
+      "tag_name": "v0.3.38",
+      "name": "v0.3.38 \u2014 Claude Code Provider Fix",
+      "published_at": "2026-03-09T22:28:38Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.7"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.38"
     },
     {
-      "tag_name": "v0.3.6",
-      "name": "v0.3.6",
-      "published_at": "2026-03-03T17:30:15Z",
+      "tag_name": "v0.3.37",
+      "name": "v0.3.37 \u2014 Community Bug Fix Batch 3",
+      "published_at": "2026-03-09T21:43:10Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.6"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.37"
     },
     {
-      "tag_name": "v0.3.5",
-      "name": "v0.3.5",
-      "published_at": "2026-03-03T13:57:46Z",
+      "tag_name": "v0.3.36",
+      "name": "v0.3.36 \u2014 Community Bug Fix Batch 2",
+      "published_at": "2026-03-09T20:08:15Z",
       "prerelease": false,
-      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.5"
+      "url": "https://github.com/RightNow-AI/openfang/releases/tag/v0.3.36"
     }
   ],
-  "contributor_count": 1,
+  "contributor_count": 40,
   "top_contributors": [
     {
       "login": "jaberjaber23",
       "avatar_url": "https://avatars.githubusercontent.com/u/103749727?v=4",
       "html_url": "https://github.com/jaberjaber23",
-      "contributions": 78,
-      "additions": 220637,
-      "deletions": 4242,
-      "commits_count": 78
+      "contributions": 200,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "dependabot[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 12,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Fail-Safe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10307870?v=4",
+      "html_url": "https://github.com/Fail-Safe",
+      "contributions": 9,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "lc-soft",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1730073?v=4",
+      "html_url": "https://github.com/lc-soft",
+      "contributions": 8,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "vnz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1267662?v=4",
+      "html_url": "https://github.com/vnz",
+      "contributions": 7,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "skymoore",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20386670?v=4",
+      "html_url": "https://github.com/skymoore",
+      "contributions": 5,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Copilot",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+      "html_url": "https://github.com/apps/copilot-swe-agent",
+      "contributions": 5,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "felix307253927",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9459249?v=4",
+      "html_url": "https://github.com/felix307253927",
+      "contributions": 4,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "szponeczek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/266308501?v=4",
+      "html_url": "https://github.com/szponeczek",
+      "contributions": 3,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "tytsxai",
+      "avatar_url": "https://avatars.githubusercontent.com/u/183002805?v=4",
+      "html_url": "https://github.com/tytsxai",
+      "contributions": 2,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     }
   ],
-  "commits_last_year": 78,
-  "commits_per_week_avg": 26.0,
-  "weekly_commits": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    26,
-    40,
-    12
-  ],
-  "weekly_timestamps": [
-    1742079600,
-    1742684400,
-    1743289200,
-    1743894000,
-    1744498800,
-    1745103600,
-    1745708400,
-    1746313200,
-    1746918000,
-    1747522800,
-    1748127600,
-    1748732400,
-    1749337200,
-    1749942000,
-    1750546800,
-    1751151600,
-    1751756400,
-    1752361200,
-    1752966000,
-    1753570800,
-    1754175600,
-    1754780400,
-    1755385200,
-    1755990000,
-    1756594800,
-    1757199600,
-    1757804400,
-    1758409200,
-    1759014000,
-    1759618800,
-    1760223600,
-    1760828400,
-    1761433200,
-    1762038000,
-    1762646400,
-    1763251200,
-    1763856000,
-    1764460800,
-    1765065600,
-    1765670400,
-    1766275200,
-    1766880000,
-    1767484800,
-    1768089600,
-    1768694400,
-    1769299200,
-    1769904000,
-    1770508800,
-    1771113600,
-    1771718400,
-    1772323200,
-    1772928000
-  ],
-  "commits_30d": 78,
-  "commits_90d": 78,
-  "commit_trend": "surging",
-  "commit_growth_pct": 100.0,
-  "total_commits": 78,
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 328,
   "first_commit_date": "2026-02-25T22:00:27Z",
-  "commit_span_days": 11,
+  "commit_span_days": 40,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-03-09T09:03:46.983043+00:00",
+  "fetched_at": "2026-04-07T07:09:46.216044+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

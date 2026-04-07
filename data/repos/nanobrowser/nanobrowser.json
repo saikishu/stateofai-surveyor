@@ -1,0 +1,283 @@
+{
+  "full_name": "nanobrowser/nanobrowser",
+  "name": "nanobrowser",
+  "owner": "nanobrowser",
+  "description": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator.",
+  "homepage": "https://nanobrowser.ai",
+  "github_url": "https://github.com/nanobrowser/nanobrowser",
+  "stars": 12630,
+  "forks": 1325,
+  "watchers": 60,
+  "license_name": "Apache License 2.0",
+  "license_spdx": "Apache-2.0",
+  "topics": [
+    "ai",
+    "chrome-extension",
+    "agent",
+    "ai-agents",
+    "ai-tools",
+    "automation",
+    "browser-use",
+    "multi-agent",
+    "web-automation",
+    "manus",
+    "opensource",
+    "mariner",
+    "browser",
+    "nano",
+    "browser-automation",
+    "comet",
+    "extension",
+    "dia",
+    "n8n",
+    "playwright"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "master",
+  "created_at": "2024-12-31T08:11:27Z",
+  "updated_at": "2026-04-07T04:01:45Z",
+  "pushed_at": "2025-11-24T11:10:03Z",
+  "age_days": 461,
+  "days_since_push": 133,
+  "activity_status": "stale",
+  "languages": {
+    "TypeScript": 644474,
+    "JavaScript": 67285,
+    "CSS": 4368,
+    "HTML": 2622,
+    "Shell": 515
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "JavaScript",
+    "CSS"
+  ],
+  "total_code_bytes": 719264,
+  "approx_loc": 17180,
+  "issues_open": 41,
+  "issues_closed": 95,
+  "issues_new_30d": 2,
+  "issues_new_90d": 4,
+  "issues_active_30d": 3,
+  "issues_closed_30d": 0,
+  "prs_open": 14,
+  "prs_closed": 33,
+  "prs_merged": 92,
+  "prs_active_30d": 4,
+  "release_count": 14,
+  "latest_release_tag": "v0.1.13",
+  "latest_release_date": "2025-11-22T13:52:50Z",
+  "avg_days_between_releases": 23.363636363636363,
+  "releases": [
+    {
+      "tag_name": "v0.1.13",
+      "name": "v0.1.13",
+      "published_at": "2025-11-22T13:52:50Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.13"
+    },
+    {
+      "tag_name": "v0.1.12",
+      "name": "v0.1.12",
+      "published_at": "2025-09-03T08:21:38Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.12"
+    },
+    {
+      "tag_name": "v0.1.11",
+      "name": "Nanobrowser v0.1.11",
+      "published_at": "2025-09-03T05:27:50Z",
+      "prerelease": true,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.11"
+    },
+    {
+      "tag_name": "v0.1.10",
+      "name": "Nanobrowser v0.1.10",
+      "published_at": "2025-09-03T03:50:10Z",
+      "prerelease": true,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.10"
+    },
+    {
+      "tag_name": "v0.1.9",
+      "name": "Nanobrowser v0.1.9",
+      "published_at": "2025-08-25T06:26:58Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.9"
+    },
+    {
+      "tag_name": "v0.1.8",
+      "name": "Nanobrowser v0.1.8",
+      "published_at": "2025-07-08T02:59:22Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.8"
+    },
+    {
+      "tag_name": "v0.1.7",
+      "name": "Nanobrowser v0.1.7",
+      "published_at": "2025-06-11T08:06:36Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.7"
+    },
+    {
+      "tag_name": "v0.1.6",
+      "name": "Nanobrowser v0.1.6",
+      "published_at": "2025-05-21T13:56:29Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.6"
+    },
+    {
+      "tag_name": "v0.1.5",
+      "name": "Nanobrowser v0.1.5",
+      "published_at": "2025-05-02T03:09:18Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.5"
+    },
+    {
+      "tag_name": "v0.1.4",
+      "name": "v0.1.4",
+      "published_at": "2025-04-01T09:26:39Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.4"
+    },
+    {
+      "tag_name": "v0.1.3",
+      "name": "Nanobrowser v0.1.3",
+      "published_at": "2025-03-25T02:56:50Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.3"
+    },
+    {
+      "tag_name": "v0.1.2",
+      "name": "Nanobrowser v0.1.2",
+      "published_at": "2025-03-17T13:36:53Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.2"
+    },
+    {
+      "tag_name": "v0.1.1",
+      "name": "Nanobrowser v0.1.1",
+      "published_at": "2025-03-10T14:36:15Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.1"
+    },
+    {
+      "tag_name": "v0.1.0",
+      "name": "Nanobrowser v0.1.0 - Initial Release",
+      "published_at": "2025-03-04T16:09:50Z",
+      "prerelease": false,
+      "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.0"
+    }
+  ],
+  "contributor_count": 25,
+  "top_contributors": [
+    {
+      "login": "alexchenzl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2885415?v=4",
+      "html_url": "https://github.com/alexchenzl",
+      "contributions": 306,
+      "additions": 48663,
+      "deletions": 20332,
+      "commits_count": 208
+    },
+    {
+      "login": "bsormagec",
+      "avatar_url": "https://avatars.githubusercontent.com/u/965219?v=4",
+      "html_url": "https://github.com/bsormagec",
+      "contributions": 11,
+      "additions": 1563,
+      "deletions": 793,
+      "commits_count": 10
+    },
+    {
+      "login": "samuel871211",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55658154?v=4",
+      "html_url": "https://github.com/samuel871211",
+      "contributions": 10,
+      "additions": 265,
+      "deletions": 21,
+      "commits_count": 9
+    },
+    {
+      "login": "AbdullahAdeebx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/158824177?v=4",
+      "html_url": "https://github.com/AbdullahAdeebx",
+      "contributions": 6,
+      "additions": 198,
+      "deletions": 44,
+      "commits_count": 6
+    },
+    {
+      "login": "PeterDaveHello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3691490?v=4",
+      "html_url": "https://github.com/PeterDaveHello",
+      "contributions": 4,
+      "additions": 1216,
+      "deletions": 122,
+      "commits_count": 4
+    },
+    {
+      "login": "PaperBoardOfficial",
+      "avatar_url": "https://avatars.githubusercontent.com/u/151846514?v=4",
+      "html_url": "https://github.com/PaperBoardOfficial",
+      "contributions": 3,
+      "additions": 719,
+      "deletions": 75,
+      "commits_count": 2
+    },
+    {
+      "login": "sbenodiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1709324?v=4",
+      "html_url": "https://github.com/sbenodiz",
+      "contributions": 3,
+      "additions": 364,
+      "deletions": 133,
+      "commits_count": 3
+    },
+    {
+      "login": "hataiit9x",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28525203?v=4",
+      "html_url": "https://github.com/hataiit9x",
+      "contributions": 2,
+      "additions": 99,
+      "deletions": 7,
+      "commits_count": 2
+    },
+    {
+      "login": "hunkim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/901975?v=4",
+      "html_url": "https://github.com/hunkim",
+      "contributions": 2,
+      "additions": 146,
+      "deletions": 46,
+      "commits_count": 2
+    },
+    {
+      "login": "mostafaeweda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/264320?v=4",
+      "html_url": "https://github.com/mostafaeweda",
+      "contributions": 2,
+      "additions": 352,
+      "deletions": 93,
+      "commits_count": 2
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 368,
+  "first_commit_date": "2024-12-31T08:11:28Z",
+  "commit_span_days": 461,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:06:34.419733+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

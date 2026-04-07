@@ -1,0 +1,514 @@
+{
+  "full_name": "langgenius/dify",
+  "name": "dify",
+  "owner": "langgenius",
+  "description": "Production-ready platform for agentic workflow development.",
+  "homepage": "https://dify.ai",
+  "github_url": "https://github.com/langgenius/dify",
+  "stars": 136489,
+  "forks": 21311,
+  "watchers": 780,
+  "license_name": "Other",
+  "license_spdx": "NOASSERTION",
+  "topics": [
+    "ai",
+    "gpt",
+    "llm",
+    "openai",
+    "python",
+    "rag",
+    "orchestration",
+    "gpt-4",
+    "agent",
+    "nextjs",
+    "workflow",
+    "genai",
+    "gemini",
+    "automation",
+    "low-code",
+    "mcp",
+    "no-code",
+    "agentic-ai",
+    "agentic-framework",
+    "agentic-workflow"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2023-04-12T07:40:24Z",
+  "updated_at": "2026-04-07T07:11:20Z",
+  "pushed_at": "2026-04-07T06:43:58Z",
+  "age_days": 1090,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "TypeScript": 27800788,
+    "Python": 23895907,
+    "JavaScript": 1525264,
+    "MDX": 679976,
+    "CSS": 209533,
+    "HTML": 158437
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "Python",
+    "JavaScript"
+  ],
+  "total_code_bytes": 54357620,
+  "approx_loc": 1407089,
+  "issues_open": 412,
+  "issues_closed": 16834,
+  "issues_new_30d": 44,
+  "issues_new_90d": 44,
+  "issues_active_30d": 44,
+  "issues_closed_30d": 17,
+  "prs_open": 455,
+  "prs_closed": 1895,
+  "prs_merged": 10391,
+  "prs_active_30d": 100,
+  "release_count": 161,
+  "latest_release_tag": "1.13.3",
+  "latest_release_date": "2026-03-27T08:46:46Z",
+  "avg_days_between_releases": 10.777777777777779,
+  "releases": [
+    {
+      "tag_name": "1.13.3",
+      "name": "v1.13.3",
+      "published_at": "2026-03-27T08:46:46Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.13.3"
+    },
+    {
+      "tag_name": "1.13.2",
+      "name": "v1.13.2",
+      "published_at": "2026-03-18T14:20:55Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.13.2"
+    },
+    {
+      "tag_name": "1.13.1",
+      "name": "v1.13.1",
+      "published_at": "2026-03-17T10:43:40Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.13.1"
+    },
+    {
+      "tag_name": "1.14.0-rc1",
+      "name": "1.14.0-rc1: New Agent x Skills for Production Workflows",
+      "published_at": "2026-02-14T09:28:47Z",
+      "prerelease": true,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.14.0-rc1"
+    },
+    {
+      "tag_name": "1.13.0",
+      "name": "1.13.0 - Human-in-the-Loop and Workflow Execution Upgrades",
+      "published_at": "2026-02-11T09:24:39Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.13.0"
+    },
+    {
+      "tag_name": "1.12.1",
+      "name": "v1.12.1 - Fix base URL in client and other bugs",
+      "published_at": "2026-02-04T12:15:15Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.12.1"
+    },
+    {
+      "tag_name": "1.12.0",
+      "name": "v1.12.0 - Introducing Summary Index: Smarter Retrieval with AI Summarization",
+      "published_at": "2026-02-03T14:38:13Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.12.0"
+    },
+    {
+      "tag_name": "1.11.4",
+      "name": "v1.11.4",
+      "published_at": "2026-01-15T07:15:40Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.11.4"
+    },
+    {
+      "tag_name": "1.11.3",
+      "name": "v1.11.3",
+      "published_at": "2026-01-13T10:10:31Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.11.3"
+    },
+    {
+      "tag_name": "1.11.2",
+      "name": "v1.11.2",
+      "published_at": "2025-12-25T08:40:33Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.11.2"
+    },
+    {
+      "tag_name": "1.11.1",
+      "name": "v1.11.1",
+      "published_at": "2025-12-12T06:44:32Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.11.1"
+    },
+    {
+      "tag_name": "1.11.0",
+      "name": "v1.11.0 - Your knowledge base just went from mono to full HD",
+      "published_at": "2025-12-11T09:23:25Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.11.0"
+    },
+    {
+      "tag_name": "1.10.1-fix.1",
+      "name": "v1.10.1-fix.1",
+      "published_at": "2025-12-05T04:59:12Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.10.1-fix.1"
+    },
+    {
+      "tag_name": "1.10.1",
+      "name": "v1.10.1 \u2013 Multi-Database Era Begins: MySQL Joins the Family",
+      "published_at": "2025-11-26T10:40:57Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.10.1"
+    },
+    {
+      "tag_name": "1.10.0",
+      "name": "v1.10.0 - Event-Driven Workflows",
+      "published_at": "2025-11-13T14:44:37Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.10.0"
+    },
+    {
+      "tag_name": "1.10.0-rc1",
+      "name": "v1.10.0-rc1 - Event-Driven Workflows",
+      "published_at": "2025-10-30T15:25:27Z",
+      "prerelease": true,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.10.0-rc1"
+    },
+    {
+      "tag_name": "1.9.2",
+      "name": "v1.9.2 - Sharper, Faster, and More Reliable",
+      "published_at": "2025-10-22T08:48:09Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.9.2"
+    },
+    {
+      "tag_name": "1.9.1",
+      "name": "v1.9.1 \u2013 1,000 Contributors, Infinite Gratitude",
+      "published_at": "2025-09-29T11:35:31Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.9.1"
+    },
+    {
+      "tag_name": "1.9.0",
+      "name": "1.9.0 \u2013 Orchestrating Knowledge, Powering Workflows",
+      "published_at": "2025-09-22T12:23:08Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.9.0"
+    },
+    {
+      "tag_name": "1.8.1",
+      "name": "v1.8.1",
+      "published_at": "2025-09-03T11:07:18Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.8.1"
+    },
+    {
+      "tag_name": "1.8.0",
+      "name": "v1.8.0 - Async workflows meet multi-model management with OAuth-powered integrations.",
+      "published_at": "2025-08-27T07:27:01Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.8.0"
+    },
+    {
+      "tag_name": "1.7.2",
+      "name": "v1.7.2",
+      "published_at": "2025-08-11T09:26:10Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.7.2"
+    },
+    {
+      "tag_name": "1.7.1",
+      "name": "v1.7.1",
+      "published_at": "2025-07-28T12:50:47Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.7.1"
+    },
+    {
+      "tag_name": "1.7.0",
+      "name": "v1.7.0 - Tool OAuth & Plugin Auto-Upgrade Enhanced",
+      "published_at": "2025-07-23T10:52:11Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.7.0"
+    },
+    {
+      "tag_name": "1.6.0",
+      "name": "v1.6.0",
+      "published_at": "2025-07-10T09:57:46Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.6.0"
+    },
+    {
+      "tag_name": "1.5.1",
+      "name": "v1.5.1",
+      "published_at": "2025-07-02T08:58:17Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.5.1"
+    },
+    {
+      "tag_name": "1.5.0",
+      "name": "v1.5.0",
+      "published_at": "2025-06-25T09:35:26Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.5.0"
+    },
+    {
+      "tag_name": "1.4.3",
+      "name": "v1.4.3",
+      "published_at": "2025-06-16T07:30:34Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.4.3"
+    },
+    {
+      "tag_name": "1.4.2",
+      "name": "v1.4.2",
+      "published_at": "2025-06-11T08:29:15Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.4.2"
+    },
+    {
+      "tag_name": "1.4.1",
+      "name": "v1.4.1",
+      "published_at": "2025-05-27T08:12:15Z",
+      "prerelease": false,
+      "url": "https://github.com/langgenius/dify/releases/tag/1.4.1"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "laipz8200",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16485841?v=4",
+      "html_url": "https://github.com/laipz8200",
+      "contributions": 674,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "takatost",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5485478?v=4",
+      "html_url": "https://github.com/takatost",
+      "contributions": 539,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "iamjoel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2120155?v=4",
+      "html_url": "https://github.com/iamjoel",
+      "contributions": 460,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "JohnJyong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76649700?v=4",
+      "html_url": "https://github.com/JohnJyong",
+      "contributions": 370,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "crazywoola",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100913391?v=4",
+      "html_url": "https://github.com/crazywoola",
+      "contributions": 350,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "bowenliang123",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1935105?v=4",
+      "html_url": "https://github.com/bowenliang123",
+      "contributions": 295,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "zxhlyh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16177003?v=4",
+      "html_url": "https://github.com/zxhlyh",
+      "contributions": 293,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "hjlarry",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25834719?v=4",
+      "html_url": "https://github.com/hjlarry",
+      "contributions": 290,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "lyzno1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92089059?v=4",
+      "html_url": "https://github.com/lyzno1",
+      "contributions": 279,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Yeuoly",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45712896?v=4",
+      "html_url": "https://github.com/Yeuoly",
+      "contributions": 220,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 9892,
+  "first_commit_date": "2023-05-15T00:51:32Z",
+  "commit_span_days": 1058,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 13,
+  "security_advisories": [
+    {
+      "ghsa_id": "GHSA-qqjx-5h5w-x5vj",
+      "cve_id": "CVE-2026-26023",
+      "severity": "high",
+      "summary": "Client\u2011side DOM XSS in the web chat app of Dify when using echarts",
+      "published_at": "2026-02-11T06:23:29Z",
+      "cvss_score": null,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-qqjx-5h5w-x5vj"
+    },
+    {
+      "ghsa_id": "GHSA-qpv6-75c2-75h4",
+      "cve_id": "CVE-2026-21866",
+      "severity": "medium",
+      "summary": "Dify - Stored XSS in chat",
+      "published_at": "2026-03-03T07:10:44Z",
+      "cvss_score": 5.7,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-qpv6-75c2-75h4"
+    },
+    {
+      "ghsa_id": "GHSA-phpv-94hg-fv9g",
+      "cve_id": "CVE-2025-67732",
+      "severity": "high",
+      "summary": "Plaintext API Key Exposure via Model Provider Configuration Endpoint",
+      "published_at": "2026-01-04T14:57:58Z",
+      "cvss_score": null,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-phpv-94hg-fv9g"
+    },
+    {
+      "ghsa_id": "GHSA-9qpf-wcv3-w3qx",
+      "cve_id": "CVE-2026-28288",
+      "severity": "low",
+      "summary": "User enumeration",
+      "published_at": "2026-02-27T06:02:57Z",
+      "cvss_score": null,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-9qpf-wcv3-w3qx"
+    },
+    {
+      "ghsa_id": "GHSA-jg5j-c9pq-w894",
+      "cve_id": "CVE-2025-59422",
+      "severity": "medium",
+      "summary": "Broken Access Control on Log Message Endpoint Allows Reading Chats of Others",
+      "published_at": "2025-09-24T19:37:38Z",
+      "cvss_score": null,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-jg5j-c9pq-w894"
+    },
+    {
+      "ghsa_id": "GHSA-9jch-j9qf-vqfw",
+      "cve_id": "CVE-2025-58747",
+      "severity": "high",
+      "summary": "Dify MCP OAuth Flow Vulnerable to XSS",
+      "published_at": "2025-10-17T06:58:38Z",
+      "cvss_score": null,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-9jch-j9qf-vqfw"
+    },
+    {
+      "ghsa_id": "GHSA-fw4f-cghv-2v33",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "Use of Cryptographically Weak Pseudo-Random Number Generator for API Key Generation",
+      "published_at": "2026-02-11T06:38:15Z",
+      "cvss_score": 6.5,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-fw4f-cghv-2v33"
+    },
+    {
+      "ghsa_id": "GHSA-grmh-ww4v-5cgj",
+      "cve_id": "CVE-2025-49149",
+      "severity": "medium",
+      "summary": "Dify has xss vulnerability",
+      "published_at": "2025-06-16T07:38:04Z",
+      "cvss_score": null,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-grmh-ww4v-5cgj"
+    },
+    {
+      "ghsa_id": "GHSA-6pw4-jqhv-3626",
+      "cve_id": "CVE-2025-43862",
+      "severity": "high",
+      "summary": "Unauthorized Access and Modification of APP Orchestration",
+      "published_at": "2025-04-25T08:08:29Z",
+      "cvss_score": 7.6,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-6pw4-jqhv-3626"
+    },
+    {
+      "ghsa_id": "GHSA-jp6m-v4gw-5vgp",
+      "cve_id": "CVE-2025-32790",
+      "severity": "medium",
+      "summary": "Insecure User Role Access Control for APP DSL Exporting",
+      "published_at": "2025-04-17T05:54:53Z",
+      "cvss_score": 6.3,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-jp6m-v4gw-5vgp"
+    },
+    {
+      "ghsa_id": "GHSA-hqcx-598m-pjq4",
+      "cve_id": "CVE-2025-32796",
+      "severity": "medium",
+      "summary": "Unauthorized APP Enable/Disable via API",
+      "published_at": "2025-04-18T07:58:12Z",
+      "cvss_score": 6.5,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-hqcx-598m-pjq4"
+    },
+    {
+      "ghsa_id": "GHSA-gg5w-m2vw-vmmj",
+      "cve_id": "CVE-2025-32795",
+      "severity": "medium",
+      "summary": "Insecure User Role Access Control for APP Editing",
+      "published_at": "2025-04-18T07:58:21Z",
+      "cvss_score": 6.5,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-gg5w-m2vw-vmmj"
+    },
+    {
+      "ghsa_id": "GHSA-jhgq-cx3f-vj5p",
+      "cve_id": "CVE-2025-43854",
+      "severity": "low",
+      "summary": "DIFY vulnerable to Clickjacking Attack",
+      "published_at": "2025-04-28T09:29:18Z",
+      "cvss_score": 3.1,
+      "url": "https://github.com/langgenius/dify/security/advisories/GHSA-jhgq-cx3f-vj5p"
+    }
+  ],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:13:41.419672+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

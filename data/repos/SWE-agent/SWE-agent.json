@@ -1,0 +1,243 @@
+{
+  "full_name": "SWE-agent/SWE-agent",
+  "name": "SWE-agent",
+  "owner": "SWE-agent",
+  "description": "SWE-agent takes a GitHub issue and tries to automatically fix it, using your LM of choice. It can also be employed for offensive cybersecurity or competitive coding challenges. [NeurIPS 2024] ",
+  "homepage": "https://swe-agent.com",
+  "github_url": "https://github.com/SWE-agent/SWE-agent",
+  "stars": 18939,
+  "forks": 2048,
+  "watchers": 109,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [
+    "agent",
+    "ai",
+    "developer-tools",
+    "llm",
+    "agent-based-model",
+    "lms",
+    "cybersecurity"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2024-04-02T04:09:47Z",
+  "updated_at": "2026-04-07T02:00:46Z",
+  "pushed_at": "2026-04-06T22:15:28Z",
+  "age_days": 735,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "Python": 644251,
+    "JavaScript": 10968,
+    "CSS": 9035,
+    "Shell": 5339,
+    "C++": 3405,
+    "Perl": 1876
+  },
+  "top_3_languages": [
+    "Python",
+    "JavaScript",
+    "CSS"
+  ],
+  "total_code_bytes": 679454,
+  "approx_loc": 19144,
+  "issues_open": 26,
+  "issues_closed": 584,
+  "issues_new_30d": 1,
+  "issues_new_90d": 3,
+  "issues_active_30d": 3,
+  "issues_closed_30d": 11,
+  "prs_open": 6,
+  "prs_closed": 133,
+  "prs_merged": 616,
+  "prs_active_30d": 5,
+  "release_count": 10,
+  "latest_release_tag": "v1.1.0",
+  "latest_release_date": "2025-05-22T16:11:39Z",
+  "avg_days_between_releases": 44.111111111111114,
+  "releases": [
+    {
+      "tag_name": "v1.1.0",
+      "name": "v1.1.0: 10s of thousands of training trajectories",
+      "published_at": "2025-05-22T16:11:39Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v1.1.0"
+    },
+    {
+      "tag_name": "v1.0.1",
+      "name": "v1.0.1: SOTA on SWE-Bench Full",
+      "published_at": "2025-02-28T16:46:14Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v1.0.1"
+    },
+    {
+      "tag_name": "v1.0.0",
+      "name": "v1.0.0",
+      "published_at": "2025-02-13T16:21:23Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v1.0.0"
+    },
+    {
+      "tag_name": "v0.7.0",
+      "name": "SWE-agent EnIGMA (0.7.0)",
+      "published_at": "2024-09-25T14:45:14Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v0.7.0"
+    },
+    {
+      "tag_name": "v0.6.1",
+      "name": "v0.6.1",
+      "published_at": "2024-06-20T15:21:51Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v0.6.1"
+    },
+    {
+      "tag_name": "v0.6.0",
+      "name": "v0.6.0",
+      "published_at": "2024-06-05T13:16:40Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v0.6.0"
+    },
+    {
+      "tag_name": "v0.5.0",
+      "name": "v0.5.0",
+      "published_at": "2024-05-28T17:14:15Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v0.5.0"
+    },
+    {
+      "tag_name": "v0.4.0",
+      "name": "0.4.0 Web UI",
+      "published_at": "2024-05-09T14:58:44Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v0.4.0"
+    },
+    {
+      "tag_name": "v0.3.0",
+      "name": "0.3.0",
+      "published_at": "2024-05-02T15:47:48Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v0.3.0"
+    },
+    {
+      "tag_name": "v0.2.0",
+      "name": "v0.2.0",
+      "published_at": "2024-04-15T19:01:34Z",
+      "prerelease": false,
+      "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v0.2.0"
+    }
+  ],
+  "contributor_count": 92,
+  "top_contributors": [
+    {
+      "login": "klieret",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13602468?v=4",
+      "html_url": "https://github.com/klieret",
+      "contributions": 1539,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "carlosejimenez",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8196527?v=4",
+      "html_url": "https://github.com/carlosejimenez",
+      "contributions": 148,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "ofirpress",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20109662?v=4",
+      "html_url": "https://github.com/ofirpress",
+      "contributions": 77,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "pre-commit-ci[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
+      "html_url": "https://github.com/apps/pre-commit-ci",
+      "contributions": 69,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "john-b-yang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10174390?v=4",
+      "html_url": "https://github.com/john-b-yang",
+      "contributions": 42,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "talorabr",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29352610?v=4",
+      "html_url": "https://github.com/talorabr",
+      "contributions": 35,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "dependabot[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 16,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "JGalego",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7282984?v=4",
+      "html_url": "https://github.com/JGalego",
+      "contributions": 9,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "tamdogood",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45498088?v=4",
+      "html_url": "https://github.com/tamdogood",
+      "contributions": 8,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "udiboy1209",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7384411?v=4",
+      "html_url": "https://github.com/udiboy1209",
+      "contributions": 6,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 2158,
+  "first_commit_date": "2024-04-02T08:57:35Z",
+  "commit_span_days": 734,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:03:29.065275+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

@@ -1,0 +1,221 @@
+{
+  "full_name": "stackblitz-labs/bolt.diy",
+  "name": "bolt.diy",
+  "owner": "stackblitz-labs",
+  "description": "Prompt, run, edit, and deploy full-stack web applications using any LLM you want!",
+  "homepage": "https://stackblitz-labs.github.io/bolt.diy/",
+  "github_url": "https://github.com/stackblitz-labs/bolt.diy",
+  "stars": 19229,
+  "forks": 10384,
+  "watchers": 304,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [],
+  "is_archived": false,
+  "is_fork": true,
+  "default_branch": "main",
+  "created_at": "2024-10-13T18:40:54Z",
+  "updated_at": "2026-04-07T06:48:46Z",
+  "pushed_at": "2026-02-07T14:36:22Z",
+  "age_days": 540,
+  "days_since_push": 58,
+  "activity_status": "recent",
+  "languages": {
+    "TypeScript": 2463347,
+    "SCSS": 32551,
+    "JavaScript": 30598,
+    "Shell": 11203,
+    "Dockerfile": 2886,
+    "CSS": 1788
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "SCSS",
+    "JavaScript"
+  ],
+  "total_code_bytes": 2542373,
+  "approx_loc": 60683,
+  "issues_open": 67,
+  "issues_closed": 886,
+  "issues_new_30d": 2,
+  "issues_new_90d": 16,
+  "issues_active_30d": 5,
+  "issues_closed_30d": 0,
+  "prs_open": 31,
+  "prs_closed": 727,
+  "prs_merged": 406,
+  "prs_active_30d": 7,
+  "release_count": 8,
+  "latest_release_tag": "v1.0.0",
+  "latest_release_date": "2025-05-12T02:15:57Z",
+  "avg_days_between_releases": 20.714285714285715,
+  "releases": [
+    {
+      "tag_name": "v1.0.0",
+      "name": "Release v1.0.0",
+      "published_at": "2025-05-12T02:15:57Z",
+      "prerelease": false,
+      "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v1.0.0"
+    },
+    {
+      "tag_name": "v0.0.7",
+      "name": "Release v0.0.7",
+      "published_at": "2025-02-28T20:13:17Z",
+      "prerelease": false,
+      "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v0.0.7"
+    },
+    {
+      "tag_name": "v0.0.6",
+      "name": "Release v0.0.6",
+      "published_at": "2025-01-22T20:58:32Z",
+      "prerelease": false,
+      "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v0.0.6"
+    },
+    {
+      "tag_name": "v0.0.5",
+      "name": "Release v0.0.5",
+      "published_at": "2024-12-31T22:28:13Z",
+      "prerelease": false,
+      "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v0.0.5"
+    },
+    {
+      "tag_name": "v0.0.4",
+      "name": "Release v0.0.4",
+      "published_at": "2024-12-31T17:17:52Z",
+      "prerelease": false,
+      "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v0.0.4"
+    },
+    {
+      "tag_name": "v0.0.3",
+      "name": "Release v0.0.3",
+      "published_at": "2024-12-17T21:00:10Z",
+      "prerelease": false,
+      "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v0.0.3"
+    },
+    {
+      "tag_name": "v0.0.2",
+      "name": "Release v0.0.2",
+      "published_at": "2024-12-16T21:50:29Z",
+      "prerelease": false,
+      "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v0.0.2"
+    },
+    {
+      "tag_name": "v0.0.1",
+      "name": "Release v0.0.1",
+      "published_at": "2024-12-13T13:31:22Z",
+      "prerelease": false,
+      "url": "https://github.com/stackblitz-labs/bolt.diy/releases/tag/v0.0.1"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "thecodacus",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29654145?v=4",
+      "html_url": "https://github.com/thecodacus",
+      "contributions": 320,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "dustinwloring1988",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21135165?v=4",
+      "html_url": "https://github.com/dustinwloring1988",
+      "contributions": 205,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Stijnus",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72551117?v=4",
+      "html_url": "https://github.com/Stijnus",
+      "contributions": 165,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "xKevIsDev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102023614?v=4",
+      "html_url": "https://github.com/xKevIsDev",
+      "contributions": 163,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 129,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "wonderwhy-er",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1150639?v=4",
+      "html_url": "https://github.com/wonderwhy-er",
+      "contributions": 95,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "coleam00",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47287758?v=4",
+      "html_url": "https://github.com/coleam00",
+      "contributions": 85,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "d3lm",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12571019?v=4",
+      "html_url": "https://github.com/d3lm",
+      "contributions": 42,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "leex279",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6664492?v=4",
+      "html_url": "https://github.com/leex279",
+      "contributions": 26,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "kc0tlh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1532264?v=4",
+      "html_url": "https://github.com/kc0tlh",
+      "contributions": 25,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 1629,
+  "first_commit_date": "2024-07-10T16:44:39Z",
+  "commit_span_days": 635,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:03:04.109647+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

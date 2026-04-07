@@ -1,0 +1,1016 @@
+{
+  "full_name": "n8n-io/n8n",
+  "name": "n8n",
+  "owner": "n8n-io",
+  "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "homepage": "https://n8n.io",
+  "github_url": "https://github.com/n8n-io/n8n",
+  "stars": 182762,
+  "forks": 56550,
+  "watchers": 1057,
+  "license_name": "Other",
+  "license_spdx": "NOASSERTION",
+  "topics": [
+    "automation",
+    "ipaas",
+    "n8n",
+    "workflow",
+    "typescript",
+    "self-hosted",
+    "integrations",
+    "workflow-automation",
+    "cli",
+    "development",
+    "low-code",
+    "data-flow",
+    "integration-framework",
+    "apis",
+    "low-code-platform",
+    "no-code",
+    "ai",
+    "mcp",
+    "mcp-client",
+    "mcp-server"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "master",
+  "created_at": "2019-06-22T09:24:21Z",
+  "updated_at": "2026-04-07T07:09:09Z",
+  "pushed_at": "2026-04-07T07:12:48Z",
+  "age_days": 2480,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "TypeScript": 63453719,
+    "Vue": 5156424,
+    "SCSS": 330435,
+    "JavaScript": 291082,
+    "Python": 230535,
+    "Handlebars": 75950
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "Vue",
+    "SCSS"
+  ],
+  "total_code_bytes": 69578463,
+  "approx_loc": 1649410,
+  "issues_open": 394,
+  "issues_closed": 8203,
+  "issues_new_30d": 30,
+  "issues_new_90d": 30,
+  "issues_active_30d": 30,
+  "issues_closed_30d": 14,
+  "prs_open": 1104,
+  "prs_closed": 3553,
+  "prs_merged": 14762,
+  "prs_active_30d": 100,
+  "release_count": 572,
+  "latest_release_tag": "n8n@2.15.0",
+  "latest_release_date": "2026-03-30T18:16:53Z",
+  "avg_days_between_releases": 1.6842105263157894,
+  "releases": [
+    {
+      "tag_name": "n8n@2.16.0",
+      "name": "n8n@2.16.0",
+      "published_at": "2026-04-07T05:05:04Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.16.0"
+    },
+    {
+      "tag_name": "beta",
+      "name": "beta",
+      "published_at": "2026-04-07T05:05:06Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/beta"
+    },
+    {
+      "tag_name": "n8n@1.123.28",
+      "name": "n8n@1.123.28",
+      "published_at": "2026-04-02T10:52:43Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.28"
+    },
+    {
+      "tag_name": "stable",
+      "name": "stable",
+      "published_at": "2026-04-07T05:07:40Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/stable"
+    },
+    {
+      "tag_name": "n8n@2.15.0",
+      "name": "n8n@2.15.0",
+      "published_at": "2026-03-30T18:16:53Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.15.0"
+    },
+    {
+      "tag_name": "n8n@2.14.2",
+      "name": "n8n@2.14.2",
+      "published_at": "2026-03-26T09:10:03Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.14.2"
+    },
+    {
+      "tag_name": "n8n@2.13.4",
+      "name": "n8n@2.13.4",
+      "published_at": "2026-03-26T09:40:34Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.13.4"
+    },
+    {
+      "tag_name": "n8n@2.13.3",
+      "name": "n8n@2.13.3",
+      "published_at": "2026-03-25T12:07:05Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.13.3"
+    },
+    {
+      "tag_name": "n8n@1.123.27",
+      "name": "n8n@ 1.123.27",
+      "published_at": "2026-03-25T13:26:03Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.27"
+    },
+    {
+      "tag_name": "n8n@2.14.1",
+      "name": "n8n@2.14.1",
+      "published_at": "2026-03-25T11:53:47Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.14.1"
+    },
+    {
+      "tag_name": "n8n@2.14.0",
+      "name": "n8n@2.14.0",
+      "published_at": "2026-03-24T09:18:21Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.14.0"
+    },
+    {
+      "tag_name": "n8n@2.13.2",
+      "name": "n8n@2.13.2",
+      "published_at": "2026-03-20T10:04:33Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.13.2"
+    },
+    {
+      "tag_name": "n8n@1.123.26",
+      "name": "n8n@1.123.26",
+      "published_at": "2026-03-19T08:08:37Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.26"
+    },
+    {
+      "tag_name": "n8n@2.12.3",
+      "name": "n8n@2.12.3",
+      "published_at": "2026-03-18T10:55:14Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.12.3"
+    },
+    {
+      "tag_name": "n8n@2.13.1",
+      "name": "n8n@2.13.1",
+      "published_at": "2026-03-18T10:43:04Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.13.1"
+    },
+    {
+      "tag_name": "n8n@2.13.0",
+      "name": "n8n@2.13.0",
+      "published_at": "2026-03-16T14:17:35Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.13.0"
+    },
+    {
+      "tag_name": "n8n@2.12.2",
+      "name": "n8n@2.12.2",
+      "published_at": "2026-03-13T11:41:30Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.12.2"
+    },
+    {
+      "tag_name": "n8n@2.11.4",
+      "name": "n8n@2.11.4",
+      "published_at": "2026-03-13T13:43:17Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.11.4"
+    },
+    {
+      "tag_name": "n8n@1.123.25",
+      "name": "n8n@1.123.25",
+      "published_at": "2026-03-13T13:24:47Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.25"
+    },
+    {
+      "tag_name": "n8n@2.11.3",
+      "name": "n8n@2.11.3",
+      "published_at": "2026-03-11T10:48:13Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.11.3"
+    },
+    {
+      "tag_name": "n8n@1.123.24",
+      "name": "n8n@1.123.24",
+      "published_at": "2026-03-11T11:09:03Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.24"
+    },
+    {
+      "tag_name": "n8n@2.12.1",
+      "name": "n8n@2.12.1",
+      "published_at": "2026-03-11T10:41:04Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.12.1"
+    },
+    {
+      "tag_name": "n8n@2.11.2",
+      "name": "n8n@2.11.2",
+      "published_at": "2026-03-09T07:04:55Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.11.2"
+    },
+    {
+      "tag_name": "n8n@2.12.0",
+      "name": "n8n@2.12.0",
+      "published_at": "2026-03-09T16:13:20Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.12.0"
+    },
+    {
+      "tag_name": "n8n@2.10.4",
+      "name": "n8n@2.10.4",
+      "published_at": "2026-03-06T11:52:50Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.10.4"
+    },
+    {
+      "tag_name": "n8n@2.10.3",
+      "name": "n8n@2.10.3",
+      "published_at": "2026-03-04T08:59:49Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.10.3"
+    },
+    {
+      "tag_name": "n8n@1.123.23",
+      "name": "n8n@1.123.23",
+      "published_at": "2026-03-04T09:03:22Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%401.123.23"
+    },
+    {
+      "tag_name": "n8n@2.11.1",
+      "name": "n8n@2.11.1",
+      "published_at": "2026-03-04T07:40:40Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.11.1"
+    },
+    {
+      "tag_name": "n8n@2.11.0",
+      "name": "n8n@2.11.0",
+      "published_at": "2026-03-03T06:46:02Z",
+      "prerelease": true,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.11.0"
+    },
+    {
+      "tag_name": "n8n@2.10.2",
+      "name": "n8n@2.10.2",
+      "published_at": "2026-02-27T12:00:33Z",
+      "prerelease": false,
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.10.2"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "janober",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6249596?v=4",
+      "html_url": "https://github.com/janober",
+      "contributions": 4631,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 4929
+    },
+    {
+      "login": "ivov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44588767?v=4",
+      "html_url": "https://github.com/ivov",
+      "contributions": 1649,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 1784
+    },
+    {
+      "login": "netroy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/196144?v=4",
+      "html_url": "https://github.com/netroy",
+      "contributions": 1317,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 1586
+    },
+    {
+      "login": "RicardoE105",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16496553?v=4",
+      "html_url": "https://github.com/RicardoE105",
+      "contributions": 1013,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 1205
+    },
+    {
+      "login": "alexgrozav",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6179477?v=4",
+      "html_url": "https://github.com/alexgrozav",
+      "contributions": 632,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 683
+    },
+    {
+      "login": "michael-radency",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88898367?v=4",
+      "html_url": "https://github.com/michael-radency",
+      "contributions": 590,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 781
+    },
+    {
+      "login": "tomi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10324676?v=4",
+      "html_url": "https://github.com/tomi",
+      "contributions": 437,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 529
+    },
+    {
+      "login": "cstuncsik",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5410822?v=4",
+      "html_url": "https://github.com/cstuncsik",
+      "contributions": 415,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 470
+    },
+    {
+      "login": "OlegIvaniv",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12657221?v=4",
+      "html_url": "https://github.com/OlegIvaniv",
+      "contributions": 411,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 474
+    },
+    {
+      "login": "Joffcom",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4688521?v=4",
+      "html_url": "https://github.com/Joffcom",
+      "contributions": 393,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 467
+    }
+  ],
+  "commits_last_year": 6244,
+  "commits_per_week_avg": 120.07692307692308,
+  "weekly_commits": [
+    85,
+    56,
+    78,
+    92,
+    99,
+    64,
+    79,
+    114,
+    88,
+    85,
+    87,
+    140,
+    93,
+    60,
+    92,
+    94,
+    85,
+    98,
+    102,
+    132,
+    138,
+    114,
+    134,
+    115,
+    145,
+    140,
+    149,
+    106,
+    110,
+    67,
+    94,
+    142,
+    138,
+    224,
+    164,
+    134,
+    43,
+    28,
+    150,
+    186,
+    169,
+    151,
+    198,
+    118,
+    199,
+    203,
+    197,
+    163,
+    164,
+    171,
+    156,
+    11
+  ],
+  "weekly_timestamps": [
+    1744502400,
+    1745107200,
+    1745712000,
+    1746316800,
+    1746921600,
+    1747526400,
+    1748131200,
+    1748736000,
+    1749340800,
+    1749945600,
+    1750550400,
+    1751155200,
+    1751760000,
+    1752364800,
+    1752969600,
+    1753574400,
+    1754179200,
+    1754784000,
+    1755388800,
+    1755993600,
+    1756598400,
+    1757203200,
+    1757808000,
+    1758412800,
+    1759017600,
+    1759622400,
+    1760227200,
+    1760832000,
+    1761436800,
+    1762041600,
+    1762646400,
+    1763251200,
+    1763856000,
+    1764460800,
+    1765065600,
+    1765670400,
+    1766275200,
+    1766880000,
+    1767484800,
+    1768089600,
+    1768694400,
+    1769299200,
+    1769904000,
+    1770508800,
+    1771113600,
+    1771718400,
+    1772323200,
+    1772928000,
+    1773532800,
+    1774137600,
+    1774742400,
+    1775347200
+  ],
+  "commits_30d": 665,
+  "commits_90d": 2086,
+  "commit_trend": "declining",
+  "commit_growth_pct": -34.1,
+  "total_commits": 18746,
+  "first_commit_date": "2019-06-23T10:35:23Z",
+  "commit_span_days": 2479,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 57,
+  "security_advisories": [
+    {
+      "ghsa_id": "GHSA-58qr-rcgv-642v",
+      "cve_id": "CVE-2026-33660",
+      "severity": "critical",
+      "summary": "RCE via SQL Mode of Merge Node",
+      "published_at": "2026-03-25T14:01:28Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-58qr-rcgv-642v"
+    },
+    {
+      "ghsa_id": "GHSA-m63j-689w-3j35",
+      "cve_id": "CVE-2026-33663",
+      "severity": "high",
+      "summary": "Credential Theft via Name-Based Resolution and Permission Checker Bypass in Community Edition",
+      "published_at": "2026-03-25T14:01:43Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-m63j-689w-3j35"
+    },
+    {
+      "ghsa_id": "GHSA-qfc3-hm4j-7q77",
+      "cve_id": "CVE-2026-33749",
+      "severity": "medium",
+      "summary": "XSS via Binary Data Inline HTML Rendering",
+      "published_at": "2026-03-25T14:04:21Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-qfc3-hm4j-7q77"
+    },
+    {
+      "ghsa_id": "GHSA-mxrg-77hm-89hv",
+      "cve_id": "CVE-2026-33696",
+      "severity": "critical",
+      "summary": "Prototype Pollution in GSuiteAdmin node parameters leads to RCE",
+      "published_at": "2026-03-25T14:01:01Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mxrg-77hm-89hv"
+    },
+    {
+      "ghsa_id": "GHSA-q4fm-pjq6-m63g",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "Stored XSS in Form Trigger",
+      "published_at": "2026-03-25T14:05:07Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-q4fm-pjq6-m63g"
+    },
+    {
+      "ghsa_id": "GHSA-3c7f-5hgj-h279",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "XSS in Chat Trigger Node via Custom CSS",
+      "published_at": "2026-03-25T14:05:57Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-3c7f-5hgj-h279"
+    },
+    {
+      "ghsa_id": "GHSA-f3f2-mcxc-pwjx",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "SQL Injection in MySQL, PostgreSQL, and Microsoft SQL nodes",
+      "published_at": "2026-02-25T13:38:43Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-f3f2-mcxc-pwjx"
+    },
+    {
+      "ghsa_id": "GHSA-wxx7-mcgf-j869",
+      "cve_id": "CVE-2026-27497",
+      "severity": "critical",
+      "summary": "Remote Code Execution via Merge Node",
+      "published_at": "2026-02-25T13:37:08Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-wxx7-mcgf-j869"
+    },
+    {
+      "ghsa_id": "GHSA-vpcf-gvg4-6qwr",
+      "cve_id": "CVE-2026-27577",
+      "severity": "critical",
+      "summary": "Expression Sandbox Escape Leading to RCE",
+      "published_at": "2026-02-25T13:36:41Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-vpcf-gvg4-6qwr"
+    },
+    {
+      "ghsa_id": "GHSA-2p9h-rqjw-gm92",
+      "cve_id": "CVE-2026-27578",
+      "severity": "high",
+      "summary": "Stored XSS via Various Nodes",
+      "published_at": "2026-02-25T13:37:36Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-2p9h-rqjw-gm92"
+    },
+    {
+      "ghsa_id": "GHSA-98c2-4cr3-4jc3",
+      "cve_id": "CVE-2026-33713",
+      "severity": "high",
+      "summary": "SQL Injection in Data Table Node via orderByColumn Expression",
+      "published_at": "2026-03-25T14:02:50Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-98c2-4cr3-4jc3"
+    },
+    {
+      "ghsa_id": "GHSA-jh8h-6c9q-7gmw",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "Authentication Bypass in Chat Trigger Node",
+      "published_at": "2026-02-25T13:40:16Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-jh8h-6c9q-7gmw"
+    },
+    {
+      "ghsa_id": "GHSA-75g8-rv7v-32f7",
+      "cve_id": "CVE-2026-27493",
+      "severity": "high",
+      "summary": "Unauthenticated Expression Evaluation via Form Node",
+      "published_at": "2026-02-25T13:38:01Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-75g8-rv7v-32f7"
+    },
+    {
+      "ghsa_id": "GHSA-w83q-mcmx-mh42",
+      "cve_id": "CVE-2026-33751",
+      "severity": "medium",
+      "summary": "LDAP Filter Injection in LDAP Node",
+      "published_at": "2026-03-25T14:03:19Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-w83q-mcmx-mh42"
+    },
+    {
+      "ghsa_id": "GHSA-xvh5-5qg4-x9qp",
+      "cve_id": "CVE-2026-27496",
+      "severity": "high",
+      "summary": "In-Process Memory Disclosure in Task Runner",
+      "published_at": "2026-03-25T14:02:12Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-xvh5-5qg4-x9qp"
+    },
+    {
+      "ghsa_id": "GHSA-vjf3-2gpj-233v",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "SSO Enforcement Bypass",
+      "published_at": "2026-02-25T13:39:56Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-vjf3-2gpj-233v"
+    },
+    {
+      "ghsa_id": "GHSA-jjpj-p2wh-qf23",
+      "cve_id": "CVE-2026-27495",
+      "severity": "critical",
+      "summary": "Sandbox Escape in JavaScript Task Runner",
+      "published_at": "2026-02-25T13:39:27Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-jjpj-p2wh-qf23"
+    },
+    {
+      "ghsa_id": "GHSA-fvfv-ppw4-7h2w",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "n8n Guardrail Node Bypass",
+      "published_at": "2026-02-25T13:40:49Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-fvfv-ppw4-7h2w"
+    },
+    {
+      "ghsa_id": "GHSA-fxcw-h3qj-8m8p",
+      "cve_id": "CVE-2026-33722",
+      "severity": "high",
+      "summary": "External Secrets Authorization Bypass in Credential Saving",
+      "published_at": "2026-03-25T14:03:01Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-fxcw-h3qj-8m8p"
+    },
+    {
+      "ghsa_id": "GHSA-364x-8g5j-x2pr",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "XSS in Credential Management Flow",
+      "published_at": "2026-03-25T14:05:43Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-364x-8g5j-x2pr"
+    },
+    {
+      "ghsa_id": "GHSA-w673-8fjw-457c",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "XSS and Open Redirect in Form Node",
+      "published_at": "2026-03-25T14:04:55Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-w673-8fjw-457c"
+    },
+    {
+      "ghsa_id": "GHSA-vpgc-2f6g-7w7x",
+      "cve_id": "CVE-2026-33720",
+      "severity": "medium",
+      "summary": "Authorization Bypass in OAuth Callback via N8N_SKIP_AUTH_ON_OAUTH_CALLBACK",
+      "published_at": "2026-03-25T14:05:26Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-vpgc-2f6g-7w7x"
+    },
+    {
+      "ghsa_id": "GHSA-38c7-23hj-2wgq",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "Webhook Forgery on Zendesk Trigger",
+      "published_at": "2026-02-25T13:41:43Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-38c7-23hj-2wgq"
+    },
+    {
+      "ghsa_id": "GHSA-mqpr-49jj-32rc",
+      "cve_id": null,
+      "severity": "medium",
+      "summary": "Webhook Forgery on Github Webhook Trigger",
+      "published_at": "2026-02-25T13:39:03Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mqpr-49jj-32rc"
+    },
+    {
+      "ghsa_id": "GHSA-hv53-3329-vmrm",
+      "cve_id": "CVE-2026-25056",
+      "severity": "critical",
+      "summary": "Arbitrary File Write leading to RCE in n8n Merge Node",
+      "published_at": "2026-02-04T14:22:13Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-hv53-3329-vmrm"
+    },
+    {
+      "ghsa_id": "GHSA-m82q-59gv-mcr9",
+      "cve_id": "CVE-2026-25055",
+      "severity": "high",
+      "summary": "Arbitrary File Write on Remote Systems via SSH Node",
+      "published_at": "2026-02-04T14:21:02Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-m82q-59gv-mcr9"
+    },
+    {
+      "ghsa_id": "GHSA-43v7-fp2v-68f6",
+      "cve_id": "CVE-2026-33724",
+      "severity": "medium",
+      "summary": "MITM Vulnerability for Source Control with SSH",
+      "published_at": "2026-03-25T14:03:36Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-43v7-fp2v-68f6"
+    },
+    {
+      "ghsa_id": "GHSA-qpq4-pw7f-pp8w",
+      "cve_id": "CVE-2026-25054",
+      "severity": "high",
+      "summary": "Stored Cross-Site Scripting via Markdown Rendering in Workflow UI",
+      "published_at": "2026-02-04T14:20:35Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-qpq4-pw7f-pp8w"
+    },
+    {
+      "ghsa_id": "GHSA-6cqr-8cfr-67f8",
+      "cve_id": "CVE-2026-25049",
+      "severity": "critical",
+      "summary": "Expression Escape Vulnerability Leading to RCE",
+      "published_at": "2026-02-04T14:20:15Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-6cqr-8cfr-67f8"
+    },
+    {
+      "ghsa_id": "GHSA-7c4h-vh2m-743m",
+      "cve_id": "CVE-2026-21893",
+      "severity": "low",
+      "summary": "Command Injection in Community Package Installation",
+      "published_at": "2026-02-04T16:01:22Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-7c4h-vh2m-743m"
+    },
+    {
+      "ghsa_id": "GHSA-x2mw-7j39-93xq",
+      "cve_id": "CVE-2026-27498",
+      "severity": "critical",
+      "summary": "Arbitrary Command Execution via File Write and Git Operations",
+      "published_at": "2026-02-25T13:41:19Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-x2mw-7j39-93xq"
+    },
+    {
+      "ghsa_id": "GHSA-9g95-qf3f-ggrw",
+      "cve_id": "CVE-2026-25053",
+      "severity": "critical",
+      "summary": "OS Command Injection in Git Node",
+      "published_at": "2026-02-04T14:19:56Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-9g95-qf3f-ggrw"
+    },
+    {
+      "ghsa_id": "GHSA-jf52-3f2h-h9j5",
+      "cve_id": "CVE-2026-21894",
+      "severity": "medium",
+      "summary": "Missing Stripe-Signature Verification Allows Unauthenticated Forged Webhooks",
+      "published_at": "2026-01-07T06:45:10Z",
+      "cvss_score": 6.5,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-jf52-3f2h-h9j5"
+    },
+    {
+      "ghsa_id": "GHSA-w96v-gf22-crwp",
+      "cve_id": "CVE-2025-68949",
+      "severity": "medium",
+      "summary": "IP Whitelist Bypass via Partial String Matching",
+      "published_at": "2026-01-13T09:00:44Z",
+      "cvss_score": 5.3,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-w96v-gf22-crwp"
+    },
+    {
+      "ghsa_id": "GHSA-j4p8-h8mh-rh8q",
+      "cve_id": "CVE-2025-68697",
+      "severity": "high",
+      "summary": "Legacy Code node enables file read/write in self-hosted n8n",
+      "published_at": "2025-12-24T09:51:34Z",
+      "cvss_score": 7.1,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-j4p8-h8mh-rh8q"
+    },
+    {
+      "ghsa_id": "GHSA-62r4-hw23-cc8v",
+      "cve_id": "CVE-2025-68668",
+      "severity": "critical",
+      "summary": "Arbitrary Command Execution in Pyodide based Python Code Node ",
+      "published_at": "2025-12-24T09:51:05Z",
+      "cvss_score": 9.9,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-62r4-hw23-cc8v"
+    },
+    {
+      "ghsa_id": "GHSA-v364-rw7m-3263",
+      "cve_id": "CVE-2026-21877",
+      "severity": "critical",
+      "summary": "RCE via Arbitrary File Write",
+      "published_at": "2026-01-06T06:25:13Z",
+      "cvss_score": 10.0,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-v364-rw7m-3263"
+    },
+    {
+      "ghsa_id": "GHSA-gfvg-qv54-r4pc",
+      "cve_id": "CVE-2026-25052",
+      "severity": "critical",
+      "summary": "Improper File Access Controls Allow Arbitrary File Read by Authenticated Users",
+      "published_at": "2026-02-04T14:19:12Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-gfvg-qv54-r4pc"
+    },
+    {
+      "ghsa_id": "GHSA-825q-w924-xhgx",
+      "cve_id": "CVE-2026-25051",
+      "severity": "high",
+      "summary": "Improper CSP Enforcement in Webhook Responses May Allow Stored XSS",
+      "published_at": "2026-02-04T14:17:30Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-825q-w924-xhgx"
+    },
+    {
+      "ghsa_id": "GHSA-v98v-ff95-f3cp",
+      "cve_id": "CVE-2025-68613",
+      "severity": "critical",
+      "summary": "n8n Remote Code Execution via Expression Injection",
+      "published_at": "2025-12-19T22:13:20Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-v98v-ff95-f3cp"
+    },
+    {
+      "ghsa_id": "GHSA-v4pr-fm98-w9pg",
+      "cve_id": "CVE-2026-21858",
+      "severity": "critical",
+      "summary": "Unauthenticated File Access via Improper Webhook Request Handling",
+      "published_at": "2026-01-07T11:09:12Z",
+      "cvss_score": 10.0,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-v4pr-fm98-w9pg"
+    },
+    {
+      "ghsa_id": "GHSA-wpqc-h9wp-chmq",
+      "cve_id": "CVE-2025-65964",
+      "severity": "critical",
+      "summary": "Remote Code Execution via Git Node Custom Pre-Commit Hook",
+      "published_at": "2025-12-08T16:41:35Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-wpqc-h9wp-chmq"
+    },
+    {
+      "ghsa_id": "GHSA-mmgg-m5j7-f83h",
+      "cve_id": "CVE-2026-27494",
+      "severity": "critical",
+      "summary": "Python Code Node Sandbox Escape",
+      "published_at": "2026-02-25T13:42:25Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mmgg-m5j7-f83h"
+    },
+    {
+      "ghsa_id": "GHSA-c545-x2rh-82fc",
+      "cve_id": "CVE-2026-33665",
+      "severity": "high",
+      "summary": "LDAP Email-Based Account Linking Allows Privilege Escalation and Account Takeover",
+      "published_at": "2026-03-25T14:02:33Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc"
+    },
+    {
+      "ghsa_id": "GHSA-2xcx-75h9-vr9h",
+      "cve_id": "CVE-2026-25631",
+      "severity": "medium",
+      "summary": "Domain allowlist bypass enables credential exfiltration",
+      "published_at": "2026-02-04T14:17:01Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-2xcx-75h9-vr9h"
+    },
+    {
+      "ghsa_id": "GHSA-8398-gmmx-564h",
+      "cve_id": "CVE-2026-25115",
+      "severity": "critical",
+      "summary": "Python sandbox escape",
+      "published_at": "2026-02-04T14:26:55Z",
+      "cvss_score": null,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-8398-gmmx-564h"
+    },
+    {
+      "ghsa_id": "GHSA-xgp7-7qjq-vg47",
+      "cve_id": "CVE-2025-62726",
+      "severity": "high",
+      "summary": "Remote Code Execution via Git Node Pre-Commit Hook",
+      "published_at": "2025-10-30T11:55:48Z",
+      "cvss_score": 8.8,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-xgp7-7qjq-vg47"
+    },
+    {
+      "ghsa_id": "GHSA-49mx-fj45-q3p6",
+      "cve_id": "CVE-2025-61917",
+      "severity": "high",
+      "summary": "Unsafe Buffer Allocation Allows In-Process Memory Disclosure in Task Runner",
+      "published_at": "2026-02-04T14:10:16Z",
+      "cvss_score": 7.7,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-49mx-fj45-q3p6"
+    },
+    {
+      "ghsa_id": "GHSA-58jc-rcg5-95f3",
+      "cve_id": "CVE-2025-61914",
+      "severity": "high",
+      "summary": "Possible Stored XSS in \u201cRespond to Webhook\u201d Node May Execute Outside Sandbox",
+      "published_at": "2025-12-26T16:21:08Z",
+      "cvss_score": 7.3,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-58jc-rcg5-95f3"
+    },
+    {
+      "ghsa_id": "GHSA-mvh4-2cm2-6hpg",
+      "cve_id": "CVE-2025-58177",
+      "severity": "medium",
+      "summary": "Stored XSS in n8n LangChain Chat Trigger Node via initialMessages Parameter",
+      "published_at": "2025-09-14T16:12:21Z",
+      "cvss_score": 4.1,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mvh4-2cm2-6hpg"
+    },
+    {
+      "ghsa_id": "GHSA-365g-vjw2-grx8",
+      "cve_id": null,
+      "severity": "high",
+      "summary": "Execute Command Node in n8n Allows Authenticated Users to Run Arbitrary Commands on Host",
+      "published_at": "2025-10-08T13:47:31Z",
+      "cvss_score": 8.8,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-365g-vjw2-grx8"
+    },
+    {
+      "ghsa_id": "GHSA-ggjm-f3g4-rwmm",
+      "cve_id": "CVE-2025-57749",
+      "severity": "medium",
+      "summary": "Symlink traversal vulnerability in \"Read/Write File\" node allows access to restricted files",
+      "published_at": "2025-08-20T15:09:53Z",
+      "cvss_score": 6.5,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-ggjm-f3g4-rwmm"
+    },
+    {
+      "ghsa_id": "GHSA-gq57-v332-7666",
+      "cve_id": "CVE-2025-52554",
+      "severity": "medium",
+      "summary": "Improper Authorization in Workflow Execution Stop Endpoint Allows Terminating Other Users\u2019 Workflows",
+      "published_at": "2025-07-03T17:55:16Z",
+      "cvss_score": 4.3,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-gq57-v332-7666"
+    },
+    {
+      "ghsa_id": "GHSA-hfmv-hhh3-43f2",
+      "cve_id": "CVE-2025-52478",
+      "severity": "high",
+      "summary": "Stored XSS in n8n Form Trigger allows Account Takeover via injected iframe and video/source",
+      "published_at": "2025-08-19T09:59:55Z",
+      "cvss_score": 8.7,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-hfmv-hhh3-43f2"
+    },
+    {
+      "ghsa_id": "GHSA-pr9r-gxgp-9rm8",
+      "cve_id": "CVE-2025-49595",
+      "severity": "medium",
+      "summary": "Denial of Service via Malformed Binary Data Requests",
+      "published_at": "2025-07-03T06:56:54Z",
+      "cvss_score": 4.9,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-pr9r-gxgp-9rm8"
+    },
+    {
+      "ghsa_id": "GHSA-5vj6-wjr7-5v9f",
+      "cve_id": "CVE-2025-49592",
+      "severity": "medium",
+      "summary": "Open Redirect Vulnerability in n8n Login Flow",
+      "published_at": "2025-06-26T18:51:57Z",
+      "cvss_score": 4.6,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-5vj6-wjr7-5v9f"
+    },
+    {
+      "ghsa_id": "GHSA-c8hm-hr8h-5xjw",
+      "cve_id": "CVE-2025-46343",
+      "severity": "medium",
+      "summary": "Stored XSS through Attachments View Endpoint",
+      "published_at": "2025-04-28T12:38:27Z",
+      "cvss_score": 5.0,
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c8hm-hr8h-5xjw"
+    }
+  ],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:13:13.795834+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

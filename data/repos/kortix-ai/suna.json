@@ -1,0 +1,239 @@
+{
+  "full_name": "kortix-ai/suna",
+  "name": "suna",
+  "owner": "kortix-ai",
+  "description": "The Autonomous Company Operating System",
+  "homepage": "https://www.kortix.com",
+  "github_url": "https://github.com/kortix-ai/suna",
+  "stars": 19572,
+  "forks": 3375,
+  "watchers": 153,
+  "license_name": "Other",
+  "license_spdx": "NOASSERTION",
+  "topics": [
+    "ai",
+    "ai-agents",
+    "llm"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2024-10-05T17:01:01Z",
+  "updated_at": "2026-04-07T06:36:24Z",
+  "pushed_at": "2026-04-06T23:06:41Z",
+  "age_days": 548,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "TypeScript": 15531526,
+    "JavaScript": 1418894,
+    "Shell": 313051,
+    "Python": 311220,
+    "CSS": 80482,
+    "HTML": 59297
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "JavaScript",
+    "Shell"
+  ],
+  "total_code_bytes": 17772817,
+  "approx_loc": 425882,
+  "issues_open": 0,
+  "issues_closed": 1120,
+  "issues_new_30d": 0,
+  "issues_new_90d": 0,
+  "issues_active_30d": 0,
+  "issues_closed_30d": 15,
+  "prs_open": 0,
+  "prs_closed": 240,
+  "prs_merged": 1634,
+  "prs_active_30d": 0,
+  "release_count": 10,
+  "latest_release_tag": "v0.8.30",
+  "latest_release_date": "2026-04-06T22:43:20Z",
+  "avg_days_between_releases": 55.666666666666664,
+  "releases": [
+    {
+      "tag_name": "v0.8.30",
+      "name": "v0.8.30 \u2014 CI/CD overhaul: native ARM builds, re-tag promotion, legacy purge",
+      "published_at": "2026-04-06T22:43:20Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v0.8.30"
+    },
+    {
+      "tag_name": "v0.8.29",
+      "name": "v0.8.29 \u2014 New CI/CD pipeline, version management, and changelog",
+      "published_at": "2026-04-06T21:46:38Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v0.8.29"
+    },
+    {
+      "tag_name": "v0.8.28",
+      "name": "v0.8.28 \u2014 Webhook URL fixes, file rendering improvements, and tighter worker safety",
+      "published_at": "2026-04-06T11:48:35Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v0.8.28"
+    },
+    {
+      "tag_name": "v0.8.27",
+      "name": "v0.8.27 \u2014 Channels v2, unified plugin system, design system overhaul, and file preview refresh",
+      "published_at": "2026-04-05T20:44:21Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v0.8.27"
+    },
+    {
+      "tag_name": "v0.8.26",
+      "name": "v0.8.26 \u2014 Fix OpenCode startup timeout on image build machines",
+      "published_at": "2026-04-03T16:46:51Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v0.8.26"
+    },
+    {
+      "tag_name": "v0.8.25",
+      "name": "v0.8.25 \u2014 Fix sandbox env var injection for cloud proxied services",
+      "published_at": "2026-04-03T11:35:06Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v0.8.25"
+    },
+    {
+      "tag_name": "v0.8.24",
+      "name": "v0.8.24 \u2014 Suna repo migration, runtime env vars, deploy infrastructure",
+      "published_at": "2026-04-02T08:35:59Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v0.8.24"
+    },
+    {
+      "tag_name": "v1",
+      "name": "Suna v1",
+      "published_at": "2025-04-22T20:12:36Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v1"
+    },
+    {
+      "tag_name": "v.0.1.11",
+      "name": "v0.1.11",
+      "published_at": "2024-11-19T03:09:10Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v.0.1.11"
+    },
+    {
+      "tag_name": "v0.1.8",
+      "name": "v0.1.8",
+      "published_at": "2024-11-18T07:14:52Z",
+      "prerelease": false,
+      "url": "https://github.com/kortix-ai/suna/releases/tag/v0.1.8"
+    }
+  ],
+  "contributor_count": 62,
+  "top_contributors": [
+    {
+      "login": "markokraemer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73443200?v=4",
+      "html_url": "https://github.com/markokraemer",
+      "contributions": 2283,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Soumyadas15",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29672242?v=4",
+      "html_url": "https://github.com/Soumyadas15",
+      "contributions": 1373,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "kubet",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41026612?v=4",
+      "html_url": "https://github.com/kubet",
+      "contributions": 1350,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "KrishavRajSingh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99531396?v=4",
+      "html_url": "https://github.com/KrishavRajSingh",
+      "contributions": 933,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Ino-Bagaric",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16362368?v=4",
+      "html_url": "https://github.com/Ino-Bagaric",
+      "contributions": 770,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "escapade-mckv",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126939298?v=4",
+      "html_url": "https://github.com/escapade-mckv",
+      "contributions": 689,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "tnfssc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29162020?v=4",
+      "html_url": "https://github.com/tnfssc",
+      "contributions": 322,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "pablocpz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108333916?v=4",
+      "html_url": "https://github.com/pablocpz",
+      "contributions": 186,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "adamcohenhillel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/633840?v=4",
+      "html_url": "https://github.com/adamcohenhillel",
+      "contributions": 162,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "emrkarata",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19878141?v=4",
+      "html_url": "https://github.com/emrkarata",
+      "contributions": 119,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 8604,
+  "first_commit_date": "2024-10-05T17:01:40Z",
+  "commit_span_days": 548,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:02:10.745941+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

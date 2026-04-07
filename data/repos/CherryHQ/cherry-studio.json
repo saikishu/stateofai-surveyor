@@ -1,0 +1,423 @@
+{
+  "full_name": "CherryHQ/cherry-studio",
+  "name": "cherry-studio",
+  "owner": "CherryHQ",
+  "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+  "homepage": "https://cherry-ai.com",
+  "github_url": "https://github.com/CherryHQ/cherry-studio",
+  "stars": 43054,
+  "forks": 4038,
+  "watchers": 188,
+  "license_name": "GNU Affero General Public License v3.0",
+  "license_spdx": "AGPL-3.0",
+  "topics": [
+    "claude-code",
+    "ai-agent",
+    "opencode",
+    "skills",
+    "codex",
+    "vibe-coding",
+    "openclaw",
+    "open-cli",
+    "agency-agents",
+    "superpowers"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2024-05-24T01:56:26Z",
+  "updated_at": "2026-04-07T06:55:09Z",
+  "pushed_at": "2026-04-07T06:45:00Z",
+  "age_days": 683,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "TypeScript": 10990899,
+    "JavaScript": 164785,
+    "Python": 89650,
+    "HTML": 79723,
+    "CSS": 54023,
+    "NSIS": 5338
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "JavaScript",
+    "Python"
+  ],
+  "total_code_bytes": 11384418,
+  "approx_loc": 271029,
+  "issues_open": 669,
+  "issues_closed": 8413,
+  "issues_new_30d": 70,
+  "issues_new_90d": 70,
+  "issues_active_30d": 70,
+  "issues_closed_30d": 25,
+  "prs_open": 226,
+  "prs_closed": 733,
+  "prs_merged": 3267,
+  "prs_active_30d": 100,
+  "release_count": 253,
+  "latest_release_tag": "v1.8.4",
+  "latest_release_date": "2026-03-27T13:02:49Z",
+  "avg_days_between_releases": 4.541666666666667,
+  "releases": [
+    {
+      "tag_name": "v1.9.0-rc.0",
+      "name": "v1.9.0-rc.0",
+      "published_at": "2026-04-03T11:01:36Z",
+      "prerelease": true,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.9.0-rc.0"
+    },
+    {
+      "tag_name": "v1.8.4",
+      "name": "v1.8.4",
+      "published_at": "2026-03-27T13:02:49Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.8.4"
+    },
+    {
+      "tag_name": "v1.8.3",
+      "name": "v1.8.3",
+      "published_at": "2026-03-25T14:55:18Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.8.3"
+    },
+    {
+      "tag_name": "v1.8.2",
+      "name": "v1.8.2",
+      "published_at": "2026-03-21T04:39:32Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.8.2"
+    },
+    {
+      "tag_name": "v1.8.1",
+      "name": "v1.8.1",
+      "published_at": "2026-03-21T14:03:03Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.8.1"
+    },
+    {
+      "tag_name": "v1.8.0",
+      "name": "v1.8.0",
+      "published_at": "2026-03-16T08:37:58Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.8.0"
+    },
+    {
+      "tag_name": "v1.7.25",
+      "name": "v1.7.25",
+      "published_at": "2026-03-13T09:08:21Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.25"
+    },
+    {
+      "tag_name": "v1.7.24",
+      "name": "v1.7.24",
+      "published_at": "2026-03-05T08:15:43Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.24"
+    },
+    {
+      "tag_name": "v1.7.23",
+      "name": "v1.7.23",
+      "published_at": "2026-03-04T07:15:06Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.23"
+    },
+    {
+      "tag_name": "v1.7.22",
+      "name": "v1.7.22",
+      "published_at": "2026-03-02T15:25:54Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.22"
+    },
+    {
+      "tag_name": "v1.7.19",
+      "name": "v1.7.19",
+      "published_at": "2026-02-14T06:38:18Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.19"
+    },
+    {
+      "tag_name": "v1.7.18",
+      "name": "v1.7.18",
+      "published_at": "2026-02-12T03:46:26Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.18"
+    },
+    {
+      "tag_name": "v1.7.17",
+      "name": "v1.7.17",
+      "published_at": "2026-02-06T09:34:13Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.17"
+    },
+    {
+      "tag_name": "v1.7.15",
+      "name": "v1.7.15",
+      "published_at": "2026-01-25T13:50:15Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.15"
+    },
+    {
+      "tag_name": "v1.7.13",
+      "name": "v1.7.13",
+      "published_at": "2026-01-25T13:50:44Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.13"
+    },
+    {
+      "tag_name": "v1.7.12",
+      "name": "v1.7.12",
+      "published_at": "2026-01-08T10:41:29Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.12"
+    },
+    {
+      "tag_name": "v1.7.9",
+      "name": "v1.7.9",
+      "published_at": "2026-01-04T10:55:18Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.9"
+    },
+    {
+      "tag_name": "v1.7.8",
+      "name": "v1.7.8",
+      "published_at": "2025-12-28T10:08:22Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.8"
+    },
+    {
+      "tag_name": "v1.7.7",
+      "name": "v1.7.7",
+      "published_at": "2025-12-25T07:10:01Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.7"
+    },
+    {
+      "tag_name": "v1.7.6",
+      "name": "v1.7.6",
+      "published_at": "2025-12-18T14:44:10Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.6"
+    },
+    {
+      "tag_name": "v1.7.5",
+      "name": "v1.7.5",
+      "published_at": "2025-12-17T15:35:01Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.5"
+    },
+    {
+      "tag_name": "v1.7.4",
+      "name": "v1.7.4",
+      "published_at": "2025-12-16T11:12:14Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.4"
+    },
+    {
+      "tag_name": "v1.7.3",
+      "name": "v1.7.3",
+      "published_at": "2025-12-12T11:01:53Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.3"
+    },
+    {
+      "tag_name": "v1.7.2",
+      "name": "v1.7.2",
+      "published_at": "2025-12-08T05:30:19Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.2"
+    },
+    {
+      "tag_name": "v1.7.1",
+      "name": "v1.7.1",
+      "published_at": "2025-11-30T12:18:03Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.1"
+    },
+    {
+      "tag_name": "v1.7.0",
+      "name": "v1.7.0",
+      "published_at": "2025-11-28T08:51:33Z",
+      "prerelease": false,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.0"
+    },
+    {
+      "tag_name": "v1.7.0-rc.3",
+      "name": "v1.7.0-rc.3",
+      "published_at": "2025-11-26T13:27:15Z",
+      "prerelease": true,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.0-rc.3"
+    },
+    {
+      "tag_name": "v1.7.0-rc.2",
+      "name": "v1.7.0-rc.2",
+      "published_at": "2025-11-24T05:33:21Z",
+      "prerelease": true,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.0-rc.2"
+    },
+    {
+      "tag_name": "v1.7.0-rc.1",
+      "name": "v1.7.0-rc.1",
+      "published_at": "2025-11-14T12:17:55Z",
+      "prerelease": true,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.0-rc.1"
+    },
+    {
+      "tag_name": "v1.7.0-beta.6",
+      "name": "v1.7.0-beta.6",
+      "published_at": "2025-11-13T02:48:01Z",
+      "prerelease": true,
+      "url": "https://github.com/CherryHQ/cherry-studio/releases/tag/v1.7.0-beta.6"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "kangfenmao",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8253512?v=4",
+      "html_url": "https://github.com/kangfenmao",
+      "contributions": 2088,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "EurFelux",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59059173?v=4",
+      "html_url": "https://github.com/EurFelux",
+      "contributions": 736,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "DeJeune",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67425183?v=4",
+      "html_url": "https://github.com/DeJeune",
+      "contributions": 482,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "alephpiece",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22237751?v=4",
+      "html_url": "https://github.com/alephpiece",
+      "contributions": 269,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "vaayne",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10231735?v=4",
+      "html_url": "https://github.com/vaayne",
+      "contributions": 232,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "beyondkmp",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5462444?v=4",
+      "html_url": "https://github.com/beyondkmp",
+      "contributions": 220,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "0xfullex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/106392080?v=4",
+      "html_url": "https://github.com/0xfullex",
+      "contributions": 166,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "ousugo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43401755?v=4",
+      "html_url": "https://github.com/ousugo",
+      "contributions": 113,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Pleasurecruise",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144885467?v=4",
+      "html_url": "https://github.com/Pleasurecruise",
+      "contributions": 110,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "eeee0717",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70054568?v=4",
+      "html_url": "https://github.com/eeee0717",
+      "contributions": 104,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 5792,
+  "first_commit_date": "2024-05-24T01:56:26Z",
+  "commit_span_days": 683,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 4,
+  "security_advisories": [
+    {
+      "ghsa_id": "GHSA-hh6w-rmjc-26f6",
+      "cve_id": "CVE-2025-61929",
+      "severity": "critical",
+      "summary": "One-click on a specific URL to cause a command to execute",
+      "published_at": "2025-10-10T01:46:49Z",
+      "cvss_score": 9.7,
+      "url": "https://github.com/CherryHQ/cherry-studio/security/advisories/GHSA-hh6w-rmjc-26f6"
+    },
+    {
+      "ghsa_id": "GHSA-gjp6-9cvg-8w93",
+      "cve_id": "CVE-2025-54382",
+      "severity": "critical",
+      "summary": "Cherry Studio RCE Vulnerability Disclosure",
+      "published_at": "2025-08-11T10:40:27Z",
+      "cvss_score": 9.7,
+      "url": "https://github.com/CherryHQ/cherry-studio/security/advisories/GHSA-gjp6-9cvg-8w93"
+    },
+    {
+      "ghsa_id": "GHSA-8xr5-732g-84px",
+      "cve_id": "CVE-2025-54074",
+      "severity": "critical",
+      "summary": "Cherry Studio is Vulnerable to OS Command Injection during Connection with a Malicious MCP Server",
+      "published_at": "2025-08-11T10:46:26Z",
+      "cvss_score": null,
+      "url": "https://github.com/CherryHQ/cherry-studio/security/advisories/GHSA-8xr5-732g-84px"
+    },
+    {
+      "ghsa_id": "GHSA-p6vw-w3p8-4g72",
+      "cve_id": "CVE-2025-54063",
+      "severity": "critical",
+      "summary": "One-click Remote Code Execution through Custom URL Handling in Cherry Studio v1.4.11",
+      "published_at": "2025-08-11T10:45:12Z",
+      "cvss_score": 9.7,
+      "url": "https://github.com/CherryHQ/cherry-studio/security/advisories/GHSA-p6vw-w3p8-4g72"
+    }
+  ],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T06:56:30.671740+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

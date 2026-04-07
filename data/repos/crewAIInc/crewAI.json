@@ -1,0 +1,380 @@
+{
+  "full_name": "crewAIInc/crewAI",
+  "name": "crewAI",
+  "owner": "crewAIInc",
+  "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+  "homepage": "https://crewai.com",
+  "github_url": "https://github.com/crewAIInc/crewAI",
+  "stars": 48207,
+  "forks": 6572,
+  "watchers": 345,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "llms",
+    "aiagentframework"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2023-10-27T03:26:59Z",
+  "updated_at": "2026-04-07T07:03:57Z",
+  "pushed_at": "2026-04-07T07:08:11Z",
+  "age_days": 893,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "Python": 7974101,
+    "JavaScript": 83380,
+    "CSS": 24684,
+    "Jinja": 6549,
+    "Shell": 25
+  },
+  "top_3_languages": [
+    "Python",
+    "JavaScript",
+    "CSS"
+  ],
+  "total_code_bytes": 8088739,
+  "approx_loc": 230626,
+  "issues_open": 99,
+  "issues_closed": 1757,
+  "issues_new_30d": 26,
+  "issues_new_90d": 26,
+  "issues_active_30d": 26,
+  "issues_closed_30d": 22,
+  "prs_open": 406,
+  "prs_closed": 1169,
+  "prs_merged": 1563,
+  "prs_active_30d": 100,
+  "release_count": 165,
+  "latest_release_tag": "1.13.0",
+  "latest_release_date": "2026-04-02T23:16:28Z",
+  "avg_days_between_releases": 6.666666666666667,
+  "releases": [
+    {
+      "tag_name": "1.14.0a3",
+      "name": "1.14.0a3",
+      "published_at": "2026-04-06T08:18:10Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.14.0a3"
+    },
+    {
+      "tag_name": "1.14.0a2",
+      "name": "1.14.0a2",
+      "published_at": "2026-04-06T07:34:34Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.14.0a2"
+    },
+    {
+      "tag_name": "1.13.0",
+      "name": "1.13.0",
+      "published_at": "2026-04-02T23:16:28Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0"
+    },
+    {
+      "tag_name": "1.13.0a7",
+      "name": "1.13.0a7",
+      "published_at": "2026-04-02T14:21:29Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0a7"
+    },
+    {
+      "tag_name": "1.13.0a6",
+      "name": "1.13.0a6",
+      "published_at": "2026-04-01T17:26:22Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0a6"
+    },
+    {
+      "tag_name": "1.13.0a5",
+      "name": "1.13.0a5",
+      "published_at": "2026-04-01T07:00:15Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0a5"
+    },
+    {
+      "tag_name": "1.13.0a4",
+      "name": "1.13.0a4",
+      "published_at": "2026-03-31T21:08:21Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0a4"
+    },
+    {
+      "tag_name": "1.13.0a3",
+      "name": "1.13.0a3",
+      "published_at": "2026-03-31T20:16:32Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0a3"
+    },
+    {
+      "tag_name": "1.13.0rc1",
+      "name": "1.13.0rc1",
+      "published_at": "2026-03-27T03:31:04Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0rc1"
+    },
+    {
+      "tag_name": "1.13.0a2",
+      "name": "1.13.0a2",
+      "published_at": "2026-03-26T20:05:42Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0a2"
+    },
+    {
+      "tag_name": "1.13.0a1",
+      "name": "1.13.0a1",
+      "published_at": "2026-03-26T19:07:38Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.13.0a1"
+    },
+    {
+      "tag_name": "1.12.2",
+      "name": "1.12.2",
+      "published_at": "2026-03-26T06:54:43Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.12.2"
+    },
+    {
+      "tag_name": "1.12.1",
+      "name": "1.12.1",
+      "published_at": "2026-03-26T01:52:18Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.12.1"
+    },
+    {
+      "tag_name": "1.12.0",
+      "name": "1.12.0",
+      "published_at": "2026-03-26T01:07:41Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.12.0"
+    },
+    {
+      "tag_name": "1.12.0a3",
+      "name": "1.12.0a3",
+      "published_at": "2026-03-25T20:17:53Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.12.0a3"
+    },
+    {
+      "tag_name": "1.12.0a2",
+      "name": "1.12.0a2",
+      "published_at": "2026-03-25T15:55:09Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.12.0a2"
+    },
+    {
+      "tag_name": "1.12.0a1",
+      "name": "1.12.0a1",
+      "published_at": "2026-03-25T12:14:59Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.12.0a1"
+    },
+    {
+      "tag_name": "1.11.1",
+      "name": "1.11.1",
+      "published_at": "2026-03-23T23:33:57Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.11.1"
+    },
+    {
+      "tag_name": "1.11.0",
+      "name": "1.11.0",
+      "published_at": "2026-03-18T13:38:51Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.11.0"
+    },
+    {
+      "tag_name": "1.11.0rc2",
+      "name": "1.11.0rc2",
+      "published_at": "2026-03-17T21:07:36Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.11.0rc2"
+    },
+    {
+      "tag_name": "1.11.0rc1",
+      "name": "1.11.0rc1",
+      "published_at": "2026-03-16T13:55:53Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.11.0rc1"
+    },
+    {
+      "tag_name": "1.10.2rc2",
+      "name": "1.10.2rc2",
+      "published_at": "2026-03-14T04:49:54Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.10.2rc2"
+    },
+    {
+      "tag_name": "1.10.2rc1",
+      "name": "1.10.2rc1",
+      "published_at": "2026-03-13T21:07:44Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.10.2rc1"
+    },
+    {
+      "tag_name": "1.10.2a1",
+      "name": "1.10.2a1",
+      "published_at": "2026-03-11T15:39:01Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.10.2a1"
+    },
+    {
+      "tag_name": "1.10.1",
+      "name": "1.10.1",
+      "published_at": "2026-03-04T19:09:19Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.10.1"
+    },
+    {
+      "tag_name": "1.10.1a1",
+      "name": "1.10.1a1",
+      "published_at": "2026-02-27T14:50:52Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.10.1a1"
+    },
+    {
+      "tag_name": "1.10.0",
+      "name": "1.10.0",
+      "published_at": "2026-02-27T00:03:56Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.10.0"
+    },
+    {
+      "tag_name": "1.10.0a1",
+      "name": "1.10.0a1",
+      "published_at": "2026-02-19T05:31:01Z",
+      "prerelease": true,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.10.0a1"
+    },
+    {
+      "tag_name": "1.9.3",
+      "name": "1.9.3",
+      "published_at": "2026-01-30T22:56:17Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.9.3"
+    },
+    {
+      "tag_name": "1.9.2",
+      "name": "1.9.2",
+      "published_at": "2026-01-29T01:15:34Z",
+      "prerelease": false,
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.9.2"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "joaomdmoura",
+      "avatar_url": "https://avatars.githubusercontent.com/u/667063?v=4",
+      "html_url": "https://github.com/joaomdmoura",
+      "contributions": 579,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "greysonlalonde",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77358368?v=4",
+      "html_url": "https://github.com/greysonlalonde",
+      "contributions": 317,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "lorenzejay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63378463?v=4",
+      "html_url": "https://github.com/lorenzejay",
+      "contributions": 190,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "bhancockio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109994880?v=4",
+      "html_url": "https://github.com/bhancockio",
+      "contributions": 145,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "lucasgomide",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5209129?v=4",
+      "html_url": "https://github.com/lucasgomide",
+      "contributions": 134,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "tonykipkemboi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64493665?v=4",
+      "html_url": "https://github.com/tonykipkemboi",
+      "contributions": 88,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "theCyberTech",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84775494?v=4",
+      "html_url": "https://github.com/theCyberTech",
+      "contributions": 52,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "pythonbyte",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25188076?v=4",
+      "html_url": "https://github.com/pythonbyte",
+      "contributions": 47,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Vidit-Ostwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110953813?v=4",
+      "html_url": "https://github.com/Vidit-Ostwal",
+      "contributions": 46,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "vinibrsl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5093045?v=4",
+      "html_url": "https://github.com/vinibrsl",
+      "contributions": 45,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 2204,
+  "first_commit_date": "2023-10-27T04:02:09Z",
+  "commit_span_days": 893,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:13:04.919643+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

@@ -25,7 +25,7 @@ from .models import FetchProgress, RepoStats
 load_dotenv()
 
 GITHUB_TOKEN   = os.getenv("GITHUB_TOKEN", "")
-REPOS_FILE     = Path(os.getenv("REPOS_FILE", "repos.txt"))
+REPOS_FILE     = Path(os.getenv("REPOS_FILE", "repos.csv"))
 PORT           = int(os.getenv("PORT", "8000"))
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 GIT_USER_NAME  = os.getenv("GIT_USER_NAME",  "OWASP Surveyor Bot")
@@ -48,18 +48,29 @@ _fetch_lock = asyncio.Lock()
 
 # ── Repos-file helpers ────────────────────────────────────────────────────────
 
-def load_repos_txt() -> List[str]:
-    """Return a list of 'owner/repo' strings from the flat text file."""
+def load_repos_csv() -> List[Dict]:
+    """Return list of repo metadata dicts from repos.csv.
+
+    Each dict has: full_name, operational_roles, autonomy_level, target_users, csv_description.
+    Falls back to plain-text parsing if the file has no header row (backwards compat).
+    """
     path = REPOS_FILE if REPOS_FILE.is_absolute() else Path.cwd() / REPOS_FILE
     if not path.exists():
-        logger.warning("Repos file not found at %s", path)
+        logger.warning("Repos CSV not found at %s", path)
         return []
     repos = []
     with open(path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith("#") and "/" in line:
-                repos.append(line)
+        reader = csv.DictReader(f)
+        for row in reader:
+            full_name = (row.get("repo") or "").strip()
+            if full_name and "/" in full_name:
+                repos.append({
+                    "full_name": full_name,
+                    "operational_roles": (row.get("operational_roles") or "").strip(),
+                    "autonomy_level": (row.get("autonomy_level") or "").strip(),
+                    "target_users": (row.get("target_users") or "").strip(),
+                    "csv_description": (row.get("description") or "").strip(),
+                })
     return repos
 
 
@@ -96,19 +107,29 @@ async def index(request: Request):
 
 @app.get("/api/repos")
 async def list_repos() -> List[Dict]:
-    """Return all repos from the text file, merged with any cached stats."""
-    full_names = load_repos_txt()
+    """Return all repos from repos.csv, merged with any cached GitHub stats."""
+    csv_repos = load_repos_csv()
     result = []
-    for full_name in full_names:
+    for meta in csv_repos:
+        full_name = meta["full_name"]
         cached = storage.get(full_name)
         if cached:
+            # CSV is source-of-truth for labels; overlay on cached data
+            cached["operational_roles"] = meta["operational_roles"]
+            cached["autonomy_level"]    = meta["autonomy_level"]
+            cached["target_users"]      = meta["target_users"]
+            cached["csv_description"]   = meta["csv_description"]
             result.append(cached)
         else:
             result.append({
-                "full_name": full_name,
-                "name": full_name.split("/")[-1],
-                "owner": full_name.split("/")[0],
-                "fetch_status": "pending",
+                "full_name":         full_name,
+                "name":              full_name.split("/")[-1],
+                "owner":             full_name.split("/")[0],
+                "fetch_status":      "pending",
+                "operational_roles": meta["operational_roles"],
+                "autonomy_level":    meta["autonomy_level"],
+                "target_users":      meta["target_users"],
+                "csv_description":   meta["csv_description"],
             })
     return result
 
@@ -143,7 +164,7 @@ async def fetch_all(background_tasks: BackgroundTasks) -> Dict:
     _require_writable()
     global _progress
     if not _fetch_lock.locked():
-        full_names = load_repos_txt()
+        full_names = [m["full_name"] for m in load_repos_csv()]
         _progress = FetchProgress(total=len(full_names), completed=0, done=False)
         background_tasks.add_task(_bulk_fetch_task, full_names)
         return {"started": True, "total": len(full_names)}
@@ -265,7 +286,7 @@ async def admin_save_repos(
     path.write_text(content, encoding="utf-8")
 
     # Trigger background refresh
-    full_names = load_repos_txt()
+    full_names = [m["full_name"] for m in load_repos_csv()]
     refresh_started = False
     if not _fetch_lock.locked() and full_names:
         global _progress

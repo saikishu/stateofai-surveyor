@@ -5,9 +5,9 @@
   "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
   "homepage": "https://code.claude.com/docs/en/overview",
   "github_url": "https://github.com/anthropics/claude-code",
-  "stars": 75565,
-  "forks": 6089,
-  "watchers": 469,
+  "stars": 110180,
+  "forks": 18314,
+  "watchers": 681,
   "license_name": null,
   "license_spdx": null,
   "topics": [],
@@ -15,13 +15,13 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-02-22T17:41:21Z",
-  "updated_at": "2026-03-09T09:00:43Z",
-  "pushed_at": "2026-03-07T00:12:45Z",
-  "age_days": 379,
-  "days_since_push": 2,
+  "updated_at": "2026-04-07T07:08:10Z",
+  "pushed_at": "2026-04-04T00:42:02Z",
+  "age_days": 408,
+  "days_since_push": 3,
   "activity_status": "active",
   "languages": {
-    "Shell": 61221,
+    "Shell": 61693,
     "Python": 38265,
     "TypeScript": 23117,
     "PowerShell": 5319,
@@ -32,23 +32,156 @@
     "Python",
     "TypeScript"
   ],
-  "total_code_bytes": 130429,
-  "approx_loc": 3607,
-  "issues_open": 5616,
-  "issues_closed": 25398,
+  "total_code_bytes": 130901,
+  "approx_loc": 3620,
+  "issues_open": 8811,
+  "issues_closed": 33754,
   "issues_new_30d": 100,
   "issues_new_90d": 100,
   "issues_active_30d": 100,
-  "issues_closed_30d": 100,
-  "prs_open": 289,
-  "prs_closed": 196,
-  "prs_merged": 145,
+  "issues_closed_30d": 99,
+  "prs_open": 446,
+  "prs_closed": 247,
+  "prs_merged": 147,
   "prs_active_30d": 100,
-  "release_count": 56,
-  "latest_release_tag": "v2.1.71",
-  "latest_release_date": "2026-03-07T00:12:46Z",
-  "avg_days_between_releases": 0.6896551724137931,
+  "release_count": 75,
+  "latest_release_tag": "v2.1.92",
+  "latest_release_date": "2026-04-04T00:42:02Z",
+  "avg_days_between_releases": 0.7586206896551724,
   "releases": [
+    {
+      "tag_name": "v2.1.92",
+      "name": "v2.1.92",
+      "published_at": "2026-04-04T00:42:02Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92"
+    },
+    {
+      "tag_name": "v2.1.91",
+      "name": "v2.1.91",
+      "published_at": "2026-04-02T23:45:35Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91"
+    },
+    {
+      "tag_name": "v2.1.90",
+      "name": "v2.1.90",
+      "published_at": "2026-04-01T23:41:31Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.90"
+    },
+    {
+      "tag_name": "v2.1.89",
+      "name": "v2.1.89",
+      "published_at": "2026-04-01T01:07:06Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89"
+    },
+    {
+      "tag_name": "v2.1.87",
+      "name": "v2.1.87",
+      "published_at": "2026-03-29T02:17:02Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.87"
+    },
+    {
+      "tag_name": "v2.1.86",
+      "name": "v2.1.86",
+      "published_at": "2026-03-27T21:42:09Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.86"
+    },
+    {
+      "tag_name": "v2.1.85",
+      "name": "v2.1.85",
+      "published_at": "2026-03-26T22:52:12Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85"
+    },
+    {
+      "tag_name": "v2.1.84",
+      "name": "v2.1.84",
+      "published_at": "2026-03-26T00:31:05Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84"
+    },
+    {
+      "tag_name": "v2.1.83",
+      "name": "v2.1.83",
+      "published_at": "2026-03-25T06:08:12Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83"
+    },
+    {
+      "tag_name": "v2.1.81",
+      "name": "v2.1.81",
+      "published_at": "2026-03-20T22:24:50Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.81"
+    },
+    {
+      "tag_name": "v2.1.80",
+      "name": "v2.1.80",
+      "published_at": "2026-03-19T22:08:48Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80"
+    },
+    {
+      "tag_name": "v2.1.79",
+      "name": "v2.1.79",
+      "published_at": "2026-03-18T22:29:36Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.79"
+    },
+    {
+      "tag_name": "v2.1.78",
+      "name": "v2.1.78",
+      "published_at": "2026-03-17T23:42:55Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78"
+    },
+    {
+      "tag_name": "v2.1.77",
+      "name": "v2.1.77",
+      "published_at": "2026-03-17T00:28:12Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.77"
+    },
+    {
+      "tag_name": "v2.1.76",
+      "name": "v2.1.76",
+      "published_at": "2026-03-14T01:23:58Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76"
+    },
+    {
+      "tag_name": "v2.1.75",
+      "name": "v2.1.75",
+      "published_at": "2026-03-13T17:09:08Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.75"
+    },
+    {
+      "tag_name": "v2.1.74",
+      "name": "v2.1.74",
+      "published_at": "2026-03-12T00:34:23Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74"
+    },
+    {
+      "tag_name": "v2.1.73",
+      "name": "v2.1.73",
+      "published_at": "2026-03-11T18:26:43Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.73"
+    },
+    {
+      "tag_name": "v2.1.72",
+      "name": "v2.1.72",
+      "published_at": "2026-03-10T00:43:03Z",
+      "prerelease": false,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72"
+    },
     {
       "tag_name": "v2.1.71",
       "name": "v2.1.71",
@@ -125,139 +258,6 @@
       "published_at": "2026-02-25T06:27:48Z",
       "prerelease": false,
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56"
-    },
-    {
-      "tag_name": "v2.1.55",
-      "name": "v2.1.55",
-      "published_at": "2026-02-25T03:15:51Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.55"
-    },
-    {
-      "tag_name": "v2.1.53",
-      "name": "v2.1.53",
-      "published_at": "2026-02-25T00:13:48Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.53"
-    },
-    {
-      "tag_name": "v2.1.52",
-      "name": "v2.1.52",
-      "published_at": "2026-02-24T06:39:56Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.52"
-    },
-    {
-      "tag_name": "v2.1.51",
-      "name": "v2.1.51",
-      "published_at": "2026-02-24T01:40:58Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.51"
-    },
-    {
-      "tag_name": "v2.1.50",
-      "name": "v2.1.50",
-      "published_at": "2026-02-20T23:48:57Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.50"
-    },
-    {
-      "tag_name": "v2.1.49",
-      "name": "v2.1.49",
-      "published_at": "2026-02-19T23:28:27Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49"
-    },
-    {
-      "tag_name": "v2.1.47",
-      "name": "v2.1.47",
-      "published_at": "2026-02-18T21:38:45Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.47"
-    },
-    {
-      "tag_name": "v2.1.45",
-      "name": "v2.1.45",
-      "published_at": "2026-02-17T18:53:52Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.45"
-    },
-    {
-      "tag_name": "v2.1.44",
-      "name": "v2.1.44",
-      "published_at": "2026-02-16T21:35:03Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.44"
-    },
-    {
-      "tag_name": "v2.1.42",
-      "name": "v2.1.42",
-      "published_at": "2026-02-13T19:56:33Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.42"
-    },
-    {
-      "tag_name": "v2.1.41",
-      "name": "v2.1.41",
-      "published_at": "2026-02-13T06:08:49Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.41"
-    },
-    {
-      "tag_name": "v2.1.39",
-      "name": "v2.1.39",
-      "published_at": "2026-02-10T23:11:36Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.39"
-    },
-    {
-      "tag_name": "v2.1.38",
-      "name": "v2.1.38",
-      "published_at": "2026-02-10T00:53:32Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.38"
-    },
-    {
-      "tag_name": "v2.1.37",
-      "name": "v2.1.37",
-      "published_at": "2026-02-07T19:10:10Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.37"
-    },
-    {
-      "tag_name": "v2.1.36",
-      "name": "v2.1.36",
-      "published_at": "2026-02-07T18:02:15Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.36"
-    },
-    {
-      "tag_name": "v2.1.34",
-      "name": "v2.1.34",
-      "published_at": "2026-02-06T14:26:47Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.34"
-    },
-    {
-      "tag_name": "v2.1.33",
-      "name": "v2.1.33",
-      "published_at": "2026-02-06T01:47:21Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.33"
-    },
-    {
-      "tag_name": "v2.1.32",
-      "name": "v2.1.32",
-      "published_at": "2026-02-05T17:47:50Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.32"
-    },
-    {
-      "tag_name": "v2.1.31",
-      "name": "v2.1.31",
-      "published_at": "2026-02-04T00:44:13Z",
-      "prerelease": false,
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.31"
     }
   ],
   "contributor_count": 47,
@@ -266,213 +266,116 @@
       "login": "actions-user",
       "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
       "html_url": "https://github.com/actions-user",
-      "contributions": 254,
-      "additions": 2329,
-      "deletions": 290,
-      "commits_count": 254
+      "contributions": 278,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "bcherny",
       "avatar_url": "https://avatars.githubusercontent.com/u/1761758?v=4",
       "html_url": "https://github.com/bcherny",
       "contributions": 70,
-      "additions": 1686,
-      "deletions": 241,
-      "commits_count": 35
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "ant-kurt",
       "avatar_url": "https://avatars.githubusercontent.com/u/209710463?v=4",
       "html_url": "https://github.com/ant-kurt",
       "contributions": 31,
-      "additions": 156,
-      "deletions": 59,
-      "commits_count": 12
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "fvolcic",
       "avatar_url": "https://avatars.githubusercontent.com/u/59806465?v=4",
       "html_url": "https://github.com/fvolcic",
       "contributions": 20,
-      "additions": 147,
-      "deletions": 125,
-      "commits_count": 15
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "ashwin-ant",
       "avatar_url": "https://avatars.githubusercontent.com/u/178951676?v=4",
       "html_url": "https://github.com/ashwin-ant",
       "contributions": 19,
-      "additions": 3647,
-      "deletions": 704,
-      "commits_count": 18
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "bogini",
       "avatar_url": "https://avatars.githubusercontent.com/u/605424?v=4",
       "html_url": "https://github.com/bogini",
       "contributions": 19,
-      "additions": 809,
-      "deletions": 786,
-      "commits_count": 10
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "OctavianGuzu",
       "avatar_url": "https://avatars.githubusercontent.com/u/23151373?v=4",
       "html_url": "https://github.com/OctavianGuzu",
-      "contributions": 12,
-      "additions": 402,
-      "deletions": 185,
-      "commits_count": 6
+      "contributions": 13,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "hackyon-anthropic",
       "avatar_url": "https://avatars.githubusercontent.com/u/171081355?v=4",
       "html_url": "https://github.com/hackyon-anthropic",
       "contributions": 8,
-      "additions": 119,
-      "deletions": 122,
-      "commits_count": 4
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "chrislloyd",
       "avatar_url": "https://avatars.githubusercontent.com/u/718?v=4",
       "html_url": "https://github.com/chrislloyd",
       "contributions": 8,
-      "additions": 441,
-      "deletions": 456,
-      "commits_count": 6
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     },
     {
       "login": "ThariqS",
       "avatar_url": "https://avatars.githubusercontent.com/u/140827?v=4",
       "html_url": "https://github.com/ThariqS",
       "contributions": 8,
-      "additions": 178,
-      "deletions": 1,
-      "commits_count": 4
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
     }
   ],
-  "commits_last_year": 428,
-  "commits_per_week_avg": 9.304347826086957,
-  "weekly_commits": [
-    0,
-    0,
-    2,
-    0,
-    4,
-    5,
-    5,
-    6,
-    5,
-    5,
-    4,
-    11,
-    2,
-    3,
-    4,
-    10,
-    7,
-    7,
-    4,
-    16,
-    18,
-    15,
-    13,
-    6,
-    11,
-    8,
-    5,
-    6,
-    8,
-    14,
-    8,
-    10,
-    14,
-    7,
-    11,
-    12,
-    8,
-    11,
-    10,
-    12,
-    0,
-    0,
-    19,
-    16,
-    5,
-    13,
-    9,
-    24,
-    9,
-    19,
-    7,
-    0
-  ],
-  "weekly_timestamps": [
-    1742083200,
-    1742688000,
-    1743292800,
-    1743897600,
-    1744502400,
-    1745107200,
-    1745712000,
-    1746316800,
-    1746921600,
-    1747526400,
-    1748131200,
-    1748736000,
-    1749340800,
-    1749945600,
-    1750550400,
-    1751155200,
-    1751760000,
-    1752364800,
-    1752969600,
-    1753574400,
-    1754179200,
-    1754784000,
-    1755388800,
-    1755993600,
-    1756598400,
-    1757203200,
-    1757808000,
-    1758412800,
-    1759017600,
-    1759622400,
-    1760227200,
-    1760832000,
-    1761436800,
-    1762041600,
-    1762646400,
-    1763251200,
-    1763856000,
-    1764460800,
-    1765065600,
-    1765670400,
-    1766275200,
-    1766880000,
-    1767484800,
-    1768089600,
-    1768694400,
-    1769299200,
-    1769904000,
-    1770508800,
-    1771113600,
-    1771718400,
-    1772323200,
-    1772928000
-  ],
-  "commits_30d": 59,
-  "commits_90d": 133,
-  "commit_trend": "declining",
-  "commit_growth_pct": -31.4,
-  "total_commits": 549,
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 576,
   "first_commit_date": "2025-02-22T17:23:42Z",
-  "commit_span_days": 379,
+  "commit_span_days": 408,
   "vulnerability_alert_count": 0,
-  "security_advisories_count": 21,
+  "security_advisories_count": 22,
   "security_advisories": [
+    {
+      "ghsa_id": "GHSA-mmgp-wc2j-qcv7",
+      "cve_id": "CVE-2026-33068",
+      "severity": "high",
+      "summary": "Workspace Trust Dialog Bypass via Repo-Controlled Settings File",
+      "published_at": "2026-03-18T21:35:35Z",
+      "cvss_score": null,
+      "url": "https://github.com/anthropics/claude-code/security/advisories/GHSA-mmgp-wc2j-qcv7"
+    },
     {
       "ghsa_id": "GHSA-66q4-vfjg-2qhh",
       "cve_id": "CVE-2026-25722",
@@ -664,7 +567,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-03-09T09:03:07.040464+00:00",
+  "fetched_at": "2026-04-07T07:08:44.832037+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

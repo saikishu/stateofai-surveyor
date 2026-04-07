@@ -1,0 +1,372 @@
+{
+  "full_name": "OthersideAI/self-operating-computer",
+  "name": "self-operating-computer",
+  "owner": "OthersideAI",
+  "description": "A framework to enable multimodal models to operate a computer.",
+  "homepage": "https://www.hyperwriteai.com/self-operating-computer",
+  "github_url": "https://github.com/OthersideAI/self-operating-computer",
+  "stars": 10211,
+  "forks": 1413,
+  "watchers": 134,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [
+    "automation",
+    "openai",
+    "pyautogui"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2023-11-04T03:13:45Z",
+  "updated_at": "2026-04-07T06:44:52Z",
+  "pushed_at": "2025-09-19T19:31:39Z",
+  "age_days": 885,
+  "days_since_push": 199,
+  "activity_status": "stale",
+  "languages": {
+    "Python": 87124
+  },
+  "top_3_languages": [
+    "Python"
+  ],
+  "total_code_bytes": 87124,
+  "approx_loc": 2489,
+  "issues_open": 81,
+  "issues_closed": 87,
+  "issues_new_30d": 0,
+  "issues_new_90d": 3,
+  "issues_active_30d": 0,
+  "issues_closed_30d": 1,
+  "prs_open": 25,
+  "prs_closed": 26,
+  "prs_merged": 48,
+  "prs_active_30d": 0,
+  "release_count": 36,
+  "latest_release_tag": "v1.5.8",
+  "latest_release_date": "2025-02-28T22:54:05Z",
+  "avg_days_between_releases": 14.724137931034482,
+  "releases": [
+    {
+      "tag_name": "v1.5.8",
+      "name": "Add version v1.5.8",
+      "published_at": "2025-02-28T22:54:05Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.5.8"
+    },
+    {
+      "tag_name": "v1.5.7",
+      "name": "new version `1.5.7`",
+      "published_at": "2025-01-23T01:59:46Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.5.7"
+    },
+    {
+      "tag_name": "v1.5.6",
+      "name": "Update to version 1.5.6",
+      "published_at": "2025-01-23T01:52:09Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.5.6"
+    },
+    {
+      "tag_name": "v1.5.5",
+      "name": "Update to version 1.5.5",
+      "published_at": "2024-12-19T01:11:09Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.5.5"
+    },
+    {
+      "tag_name": "v1.5.1",
+      "name": "update to `1.5.1`",
+      "published_at": "2024-12-18T05:08:30Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.5.1"
+    },
+    {
+      "tag_name": "v1.5.0",
+      "name": "update to `1.5.0`",
+      "published_at": "2024-12-18T05:05:22Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.5.0"
+    },
+    {
+      "tag_name": "v1.4.6",
+      "name": "update to `1.4.6`",
+      "published_at": "2024-07-09T16:14:50Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.4.6"
+    },
+    {
+      "tag_name": "v1.4.5",
+      "name": "New Release v1.4.5",
+      "published_at": "2024-03-21T14:44:59Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.4.5"
+    },
+    {
+      "tag_name": "v1.4.2",
+      "name": "New version v1.4.2 ",
+      "published_at": "2024-03-20T15:25:17Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.4.2"
+    },
+    {
+      "tag_name": "v1.4.1",
+      "name": "New Release v1.4.1 - Add `Claude`",
+      "published_at": "2024-03-20T14:56:12Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.4.1"
+    },
+    {
+      "tag_name": "v1.4.0",
+      "name": "New Release v1.4.0 - Add `Claude`",
+      "published_at": "2024-03-20T14:49:58Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.4.0"
+    },
+    {
+      "tag_name": "v1.3.2",
+      "name": "New Release v1.3.2",
+      "published_at": "2024-02-17T01:15:28Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.3.2"
+    },
+    {
+      "tag_name": "v1.3.1",
+      "name": "New Release v1.3.1",
+      "published_at": "2024-02-09T20:31:41Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.3.1"
+    },
+    {
+      "tag_name": "v1.3.0",
+      "name": "New Release v1.3.0",
+      "published_at": "2024-02-09T05:28:51Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.3.0"
+    },
+    {
+      "tag_name": "v1.2.9",
+      "name": "New Release v1.2.9",
+      "published_at": "2024-02-02T22:47:04Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.9"
+    },
+    {
+      "tag_name": "v1.2.8",
+      "name": "New Release v1.2.8",
+      "published_at": "2024-01-25T16:30:43Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.8"
+    },
+    {
+      "tag_name": "v1.2.7",
+      "name": "New Release v1.2.7",
+      "published_at": "2024-01-24T17:02:12Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.7"
+    },
+    {
+      "tag_name": "v1.2.6",
+      "name": "New Release v1.2.6",
+      "published_at": "2024-01-24T16:50:01Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.6"
+    },
+    {
+      "tag_name": "v1.2.5",
+      "name": "New Release v1.2.5",
+      "published_at": "2024-01-19T21:51:56Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.5"
+    },
+    {
+      "tag_name": "v1.2.4",
+      "name": "New Release v1.2.4",
+      "published_at": "2024-01-19T20:45:23Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.4"
+    },
+    {
+      "tag_name": "v1.2.3",
+      "name": "New Release v1.2.3",
+      "published_at": "2024-01-19T19:52:50Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.3"
+    },
+    {
+      "tag_name": "v1.2.2",
+      "name": "New Release v1.2.2",
+      "published_at": "2024-01-19T17:26:49Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.2"
+    },
+    {
+      "tag_name": "v1.2.1",
+      "name": "New Release v1.2.1",
+      "published_at": "2024-01-19T16:41:55Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.1"
+    },
+    {
+      "tag_name": "v1.2.0",
+      "name": "Update to version `1.2.0`, with key commands",
+      "published_at": "2024-01-16T14:45:02Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.2.0"
+    },
+    {
+      "tag_name": "v1.1.2",
+      "name": "Update to version `1.1.2`, minor bug fixes",
+      "published_at": "2024-01-10T17:47:52Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.1.2"
+    },
+    {
+      "tag_name": "v1.1.1",
+      "name": "Update to `version=\"1.1.1\"` - Finalize set-of-mark prompting",
+      "published_at": "2024-01-07T17:35:12Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.1.1"
+    },
+    {
+      "tag_name": "v1.1.0",
+      "name": " Update `version=\"1.1.0\"` - Add Set-of-Mark prompting",
+      "published_at": "2024-01-07T17:32:43Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.1.0"
+    },
+    {
+      "tag_name": "v1.0.9",
+      "name": "Update to `v1.0.9` - Code refactor",
+      "published_at": "2023-12-30T19:34:11Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.0.9"
+    },
+    {
+      "tag_name": "v1.0.8",
+      "name": "Update to `v1.0.8` - Gemini support (with fix) ",
+      "published_at": "2023-12-20T14:50:51Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.0.8"
+    },
+    {
+      "tag_name": "v1.0.7",
+      "name": "Update to `version` `v1.0.7` for adding Gemini support",
+      "published_at": "2023-12-19T15:48:39Z",
+      "prerelease": false,
+      "url": "https://github.com/OthersideAI/self-operating-computer/releases/tag/v1.0.7"
+    }
+  ],
+  "contributor_count": 26,
+  "top_contributors": [
+    {
+      "login": "joshbickett",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42594239?v=4",
+      "html_url": "https://github.com/joshbickett",
+      "contributions": 542,
+      "additions": 10320,
+      "deletions": 8923,
+      "commits_count": 482
+    },
+    {
+      "login": "michaelhhogue",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18507739?v=4",
+      "html_url": "https://github.com/michaelhhogue",
+      "contributions": 35,
+      "additions": 704,
+      "deletions": 263,
+      "commits_count": 33
+    },
+    {
+      "login": "klxu03",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48634131?v=4",
+      "html_url": "https://github.com/klxu03",
+      "contributions": 22,
+      "additions": 2902,
+      "deletions": 1401,
+      "commits_count": 16
+    },
+    {
+      "login": "centopw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30675552?v=4",
+      "html_url": "https://github.com/centopw",
+      "contributions": 5,
+      "additions": 342,
+      "deletions": 167,
+      "commits_count": 3
+    },
+    {
+      "login": "Daisuke134",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140220114?v=4",
+      "html_url": "https://github.com/Daisuke134",
+      "contributions": 3,
+      "additions": 51,
+      "deletions": 16,
+      "commits_count": 3
+    },
+    {
+      "login": "roywei",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8022184?v=4",
+      "html_url": "https://github.com/roywei",
+      "contributions": 3,
+      "additions": 236,
+      "deletions": 23,
+      "commits_count": 3
+    },
+    {
+      "login": "mshumer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41550495?v=4",
+      "html_url": "https://github.com/mshumer",
+      "contributions": 3,
+      "additions": 10,
+      "deletions": 3,
+      "commits_count": 3
+    },
+    {
+      "login": "linusaltacc",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70189009?v=4",
+      "html_url": "https://github.com/linusaltacc",
+      "contributions": 3,
+      "additions": 158,
+      "deletions": 63,
+      "commits_count": 3
+    },
+    {
+      "login": "horw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47724762?v=4",
+      "html_url": "https://github.com/horw",
+      "contributions": 2,
+      "additions": 4,
+      "deletions": 8,
+      "commits_count": 2
+    },
+    {
+      "login": "younesbram",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43382860?v=4",
+      "html_url": "https://github.com/younesbram",
+      "contributions": 2,
+      "additions": 44,
+      "deletions": 10,
+      "commits_count": 2
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 645,
+  "first_commit_date": "2023-11-04T03:13:46Z",
+  "commit_span_days": 885,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:08:17.208678+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

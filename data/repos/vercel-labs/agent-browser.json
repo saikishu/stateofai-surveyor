@@ -1,0 +1,375 @@
+{
+  "full_name": "vercel-labs/agent-browser",
+  "name": "agent-browser",
+  "owner": "vercel-labs",
+  "description": "Browser automation CLI for AI agents",
+  "homepage": "https://agent-browser.dev",
+  "github_url": "https://github.com/vercel-labs/agent-browser",
+  "stars": 27843,
+  "forks": 1683,
+  "watchers": 77,
+  "license_name": "Apache License 2.0",
+  "license_spdx": "Apache-2.0",
+  "topics": [],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2026-01-11T05:38:15Z",
+  "updated_at": "2026-04-07T07:02:24Z",
+  "pushed_at": "2026-04-07T06:53:32Z",
+  "age_days": 86,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "Rust": 1603357,
+    "TypeScript": 239789,
+    "Shell": 23266,
+    "JavaScript": 18788,
+    "HTML": 9473,
+    "CSS": 5407
+  },
+  "top_3_languages": [
+    "Rust",
+    "TypeScript",
+    "Shell"
+  ],
+  "total_code_bytes": 1900080,
+  "approx_loc": 47202,
+  "issues_open": 187,
+  "issues_closed": 202,
+  "issues_new_30d": 39,
+  "issues_new_90d": 39,
+  "issues_active_30d": 39,
+  "issues_closed_30d": 29,
+  "prs_open": 177,
+  "prs_closed": 123,
+  "prs_merged": 490,
+  "prs_active_30d": 83,
+  "release_count": 78,
+  "latest_release_tag": "v0.25.3",
+  "latest_release_date": "2026-04-07T02:11:22Z",
+  "avg_days_between_releases": 0.41379310344827586,
+  "releases": [
+    {
+      "tag_name": "v0.25.3",
+      "name": "v0.25.3",
+      "published_at": "2026-04-07T02:11:22Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.25.3"
+    },
+    {
+      "tag_name": "v0.25.2",
+      "name": "v0.25.2",
+      "published_at": "2026-04-07T00:02:55Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.25.2"
+    },
+    {
+      "tag_name": "v0.25.1",
+      "name": "v0.25.1",
+      "published_at": "2026-04-06T16:00:43Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.25.1"
+    },
+    {
+      "tag_name": "v0.25.0",
+      "name": "v0.25.0",
+      "published_at": "2026-04-06T15:27:59Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.25.0"
+    },
+    {
+      "tag_name": "v0.24.1",
+      "name": "v0.24.1",
+      "published_at": "2026-04-04T17:56:26Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.24.1"
+    },
+    {
+      "tag_name": "v0.24.0",
+      "name": "v0.24.0",
+      "published_at": "2026-04-03T01:48:47Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.24.0"
+    },
+    {
+      "tag_name": "v0.23.4",
+      "name": "v0.23.4",
+      "published_at": "2026-03-31T07:32:26Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.23.4"
+    },
+    {
+      "tag_name": "v0.23.3",
+      "name": "v0.23.3",
+      "published_at": "2026-03-31T01:36:21Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.23.3"
+    },
+    {
+      "tag_name": "v0.23.2",
+      "name": "v0.23.2",
+      "published_at": "2026-03-31T00:21:08Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.23.2"
+    },
+    {
+      "tag_name": "agent-browser@0.23.2",
+      "name": "agent-browser@0.23.2",
+      "published_at": "2026-03-31T00:20:31Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/agent-browser%400.23.2"
+    },
+    {
+      "tag_name": "v0.23.1",
+      "name": "v0.23.1",
+      "published_at": "2026-03-30T18:39:14Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.23.1"
+    },
+    {
+      "tag_name": "agent-browser@0.23.1",
+      "name": "agent-browser@0.23.1",
+      "published_at": "2026-03-30T18:38:34Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/agent-browser%400.23.1"
+    },
+    {
+      "tag_name": "v0.23.0",
+      "name": "v0.23.0",
+      "published_at": "2026-03-27T17:37:04Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.23.0"
+    },
+    {
+      "tag_name": "agent-browser@0.23.0",
+      "name": "agent-browser@0.23.0",
+      "published_at": "2026-03-27T17:36:27Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/agent-browser%400.23.0"
+    },
+    {
+      "tag_name": "v0.22.3",
+      "name": "v0.22.3",
+      "published_at": "2026-03-25T18:56:57Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.22.3"
+    },
+    {
+      "tag_name": "v0.22.2",
+      "name": "v0.22.2",
+      "published_at": "2026-03-24T22:27:11Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.22.2"
+    },
+    {
+      "tag_name": "v0.22.1",
+      "name": "v0.22.1",
+      "published_at": "2026-03-24T13:02:28Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.22.1"
+    },
+    {
+      "tag_name": "v0.22.0",
+      "name": "v0.22.0",
+      "published_at": "2026-03-23T17:26:43Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.22.0"
+    },
+    {
+      "tag_name": "v0.21.4",
+      "name": "v0.21.4",
+      "published_at": "2026-03-20T14:18:41Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.21.4"
+    },
+    {
+      "tag_name": "v0.21.3",
+      "name": "v0.21.3",
+      "published_at": "2026-03-20T13:59:38Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.21.3"
+    },
+    {
+      "tag_name": "v0.21.2",
+      "name": "v0.21.2",
+      "published_at": "2026-03-19T00:59:43Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.21.2"
+    },
+    {
+      "tag_name": "v0.21.1",
+      "name": "v0.21.1",
+      "published_at": "2026-03-18T15:55:26Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.21.1"
+    },
+    {
+      "tag_name": "v0.21.0",
+      "name": "v0.21.0",
+      "published_at": "2026-03-17T19:30:41Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.21.0"
+    },
+    {
+      "tag_name": "v0.20.14",
+      "name": "v0.20.14",
+      "published_at": "2026-03-17T00:23:30Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.20.14"
+    },
+    {
+      "tag_name": "v0.20.13",
+      "name": "v0.20.13",
+      "published_at": "2026-03-16T05:36:42Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.20.13"
+    },
+    {
+      "tag_name": "v0.20.12",
+      "name": "v0.20.12",
+      "published_at": "2026-03-16T02:02:36Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.20.12"
+    },
+    {
+      "tag_name": "v0.20.11",
+      "name": "v0.20.11",
+      "published_at": "2026-03-15T19:19:19Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.20.11"
+    },
+    {
+      "tag_name": "v0.20.10",
+      "name": "v0.20.10",
+      "published_at": "2026-03-15T15:33:07Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.20.10"
+    },
+    {
+      "tag_name": "v0.20.9",
+      "name": "v0.20.9",
+      "published_at": "2026-03-15T14:55:27Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.20.9"
+    },
+    {
+      "tag_name": "v0.20.8",
+      "name": "v0.20.8",
+      "published_at": "2026-03-15T13:30:25Z",
+      "prerelease": false,
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.20.8"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "ctate",
+      "avatar_url": "https://avatars.githubusercontent.com/u/366502?v=4",
+      "html_url": "https://github.com/ctate",
+      "contributions": 320,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 68,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "jin-2-kakaoent",
+      "avatar_url": "https://avatars.githubusercontent.com/u/176381442?v=4",
+      "html_url": "https://github.com/jin-2-kakaoent",
+      "contributions": 25,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "mikewong23571",
+      "avatar_url": "https://avatars.githubusercontent.com/u/210010007?v=4",
+      "html_url": "https://github.com/mikewong23571",
+      "contributions": 10,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "hewliyang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76434265?v=4",
+      "html_url": "https://github.com/hewliyang",
+      "contributions": 5,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "mvanhorn",
+      "avatar_url": "https://avatars.githubusercontent.com/u/455140?v=4",
+      "html_url": "https://github.com/mvanhorn",
+      "contributions": 4,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Lppy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28820766?v=4",
+      "html_url": "https://github.com/Lppy",
+      "contributions": 3,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Levix",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65117011?v=4",
+      "html_url": "https://github.com/Levix",
+      "contributions": 3,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "n33pm",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12273891?v=4",
+      "html_url": "https://github.com/n33pm",
+      "contributions": 3,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "dannote",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2206583?v=4",
+      "html_url": "https://github.com/dannote",
+      "contributions": 3,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 544,
+  "first_commit_date": "2026-01-10T17:33:37Z",
+  "commit_span_days": 86,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:05:21.383486+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

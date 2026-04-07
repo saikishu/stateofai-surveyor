@@ -5,9 +5,9 @@
   "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
   "homepage": "https://nanoclaw.dev",
   "github_url": "https://github.com/qwibitai/nanoclaw",
-  "stars": 20693,
-  "forks": 3448,
-  "watchers": 97,
+  "stars": 26725,
+  "forks": 10988,
+  "watchers": 115,
   "license_name": "MIT License",
   "license_spdx": "MIT",
   "topics": [
@@ -21,84 +21,105 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2026-01-31T15:47:22Z",
-  "updated_at": "2026-03-09T09:01:14Z",
-  "pushed_at": "2026-03-08T22:29:40Z",
-  "age_days": 36,
+  "updated_at": "2026-04-07T06:59:58Z",
+  "pushed_at": "2026-04-07T05:35:41Z",
+  "age_days": 65,
   "days_since_push": 0,
   "activity_status": "active",
   "languages": {
-    "TypeScript": 1313088,
-    "Shell": 10666,
-    "Dockerfile": 7134
+    "TypeScript": 427337,
+    "Python": 13555,
+    "Shell": 8816,
+    "Swift": 5262,
+    "Dockerfile": 2127,
+    "JavaScript": 984
   },
   "top_3_languages": [
     "TypeScript",
-    "Shell",
-    "Dockerfile"
+    "Python",
+    "Shell"
   ],
-  "total_code_bytes": 1330888,
-  "approx_loc": 31805,
-  "issues_open": 76,
-  "issues_closed": 137,
-  "issues_new_30d": 28,
-  "issues_new_90d": 28,
-  "issues_active_30d": 28,
-  "issues_closed_30d": 17,
-  "prs_open": 212,
-  "prs_closed": 329,
-  "prs_merged": 95,
+  "total_code_bytes": 458081,
+  "approx_loc": 11022,
+  "issues_open": 186,
+  "issues_closed": 257,
+  "issues_new_30d": 34,
+  "issues_new_90d": 34,
+  "issues_active_30d": 34,
+  "issues_closed_30d": 11,
+  "prs_open": 429,
+  "prs_closed": 624,
+  "prs_merged": 151,
   "prs_active_30d": 100,
   "release_count": 0,
   "latest_release_tag": null,
   "latest_release_date": null,
   "avg_days_between_releases": null,
   "releases": [],
-  "contributor_count": 38,
+  "contributor_count": 57,
   "top_contributors": [
     {
       "login": "gavrielc",
       "avatar_url": "https://avatars.githubusercontent.com/u/20087851?v=4",
       "html_url": "https://github.com/gavrielc",
-      "contributions": 146,
-      "additions": 50560,
-      "deletions": 20133,
-      "commits_count": 138
+      "contributions": 351,
+      "additions": 63444,
+      "deletions": 62765,
+      "commits_count": 243
     },
     {
       "login": "github-actions[bot]",
       "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
       "html_url": "https://github.com/apps/github-actions",
-      "contributions": 42,
-      "additions": 151,
-      "deletions": 151,
-      "commits_count": 42
+      "contributions": 151,
+      "additions": 401,
+      "deletions": 401,
+      "commits_count": 116
     },
     {
       "login": "gabi-simons",
       "avatar_url": "https://avatars.githubusercontent.com/u/263580637?v=4",
       "html_url": "https://github.com/gabi-simons",
-      "contributions": 9,
-      "additions": 6805,
-      "deletions": 9794,
-      "commits_count": 9
+      "contributions": 23,
+      "additions": 7138,
+      "deletions": 10125,
+      "commits_count": 20
     },
     {
       "login": "glifocat",
       "avatar_url": "https://avatars.githubusercontent.com/u/12087426?v=4",
       "html_url": "https://github.com/glifocat",
-      "contributions": 9,
-      "additions": 6846,
-      "deletions": 77,
-      "commits_count": 9
+      "contributions": 17,
+      "additions": 7592,
+      "deletions": 324,
+      "commits_count": 17
+    },
+    {
+      "login": "Koshkoshinsk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/163998153?v=4",
+      "html_url": "https://github.com/Koshkoshinsk",
+      "contributions": 15,
+      "additions": 6564,
+      "deletions": 8580,
+      "commits_count": 12
     },
     {
       "login": "claude",
       "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
       "html_url": "https://github.com/claude",
+      "contributions": 9,
+      "additions": 92661,
+      "deletions": 67768,
+      "commits_count": 327
+    },
+    {
+      "login": "guyb1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6676322?v=4",
+      "html_url": "https://github.com/guyb1",
       "contributions": 6,
-      "additions": 76085,
-      "deletions": 24308,
-      "commits_count": 178
+      "additions": 160,
+      "deletions": 123,
+      "commits_count": 6
     },
     {
       "login": "TomGranot",
@@ -110,6 +131,15 @@
       "commits_count": 5
     },
     {
+      "login": "akshan-main",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97239696?v=4",
+      "html_url": "https://github.com/akshan-main",
+      "contributions": 5,
+      "additions": 2941,
+      "deletions": 24,
+      "commits_count": 5
+    },
+    {
       "login": "Fritzzzz1",
       "avatar_url": "https://avatars.githubusercontent.com/u/102416383?v=4",
       "html_url": "https://github.com/Fritzzzz1",
@@ -117,42 +147,11 @@
       "additions": 2716,
       "deletions": 739,
       "commits_count": 4
-    },
-    {
-      "login": "lawyered0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4802498?v=4",
-      "html_url": "https://github.com/lawyered0",
-      "contributions": 4,
-      "additions": 639,
-      "deletions": 34,
-      "commits_count": 4
-    },
-    {
-      "login": "akshan-main",
-      "avatar_url": "https://avatars.githubusercontent.com/u/97239696?v=4",
-      "html_url": "https://github.com/akshan-main",
-      "contributions": 3,
-      "additions": 2701,
-      "deletions": 7,
-      "commits_count": 3
-    },
-    {
-      "login": "Koshkoshinsk",
-      "avatar_url": "https://avatars.githubusercontent.com/u/163998153?v=4",
-      "html_url": "https://github.com/Koshkoshinsk",
-      "contributions": 3,
-      "additions": 6010,
-      "deletions": 8565,
-      "commits_count": 4
     }
   ],
-  "commits_last_year": 262,
-  "commits_per_week_avg": 37.42857142857143,
+  "commits_last_year": 530,
+  "commits_per_week_avg": 48.18181818181818,
   "weekly_commits": [
-    0,
-    0,
-    0,
-    0,
     0,
     0,
     0,
@@ -199,14 +198,14 @@
     21,
     38,
     58,
-    50,
-    8
+    51,
+    62,
+    52,
+    105,
+    33,
+    23
   ],
   "weekly_timestamps": [
-    1742079600,
-    1742684400,
-    1743289200,
-    1743894000,
     1744498800,
     1745103600,
     1745708400,
@@ -254,20 +253,24 @@
     1771113600,
     1771718400,
     1772323200,
-    1772928000
+    1772928000,
+    1773532800,
+    1774137600,
+    1774742400,
+    1775347200
   ],
-  "commits_30d": 175,
-  "commits_90d": 262,
-  "commit_trend": "rising",
-  "commit_growth_pct": 42.6,
-  "total_commits": 274,
+  "commits_30d": 275,
+  "commits_90d": 530,
+  "commit_trend": "flat",
+  "commit_growth_pct": 1.9,
+  "total_commits": 685,
   "first_commit_date": "2026-01-31T16:54:24Z",
-  "commit_span_days": 36,
+  "commit_span_days": 65,
   "vulnerability_alert_count": 0,
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-03-09T09:03:29.059329+00:00",
+  "fetched_at": "2026-04-07T07:09:08.689536+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

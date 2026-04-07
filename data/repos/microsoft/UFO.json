@@ -1,0 +1,234 @@
+{
+  "full_name": "microsoft/UFO",
+  "name": "UFO",
+  "owner": "microsoft",
+  "description": "UFO\u00b3: Weaving the Digital Agent Galaxy",
+  "homepage": "https://microsoft.github.io/UFO/",
+  "github_url": "https://github.com/microsoft/UFO",
+  "stars": 8377,
+  "forks": 1008,
+  "watchers": 505,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [
+    "agent",
+    "automation",
+    "copilot",
+    "gui",
+    "llm",
+    "windows"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2024-01-08T05:07:52Z",
+  "updated_at": "2026-04-07T04:11:21Z",
+  "pushed_at": "2026-04-03T07:47:30Z",
+  "age_days": 820,
+  "days_since_push": 3,
+  "activity_status": "active",
+  "languages": {
+    "Python": 4311742,
+    "TypeScript": 218942,
+    "CSS": 12045,
+    "JavaScript": 3454,
+    "HTML": 3059
+  },
+  "top_3_languages": [
+    "Python",
+    "TypeScript",
+    "CSS"
+  ],
+  "total_code_bytes": 4549242,
+  "approx_loc": 128807,
+  "issues_open": 39,
+  "issues_closed": 43,
+  "issues_new_30d": 2,
+  "issues_new_90d": 2,
+  "issues_active_30d": 3,
+  "issues_closed_30d": 0,
+  "prs_open": 11,
+  "prs_closed": 38,
+  "prs_merged": 156,
+  "prs_active_30d": 0,
+  "release_count": 9,
+  "latest_release_tag": "v3.0.0",
+  "latest_release_date": "2025-11-09T10:58:53Z",
+  "avg_days_between_releases": 73.75,
+  "releases": [
+    {
+      "tag_name": "v3.0.0",
+      "name": "UFO3 RELEASE",
+      "published_at": "2025-11-09T10:58:53Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/v3.0.0"
+    },
+    {
+      "tag_name": "v2.0.0",
+      "name": "New release in v2.0.0",
+      "published_at": "2025-04-22T02:08:45Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/v2.0.0"
+    },
+    {
+      "tag_name": "v1.2.1",
+      "name": "New release in v1.2.1",
+      "published_at": "2025-01-21T12:28:21Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/v1.2.1"
+    },
+    {
+      "tag_name": "v1.2.0",
+      "name": "New Release for v1.2.0!",
+      "published_at": "2024-12-16T04:11:28Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/v1.2.0"
+    },
+    {
+      "tag_name": "V1.1.0",
+      "name": "New Release for v1.1.0!",
+      "published_at": "2024-09-08T10:09:38Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/V1.1.0"
+    },
+    {
+      "tag_name": "v1.0.0",
+      "name": "New Release for v1.0.0!",
+      "published_at": "2024-07-06T13:04:45Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/v1.0.0"
+    },
+    {
+      "tag_name": "v0.2.1",
+      "name": "v0.2.1 New features for evaluation agent + Gemini support",
+      "published_at": "2024-06-24T08:06:58Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/v0.2.1"
+    },
+    {
+      "tag_name": "v0.1.1",
+      "name": "v0.1.1",
+      "published_at": "2024-05-08T14:44:33Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/v0.1.1"
+    },
+    {
+      "tag_name": "v0.0.1",
+      "name": "v0.0.1",
+      "published_at": "2024-03-25T12:40:07Z",
+      "prerelease": false,
+      "url": "https://github.com/microsoft/UFO/releases/tag/v0.0.1"
+    }
+  ],
+  "contributor_count": 23,
+  "top_contributors": [
+    {
+      "login": "vyokky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11352048?v=4",
+      "html_url": "https://github.com/vyokky",
+      "contributions": 1468,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Mac0q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34420898?v=4",
+      "html_url": "https://github.com/Mac0q",
+      "contributions": 97,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "nice-mee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20547034?v=4",
+      "html_url": "https://github.com/nice-mee",
+      "contributions": 59,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "MightyGaga",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145557080?v=4",
+      "html_url": "https://github.com/MightyGaga",
+      "contributions": 39,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "rhmsd",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44690262?v=4",
+      "html_url": "https://github.com/rhmsd",
+      "contributions": 20,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "PaulJiangMS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100672665?v=4",
+      "html_url": "https://github.com/PaulJiangMS",
+      "contributions": 18,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Lenny2Liu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/117865161?v=4",
+      "html_url": "https://github.com/Lenny2Liu",
+      "contributions": 12,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "microsoftopensource",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22527892?v=4",
+      "html_url": "https://github.com/microsoftopensource",
+      "contributions": 10,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "ShilinHe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10590876?v=4",
+      "html_url": "https://github.com/ShilinHe",
+      "contributions": 10,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "yunhao0204",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59384816?v=4",
+      "html_url": "https://github.com/yunhao0204",
+      "contributions": 9,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 1864,
+  "first_commit_date": "2024-01-08T05:07:53Z",
+  "commit_span_days": 820,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:11:51.343340+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

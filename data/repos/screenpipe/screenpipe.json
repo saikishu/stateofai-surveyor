@@ -1,0 +1,385 @@
+{
+  "full_name": "screenpipe/screenpipe",
+  "name": "screenpipe",
+  "owner": "screenpipe",
+  "description": "Run agents that work for you based on what you do. AI finally knows what you are doing",
+  "homepage": "https://screenpi.pe",
+  "github_url": "https://github.com/screenpipe/screenpipe",
+  "stars": 18052,
+  "forks": 1600,
+  "watchers": 101,
+  "license_name": "Other",
+  "license_spdx": "NOASSERTION",
+  "topics": [
+    "ai",
+    "computer-vision",
+    "llm",
+    "machine-learning",
+    "ml",
+    "multimodal",
+    "vision",
+    "agents",
+    "agi"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2024-06-19T13:23:56Z",
+  "updated_at": "2026-04-07T06:41:39Z",
+  "pushed_at": "2026-04-07T05:27:52Z",
+  "age_days": 656,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "Rust": 5617407,
+    "TypeScript": 3646217,
+    "JavaScript": 141090,
+    "Swift": 81945,
+    "HTML": 22090,
+    "CSS": 12968
+  },
+  "top_3_languages": [
+    "Rust",
+    "TypeScript",
+    "JavaScript"
+  ],
+  "total_code_bytes": 9542033,
+  "approx_loc": 233253,
+  "issues_open": 137,
+  "issues_closed": 1289,
+  "issues_new_30d": 26,
+  "issues_new_90d": 26,
+  "issues_active_30d": 26,
+  "issues_closed_30d": 35,
+  "prs_open": 86,
+  "prs_closed": 431,
+  "prs_merged": 750,
+  "prs_active_30d": 86,
+  "release_count": 273,
+  "latest_release_tag": "app-v2.3.25",
+  "latest_release_date": "2026-04-06T19:37:57Z",
+  "avg_days_between_releases": 0.2692307692307692,
+  "releases": [
+    {
+      "tag_name": "app-v2.3.25",
+      "name": "Screenpipe App v2.3.25",
+      "published_at": "2026-04-06T19:37:57Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.3.25"
+    },
+    {
+      "tag_name": "app-v2.3.18",
+      "name": "Screenpipe App v2.3.18",
+      "published_at": "2026-04-04T23:44:41Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.3.18"
+    },
+    {
+      "tag_name": "app-v2.3.15",
+      "name": "Screenpipe App v2.3.15",
+      "published_at": "2026-04-04T19:09:17Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.3.15"
+    },
+    {
+      "tag_name": "app-v2.3.13",
+      "name": "Screenpipe App v2.3.13",
+      "published_at": "2026-04-04T14:47:22Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.3.13"
+    },
+    {
+      "tag_name": "app-v2.3.11",
+      "name": "Screenpipe App v2.3.11",
+      "published_at": "2026-04-03T19:34:05Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.3.11"
+    },
+    {
+      "tag_name": "app-v2.3.10",
+      "name": "Screenpipe App v2.3.10",
+      "published_at": "2026-04-03T15:07:42Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.3.10"
+    },
+    {
+      "tag_name": "mcp-v0.13.0",
+      "name": "MCP Server mcp-v0.13.0",
+      "published_at": "2026-04-03T23:55:28Z",
+      "prerelease": true,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/mcp-v0.13.0"
+    },
+    {
+      "tag_name": "app-v2.3.6",
+      "name": "Screenpipe App v2.3.6",
+      "published_at": "2026-04-02T17:05:57Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.3.6"
+    },
+    {
+      "tag_name": "mcp-v0.12.0",
+      "name": "MCP Server mcp-v0.12.0",
+      "published_at": "2026-04-02T23:07:22Z",
+      "prerelease": true,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/mcp-v0.12.0"
+    },
+    {
+      "tag_name": "app-v2.3.0",
+      "name": "Screenpipe App v2.3.0",
+      "published_at": "2026-04-01T01:47:58Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.3.0"
+    },
+    {
+      "tag_name": "app-v2.2.296",
+      "name": "Screenpipe App v2.2.296",
+      "published_at": "2026-03-31T15:15:59Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.296"
+    },
+    {
+      "tag_name": "mcp-v0.11.0",
+      "name": "MCP Server mcp-v0.11.0",
+      "published_at": "2026-03-31T22:38:44Z",
+      "prerelease": true,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/mcp-v0.11.0"
+    },
+    {
+      "tag_name": "app-v2.2.293",
+      "name": "Screenpipe App v2.2.293",
+      "published_at": "2026-03-28T18:13:50Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.293"
+    },
+    {
+      "tag_name": "app-v2.2.291",
+      "name": "Screenpipe App v2.2.291",
+      "published_at": "2026-03-28T15:28:04Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.291"
+    },
+    {
+      "tag_name": "mlx-metallib-v0.2.0",
+      "name": "MLX Metallib v0.2.0",
+      "published_at": "2026-03-27T14:29:33Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/mlx-metallib-v0.2.0"
+    },
+    {
+      "tag_name": "app-v2.2.288",
+      "name": "Screenpipe App v2.2.288",
+      "published_at": "2026-03-28T12:24:26Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.288"
+    },
+    {
+      "tag_name": "app-v2.2.285",
+      "name": "Screenpipe App v2.2.285",
+      "published_at": "2026-03-27T19:03:43Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.285"
+    },
+    {
+      "tag_name": "app-v2.2.255",
+      "name": "Screenpipe App v2.2.255",
+      "published_at": "2026-03-27T02:35:14Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.255"
+    },
+    {
+      "tag_name": "app-v2.2.271",
+      "name": "Screenpipe App v2.2.271",
+      "published_at": "2026-03-26T16:21:34Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.271"
+    },
+    {
+      "tag_name": "app-v2.2.270",
+      "name": "Screenpipe App v2.2.270",
+      "published_at": "2026-03-26T01:52:54Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.270"
+    },
+    {
+      "tag_name": "app-v2.2.269",
+      "name": "Screenpipe App v2.2.269",
+      "published_at": "2026-03-25T23:51:02Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.269"
+    },
+    {
+      "tag_name": "app-v2.2.267",
+      "name": "Screenpipe App v2.2.267",
+      "published_at": "2026-03-25T21:09:23Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.267"
+    },
+    {
+      "tag_name": "app-v2.2.244",
+      "name": "Screenpipe App v2.2.244",
+      "published_at": "2026-03-24T13:27:33Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.244"
+    },
+    {
+      "tag_name": "app-v2.2.239",
+      "name": "Screenpipe App v2.2.239",
+      "published_at": "2026-03-23T23:00:16Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.239"
+    },
+    {
+      "tag_name": "app-v2.2.235",
+      "name": "Screenpipe App v2.2.235",
+      "published_at": "2026-03-23T18:25:19Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.235"
+    },
+    {
+      "tag_name": "app-v2.2.231",
+      "name": "Screenpipe App v2.2.231",
+      "published_at": "2026-03-23T15:28:01Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.231"
+    },
+    {
+      "tag_name": "app-v2.2.223",
+      "name": "Screenpipe App v2.2.223",
+      "published_at": "2026-03-21T01:38:28Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.223"
+    },
+    {
+      "tag_name": "app-v2.2.222",
+      "name": "Screenpipe App v2.2.222",
+      "published_at": "2026-03-20T23:44:48Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.222"
+    },
+    {
+      "tag_name": "app-v2.2.215",
+      "name": "Screenpipe App v2.2.215",
+      "published_at": "2026-03-20T18:33:36Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.215"
+    },
+    {
+      "tag_name": "app-v2.2.203",
+      "name": "Screenpipe App v2.2.203",
+      "published_at": "2026-03-19T21:29:10Z",
+      "prerelease": false,
+      "url": "https://github.com/screenpipe/screenpipe/releases/tag/app-v2.2.203"
+    }
+  ],
+  "contributor_count": 96,
+  "top_contributors": [
+    {
+      "login": "louis030195",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25003283?v=4",
+      "html_url": "https://github.com/louis030195",
+      "contributions": 6512,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "m13v",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104702220?v=4",
+      "html_url": "https://github.com/m13v",
+      "contributions": 419,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 218,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "divanshu-go",
+      "avatar_url": "https://avatars.githubusercontent.com/u/180667632?v=4",
+      "html_url": "https://github.com/divanshu-go",
+      "contributions": 90,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Neptune650",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62727185?v=4",
+      "html_url": "https://github.com/Neptune650",
+      "contributions": 70,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "EzraEllette",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50280365?v=4",
+      "html_url": "https://github.com/EzraEllette",
+      "contributions": 52,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "tribhuwan-kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118052427?v=4",
+      "html_url": "https://github.com/tribhuwan-kumar",
+      "contributions": 41,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "neo773",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62795688?v=4",
+      "html_url": "https://github.com/neo773",
+      "contributions": 40,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "shaik-zeeshan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145040231?v=4",
+      "html_url": "https://github.com/shaik-zeeshan",
+      "contributions": 30,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "wesleymatosdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100464352?v=4",
+      "html_url": "https://github.com/wesleymatosdev",
+      "contributions": 30,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 7774,
+  "first_commit_date": "2024-06-19T13:23:57Z",
+  "commit_span_days": 656,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:03:56.319322+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

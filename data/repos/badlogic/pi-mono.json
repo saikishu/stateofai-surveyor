@@ -1,0 +1,375 @@
+{
+  "full_name": "badlogic/pi-mono",
+  "name": "pi-mono",
+  "owner": "badlogic",
+  "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+  "homepage": null,
+  "github_url": "https://github.com/badlogic/pi-mono",
+  "stars": 32545,
+  "forks": 3556,
+  "watchers": 134,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2025-08-09T14:03:50Z",
+  "updated_at": "2026-04-07T07:02:29Z",
+  "pushed_at": "2026-04-06T14:51:25Z",
+  "age_days": 240,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "TypeScript": 5292426,
+    "JavaScript": 168978,
+    "Shell": 32361,
+    "CSS": 22843,
+    "HTML": 2647,
+    "C": 1709
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "JavaScript",
+    "Shell"
+  ],
+  "total_code_bytes": 5520964,
+  "approx_loc": 131743,
+  "issues_open": 13,
+  "issues_closed": 1417,
+  "issues_new_30d": 12,
+  "issues_new_90d": 12,
+  "issues_active_30d": 13,
+  "issues_closed_30d": 68,
+  "prs_open": 4,
+  "prs_closed": 859,
+  "prs_merged": 437,
+  "prs_active_30d": 4,
+  "release_count": 186,
+  "latest_release_tag": "v0.65.2",
+  "latest_release_date": "2026-04-06T00:07:03Z",
+  "avg_days_between_releases": 0.9655172413793104,
+  "releases": [
+    {
+      "tag_name": "v0.65.2",
+      "name": "v0.65.2",
+      "published_at": "2026-04-06T00:07:03Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.65.2"
+    },
+    {
+      "tag_name": "v0.65.1",
+      "name": "v0.65.1",
+      "published_at": "2026-04-05T22:28:13Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.65.1"
+    },
+    {
+      "tag_name": "v0.65.0",
+      "name": "v0.65.0",
+      "published_at": "2026-04-03T18:33:35Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.65.0"
+    },
+    {
+      "tag_name": "v0.64.0",
+      "name": "v0.64.0",
+      "published_at": "2026-03-29T19:58:22Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.64.0"
+    },
+    {
+      "tag_name": "v0.63.2",
+      "name": "v0.63.2",
+      "published_at": "2026-03-29T11:15:33Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.63.2"
+    },
+    {
+      "tag_name": "v0.63.1",
+      "name": "v0.63.1",
+      "published_at": "2026-03-27T03:16:20Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.63.1"
+    },
+    {
+      "tag_name": "v0.63.0",
+      "name": "v0.63.0",
+      "published_at": "2026-03-27T01:32:31Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.63.0"
+    },
+    {
+      "tag_name": "v0.62.0",
+      "name": "v0.62.0",
+      "published_at": "2026-03-23T01:52:03Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.62.0"
+    },
+    {
+      "tag_name": "v0.61.1",
+      "name": "v0.61.1",
+      "published_at": "2026-03-20T19:17:37Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.61.1"
+    },
+    {
+      "tag_name": "v0.61.0",
+      "name": "v0.61.0",
+      "published_at": "2026-03-20T01:11:02Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.61.0"
+    },
+    {
+      "tag_name": "v0.60.0",
+      "name": "v0.60.0",
+      "published_at": "2026-03-18T02:43:47Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.60.0"
+    },
+    {
+      "tag_name": "v0.59.0",
+      "name": "v0.59.0",
+      "published_at": "2026-03-17T17:14:37Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.59.0"
+    },
+    {
+      "tag_name": "v0.58.4",
+      "name": "v0.58.4",
+      "published_at": "2026-03-16T19:30:41Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.58.4"
+    },
+    {
+      "tag_name": "v0.58.3",
+      "name": "v0.58.3",
+      "published_at": "2026-03-15T19:35:26Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.58.3"
+    },
+    {
+      "tag_name": "v0.58.2",
+      "name": "v0.58.2",
+      "published_at": "2026-03-15T18:23:04Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.58.2"
+    },
+    {
+      "tag_name": "v0.58.1",
+      "name": "v0.58.1",
+      "published_at": "2026-03-14T11:41:25Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.58.1"
+    },
+    {
+      "tag_name": "v0.58.0",
+      "name": "v0.58.0",
+      "published_at": "2026-03-14T02:32:26Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.58.0"
+    },
+    {
+      "tag_name": "v0.57.1",
+      "name": "v0.57.1",
+      "published_at": "2026-03-07T23:57:54Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.57.1"
+    },
+    {
+      "tag_name": "v0.57.0",
+      "name": "v0.57.0",
+      "published_at": "2026-03-07T13:45:31Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.57.0"
+    },
+    {
+      "tag_name": "v0.56.3",
+      "name": "v0.56.3",
+      "published_at": "2026-03-06T16:08:46Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.56.3"
+    },
+    {
+      "tag_name": "v0.56.2",
+      "name": "v0.56.2",
+      "published_at": "2026-03-05T23:43:51Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.56.2"
+    },
+    {
+      "tag_name": "v0.56.1",
+      "name": "v0.56.1",
+      "published_at": "2026-03-05T06:15:28Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.56.1"
+    },
+    {
+      "tag_name": "v0.56.0",
+      "name": "v0.56.0",
+      "published_at": "2026-03-04T20:25:49Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.56.0"
+    },
+    {
+      "tag_name": "v0.55.4",
+      "name": "v0.55.4",
+      "published_at": "2026-03-02T22:26:21Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.55.4"
+    },
+    {
+      "tag_name": "v0.55.3",
+      "name": "v0.55.3",
+      "published_at": "2026-02-27T21:55:57Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.55.3"
+    },
+    {
+      "tag_name": "v0.55.2",
+      "name": "v0.55.2",
+      "published_at": "2026-02-27T21:27:56Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.55.2"
+    },
+    {
+      "tag_name": "v0.55.1",
+      "name": "v0.55.1",
+      "published_at": "2026-02-26T00:12:10Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.55.1"
+    },
+    {
+      "tag_name": "v0.55.0",
+      "name": "v0.55.0",
+      "published_at": "2026-02-24T22:53:58Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.55.0"
+    },
+    {
+      "tag_name": "v0.54.2",
+      "name": "v0.54.2",
+      "published_at": "2026-02-23T00:58:21Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.54.2"
+    },
+    {
+      "tag_name": "v0.54.1",
+      "name": "v0.54.1",
+      "published_at": "2026-02-22T13:36:44Z",
+      "prerelease": false,
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.54.1"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "badlogic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/514052?v=4",
+      "html_url": "https://github.com/badlogic",
+      "contributions": 2750,
+      "additions": 474580,
+      "deletions": 313833,
+      "commits_count": 2594
+    },
+    {
+      "login": "hjanuschka",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2891702?v=4",
+      "html_url": "https://github.com/hjanuschka",
+      "contributions": 66,
+      "additions": 6049,
+      "deletions": 2874,
+      "commits_count": 66
+    },
+    {
+      "login": "github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 54,
+      "additions": 54,
+      "deletions": 0,
+      "commits_count": 54
+    },
+    {
+      "login": "aliou",
+      "avatar_url": "https://avatars.githubusercontent.com/u/980367?v=4",
+      "html_url": "https://github.com/aliou",
+      "contributions": 41,
+      "additions": 3094,
+      "deletions": 244,
+      "commits_count": 41
+    },
+    {
+      "login": "markusylisiurunen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8409947?v=4",
+      "html_url": "https://github.com/markusylisiurunen",
+      "contributions": 40,
+      "additions": 5210,
+      "deletions": 2057,
+      "commits_count": 41
+    },
+    {
+      "login": "Perlence",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1044300?v=4",
+      "html_url": "https://github.com/Perlence",
+      "contributions": 34,
+      "additions": 4536,
+      "deletions": 593,
+      "commits_count": 35
+    },
+    {
+      "login": "nicobailon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2958133?v=4",
+      "html_url": "https://github.com/nicobailon",
+      "contributions": 29,
+      "additions": 9714,
+      "deletions": 975,
+      "commits_count": 30
+    },
+    {
+      "login": "mitsuhiko",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7396?v=4",
+      "html_url": "https://github.com/mitsuhiko",
+      "contributions": 22,
+      "additions": 1307,
+      "deletions": 314,
+      "commits_count": 22
+    },
+    {
+      "login": "ferologics",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5576161?v=4",
+      "html_url": "https://github.com/ferologics",
+      "contributions": 21,
+      "additions": 2323,
+      "deletions": 765,
+      "commits_count": 21
+    },
+    {
+      "login": "dannote",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2206583?v=4",
+      "html_url": "https://github.com/dannote",
+      "contributions": 18,
+      "additions": 1502,
+      "deletions": 417,
+      "commits_count": 18
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 3476,
+  "first_commit_date": "2025-08-09T15:18:38Z",
+  "commit_span_days": 240,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:04:27.599711+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

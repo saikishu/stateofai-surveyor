@@ -1,0 +1,370 @@
+{
+  "full_name": "huggingface/smolagents",
+  "name": "smolagents",
+  "owner": "huggingface",
+  "description": "\ud83e\udd17 smolagents: a barebones library for agents that think in code.",
+  "homepage": "https://huggingface.co/docs/smolagents",
+  "github_url": "https://github.com/huggingface/smolagents",
+  "stars": 26477,
+  "forks": 2442,
+  "watchers": 132,
+  "license_name": "Apache License 2.0",
+  "license_spdx": "Apache-2.0",
+  "topics": [],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2024-12-05T11:28:04Z",
+  "updated_at": "2026-04-07T06:58:23Z",
+  "pushed_at": "2026-04-02T14:29:38Z",
+  "age_days": 487,
+  "days_since_push": 4,
+  "activity_status": "active",
+  "languages": {
+    "Python": 1002540,
+    "Makefile": 326
+  },
+  "top_3_languages": [
+    "Python",
+    "Makefile"
+  ],
+  "total_code_bytes": 1002866,
+  "approx_loc": 28654,
+  "issues_open": 242,
+  "issues_closed": 514,
+  "issues_new_30d": 28,
+  "issues_new_90d": 34,
+  "issues_active_30d": 43,
+  "issues_closed_30d": 7,
+  "prs_open": 234,
+  "prs_closed": 263,
+  "prs_merged": 839,
+  "prs_active_30d": 54,
+  "release_count": 34,
+  "latest_release_tag": "v1.24.0",
+  "latest_release_date": "2026-01-16T05:38:28Z",
+  "avg_days_between_releases": 12.172413793103448,
+  "releases": [
+    {
+      "tag_name": "v1.24.0",
+      "name": "v1.24.0",
+      "published_at": "2026-01-16T05:38:28Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.24.0"
+    },
+    {
+      "tag_name": "v1.23.0",
+      "name": "v1.23.0",
+      "published_at": "2025-11-17T14:35:02Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.23.0"
+    },
+    {
+      "tag_name": "v1.22.0",
+      "name": "v1.22.0",
+      "published_at": "2025-09-25T08:47:27Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.22.0"
+    },
+    {
+      "tag_name": "v1.21.3",
+      "name": "v1.21.3",
+      "published_at": "2025-09-01T14:35:16Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.21.3"
+    },
+    {
+      "tag_name": "v1.21.2",
+      "name": "v1.21.2",
+      "published_at": "2025-08-20T05:15:23Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.21.2"
+    },
+    {
+      "tag_name": "v1.21.1",
+      "name": "v1.21.1",
+      "published_at": "2025-08-11T10:52:43Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.21.1"
+    },
+    {
+      "tag_name": "v1.21.0",
+      "name": "v1.21.0",
+      "published_at": "2025-08-07T10:48:49Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.21.0"
+    },
+    {
+      "tag_name": "v1.20.0",
+      "name": "v1.20.0",
+      "published_at": "2025-07-10T16:22:39Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.20.0"
+    },
+    {
+      "tag_name": "v1.19.0",
+      "name": "v1.19.0",
+      "published_at": "2025-06-24T08:43:14Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.19.0"
+    },
+    {
+      "tag_name": "v1.18.0",
+      "name": "v1.18.0",
+      "published_at": "2025-06-10T14:15:08Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.18.0"
+    },
+    {
+      "tag_name": "v1.17.0",
+      "name": "v1.17.0",
+      "published_at": "2025-05-27T11:26:12Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.17.0"
+    },
+    {
+      "tag_name": "v1.16.1",
+      "name": "v1.16.1",
+      "published_at": "2025-05-16T15:06:21Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.16.1"
+    },
+    {
+      "tag_name": "v1.16.0",
+      "name": "v1.16.0",
+      "published_at": "2025-05-16T05:59:44Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.16.0"
+    },
+    {
+      "tag_name": "v1.15.0",
+      "name": "v1.15.0",
+      "published_at": "2025-05-07T15:25:24Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.15.0"
+    },
+    {
+      "tag_name": "v1.14.0",
+      "name": "v1.14.0",
+      "published_at": "2025-04-18T09:59:12Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.14.0"
+    },
+    {
+      "tag_name": "v1.13.0",
+      "name": "v1.13.0",
+      "published_at": "2025-04-02T15:10:31Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.13.0"
+    },
+    {
+      "tag_name": "v1.12.0",
+      "name": "v1.12.0",
+      "published_at": "2025-03-20T09:37:38Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.12.0"
+    },
+    {
+      "tag_name": "v1.11.0",
+      "name": "v1.11.0",
+      "published_at": "2025-03-14T19:55:16Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.11.0"
+    },
+    {
+      "tag_name": "v1.10.0",
+      "name": "v1.10.0",
+      "published_at": "2025-03-05T18:04:08Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.10.0"
+    },
+    {
+      "tag_name": "v1.9.2",
+      "name": "v1.9.2",
+      "published_at": "2025-02-17T10:43:13Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.9.2"
+    },
+    {
+      "tag_name": "v1.9.1",
+      "name": "v1.9.1",
+      "published_at": "2025-02-14T12:21:02Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.9.1"
+    },
+    {
+      "tag_name": "v1.9.0",
+      "name": "v1.9.0",
+      "published_at": "2025-02-14T11:26:48Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.9.0"
+    },
+    {
+      "tag_name": "v1.8.1",
+      "name": "v1.8.1",
+      "published_at": "2025-02-11T09:14:32Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.8.1"
+    },
+    {
+      "tag_name": "v1.8.0",
+      "name": "v1.8.0",
+      "published_at": "2025-02-07T15:02:10Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.8.0"
+    },
+    {
+      "tag_name": "v1.7.0",
+      "name": "v1.7.0",
+      "published_at": "2025-01-31T13:05:14Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.7.0"
+    },
+    {
+      "tag_name": "v1.6.0",
+      "name": "v1.6.0",
+      "published_at": "2025-01-28T10:46:27Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.6.0"
+    },
+    {
+      "tag_name": "v1.5.1",
+      "name": "v1.5.1",
+      "published_at": "2025-01-27T09:26:35Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.5.1"
+    },
+    {
+      "tag_name": "v1.5.0",
+      "name": "v1.5.0",
+      "published_at": "2025-01-24T16:22:43Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.5.0"
+    },
+    {
+      "tag_name": "v1.4.1",
+      "name": "v1.4.1",
+      "published_at": "2025-01-17T20:00:35Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.4.1"
+    },
+    {
+      "tag_name": "v1.3.0",
+      "name": "v1.3.0",
+      "published_at": "2025-01-15T16:30:32Z",
+      "prerelease": false,
+      "url": "https://github.com/huggingface/smolagents/releases/tag/v1.3.0"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "albertvillanova",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8515462?v=4",
+      "html_url": "https://github.com/albertvillanova",
+      "contributions": 360,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "aymeric-roucher",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69208727?v=4",
+      "html_url": "https://github.com/aymeric-roucher",
+      "contributions": 306,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "keetrap",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103131112?v=4",
+      "html_url": "https://github.com/keetrap",
+      "contributions": 16,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "sysradium",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16747951?v=4",
+      "html_url": "https://github.com/sysradium",
+      "contributions": 12,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "touseefahmed96",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124333084?v=4",
+      "html_url": "https://github.com/touseefahmed96",
+      "contributions": 12,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "FacerAin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16442978?v=4",
+      "html_url": "https://github.com/FacerAin",
+      "contributions": 10,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "suryabdev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78837638?v=4",
+      "html_url": "https://github.com/suryabdev",
+      "contributions": 10,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "RolandJAAI",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38503289?v=4",
+      "html_url": "https://github.com/RolandJAAI",
+      "contributions": 7,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "sergiopaniego",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17179696?v=4",
+      "html_url": "https://github.com/sergiopaniego",
+      "contributions": 6,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "tobiasofsn",
+      "avatar_url": "https://avatars.githubusercontent.com/u/211119136?v=4",
+      "html_url": "https://github.com/tobiasofsn",
+      "contributions": 5,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 1035,
+  "first_commit_date": "2024-12-05T11:28:04Z",
+  "commit_span_days": 487,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:12:37.960365+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

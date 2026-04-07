@@ -1,0 +1,265 @@
+{
+  "full_name": "reworkd/AgentGPT",
+  "name": "AgentGPT",
+  "owner": "reworkd",
+  "description": "\ud83e\udd16 Assemble, configure, and deploy autonomous AI Agents in your browser.",
+  "homepage": "https://agentgpt.reworkd.ai",
+  "github_url": "https://github.com/reworkd/AgentGPT",
+  "stars": 35943,
+  "forks": 9408,
+  "watchers": 330,
+  "license_name": "GNU General Public License v3.0",
+  "license_spdx": "GPL-3.0",
+  "topics": [
+    "agent",
+    "autogpt",
+    "agi",
+    "openai",
+    "gpt",
+    "baby-agi",
+    "next",
+    "t3",
+    "t3-stack",
+    "langchain",
+    "agentgpt",
+    "llm",
+    "agents",
+    "ai",
+    "ai-agents"
+  ],
+  "is_archived": true,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2023-04-07T02:29:19Z",
+  "updated_at": "2026-04-07T06:11:21Z",
+  "pushed_at": "2025-04-29T01:19:32Z",
+  "age_days": 1096,
+  "days_since_push": 343,
+  "activity_status": "archived",
+  "languages": {
+    "TypeScript": 267757,
+    "Python": 151498,
+    "JavaScript": 24765,
+    "MDX": 22221,
+    "CSS": 4130,
+    "Shell": 1910
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "Python",
+    "JavaScript"
+  ],
+  "total_code_bytes": 474031,
+  "approx_loc": 12022,
+  "issues_open": 132,
+  "issues_closed": 337,
+  "issues_new_30d": 0,
+  "issues_new_90d": 1,
+  "issues_active_30d": 0,
+  "issues_closed_30d": 0,
+  "prs_open": 87,
+  "prs_closed": 454,
+  "prs_merged": 541,
+  "prs_active_30d": 0,
+  "release_count": 12,
+  "latest_release_tag": "v.1.0.0",
+  "latest_release_date": "2023-11-02T00:14:25Z",
+  "avg_days_between_releases": 18.363636363636363,
+  "releases": [
+    {
+      "tag_name": "v.1.0.0",
+      "name": "v.1.0.0",
+      "published_at": "2023-11-02T00:14:25Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.1.0.0"
+    },
+    {
+      "tag_name": "v.0.10.0-beta",
+      "name": "v.0.10.0-beta",
+      "published_at": "2023-07-18T20:48:23Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.10.0-beta"
+    },
+    {
+      "tag_name": "v.0.9.5-beta",
+      "name": "v.0.9.5-beta",
+      "published_at": "2023-07-06T03:05:39Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.9.5-beta"
+    },
+    {
+      "tag_name": "v.0.9.0-beta",
+      "name": "v.0.9.0-beta",
+      "published_at": "2023-06-29T23:18:32Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.9.0-beta"
+    },
+    {
+      "tag_name": "v.0.8.0-beta",
+      "name": "v.0.8.0-beta",
+      "published_at": "2023-06-14T05:04:45Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.8.0-beta"
+    },
+    {
+      "tag_name": "v.0.7.0-beta",
+      "name": "v.0.7.0-beta",
+      "published_at": "2023-06-08T22:30:35Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.7.0-beta"
+    },
+    {
+      "tag_name": "v.0.6.0-beta",
+      "name": "v.0.6.0-beta",
+      "published_at": "2023-05-31T03:05:11Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.6.0-beta"
+    },
+    {
+      "tag_name": "v.0.5.0-beta",
+      "name": "v.0.5.0-beta",
+      "published_at": "2023-05-25T01:11:10Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.5.0-beta"
+    },
+    {
+      "tag_name": "v.0.4.0-beta",
+      "name": "v.0.4.0-beta",
+      "published_at": "2023-05-15T17:00:55Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.4.0-beta"
+    },
+    {
+      "tag_name": "v.0.3.0-beta",
+      "name": "v0.3.0 Beta 3.0",
+      "published_at": "2023-05-02T21:48:57Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.3.0-beta"
+    },
+    {
+      "tag_name": "v.0.2.0-beta",
+      "name": "v0.2.0 Beta 2.0",
+      "published_at": "2023-04-19T08:06:45Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.2.0-beta"
+    },
+    {
+      "tag_name": "v.0.1.0-beta",
+      "name": "v0.1.0 - Beta One",
+      "published_at": "2023-04-09T04:22:38Z",
+      "prerelease": false,
+      "url": "https://github.com/reworkd/AgentGPT/releases/tag/v.0.1.0-beta"
+    }
+  ],
+  "contributor_count": 69,
+  "top_contributors": [
+    {
+      "login": "asim-shrestha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50181239?v=4",
+      "html_url": "https://github.com/asim-shrestha",
+      "contributions": 607,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "awtkns",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32209255?v=4",
+      "html_url": "https://github.com/awtkns",
+      "contributions": 553,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "dependabot[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 64,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "shahrishabh7",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75043888?v=4",
+      "html_url": "https://github.com/shahrishabh7",
+      "contributions": 46,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Jshen123",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22240630?v=4",
+      "html_url": "https://github.com/Jshen123",
+      "contributions": 43,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "jasangill1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56135840?v=4",
+      "html_url": "https://github.com/jasangill1",
+      "contributions": 33,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Cs4K1Sr4C",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126985144?v=4",
+      "html_url": "https://github.com/Cs4K1Sr4C",
+      "contributions": 17,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "reworkd-admin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/122697934?v=4",
+      "html_url": "https://github.com/reworkd-admin",
+      "contributions": 11,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Srijan-Subedi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94234723?v=4",
+      "html_url": "https://github.com/Srijan-Subedi",
+      "contributions": 11,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "exil0867",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6927114?v=4",
+      "html_url": "https://github.com/exil0867",
+      "contributions": 8,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 1500,
+  "first_commit_date": "2023-04-07T02:29:13Z",
+  "commit_span_days": 1096,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T06:56:57.762926+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

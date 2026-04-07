@@ -323,6 +323,24 @@
       <option value="archived">🔴 Archived</option>
     </select>
 
+    <!-- Filter: Autonomy Level -->
+    <select x-model="filterAutonomy"
+            class="bg-card border border-border text-sm text-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:border-accent">
+      <option value="">All autonomy</option>
+      <option value="supervised">🔵 Supervised</option>
+      <option value="semi-autonomous">🟡 Semi-autonomous</option>
+      <option value="fully autonomous">🔴 Fully autonomous</option>
+    </select>
+
+    <!-- Filter: Operational Role -->
+    <select x-model="filterRole"
+            class="bg-card border border-border text-sm text-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:border-accent">
+      <option value="">All roles</option>
+      <template x-for="role in operationalRoles" :key="role">
+        <option :value="role" x-text="role"></option>
+      </template>
+    </select>
+
     <!-- Sort -->
     <select x-model="sortBy"
             class="bg-card border border-border text-sm text-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:border-accent">
@@ -403,9 +421,18 @@
                 <div class="flex items-center gap-2.5">
                   <div class="flex-shrink-0 w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center text-sm font-bold text-slate-300"
                        x-text="(repo.name||'?')[0].toUpperCase()"></div>
-                  <div>
+                  <div class="min-w-0">
                     <p class="font-semibold text-white text-sm" x-text="repo.name"></p>
                     <p class="text-xs text-slate-500" x-text="repo.owner"></p>
+                    <div class="flex gap-1 mt-1 flex-wrap">
+                      <template x-if="repo.autonomy_level">
+                        <span class="badge" :style="autonomyStyle(repo.autonomy_level)"
+                              x-text="repo.autonomy_level"></span>
+                      </template>
+                      <template x-for="role in (repo.operational_roles||'').split(',').map(s=>s.trim()).filter(Boolean).slice(0,2)" :key="role">
+                        <span class="badge" :style="roleStyle(role)" x-text="role"></span>
+                      </template>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -552,6 +579,32 @@
           <canvas id="chart-languages"></canvas>
         </div>
       </div>
+
+      <!-- Autonomy Distribution -->
+      <div class="bg-card border border-border rounded-xl p-5">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-white">⚡ Autonomy Level Distribution</h3>
+          <button @click="openFullscreen('chart-autonomy', '⚡ Autonomy Level Distribution')" class="btn-icon !p-1" title="Expand">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+          </button>
+        </div>
+        <div class="chart-container" style="height:280px">
+          <canvas id="chart-autonomy"></canvas>
+        </div>
+      </div>
+
+      <!-- Operational Roles -->
+      <div class="bg-card border border-border rounded-xl p-5">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-semibold text-white">🎯 Operational Roles</h3>
+          <button @click="openFullscreen('chart-roles', '🎯 Operational Roles')" class="btn-icon !p-1" title="Expand">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+          </button>
+        </div>
+        <div class="chart-container" style="height:280px">
+          <canvas id="chart-roles"></canvas>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -594,6 +647,17 @@
             <template x-if="selectedRepo.homepage">
               <a :href="selectedRepo.homepage" target="_blank"
                  class="text-cyan-400 hover:underline" x-text="selectedRepo.homepage"></a>
+            </template>
+          </div>
+
+          <!-- Survey metadata row -->
+          <div class="mt-3 flex flex-wrap items-start gap-2">
+            <template x-if="selectedRepo.autonomy_level">
+              <span class="badge text-xs font-semibold" :style="autonomyStyle(selectedRepo.autonomy_level)"
+                    x-text="'⚡ ' + selectedRepo.autonomy_level"></span>
+            </template>
+            <template x-for="role in (selectedRepo.operational_roles||'').split(',').map(s=>s.trim()).filter(Boolean)" :key="role">
+              <span class="badge text-xs" :style="roleStyle(role)" x-text="role"></span>
             </template>
           </div>
         </div>
@@ -673,6 +737,25 @@
           <p class="text-xs text-slate-400" x-text="fmtBytes(selectedRepo.total_code_bytes)"></p>
         </div>
       </div>
+
+      <!-- Survey Context card -->
+      <template x-if="selectedRepo.csv_description || selectedRepo.target_users">
+        <div class="bg-slate-800 rounded-xl p-4 space-y-3">
+          <h4 class="text-sm font-semibold text-white">📋 About</h4>
+          <template x-if="selectedRepo.csv_description">
+            <div>
+              <p class="text-xs text-slate-500 mb-0.5">Description</p>
+              <p class="text-sm text-slate-300" x-text="selectedRepo.csv_description"></p>
+            </div>
+          </template>
+          <template x-if="selectedRepo.target_users">
+            <div>
+              <p class="text-xs text-slate-500 mb-0.5">Target users</p>
+              <p class="text-sm text-slate-300" x-text="selectedRepo.target_users"></p>
+            </div>
+          </template>
+        </div>
+      </template>
 
       <!-- Charts row 1 -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -966,7 +1049,8 @@ function app() {
     selectedRepo: null,
     search: '',
     filterStatus: '',
-    filterCategory: '',
+    filterAutonomy: '',
+    filterRole: '',
     sortBy: 'stars',
     sortDesc: true,
     fetching: false,
@@ -1011,9 +1095,32 @@ function app() {
       } catch (_) {}
     },
 
-    get categories() {
-      const cats = new Set(this.repos.map(r => r.csv_row?.category || r.category).filter(Boolean));
-      return [...cats].sort();
+    get operationalRoles() {
+      const roles = new Set();
+      this.repos.forEach(r => {
+        (r.operational_roles || '').split(',').map(s => s.trim()).filter(Boolean).forEach(role => roles.add(role));
+      });
+      return [...roles].sort();
+    },
+
+    autonomyStyle(level) {
+      return {
+        'supervised':      'border:1px solid #3b82f6;color:#60a5fa',
+        'semi-autonomous': 'border:1px solid #f59e0b;color:#fbbf24',
+        'fully autonomous':'border:1px solid #ef4444;color:#f87171',
+      }[level] || 'border:1px solid #64748b;color:#94a3b8';
+    },
+
+    roleStyle(role) {
+      const map = {
+        'coding':            'background:rgba(168,85,247,0.15);color:#c084fc',
+        'enterprise':        'background:rgba(59,130,246,0.15);color:#60a5fa',
+        'framework/platform':'background:rgba(20,184,166,0.15);color:#2dd4bf',
+        'personal':          'background:rgba(34,197,94,0.15);color:#4ade80',
+        'client-facing':     'background:rgba(249,115,22,0.15);color:#fb923c',
+        'infra/ops':         'background:rgba(239,68,68,0.15);color:#f87171',
+      };
+      return map[role] || 'background:rgba(100,116,139,0.15);color:#94a3b8';
     },
 
     get aggregate() {
@@ -1036,15 +1143,22 @@ function app() {
         list = list.filter(r =>
           r.full_name?.toLowerCase().includes(q) ||
           r.description?.toLowerCase().includes(q) ||
-          r.csv_row?.key_capabilities?.toLowerCase().includes(q)
+          r.csv_description?.toLowerCase().includes(q) ||
+          r.target_users?.toLowerCase().includes(q) ||
+          r.operational_roles?.toLowerCase().includes(q)
         );
       }
       if (this.filterStatus) {
         list = list.filter(r => r.activity_status === this.filterStatus ||
           (this.filterStatus === 'active' && !r.activity_status && r.fetch_status === 'pending'));
       }
-      if (this.filterCategory) {
-        list = list.filter(r => (r.csv_row?.category || r.category) === this.filterCategory);
+      if (this.filterAutonomy) {
+        list = list.filter(r => r.autonomy_level === this.filterAutonomy);
+      }
+      if (this.filterRole) {
+        list = list.filter(r =>
+          (r.operational_roles || '').split(',').map(s => s.trim()).includes(this.filterRole)
+        );
       }
       list.sort((a, b) => {
         const av = a[this.sortBy] ?? 0, bv = b[this.sortBy] ?? 0;
@@ -1061,7 +1175,8 @@ function app() {
     clearFilters() {
       this.search = '';
       this.filterStatus = '';
-      this.filterCategory = '';
+      this.filterAutonomy = '';
+      this.filterRole = '';
     },
 
     // ── Theme ─────────────────────────────────────────────────────────
@@ -1181,6 +1296,8 @@ function app() {
         case 'chart-licenses':      this.drawLicenseChart('fullscreen-canvas'); break;
         case 'chart-activity':      this.drawActivityChart('fullscreen-canvas'); break;
         case 'chart-languages':     this.drawLanguagesOverviewChart('fullscreen-canvas'); break;
+        case 'chart-autonomy':      this.drawAutonomyChart('fullscreen-canvas'); break;
+        case 'chart-roles':         this.drawRolesChart('fullscreen-canvas'); break;
         case 'detail-commits':      if (this.selectedRepo) this.drawCommitChart(this.selectedRepo, 'fullscreen-canvas'); break;
         case 'detail-languages':    if (this.selectedRepo) this.drawLanguageChart(this.selectedRepo, 'fullscreen-canvas'); break;
         case 'detail-issues':       if (this.selectedRepo) this.drawIssuesChart(this.selectedRepo, 'fullscreen-canvas'); break;
@@ -1347,6 +1464,8 @@ function app() {
       this.drawLicenseChart();
       this.drawActivityChart();
       this.drawLanguagesOverviewChart();
+      this.drawAutonomyChart();
+      this.drawRolesChart();
     },
 
     drawStarsChart(targetId = 'chart-stars') {
@@ -1463,6 +1582,71 @@ function app() {
           scales: {
             x: { ticks: { color: tc.leg, font: { size: 10 } }, grid: { display: false } },
             y: { ticks: { color: tc.tick, font: { size: 10 } }, grid: { color: tc.grid } }
+          }
+        }
+      });
+    },
+
+    drawAutonomyChart(targetId = 'chart-autonomy') {
+      const el = this._getCanvas(targetId);
+      if (!el) return;
+      const tc = this._tc();
+      const levels = ['supervised', 'semi-autonomous', 'fully autonomous'];
+      const colors = ['#3b82f6', '#f59e0b', '#ef4444'];
+      const counts = levels.map(l => this.repos.filter(r => r.autonomy_level === l).length);
+      _charts[targetId] = new Chart(el, {
+        type: 'doughnut',
+        data: {
+          labels: ['Supervised', 'Semi-autonomous', 'Fully autonomous'],
+          datasets: [{ data: counts, backgroundColor: colors, borderWidth: 0 }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          cutout: '60%',
+          plugins: {
+            legend: { position: 'right', labels: { color: tc.leg, font: { size: 11 }, padding: 10 } },
+            tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.raw} repos` } }
+          }
+        }
+      });
+    },
+
+    drawRolesChart(targetId = 'chart-roles') {
+      const el = this._getCanvas(targetId);
+      if (!el) return;
+      const tc = this._tc();
+      const roleColors = {
+        'coding':            '#a855f7',
+        'enterprise':        '#3b82f6',
+        'framework/platform':'#14b8a6',
+        'personal':          '#22c55e',
+        'client-facing':     '#f97316',
+        'infra/ops':         '#ef4444',
+      };
+      const counts = {};
+      this.repos.forEach(r => {
+        (r.operational_roles || '').split(',').map(s => s.trim()).filter(Boolean).forEach(role => {
+          counts[role] = (counts[role] || 0) + 1;
+        });
+      });
+      const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      _charts[targetId] = new Chart(el, {
+        type: 'bar',
+        data: {
+          labels: entries.map(([k]) => k),
+          datasets: [{
+            data: entries.map(([, v]) => v),
+            backgroundColor: entries.map(([k]) => roleColors[k] || '#64748b'),
+            borderRadius: 4,
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: tc.tick, font: { size: 10 } }, grid: { color: tc.grid } },
+            y: { ticks: { color: tc.leg, font: { size: 11 } }, grid: { display: false } }
           }
         }
       });

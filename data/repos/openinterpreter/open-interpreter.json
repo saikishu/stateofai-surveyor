@@ -1,0 +1,380 @@
+{
+  "full_name": "openinterpreter/open-interpreter",
+  "name": "open-interpreter",
+  "owner": "openinterpreter",
+  "description": "A natural language interface for computers",
+  "homepage": "http://openinterpreter.com/",
+  "github_url": "https://github.com/openinterpreter/open-interpreter",
+  "stars": 63021,
+  "forks": 5442,
+  "watchers": 458,
+  "license_name": "GNU Affero General Public License v3.0",
+  "license_spdx": "AGPL-3.0",
+  "topics": [
+    "chatgpt",
+    "gpt-4",
+    "python",
+    "interpreter",
+    "javascript",
+    "nodejs"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2023-07-14T07:10:44Z",
+  "updated_at": "2026-04-07T04:43:49Z",
+  "pushed_at": "2026-02-09T09:19:51Z",
+  "age_days": 997,
+  "days_since_push": 56,
+  "activity_status": "recent",
+  "languages": {
+    "Python": 756720,
+    "PowerShell": 5883,
+    "Shell": 5045,
+    "Dockerfile": 879
+  },
+  "top_3_languages": [
+    "Python",
+    "PowerShell",
+    "Shell"
+  ],
+  "total_code_bytes": 768527,
+  "approx_loc": 21940,
+  "issues_open": 254,
+  "issues_closed": 804,
+  "issues_new_30d": 8,
+  "issues_new_90d": 15,
+  "issues_active_30d": 11,
+  "issues_closed_30d": 0,
+  "prs_open": 59,
+  "prs_closed": 183,
+  "prs_merged": 384,
+  "prs_active_30d": 7,
+  "release_count": 48,
+  "latest_release_tag": null,
+  "latest_release_date": null,
+  "avg_days_between_releases": null,
+  "releases": [
+    {
+      "tag_name": "v0.4.2",
+      "name": "v0.4.2 More Hotfixes",
+      "published_at": "2024-10-24T21:22:03Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.4.2"
+    },
+    {
+      "tag_name": "v0.4.1",
+      "name": "v0.4.1 Hotfixes",
+      "published_at": "2024-10-24T21:20:18Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.4.1"
+    },
+    {
+      "tag_name": "v0.4.0",
+      "name": "v0.4.0",
+      "published_at": "2024-10-24T01:04:02Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.4.0"
+    },
+    {
+      "tag_name": "v0.3.14",
+      "name": "v0.3.14",
+      "published_at": "2024-10-15T18:39:24Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.14"
+    },
+    {
+      "tag_name": "v0.3.13",
+      "name": "v0.3.13",
+      "published_at": "2024-09-15T22:42:40Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.13"
+    },
+    {
+      "tag_name": "v0.3.12",
+      "name": "0.3.12",
+      "published_at": "2024-09-05T06:34:23Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.12"
+    },
+    {
+      "tag_name": "v0.3.10",
+      "name": "v0.3.10",
+      "published_at": "2024-08-29T22:55:44Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.10"
+    },
+    {
+      "tag_name": "v0.3.9",
+      "name": "v0.3.9",
+      "published_at": "2024-08-26T16:52:08Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.9"
+    },
+    {
+      "tag_name": "v0.3.7",
+      "name": "v0.3.7",
+      "published_at": "2024-08-15T17:55:17Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.7"
+    },
+    {
+      "tag_name": "v0.3.6",
+      "name": "v0.3.6 - The Developer Update Preview I",
+      "published_at": "2024-08-08T01:16:17Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.6"
+    },
+    {
+      "tag_name": "v0.3.4",
+      "name": "v0.3.4",
+      "published_at": "2024-06-30T21:22:03Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.4"
+    },
+    {
+      "tag_name": "v0.3.3",
+      "name": "v0.3.3",
+      "published_at": "2024-06-20T23:25:25Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.3"
+    },
+    {
+      "tag_name": "v0.3.2",
+      "name": "v0.3.2",
+      "published_at": "2024-06-20T19:35:53Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.2"
+    },
+    {
+      "tag_name": "v0.3.1",
+      "name": "v0.3.1",
+      "published_at": "2024-06-18T21:16:01Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.1"
+    },
+    {
+      "tag_name": "v0.3.0",
+      "name": "Local III",
+      "published_at": "2024-06-18T15:41:42Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.3.0"
+    },
+    {
+      "tag_name": "v0.2.6",
+      "name": "v0.2.6",
+      "published_at": "2024-06-08T22:59:34Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.2.6"
+    },
+    {
+      "tag_name": "v0.2.5",
+      "name": "Local II Preview",
+      "published_at": "2024-04-24T15:56:01Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.2.5"
+    },
+    {
+      "tag_name": "v0.2.4",
+      "name": "v0.2.4",
+      "published_at": "2024-03-24T07:58:48Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.2.4"
+    },
+    {
+      "tag_name": "v0.2.3",
+      "name": "v0.2.3",
+      "published_at": "2024-03-20T06:28:45Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.2.3"
+    },
+    {
+      "tag_name": "v0.2.2",
+      "name": "The New Computer Update Part II (quick fixes)",
+      "published_at": "2024-03-12T09:48:42Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.2.2"
+    },
+    {
+      "tag_name": "v0.2.1",
+      "name": "The New Computer Update Part II",
+      "published_at": "2024-03-11T23:27:44Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.2.1"
+    },
+    {
+      "tag_name": "v0.2.0",
+      "name": "The New Computer Update",
+      "published_at": "2024-01-05T04:49:55Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.2.0"
+    },
+    {
+      "tag_name": "v0.1.18",
+      "name": "The New Computer Update (Preview)",
+      "published_at": "2023-12-28T12:14:31Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.18"
+    },
+    {
+      "tag_name": "v0.1.17",
+      "name": "v0.1.17",
+      "published_at": "2023-12-05T02:29:10Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.17"
+    },
+    {
+      "tag_name": "v0.1.16",
+      "name": "v0.1.16",
+      "published_at": "2023-11-26T03:53:27Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.16"
+    },
+    {
+      "tag_name": "v0.1.15",
+      "name": "v0.1.15",
+      "published_at": "2023-11-15T09:20:25Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.15"
+    },
+    {
+      "tag_name": "v0.1.14",
+      "name": "Vision I (Quick Fixes II)",
+      "published_at": "2023-11-11T10:34:34Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.14"
+    },
+    {
+      "tag_name": "v0.1.13",
+      "name": "Vision I (Quick Fixes I)",
+      "published_at": "2023-11-11T06:16:34Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.13"
+    },
+    {
+      "tag_name": "v0.1.12",
+      "name": "Vision I",
+      "published_at": "2023-11-10T22:35:22Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.12"
+    },
+    {
+      "tag_name": "v0.1.11",
+      "name": "Local II Update",
+      "published_at": "2023-11-09T16:52:55Z",
+      "prerelease": true,
+      "url": "https://github.com/openinterpreter/open-interpreter/releases/tag/v0.1.11"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "KillianLucas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63927363?v=4",
+      "html_url": "https://github.com/KillianLucas",
+      "contributions": 2288,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Notnaton",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4324290?v=4",
+      "html_url": "https://github.com/Notnaton",
+      "contributions": 107,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "MikeBirdTech",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63524998?v=4",
+      "html_url": "https://github.com/MikeBirdTech",
+      "contributions": 84,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "CyanideByte",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6693226?v=4",
+      "html_url": "https://github.com/CyanideByte",
+      "contributions": 74,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "ericrallen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1667415?v=4",
+      "html_url": "https://github.com/ericrallen",
+      "contributions": 68,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "tyfiero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77432183?v=4",
+      "html_url": "https://github.com/tyfiero",
+      "contributions": 39,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "jordanbtucker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/468153?v=4",
+      "html_url": "https://github.com/jordanbtucker",
+      "contributions": 38,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "TanmayDoesAI",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85993243?v=4",
+      "html_url": "https://github.com/TanmayDoesAI",
+      "contributions": 26,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "imapersonman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7597409?v=4",
+      "html_url": "https://github.com/imapersonman",
+      "contributions": 22,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "endolith",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58611?v=4",
+      "html_url": "https://github.com/endolith",
+      "contributions": 20,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 3103,
+  "first_commit_date": "2023-07-14T07:10:44Z",
+  "commit_span_days": 997,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T06:54:22.499956+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

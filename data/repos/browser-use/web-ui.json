@@ -1,0 +1,223 @@
+{
+  "full_name": "browser-use/web-ui",
+  "name": "web-ui",
+  "owner": "browser-use",
+  "description": "\ud83d\udda5\ufe0f Run AI Agent in your browser.",
+  "homepage": null,
+  "github_url": "https://github.com/browser-use/web-ui",
+  "stars": 15813,
+  "forks": 2694,
+  "watchers": 127,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2025-01-02T01:29:44Z",
+  "updated_at": "2026-04-07T04:34:54Z",
+  "pushed_at": "2025-08-31T14:16:34Z",
+  "age_days": 460,
+  "days_since_push": 218,
+  "activity_status": "stale",
+  "languages": {
+    "Python": 218371,
+    "Dockerfile": 2339
+  },
+  "top_3_languages": [
+    "Python",
+    "Dockerfile"
+  ],
+  "total_code_bytes": 220710,
+  "approx_loc": 6316,
+  "issues_open": 267,
+  "issues_closed": 174,
+  "issues_new_30d": 2,
+  "issues_new_90d": 8,
+  "issues_active_30d": 6,
+  "issues_closed_30d": 0,
+  "prs_open": 48,
+  "prs_closed": 58,
+  "prs_merged": 116,
+  "prs_active_30d": 4,
+  "release_count": 9,
+  "latest_release_tag": "v3.0.0",
+  "latest_release_date": "2025-08-31T14:16:34Z",
+  "avg_days_between_releases": 29.125,
+  "releases": [
+    {
+      "tag_name": "v3.0.0",
+      "name": "WebUI or VibeSurf? cdb-use is all you need \ud83d\ude80",
+      "published_at": "2025-08-31T14:16:34Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v3.0.0"
+    },
+    {
+      "tag_name": "v2.0.0",
+      "name": "\ud83d\udca5 Browser-Use + MCP: Unleashing Agent Power Beyond the Browser! \ud83d\ude80",
+      "published_at": "2025-05-01T05:56:03Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v2.0.0"
+    },
+    {
+      "tag_name": "v1.7",
+      "name": "Security Update & UI Enhancements!",
+      "published_at": "2025-03-29T03:37:51Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v1.7"
+    },
+    {
+      "tag_name": "v1.6",
+      "name": "DeepResearch Lands on Browser-Use Web UI, with Collaborative Agents! \ud83e\udd16\ud83e\udd1d\ud83d\udcda",
+      "published_at": "2025-02-06T12:16:21Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v1.6"
+    },
+    {
+      "tag_name": "v1.4",
+      "name": "\ud83d\ude80 Local DeepSeek-r1 Power with Ollama! ",
+      "published_at": "2025-01-28T12:52:40Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v1.4"
+    },
+    {
+      "tag_name": "v1.3",
+      "name": " \u2728 DeepSeek-r1 + Browser-use = New Magic  \u2728",
+      "published_at": "2025-01-25T16:13:11Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v1.3"
+    },
+    {
+      "tag_name": "v1.2",
+      "name": "Hotfix some errors",
+      "published_at": "2025-01-16T01:52:59Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v1.2"
+    },
+    {
+      "tag_name": "v1.1",
+      "name": "New WebUI: Enhanced Features and Compatibility",
+      "published_at": "2025-01-13T15:28:05Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v1.1"
+    },
+    {
+      "tag_name": "v1.0",
+      "name": "Original version",
+      "published_at": "2025-01-06T14:32:48Z",
+      "prerelease": false,
+      "url": "https://github.com/browser-use/web-ui/releases/tag/v1.0"
+    }
+  ],
+  "contributor_count": 53,
+  "top_contributors": [
+    {
+      "login": "warmshao",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138360003?v=4",
+      "html_url": "https://github.com/warmshao",
+      "contributions": 123,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "vvincent1234",
+      "avatar_url": "https://avatars.githubusercontent.com/u/194230675?v=4",
+      "html_url": "https://github.com/vvincent1234",
+      "contributions": 74,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "richard-devbot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/152559661?v=4",
+      "html_url": "https://github.com/richard-devbot",
+      "contributions": 40,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "MeshkatShB",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22049768?v=4",
+      "html_url": "https://github.com/MeshkatShB",
+      "contributions": 32,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "marginal23326",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58261815?v=4",
+      "html_url": "https://github.com/marginal23326",
+      "contributions": 11,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "al-one",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4549099?v=4",
+      "html_url": "https://github.com/al-one",
+      "contributions": 10,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "gregpr07",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36313686?v=4",
+      "html_url": "https://github.com/gregpr07",
+      "contributions": 7,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "pad918",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27883890?v=4",
+      "html_url": "https://github.com/pad918",
+      "contributions": 7,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "tayyabakmal1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62791376?v=4",
+      "html_url": "https://github.com/tayyabakmal1",
+      "contributions": 6,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "fyq163",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49147332?v=4",
+      "html_url": "https://github.com/fyq163",
+      "contributions": 6,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 447,
+  "first_commit_date": "2025-01-02T01:30:46Z",
+  "commit_span_days": 460,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:04:53.883429+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

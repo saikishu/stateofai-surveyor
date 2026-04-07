@@ -1,0 +1,375 @@
+{
+  "full_name": "QwenLM/qwen-code",
+  "name": "qwen-code",
+  "owner": "QwenLM",
+  "description": "An open-source AI agent that lives in your terminal.",
+  "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+  "github_url": "https://github.com/QwenLM/qwen-code",
+  "stars": 21977,
+  "forks": 2016,
+  "watchers": 116,
+  "license_name": "Apache License 2.0",
+  "license_spdx": "Apache-2.0",
+  "topics": [],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2025-06-26T01:37:46Z",
+  "updated_at": "2026-04-07T07:00:27Z",
+  "pushed_at": "2026-04-07T06:57:57Z",
+  "age_days": 285,
+  "days_since_push": 0,
+  "activity_status": "active",
+  "languages": {
+    "TypeScript": 14067085,
+    "JavaScript": 897963,
+    "Java": 408903,
+    "CSS": 84238,
+    "Python": 44154,
+    "HTML": 29215
+  },
+  "top_3_languages": [
+    "TypeScript",
+    "JavaScript",
+    "Java"
+  ],
+  "total_code_bytes": 15571987,
+  "approx_loc": 368431,
+  "issues_open": 581,
+  "issues_closed": 962,
+  "issues_new_30d": 62,
+  "issues_new_90d": 62,
+  "issues_active_30d": 62,
+  "issues_closed_30d": 29,
+  "prs_open": 146,
+  "prs_closed": 306,
+  "prs_merged": 738,
+  "prs_active_30d": 100,
+  "release_count": 371,
+  "latest_release_tag": "v0.14.0",
+  "latest_release_date": "2026-04-03T00:41:40Z",
+  "avg_days_between_releases": 2.0,
+  "releases": [
+    {
+      "tag_name": "v0.14.0",
+      "name": "Release v0.14.0",
+      "published_at": "2026-04-03T00:41:40Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.0"
+    },
+    {
+      "tag_name": "v0.14.0-preview.5",
+      "name": "Release v0.14.0-preview.5",
+      "published_at": "2026-04-02T03:46:00Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.0-preview.5"
+    },
+    {
+      "tag_name": "v0.14.0-nightly.20260402.a5f17ee39",
+      "name": "Release v0.14.0-nightly.20260402.a5f17ee39",
+      "published_at": "2026-04-02T00:28:20Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.0-nightly.20260402.a5f17ee39"
+    },
+    {
+      "tag_name": "v0.14.0-preview.4",
+      "name": "Release v0.14.0-preview.4",
+      "published_at": "2026-04-01T12:50:38Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.0-preview.4"
+    },
+    {
+      "tag_name": "v0.14.0-preview.3",
+      "name": "Release v0.14.0-preview.3",
+      "published_at": "2026-04-01T04:46:13Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.0-preview.3"
+    },
+    {
+      "tag_name": "v0.13.2-preview.0",
+      "name": "Release v0.13.2-preview.0",
+      "published_at": "2026-04-01T00:30:08Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.2-preview.0"
+    },
+    {
+      "tag_name": "v0.13.2-nightly.20260401.20e51e3d3",
+      "name": "Release v0.13.2-nightly.20260401.20e51e3d3",
+      "published_at": "2026-04-01T00:25:45Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.2-nightly.20260401.20e51e3d3"
+    },
+    {
+      "tag_name": "v0.13.2-nightly.20260331.1b1a029fd",
+      "name": "Release v0.13.2-nightly.20260331.1b1a029fd",
+      "published_at": "2026-03-31T00:25:33Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.2-nightly.20260331.1b1a029fd"
+    },
+    {
+      "tag_name": "v0.14.0-preview.2",
+      "name": "Release v0.14.0-preview.2",
+      "published_at": "2026-03-30T13:24:28Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.0-preview.2"
+    },
+    {
+      "tag_name": "v0.13.2",
+      "name": "Release v0.13.2",
+      "published_at": "2026-03-30T11:43:43Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.2"
+    },
+    {
+      "tag_name": "v0.13.1-nightly.20260330.070ec5b43",
+      "name": "Release v0.13.1-nightly.20260330.070ec5b43",
+      "published_at": "2026-03-30T00:24:18Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.1-nightly.20260330.070ec5b43"
+    },
+    {
+      "tag_name": "sdk-typescript-v0.1.6",
+      "name": "SDK TypeScript Release v0.1.6",
+      "published_at": "2026-03-30T04:02:00Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.6"
+    },
+    {
+      "tag_name": "v0.13.1-nightly.20260329.070ec5b43",
+      "name": "Release v0.13.1-nightly.20260329.070ec5b43",
+      "published_at": "2026-03-29T00:23:24Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.1-nightly.20260329.070ec5b43"
+    },
+    {
+      "tag_name": "v0.14.0-preview.1",
+      "name": "Release v0.14.0-preview.1",
+      "published_at": "2026-03-27T12:16:28Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.0-preview.1"
+    },
+    {
+      "tag_name": "v0.13.1",
+      "name": "Release v0.13.1",
+      "published_at": "2026-03-27T10:17:32Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.1"
+    },
+    {
+      "tag_name": "v0.13.1-preview.0",
+      "name": "Release v0.13.1-preview.0",
+      "published_at": "2026-03-26T14:14:28Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.1-preview.0"
+    },
+    {
+      "tag_name": "v0.13.0-nightly.20260326.28e62882f",
+      "name": "Release v0.13.0-nightly.20260326.28e62882f",
+      "published_at": "2026-03-26T00:25:47Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-nightly.20260326.28e62882f"
+    },
+    {
+      "tag_name": "v0.14.0-preview.0",
+      "name": "Release v0.14.0-preview.0",
+      "published_at": "2026-03-25T10:20:05Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.14.0-preview.0"
+    },
+    {
+      "tag_name": "v0.13.0-nightly.20260325.3776825c2",
+      "name": "Release v0.13.0-nightly.20260325.3776825c2",
+      "published_at": "2026-03-25T00:25:16Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-nightly.20260325.3776825c2"
+    },
+    {
+      "tag_name": "v0.13.0-nightly.20260324.aebe889b3",
+      "name": "Release v0.13.0-nightly.20260324.aebe889b3",
+      "published_at": "2026-03-24T00:23:50Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-nightly.20260324.aebe889b3"
+    },
+    {
+      "tag_name": "v0.13.0",
+      "name": "Release v0.13.0",
+      "published_at": "2026-03-23T14:32:03Z",
+      "prerelease": false,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0"
+    },
+    {
+      "tag_name": "v0.13.0-preview.7",
+      "name": "Release v0.13.0-preview.7",
+      "published_at": "2026-03-23T13:57:07Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-preview.7"
+    },
+    {
+      "tag_name": "v0.13.0-preview.6",
+      "name": "Release v0.13.0-preview.6",
+      "published_at": "2026-03-23T12:14:21Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-preview.6"
+    },
+    {
+      "tag_name": "v0.13.0-preview.5",
+      "name": "Release v0.13.0-preview.5",
+      "published_at": "2026-03-23T09:08:16Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-preview.5"
+    },
+    {
+      "tag_name": "v0.13.0-preview.4",
+      "name": "Release v0.13.0-preview.4",
+      "published_at": "2026-03-23T04:57:52Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-preview.4"
+    },
+    {
+      "tag_name": "v0.13.0-preview.3",
+      "name": "Release v0.13.0-preview.3",
+      "published_at": "2026-03-23T03:51:15Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-preview.3"
+    },
+    {
+      "tag_name": "v0.13.0-preview.2",
+      "name": "Release v0.13.0-preview.2",
+      "published_at": "2026-03-23T03:11:54Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-preview.2"
+    },
+    {
+      "tag_name": "v0.13.0-nightly.20260323.38caa0b21",
+      "name": "Release v0.13.0-nightly.20260323.38caa0b21",
+      "published_at": "2026-03-23T00:24:26Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-nightly.20260323.38caa0b21"
+    },
+    {
+      "tag_name": "v0.13.0-nightly.20260322.38caa0b21",
+      "name": "Release v0.13.0-nightly.20260322.38caa0b21",
+      "published_at": "2026-03-22T00:20:41Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-nightly.20260322.38caa0b21"
+    },
+    {
+      "tag_name": "v0.13.0-nightly.20260321.38caa0b21",
+      "name": "Release v0.13.0-nightly.20260321.38caa0b21",
+      "published_at": "2026-03-21T00:23:13Z",
+      "prerelease": true,
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.13.0-nightly.20260321.38caa0b21"
+    }
+  ],
+  "contributor_count": 100,
+  "top_contributors": [
+    {
+      "login": "tanzhenxin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/480123?v=4",
+      "html_url": "https://github.com/tanzhenxin",
+      "contributions": 913,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "yiliang114",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11473889?v=4",
+      "html_url": "https://github.com/yiliang114",
+      "contributions": 408,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Mingholy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14246397?v=4",
+      "html_url": "https://github.com/Mingholy",
+      "contributions": 371,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "LaZzyMan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23273105?v=4",
+      "html_url": "https://github.com/LaZzyMan",
+      "contributions": 246,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "pomelo-nwu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10703060?v=4",
+      "html_url": "https://github.com/pomelo-nwu",
+      "contributions": 227,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "NTaylorMullen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2008729?v=4",
+      "html_url": "https://github.com/NTaylorMullen",
+      "contributions": 212,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "DennisYu07",
+      "avatar_url": "https://avatars.githubusercontent.com/u/216484627?v=4",
+      "html_url": "https://github.com/DennisYu07",
+      "contributions": 196,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "olcan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/747196?v=4",
+      "html_url": "https://github.com/olcan",
+      "contributions": 172,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "scidomino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13950003?v=4",
+      "html_url": "https://github.com/scidomino",
+      "contributions": 114,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "KeijiBranshi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10525281?v=4",
+      "html_url": "https://github.com/KeijiBranshi",
+      "contributions": 103,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 5187,
+  "first_commit_date": "2025-04-16T04:41:08Z",
+  "commit_span_days": 356,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:02:37.971872+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}

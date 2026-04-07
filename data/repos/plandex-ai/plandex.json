@@ -1,0 +1,392 @@
+{
+  "full_name": "plandex-ai/plandex",
+  "name": "plandex",
+  "owner": "plandex-ai",
+  "description": "Open source AI coding agent. Designed for large projects and real world tasks.",
+  "homepage": "https://plandex.ai",
+  "github_url": "https://github.com/plandex-ai/plandex",
+  "stars": 15212,
+  "forks": 1113,
+  "watchers": 106,
+  "license_name": "MIT License",
+  "license_spdx": "MIT",
+  "topics": [
+    "ai",
+    "ai-developer-tools",
+    "gpt-4",
+    "llm",
+    "openai",
+    "ai-agents",
+    "ai-tools",
+    "cli",
+    "developer-tools",
+    "polyglot-programming",
+    "terminal-based",
+    "golang",
+    "git",
+    "terminal",
+    "terminal-ui",
+    "command-line"
+  ],
+  "is_archived": false,
+  "is_fork": false,
+  "default_branch": "main",
+  "created_at": "2023-10-24T22:11:43Z",
+  "updated_at": "2026-04-07T07:04:04Z",
+  "pushed_at": "2025-10-03T21:49:58Z",
+  "age_days": 895,
+  "days_since_push": 185,
+  "activity_status": "stale",
+  "languages": {
+    "Go": 2196504,
+    "Shell": 36186,
+    "TypeScript": 13461,
+    "PLpgSQL": 11310,
+    "Python": 9900,
+    "C": 7197
+  },
+  "top_3_languages": [
+    "Go",
+    "Shell",
+    "TypeScript"
+  ],
+  "total_code_bytes": 2352248,
+  "approx_loc": 50871,
+  "issues_open": 34,
+  "issues_closed": 166,
+  "issues_new_30d": 2,
+  "issues_new_90d": 5,
+  "issues_active_30d": 2,
+  "issues_closed_30d": 0,
+  "prs_open": 14,
+  "prs_closed": 32,
+  "prs_merged": 33,
+  "prs_active_30d": 5,
+  "release_count": 73,
+  "latest_release_tag": "cli/v2.2.1",
+  "latest_release_date": "2025-07-16T16:54:55Z",
+  "avg_days_between_releases": 3.3448275862068964,
+  "releases": [
+    {
+      "tag_name": "server/v2.2.1",
+      "name": "Release server/v2.2.1",
+      "published_at": "2025-07-16T16:21:00Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.2.1"
+    },
+    {
+      "tag_name": "cli/v2.2.1",
+      "name": "Release cli/v2.2.1",
+      "published_at": "2025-07-16T16:54:55Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.2.1"
+    },
+    {
+      "tag_name": "server/v2.2.0",
+      "name": "Release server/v2.2.0",
+      "published_at": "2025-07-01T21:21:16Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.2.0"
+    },
+    {
+      "tag_name": "cli/v2.2.0",
+      "name": "Release cli/v2.2.0",
+      "published_at": "2025-07-01T21:36:07Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.2.0"
+    },
+    {
+      "tag_name": "server/v2.1.8",
+      "name": "Release server/v2.1.8",
+      "published_at": "2025-06-08T19:42:27Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.8"
+    },
+    {
+      "tag_name": "server/v2.1.7",
+      "name": "Release server/v2.1.7",
+      "published_at": "2025-06-04T21:29:11Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.7"
+    },
+    {
+      "tag_name": "server/v2.1.6+1",
+      "name": "Release server/v2.1.6+1",
+      "published_at": "2025-05-27T02:42:51Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.6%2B1"
+    },
+    {
+      "tag_name": "server/v2.1.6",
+      "name": "Release server/v2.1.6",
+      "published_at": "2025-05-27T00:12:18Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.6"
+    },
+    {
+      "tag_name": "cli/v2.1.6+1",
+      "name": "Release cli/v2.1.6+1",
+      "published_at": "2025-05-27T02:49:37Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.1.6%2B1"
+    },
+    {
+      "tag_name": "cli/v2.1.6",
+      "name": "Release cli/v2.1.6",
+      "published_at": "2025-05-27T00:20:23Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.1.6"
+    },
+    {
+      "tag_name": "server/v2.1.5",
+      "name": "Release server/v2.1.5",
+      "published_at": "2025-05-24T00:09:13Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.5"
+    },
+    {
+      "tag_name": "cli/v2.1.5",
+      "name": "Release cli/v2.1.5",
+      "published_at": "2025-05-24T00:13:13Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.1.5"
+    },
+    {
+      "tag_name": "server/v2.1.4",
+      "name": "Release server/v2.1.4",
+      "published_at": "2025-05-20T18:29:33Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.4"
+    },
+    {
+      "tag_name": "server/v2.1.3",
+      "name": "Release server/v2.1.3",
+      "published_at": "2025-05-19T17:23:00Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.3"
+    },
+    {
+      "tag_name": "cli/v2.1.3",
+      "name": "Release cli/v2.1.3",
+      "published_at": "2025-05-15T18:59:01Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.1.3"
+    },
+    {
+      "tag_name": "server/v2.1.2",
+      "name": "Release server/v2.1.2",
+      "published_at": "2025-05-08T17:41:13Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.2"
+    },
+    {
+      "tag_name": "cli/v2.1.2",
+      "name": "Release cli/v2.1.2",
+      "published_at": "2025-05-08T17:52:42Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.1.2"
+    },
+    {
+      "tag_name": "server/v2.1.1+1",
+      "name": "Release server/v2.1.1+1",
+      "published_at": "2025-05-05T18:20:00Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.1%2B1"
+    },
+    {
+      "tag_name": "server/v2.1.1",
+      "name": "Release server/v2.1.1",
+      "published_at": "2025-05-02T17:37:33Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.1"
+    },
+    {
+      "tag_name": "cli/v2.1.1",
+      "name": "Release cli/v2.1.1",
+      "published_at": "2025-05-02T17:38:16Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.1.1"
+    },
+    {
+      "tag_name": "server/v2.1.0+1",
+      "name": "Release server/v2.1.0+1",
+      "published_at": "2025-04-30T05:45:30Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.0%2B1"
+    },
+    {
+      "tag_name": "cli/v2.1.0+1",
+      "name": "Release cli/v2.1.0+1",
+      "published_at": "2025-04-30T05:47:00Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.1.0%2B1"
+    },
+    {
+      "tag_name": "cli/v2.1.0",
+      "name": "Release cli/v2.1.0",
+      "published_at": "2025-04-29T00:01:07Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.1.0"
+    },
+    {
+      "tag_name": "server/v2.1.0",
+      "name": "Release server/v2.1.0",
+      "published_at": "2025-04-28T23:54:42Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.1.0"
+    },
+    {
+      "tag_name": "cli/v2.0.7+1",
+      "name": "Release cli/v2.0.7+1",
+      "published_at": "2025-04-08T16:58:58Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.0.7%2B1"
+    },
+    {
+      "tag_name": "cli/v2.0.7",
+      "name": "Release cli/v2.0.7",
+      "published_at": "2025-04-08T16:47:56Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.0.7"
+    },
+    {
+      "tag_name": "server/v2.0.6",
+      "name": "Release server/v2.0.6",
+      "published_at": "2025-04-03T00:35:41Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.0.6"
+    },
+    {
+      "tag_name": "cli/v2.0.6",
+      "name": "Release cli/v2.0.6",
+      "published_at": "2025-04-03T00:41:00Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.0.6"
+    },
+    {
+      "tag_name": "server/v2.0.5",
+      "name": "Release server/v2.0.5",
+      "published_at": "2025-04-02T18:44:58Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/server/v2.0.5"
+    },
+    {
+      "tag_name": "cli/v2.0.5",
+      "name": "Release cli/v2.0.5",
+      "published_at": "2025-04-02T18:55:29Z",
+      "prerelease": false,
+      "url": "https://github.com/plandex-ai/plandex/releases/tag/cli/v2.0.5"
+    }
+  ],
+  "contributor_count": 22,
+  "top_contributors": [
+    {
+      "login": "danenania",
+      "avatar_url": "https://avatars.githubusercontent.com/u/545350?v=4",
+      "html_url": "https://github.com/danenania",
+      "contributions": 821,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "ZanzyTHEbar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45744329?v=4",
+      "html_url": "https://github.com/ZanzyTHEbar",
+      "contributions": 23,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "harleypig",
+      "avatar_url": "https://avatars.githubusercontent.com/u/188624?v=4",
+      "html_url": "https://github.com/harleypig",
+      "contributions": 19,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Slahser",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3760744?v=4",
+      "html_url": "https://github.com/Slahser",
+      "contributions": 18,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "appreciated",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1729845?v=4",
+      "html_url": "https://github.com/appreciated",
+      "contributions": 13,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "ryanwithawhy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19313354?v=4",
+      "html_url": "https://github.com/ryanwithawhy",
+      "contributions": 5,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "kalil0321",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92564081?v=4",
+      "html_url": "https://github.com/kalil0321",
+      "contributions": 4,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "songzhibin97",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49082129?v=4",
+      "html_url": "https://github.com/songzhibin97",
+      "contributions": 2,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "ryansonshine",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9534477?v=4",
+      "html_url": "https://github.com/ryansonshine",
+      "contributions": 2,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    },
+    {
+      "login": "Garfinkel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5054913?v=4",
+      "html_url": "https://github.com/Garfinkel",
+      "contributions": 2,
+      "additions": 0,
+      "deletions": 0,
+      "commits_count": 0
+    }
+  ],
+  "commits_last_year": 0,
+  "commits_per_week_avg": 0.0,
+  "weekly_commits": [],
+  "weekly_timestamps": [],
+  "commits_30d": 0,
+  "commits_90d": 0,
+  "commit_trend": "unknown",
+  "commit_growth_pct": 0.0,
+  "total_commits": 1483,
+  "first_commit_date": "2023-09-28T08:09:03Z",
+  "commit_span_days": 921,
+  "vulnerability_alert_count": 0,
+  "security_advisories_count": 0,
+  "security_advisories": [],
+  "csv_row": null,
+  "fetched_at": "2026-04-07T07:05:46.972380+00:00",
+  "fetch_error": null,
+  "fetch_status": "complete"
+}
