@@ -206,7 +206,7 @@ class GitHubClient:
         if resp.status_code == 404:
             return resp if return_response else None
         if resp.status_code == 202:
-            return None   # stats computing — caller retries
+            return resp if return_response else None   # stats computing — caller retries
         resp.raise_for_status()
         return resp if return_response else resp.json()
 
@@ -329,19 +329,40 @@ class GitHubClient:
     # ── Commit activity (52 weeks) ────────────────────────────────────────────
 
     async def _apply_commit_activity(self, s: RepoStats, owner: str, name: str) -> None:
-        for attempt in range(10):
-            raw = await self._rest(f"/repos/{owner}/{name}/stats/commit_activity")
-            if raw is None and attempt < 9:
-                # GitHub stats API returns 202 while computing; back off progressively
-                await asyncio.sleep(5 + attempt * 3)
+        path = f"/repos/{owner}/{name}/stats/commit_activity"
+        for attempt in range(8):
+            resp = await self._rest(path, return_response=True)
+            # Capture canonical URL after first redirect (avoids double-hop on every retry)
+            if resp is not None and hasattr(resp, "url"):
+                canonical = str(resp.url).replace("https://api.github.com", "")
+                if canonical and canonical != path:
+                    path = canonical
+            if resp is not None and resp.status_code == 202:
+                wait = 20 if attempt == 0 else 10
+                logger.debug("stats/commit_activity 202 for %s/%s, sleeping %ds (attempt %d)",
+                             owner, name, wait, attempt + 1)
+                await asyncio.sleep(wait)
                 continue
+            raw = resp.json() if resp is not None and resp.status_code == 200 else None
             if isinstance(raw, list) and raw:
                 s.weekly_commits    = [w["total"] for w in raw]
                 s.weekly_timestamps = [w["week"]  for w in raw]
                 s.commits_last_year = sum(s.weekly_commits)
                 nonzero = [c for c in s.weekly_commits if c > 0]
                 s.commits_per_week_avg = sum(nonzero) / len(nonzero) if nonzero else 0.0
-                break
+                return
+
+        # Fallback: /stats/participation is pre-computed and rarely returns 202.
+        # Returns {"all": [52 weekly counts], "owner": [...]} oldest→newest.
+        logger.warning("stats/commit_activity exhausted retries for %s/%s, trying participation fallback",
+                       owner, name)
+        fb = await self._rest(f"/repos/{owner}/{name}/stats/participation")
+        if isinstance(fb, dict) and isinstance(fb.get("all"), list):
+            counts = fb["all"]   # 52 weeks, no timestamps
+            s.weekly_commits = counts
+            s.commits_last_year = sum(counts)
+            nonzero = [c for c in counts if c > 0]
+            s.commits_per_week_avg = sum(nonzero) / len(nonzero) if nonzero else 0.0
 
     # ── Contributors (basic list) ─────────────────────────────────────────────
 

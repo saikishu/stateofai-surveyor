@@ -8,7 +8,7 @@
   "stars": 29302,
   "forks": 2864,
   "watchers": 229,
-  "stars_added_30d": 793,
+  "stars_added_30d": 792,
   "stars_added_90d": 902,
   "stars_added_90d_capped": true,
   "license_name": "Apache License 2.0",
@@ -560,7 +560,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T08:25:06.108291+00:00",
+  "fetched_at": "2026-04-07T08:47:36.523703+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

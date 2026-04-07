@@ -5,7 +5,7 @@
   "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
   "homepage": "https://code.claude.com/docs/en/overview",
   "github_url": "https://github.com/anthropics/claude-code",
-  "stars": 110245,
+  "stars": 110267,
   "forks": 18334,
   "watchers": 683,
   "stars_added_30d": 0,
@@ -18,7 +18,7 @@
   "is_fork": false,
   "default_branch": "main",
   "created_at": "2025-02-22T17:41:21Z",
-  "updated_at": "2026-04-07T08:24:06Z",
+  "updated_at": "2026-04-07T08:51:06Z",
   "pushed_at": "2026-04-04T00:42:02Z",
   "age_days": 408,
   "days_since_push": 3,
@@ -37,8 +37,8 @@
   ],
   "total_code_bytes": 130901,
   "approx_loc": 3620,
-  "issues_open": 8836,
-  "issues_closed": 33757,
+  "issues_open": 8840,
+  "issues_closed": 33760,
   "issues_new_30d": 991,
   "issues_new_90d": 991,
   "issues_new_capped": true,
@@ -1002,7 +1002,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T08:27:23.259074+00:00",
+  "fetched_at": "2026-04-07T08:52:50.616079+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

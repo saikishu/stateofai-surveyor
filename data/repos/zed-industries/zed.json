@@ -45,7 +45,7 @@
   "approx_loc": 1135512,
   "issues_open": 2688,
   "issues_closed": 16665,
-  "issues_new_30d": 368,
+  "issues_new_30d": 367,
   "issues_new_90d": 583,
   "issues_new_capped": true,
   "issues_active_30d": 271,
@@ -53,10 +53,10 @@
   "issues_closed_30d": 1,
   "issues_closed_90d": 1,
   "issues_closed_capped": false,
-  "prs_open": 515,
+  "prs_open": 516,
   "prs_closed": 3394,
   "prs_merged": 23100,
-  "prs_active_30d": 423,
+  "prs_active_30d": 424,
   "prs_active_capped": true,
   "prs_opened_30d": 1000,
   "prs_opened_90d": 1000,
@@ -1048,7 +1048,7 @@
     }
   ],
   "csv_row": null,
-  "fetched_at": "2026-04-07T08:24:39.418721+00:00",
+  "fetched_at": "2026-04-07T08:46:22.632000+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }

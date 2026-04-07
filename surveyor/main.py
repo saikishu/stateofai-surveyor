@@ -103,7 +103,7 @@ async def get_config() -> Dict:
 
 @app.get("/", include_in_schema=False)
 async def index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request, "index.html")
 
 
 @app.get("/api/repos")
@@ -252,7 +252,7 @@ def _repos_path() -> Path:
 
 @app.get("/admin", include_in_schema=False)
 async def admin_page(request: Request):
-    return templates.TemplateResponse("admin.html", {"request": request})
+    return templates.TemplateResponse(request, "admin.html")
 
 
 @app.get("/api/admin/repos-txt")

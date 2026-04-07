@@ -21,7 +21,7 @@
   "updated_at": "2026-04-07T06:55:48Z",
   "pushed_at": "2025-09-25T08:47:36Z",
   "age_days": 747,
-  "days_since_push": 193,
+  "days_since_push": 194,
   "activity_status": "stale",
   "languages": {
     "Python": 126787,
@@ -278,7 +278,7 @@
   "security_advisories_count": 0,
   "security_advisories": [],
   "csv_row": null,
-  "fetched_at": "2026-04-07T08:25:04.412131+00:00",
+  "fetched_at": "2026-04-07T08:49:14.235560+00:00",
   "fetch_error": null,
   "fetch_status": "complete"
 }
